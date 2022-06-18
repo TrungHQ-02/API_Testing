@@ -32,8 +32,8 @@ public class Vd01 {
 	    
 	    
 	    Map<String, String> params = new HashMap<>();
-	    params.put("phonenumber", "0987768886");
-	    params.put("password", "123456789");
+	    params.put("email", "thanh12345@gmail.com");
+	    params.put("password", "123456");
 
 	    StringBuilder postData = new StringBuilder();
 	    for (Map.Entry<String, String> param : params.entrySet()) {
