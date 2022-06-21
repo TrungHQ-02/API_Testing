@@ -30,12 +30,13 @@ public class Logout {
             while ((line = reader.readLine()) != null) {
                 respondContent.append(line);
             }
+            
+            // Print Json
             System.out.println(respondContent);
 
-
+            // Convert to Object
             Gson g = new Gson();
             rp = g.fromJson(respondContent.toString(), Rp.class);
-
 
             reader.close();
         } catch (IOException e) {
