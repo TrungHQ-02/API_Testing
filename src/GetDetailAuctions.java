@@ -42,14 +42,11 @@ public class GetDetailAuctions{
 
     }
     public static void unit_test01(){
-        System.out.println("Unit test 1: Test with auction_ID from 1 to 21, The code and message String shall be not NULL as well as non-empty:");
-        for(int i=1; i <= 21; i++) {
-            String s = String.valueOf(i);
-            Test09(s, null);
+        System.out.println("Unit test 1: Test with auction_ID = 1, The code and message String shall be not NULL as well as non-empty:");
+            Test09("1", null);
             assert (rp.code != null && !"".equals(rp.code));
             assert (rp.msg != null && !"".equals(rp.msg));
             System.out.println("Finished! Satisfied!");
-        }
     }
     public static void main(String[] args){
         unit_test01();

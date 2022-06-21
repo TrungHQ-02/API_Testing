@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/GetDetailAuctions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetDetailAuctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetDetailAuctions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655825772975</updated>
       <workItem from="1655825774736" duration="391000" />
-      <workItem from="1655826847407" duration="2706000" />
+      <workItem from="1655826847407" duration="4074000" />
     </task>
     <servers />
   </component>
@@ -121,12 +120,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GetDetailAuctions.java</url>
-          <line>52</line>
+          <line>49</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/GetDetailAuctions.java</url>
-          <line>53</line>
+          <line>50</line>
           <properties class="GetDetailAuctions" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
