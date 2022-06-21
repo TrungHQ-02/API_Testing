@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.MalformedURLException;
 import java.nio.charset.StandardCharsets;
 
 public class Login {
@@ -45,11 +44,9 @@ public class Login {
             rp = g.fromJson(respondContent.toString(), Rp.class);
 
             reader.close();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             connection.disconnect();
         }
 
