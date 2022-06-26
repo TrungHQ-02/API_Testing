@@ -46,9 +46,9 @@ public class Logout {
     }
     public static void Unit_test1(){
         System.out.println("Unit test 1: If Access token is right, The code and message String shall be not NULL as well as non-empty:");
-        Test04("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU1ODIzMTAwLCJleHAiOjE2NTYxODMxMDAsIm5iZiI6MTY1NTgyMzEwMCwianRpIjoiVnN6Uk41b2l0V1RCdjBxQyIsInN1YiI6MjMwLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Vq4KZ6Y8NBCKgQiX6BCYrIUwR_wNzDY4NK_t6Mx6j8U");
-        assert (rp.code != null && !"".equals(rp.code));
-        assert (rp.msg != null && !"".equals(rp.msg));
+        Test04("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU2MjMxOTgzLCJleHAiOjE2NTY1OTE5ODMsIm5iZiI6MTY1NjIzMTk4MywianRpIjoiTjNRU3U4WnlLQmtoSEQ0cCIsInN1YiI6MjMwLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.itq0AgEmUmLohB6-iF_64PHfxHynPJUs568T5VEwW3I");
+        assert rp.code == 1000 : "Wrong code";
+        assert rp.message.equals("OK") : "Wrong message";
         System.out.println("Finished! Satisfied!");
     }
 

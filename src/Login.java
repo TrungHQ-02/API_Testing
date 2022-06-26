@@ -39,6 +39,7 @@ public class Login {
             //Print Json
             System.out.println(respondContent.toString());
 
+
             //Convert to Object
             Gson g = new Gson();
             rp = g.fromJson(respondContent.toString(), Rp.class);
@@ -53,7 +54,7 @@ public class Login {
     }
     public static void main(String[] args){
         Test01("minh0915@gmail.com","123456");
-        System.out.println(rp.code);
+        System.out.println(rp.message);
 
     }
 }

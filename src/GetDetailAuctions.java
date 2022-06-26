@@ -44,8 +44,8 @@ public class GetDetailAuctions{
     public static void unit_test01(){
         System.out.println("Unit test 1: Test with auction_ID = 1, The code and message String shall be not NULL as well as non-empty:");
             Test09("1", null);
-            assert (rp.code != null && !"".equals(rp.code));
-            assert (rp.msg != null && !"".equals(rp.msg));
+            assert rp.code == 1000 : "Wrong code" ;
+            assert rp.message .equals("OK") : "Wrong message";
             System.out.println("Finished! Satisfied!");
     }
     public static void main(String[] args){
