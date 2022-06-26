@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter_5_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GetDetailAuctionsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API_Test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/API_Test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetDetailAuctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetDetailAuctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetDetailAuctionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetDetailAuctionsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +150,7 @@
       <workItem from="1656169465023" duration="1976000" />
       <workItem from="1656213687211" duration="692000" />
       <workItem from="1656228322489" duration="5299000" />
-      <workItem from="1656257448169" duration="2576000" />
+      <workItem from="1656257448169" duration="3212000" />
     </task>
     <servers />
   </component>
