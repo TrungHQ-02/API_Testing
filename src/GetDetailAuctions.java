@@ -9,27 +9,28 @@ import java.net.URL;
 public class GetDetailAuctions{
     private static HttpURLConnection connection;
     public static Rp rp;
+    int rpCode;
 
-    public static void Test09(String Auct_ID, String token) {
+    public void Test09(int Auct_ID, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
+
 
         try {
             URL url = new URL("https://auctions-app-2.herokuapp.com/api/auctions/detail/"+Auct_ID);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Authorization", "Bearer" + token);
+            rpCode = connection.getResponseCode();
 
             reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             while ((line = reader.readLine()) != null) {
                 respondContent.append(line);
             }
 
-            // Print Json
-            System.out.println(respondContent.toString());
 
-            // Convert to Object
+            // Parse JSON
             Gson g = new Gson();
             rp = g.fromJson(respondContent.toString(), Rp.class);
 
@@ -39,16 +40,15 @@ public class GetDetailAuctions{
         }finally {
             connection.disconnect();
         }
+    }
+    public int getCode(){
+        return rp.code;
+    }
+    public String getMessage(){
+        return rp.message;
+    }
+    public int getHttpResponseCode(){
+        return rpCode;
+    }
 
-    }
-    public static void unit_test01(){
-        System.out.println("Unit test 1: Test with auction_ID = 1, The code and message String shall be not NULL as well as non-empty:");
-            Test09("1", null);
-            assert rp.code == 1000 : "Wrong code" ;
-            assert rp.message .equals("OK") : "Wrong message";
-            System.out.println("Finished! Satisfied!");
-    }
-    public static void main(String[] args){
-        unit_test01();
-    }
 }

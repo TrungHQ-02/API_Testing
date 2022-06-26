@@ -36,11 +36,11 @@ public class Login {
                 respondContent.append(line);
             }
 
-            //Print Json
+            // Print Json
             System.out.println(respondContent.toString());
 
 
-            //Convert to Object
+            // Parse JSON
             Gson g = new Gson();
             rp = g.fromJson(respondContent.toString(), Rp.class);
 

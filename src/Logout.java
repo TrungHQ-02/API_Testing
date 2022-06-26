@@ -32,7 +32,7 @@ public class Logout {
             // Print Json
             System.out.println(respondContent);
 
-            // Convert to Object
+            // Parse Json
             Gson g = new Gson();
             rp = g.fromJson(respondContent.toString(), Rp.class);
 
@@ -45,7 +45,7 @@ public class Logout {
 
     }
     public static void Unit_test1(){
-        System.out.println("Unit test 1: If Access token is right, The code and message String shall be not NULL as well as non-empty:");
+        System.out.println("Unit test 1: If Access token is right, Respond code is 1000 and message is OK:");
         Test04("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU2MjMxOTgzLCJleHAiOjE2NTY1OTE5ODMsIm5iZiI6MTY1NjIzMTk4MywianRpIjoiTjNRU3U4WnlLQmtoSEQ0cCIsInN1YiI6MjMwLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.itq0AgEmUmLohB6-iF_64PHfxHynPJUs568T5VEwW3I");
         assert rp.code == 1000 : "Wrong code";
         assert rp.message.equals("OK") : "Wrong message";

@@ -1,4 +1,4 @@
-// Respond Object
+// Response Object
 public class Rp {
     public int code;
     public String message;
