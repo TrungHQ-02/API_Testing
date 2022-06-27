@@ -11,8 +11,9 @@ public class Logout {
     private static HttpURLConnection connection;
 
     public static Rp rp;
+    int rpCode;
 
-    public static void Test04(String token) {
+    public void Test04(String token) {
         String line;
         BufferedReader reader;
         StringBuilder respondContent = new StringBuilder();
@@ -22,15 +23,14 @@ public class Logout {
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + token);
+            rpCode = connection.getResponseCode();
+
 
 
             reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             while ((line = reader.readLine()) != null) {
                 respondContent.append(line);
             }
-            
-            // Print Json
-            System.out.println(respondContent);
 
             // Parse Json
             Gson g = new Gson();
@@ -42,18 +42,11 @@ public class Logout {
         } finally {
             connection.disconnect();
         }
-
     }
-    public static void Unit_test1(){
-        System.out.println("Unit test 1: If Access token is right, Respond code is 1000 and message is OK:");
-        Test04("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU2MjMxOTgzLCJleHAiOjE2NTY1OTE5ODMsIm5iZiI6MTY1NjIzMTk4MywianRpIjoiTjNRU3U4WnlLQmtoSEQ0cCIsInN1YiI6MjMwLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.itq0AgEmUmLohB6-iF_64PHfxHynPJUs568T5VEwW3I");
-        assert rp.code == 1000 : "Wrong code";
-        assert rp.message.equals("OK") : "Wrong message";
-        System.out.println("Finished! Satisfied!");
+    public int getCode(){
+        return rp.code;
     }
-
-    // Run unit test
-    public static void main(String[] args){
-        Unit_test1();
+    public String getMessage(){
+        return rp.message;
     }
 }

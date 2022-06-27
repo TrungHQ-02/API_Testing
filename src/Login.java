@@ -13,7 +13,7 @@ public class Login {
 
     public static Rp rp;
 
-    public static void Test01(String email, String pass) {
+    public void Test01(String email, String pass) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
@@ -36,10 +36,6 @@ public class Login {
                 respondContent.append(line);
             }
 
-            // Print Json
-            System.out.println(respondContent.toString());
-
-
             // Parse JSON
             Gson g = new Gson();
             rp = g.fromJson(respondContent.toString(), Rp.class);
@@ -52,9 +48,7 @@ public class Login {
         }
 
     }
-    public static void main(String[] args){
-        Test01("minh0915@gmail.com","123456");
-        System.out.println(rp.message);
-
+    public String getToken(){
+        return rp.data.access_token;
     }
 }
