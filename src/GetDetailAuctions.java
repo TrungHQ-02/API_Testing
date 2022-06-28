@@ -15,8 +15,6 @@ public class GetDetailAuctions{
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
-
-
         try {
             URL url = new URL("https://auctions-app-2.herokuapp.com/api/auctions/detail/"+Auct_ID);
             connection = (HttpURLConnection) url.openConnection();
@@ -28,7 +26,7 @@ public class GetDetailAuctions{
             while ((line = reader.readLine()) != null) {
                 respondContent.append(line);
             }
-
+            System.out.println(respondContent);
 
             // Parse JSON
             Gson g = new Gson();

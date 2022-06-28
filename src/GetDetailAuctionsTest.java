@@ -1,14 +1,10 @@
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class GetDetailAuctionsTest {
-    GetDetailAuctions getDetailAuctions;
-    @BeforeEach
-    public void setup(){
-        getDetailAuctions = new GetDetailAuctions();
-    }
+    GetDetailAuctions getDetailAuctions = new GetDetailAuctions();
+
     @Test
     @DisplayName("Unit Test 1: If Auction_ID is right, response code should be 1000 and message should be OK")
     public void UnitTest1(){

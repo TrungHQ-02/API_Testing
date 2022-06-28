@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LogoutTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GetListComments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GetListCommentsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetDetailAuctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetDetailAuctions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GetDetailAuctionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetDetailAuctionsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +67,13 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.LogoutTest">
+    <configuration name="GetListComments" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GetListComments" />
+      <module name="API_Test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GetDetailAuctionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -76,21 +83,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetDetailAuctionsTest.AuctionIdIs1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetListCommentsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetDetailAuctionsTest" />
-      <option name="METHOD_NAME" value="AuctionIdIs1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="GetListCommentsTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetDetailAuctionsTest.should" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetListCommentsTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetDetailAuctionsTest" />
-      <option name="METHOD_NAME" value="should" />
+      <option name="MAIN_CLASS_NAME" value="GetListCommentsTest" />
+      <option name="METHOD_NAME" value="UnitTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,16 +107,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LogoutTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogoutTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LogoutTest" />
-      <option name="METHOD_NAME" value="UnitTest1" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,19 +123,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.GetListComments" />
+      <item itemvalue="JUnit.GetListCommentsTest" />
+      <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
       <item itemvalue="JUnit.LogoutTest" />
-      <item itemvalue="JUnit.LogoutTest.UnitTest1" />
       <item itemvalue="JUnit.GetDetailAuctionsTest" />
-      <item itemvalue="JUnit.GetDetailAuctionsTest.AuctionIdIs1" />
-      <item itemvalue="JUnit.GetDetailAuctionsTest.should" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.LogoutTest" />
-        <item itemvalue="JUnit.LogoutTest.UnitTest1" />
         <item itemvalue="JUnit.GetDetailAuctionsTest" />
-        <item itemvalue="JUnit.GetDetailAuctionsTest.AuctionIdIs1" />
-        <item itemvalue="JUnit.GetDetailAuctionsTest.should" />
+        <item itemvalue="JUnit.GetListCommentsTest" />
+        <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
+        <item itemvalue="Application.GetListComments" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +155,8 @@
       <workItem from="1656228322489" duration="5299000" />
       <workItem from="1656257448169" duration="4652000" />
       <workItem from="1656322469210" duration="1629000" />
+      <workItem from="1656324144276" duration="58000" />
+      <workItem from="1656391325454" duration="2382000" />
     </task>
     <servers />
   </component>
@@ -192,6 +190,11 @@
           <url>file://$PROJECT_DIR$/src/LogoutTest.java</url>
           <line>6</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GetDetailAuctionsTest.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
