@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/GetListComments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GetListCommentsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AcceptMaxBid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GetNews.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GetNewsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetDetailAuctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetDetailAuctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetDetailAuctionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetDetailAuctionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListComments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListComments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListCommentsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCommentsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LogoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,14 +69,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LogoutTest">
-    <configuration name="GetListComments" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GetListComments" />
-      <module name="API_Test" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.GetNewsTest">
     <configuration name="GetDetailAuctionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -102,11 +98,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogoutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetNewsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GetNewsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogoutTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LogoutTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="UnitTest1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,19 +129,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.GetListComments" />
-      <item itemvalue="JUnit.GetListCommentsTest" />
       <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
-      <item itemvalue="JUnit.LogoutTest" />
+      <item itemvalue="JUnit.GetNewsTest" />
+      <item itemvalue="JUnit.LogoutTest.UnitTest1" />
+      <item itemvalue="JUnit.GetListCommentsTest" />
       <item itemvalue="JUnit.GetDetailAuctionsTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LogoutTest" />
-        <item itemvalue="JUnit.GetDetailAuctionsTest" />
-        <item itemvalue="JUnit.GetListCommentsTest" />
+        <item itemvalue="JUnit.GetNewsTest" />
         <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
-        <item itemvalue="Application.GetListComments" />
+        <item itemvalue="JUnit.GetListCommentsTest" />
+        <item itemvalue="JUnit.GetDetailAuctionsTest" />
+        <item itemvalue="JUnit.LogoutTest.UnitTest1" />
       </list>
     </recent_temporary>
   </component>
@@ -157,6 +163,13 @@
       <workItem from="1656322469210" duration="1629000" />
       <workItem from="1656324144276" duration="58000" />
       <workItem from="1656391325454" duration="2382000" />
+      <workItem from="1656393771360" duration="84000" />
+      <workItem from="1656403291230" duration="388000" />
+      <workItem from="1656408804426" duration="2094000" />
+      <workItem from="1656432049660" duration="2898000" />
+      <workItem from="1656497106680" duration="1331000" />
+      <workItem from="1656578609296" duration="2927000" />
+      <workItem from="1656750990676" duration="555000" />
     </task>
     <servers />
   </component>
@@ -185,6 +198,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/LogoutTest.java</url>
+          <line>12</line>
+          <properties class="LogoutTest" method="UnitTest1">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/LogoutTest.java</url>
