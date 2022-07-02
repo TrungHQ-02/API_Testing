@@ -2,7 +2,7 @@ package random;
 
 import java.util.Random;
 
-final class RandomEmail {
+public class RandomEmail {
 	public String getSaltString() {
         String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         StringBuilder salt = new StringBuilder();
@@ -38,7 +38,7 @@ final class RandomEmail {
 	
 	public static void main(String[] args) {
 		RandomEmail email = new RandomEmail();
-		 System.out.println(email.getStringWithFixedLength(100));
+		 System.out.println(email.getStringWithFixedLength(1));
 	}
 }
 
