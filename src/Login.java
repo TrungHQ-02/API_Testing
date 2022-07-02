@@ -48,7 +48,16 @@ public class Login {
         }
 
     }
+    
     public String getToken(){
         return rp.data.access_token;
+    }
+    
+    public int getCode() {
+    	return rp.code;
+    }
+    
+    public String getMessage() {
+    	return rp.message;
     }
 }
