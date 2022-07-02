@@ -1,7 +1,16 @@
 // Response Object
+
+class User {
+	// For Test Login
+	String name, role, email, address, avatar, phone;
+}
+
 class Data{
     String access_token;
-    String total;// Use for get news test
+
+    String token_type;
+    String expires_in;
+    User user = new User();
 }
 public class Rp {
     public int code;
