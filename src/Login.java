@@ -61,6 +61,7 @@ public class Login {
     	return rp.message;
     }
     
+    // Trung them
     public Data getData() {
     	return rp.data;
     }
