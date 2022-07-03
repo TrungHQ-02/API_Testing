@@ -60,4 +60,8 @@ public class Login {
     public String getMessage() {
     	return rp.message;
     }
+    
+    public Data getData() {
+    	return rp.data;
+    }
 }
