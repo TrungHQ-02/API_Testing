@@ -1,5 +1,3 @@
-import javax.security.auth.login.LoginContext;
-
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 
