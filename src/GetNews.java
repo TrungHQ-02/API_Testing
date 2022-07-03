@@ -6,25 +6,19 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-
-public class Logout {
+public class GetNews {
     private static HttpURLConnection connection;
-
     public static Rp rp;
-    int rpCode;
 
-    public void Test04(String token) {
+    public void Test24(int index, int count, String token) {
         String line;
         BufferedReader reader;
-        StringBuilder respondContent = new StringBuilder();
-        // Connect and parse Json
+        StringBuffer respondContent = new StringBuffer();
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/logout");
+            URL url = new URL("https://auctions-app-2.herokuapp.com/api/news"+"?count=" + count + "&index=" + index);
             connection = (HttpURLConnection) url.openConnection();
-            connection.setRequestMethod("POST");
+            connection.setRequestMethod("GET");
             connection.setRequestProperty("Authorization", "Bearer" + token);
-            rpCode = connection.getResponseCode();
-            System.out.println(rpCode);
 
             reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             while ((line = reader.readLine()) != null) {
@@ -32,7 +26,7 @@ public class Logout {
             }
             System.out.println(respondContent);
 
-            // Parse Json
+            // Parse JSON
             Gson g = new Gson();
             rp = g.fromJson(respondContent.toString(), Rp.class);
 
@@ -49,7 +43,7 @@ public class Logout {
     public String getMessage(){
         return rp.message;
     }
-    public int getHttpCode(){
-       return rpCode;
+    public String getTotal(){
+        return rp.data.total;
     }
 }
