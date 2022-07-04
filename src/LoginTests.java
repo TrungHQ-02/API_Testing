@@ -1,5 +1,6 @@
 
 import org.junit.jupiter.api.Assertions;
+
 import org.junit.jupiter.api.Test;
 import random.RandomEmail;
 
@@ -126,7 +127,7 @@ public class LoginTests {
 		}
 		System.out.println("Unit 8: Satisfied!");
 	}
-	
+
 	@Test
 	// trung@gmail.com, 1234567
 	public void unitTest9() {
@@ -140,10 +141,10 @@ public class LoginTests {
 		login.Test01(mail_250, "1234567");
 		Assertions.assertEquals(1000, login.getCode());
 		Assertions.assertNotEquals(null, login.getData());
-		
+
 		System.out.println("Unit 9: Satisfied!");
 	}
-	
+
 	@Test
 	public void unitTest10() {
 		System.out.println("If email is not formatted properly, "
@@ -165,10 +166,10 @@ public class LoginTests {
 				Assertions.assertEquals("email: 7002 &password: ", login.getMessage());
 			}
 		}
-		
-		System.out.println("Unit 10: Satisfied");	
+
+		System.out.println("Unit 10: Satisfied");
 	}
-	
+
 	@Test
 	public void unitTest11() {
 		System.out.println("If email is properly formatted but password is longer than 255 characters, "
@@ -180,27 +181,27 @@ public class LoginTests {
 			Assertions.assertEquals(1001, login.getCode());
 			Assertions.assertEquals("email:  &password: 7001", login.getMessage());
 		}
-		System.out.println("Unit 11: Satisfied");	
+		System.out.println("Unit 11: Satisfied");
 	}
-	
+
 	@Test
 	public void unitTest12() {
 		//If email and password are correct, response code shoule be 1000 and data is not null
 		System.out.println("If email and password are correct, response code shoule be 1000 and data is not null");
 		System.out.println("Testing unit12...");
-		
+
 		/*
 		 * Sau nay doan nay thay bang 1 loat signup va xoa account
 		 */
-		
+
 		login.Test01("trung@gmail.com", "1234567");
 		Assertions.assertEquals(1000, login.getCode());
 		Assertions.assertEquals("OK", login.getMessage());
 		Assertions.assertNotEquals(null, login.getData());
-		
+
 		System.out.println("Unit 12: Satisfied!");
 	}
-	
+
 	@Test
 	public void unitTest13() {
 		//If password is incorrect, response code should be 1002, and message should be メールとパスワードは違いました
@@ -209,22 +210,22 @@ public class LoginTests {
 		System.out.println("Testing unit13...");
 		Assertions.assertEquals(1002, login.getCode());
 		Assertions.assertEquals("メールとパスワードは違いました", login.getMessage());
-		
+
 		System.out.println("Unit 13: Satisfied!");
 	}
-	
+
 	@Test
 	public void unitTest14() {
 		//If we use the admin account,response code should be 1000, message should be OK and the role in data should be 1
 		System.out.println("If we use the admin account,response code should be 1000, message should be OK and the role in data should be 1");
 		System.out.println("Testing unit14...");
-		login.Test01("thanh12345@gmail.com", "123456");
+		login.Test01("devAdmin2@gmail.com", "123456");
 		Assertions.assertEquals(1000, login.getCode());
 		Assertions.assertEquals("OK", login.getMessage());
 		Assertions.assertEquals("1", login.getData().user.role);
 		System.out.println("Unit 14: Satisfied");
 	}
-	
+
 	@Test
 	public void unitTest15() {
 		//If we log in an account that is not admin, code should be 1000, , message should be OK and the role should be 2
@@ -236,7 +237,7 @@ public class LoginTests {
 		Assertions.assertEquals("2", login.getData().user.role);
 		System.out.println("Unit 15: Satisfied");
 	}
-	
+
 	@Test
 	public void unitTest16() {
 		// If we login in an proper account, access_token should not be null, token_type should be bearer and expires_in should not be null
@@ -249,6 +250,6 @@ public class LoginTests {
 		Assertions.assertNotEquals(null, login.getData().expires_in);
 		System.out.println("Unit 16: Satisfied");
 	}
-	
+
 	// Test 20 la du
 }
