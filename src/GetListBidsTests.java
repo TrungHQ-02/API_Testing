@@ -1,0 +1,103 @@
+import java.util.Random;
+
+import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+
+import random.RandomEmail;
+
+public class GetListBidsTests {
+	GetListBids bidList = new GetListBids();
+	Random random = new Random();
+	RandomEmail randomString = new RandomEmail();
+
+	@Test
+	public void unitTest1() {
+		// Code 1000 message OK
+		System.out.println("Code should be 1000 and message should be OK with the valid input");
+		System.out.println("Testing unit1...");
+		bidList.Test07(1, 1, 1, null);
+		Assertions.assertEquals(1000, bidList.getCode());
+		Assertions.assertEquals("OK", bidList.getMessage());
+		System.out.println("Unit 1: Satisfied");
+	}
+
+	@Test
+	public void unitTest2() {
+		System.out.println("Code should be 1000 and message should be OK with the negative input");
+		System.out.println("Testing unit2...");
+		for (int i = 1; i <= 10; i++) {
+			int randomId = random.nextInt(-1000, -1);
+			int randomIndex = random.nextInt(-1000, -1);
+			int randomCount = random.nextInt(-1000, -1);
+			bidList.Test07(randomId, randomIndex, randomCount, null);
+			Assertions.assertEquals(1000, bidList.getCode());
+			Assertions.assertEquals("OK", bidList.getMessage());
+		}
+		System.out.println("Unit 2: Satisfied!");
+	}
+
+	@Test
+	public void unitTest3() {
+		System.out.println("Code should be 1000 and message should be OK even when token is wrong");
+		System.out.println("Testing unit3...");
+		for (int i = 1; i <= 10; i++) {
+			int randomId = random.nextInt(1, 1000);
+			int randomIndex = random.nextInt(1, 1000);
+			int randomCount = random.nextInt(1, 1000);
+			String random_token = randomString.getStringWithFixedLength(100);
+			bidList.Test07(randomId, randomIndex, randomCount, random_token);
+			Assertions.assertEquals(1000, bidList.getCode());
+			Assertions.assertEquals("OK", bidList.getMessage());
+		}
+		System.out.println("Unit 3: Satisfied!");
+	}
+
+	@Test
+	public void unitTest4() {
+		System.out.println("User name should not be null");
+		System.out.println("Testing unit4...");
+		for (int i = 1; i <= 10; i++) {
+			int randomId = random.nextInt(1, 1000);
+			int randomIndex = random.nextInt(1, 1000);
+			int randomCount = random.nextInt(1, 1000);
+			bidList.Test07(randomId, randomIndex, randomCount, null);
+			Bid[] listOfBids = bidList.getData().bids.clone();
+			for (Bid bid : listOfBids) {
+				Assertions.assertNotEquals(null, bid.user_name);
+			}
+		}
+		System.out.println("Unit 4: Satisfied!");
+	}
+
+	@Test
+	public void unitTest5() {
+		System.out.println("Update time should not be null");
+		System.out.println("Testing unit5...");
+		for (int i = 1; i <= 10; i++) {
+			int randomId = random.nextInt(1, 1000);
+			int randomIndex = random.nextInt(1, 1000);
+			int randomCount = random.nextInt(1, 1000);
+			bidList.Test07(randomId, randomIndex, randomCount, null);
+			Bid[] listOfBids = bidList.getData().bids.clone();
+			for (Bid bid : listOfBids) {
+				Assertions.assertNotEquals(null, bid.updated_at);
+			}
+		}
+		System.out.println("Finished! Satisfied!");
+	}
+
+	@Test
+	public void unitTest6() {
+		System.out.println("Total of bids should be greater than or equals to zero");
+		System.out.println("Testing unit6...");
+		for (int i = 1; i <= 10; i++) {
+			int randomId = random.nextInt(1, 1000);
+			int randomIndex = random.nextInt(1, 1000);
+			int randomCount = random.nextInt(1, 1000);
+			bidList.Test07(randomId, randomIndex, randomCount, null);
+			int totalAuctions = Integer.parseInt(bidList.getData().total);
+			Assertions.assertTrue(totalAuctions >= 0);
+		}
+		System.out.println("Unit 6: Satisfied!");
+	}
+}
