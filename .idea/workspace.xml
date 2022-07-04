@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Rp2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetNewsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetNewsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListBidsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListBidsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Rp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,31 +63,31 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SearchTest.UnitTest1">
-    <configuration name="GetListCommentsTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GetListBidsTests">
+    <configuration name="GetListBidsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetListCommentsTest" />
-      <option name="METHOD_NAME" value="UnitTest1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetNewsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetNewsTest" />
+      <option name="MAIN_CLASS_NAME" value="GetListBidsTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetNewsTest.UnitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetListBidsTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetNewsTest" />
-      <option name="METHOD_NAME" value="UnitTest2" />
+      <option name="MAIN_CLASS_NAME" value="GetListBidsTests" />
+      <option name="METHOD_NAME" value="unitTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetListCommentsTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GetListCommentsTest" />
+      <option name="METHOD_NAME" value="UnitTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,19 +124,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.GetListBidsTests" />
+      <item itemvalue="JUnit.GetListBidsTests.unitTest1" />
       <item itemvalue="JUnit.SearchTest" />
       <item itemvalue="JUnit.SearchTest.UnitTest1" />
-      <item itemvalue="JUnit.GetNewsTest.UnitTest2" />
       <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
-      <item itemvalue="JUnit.GetNewsTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GetListBidsTests" />
+        <item itemvalue="JUnit.GetListBidsTests.unitTest1" />
         <item itemvalue="JUnit.SearchTest.UnitTest1" />
         <item itemvalue="JUnit.SearchTest" />
         <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
-        <item itemvalue="JUnit.GetNewsTest.UnitTest2" />
-        <item itemvalue="JUnit.GetNewsTest" />
       </list>
     </recent_temporary>
   </component>

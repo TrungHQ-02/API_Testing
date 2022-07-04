@@ -19,7 +19,7 @@ public class GetListBids {
 		// Connect and parse Json
 		// https://auctions-app-2.herokuapp.com/api/api/bids/{auctionId}
 		try {
-			URL url = new URL("https://auctions-app-2.herokuapp.com/api/bids/?" + auctionId + "&index=" + index
+			URL url = new URL("https://auctions-app-2.herokuapp.com/api/bids/" + auctionId + "?index=" + index
 					+ "&count=" + count);
 			connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod("GET");

@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 
 // Response Object
 
@@ -11,7 +10,6 @@ class Data{
     String access_token;
     String token_type;
     String expires_in;
-    String total;
     User user = new User();
     Auction[] auctions;
     Deny[] denys;
