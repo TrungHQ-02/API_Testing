@@ -218,7 +218,7 @@ public class LoginTests {
 		//If we use the admin account,response code should be 1000, message should be OK and the role in data should be 1
 		System.out.println("If we use the admin account,response code should be 1000, message should be OK and the role in data should be 1");
 		System.out.println("Testing unit14...");
-		login.Test01("thanh12345@gmail.com", "123456");
+		login.Test01("devAdmin2@gmail.com", "123456");
 		Assertions.assertEquals(1000, login.getCode());
 		Assertions.assertEquals("OK", login.getMessage());
 		Assertions.assertEquals("1", login.getData().user.role);
