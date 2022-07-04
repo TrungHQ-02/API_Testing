@@ -13,6 +13,9 @@ class Data{
     String expires_in;
     User user = new User();
     Auction[] auctions;
+    Deny[] denys;
+    Bid[] bids;
+    String total_not_read; // for notif by Trung
     String total;
 }
 
@@ -29,6 +32,23 @@ class Auction{
     String start_date, end_date;
     String statusId, status;
     Category catergory = new Category();
+}
+
+class Deny{
+	String title;
+	String start_date, end_date;
+	String reason;
+	String auction_id;
+	String updated_at;
+	String type;
+	String is_read;
+}
+
+class Bid{
+	String user_name;
+	String user_avatar;
+	String price;
+	String updated_at;
 }
 
 public class Rp {
