@@ -10,6 +10,7 @@ class Data{
 
     String token_type;
     String expires_in;
+    String total;
     User user = new User();
 }
 public class Rp {

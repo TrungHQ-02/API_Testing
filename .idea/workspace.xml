@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AcceptMaxBid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GetNews.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GetNewsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Rp2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListComments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListComments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListCommentsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCommentsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LogoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetNewsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetNewsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Rp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,7 +51,7 @@
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Program Files/JetBrains/IntelliJ IDEA 2022.1/lib/junit-jupiter-5.8.2.jar&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
@@ -69,25 +67,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GetNewsTest">
-    <configuration name="GetDetailAuctionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetDetailAuctionsTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetListCommentsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetListCommentsTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SearchTest.UnitTest1">
     <configuration name="GetListCommentsTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -107,10 +87,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogoutTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetNewsTest.UnitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LogoutTest" />
+      <option name="MAIN_CLASS_NAME" value="GetNewsTest" />
+      <option name="METHOD_NAME" value="UnitTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SearchTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SearchTest" />
       <option name="METHOD_NAME" value="UnitTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -129,19 +128,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.SearchTest" />
+      <item itemvalue="JUnit.SearchTest.UnitTest1" />
+      <item itemvalue="JUnit.GetNewsTest.UnitTest2" />
       <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
       <item itemvalue="JUnit.GetNewsTest" />
-      <item itemvalue="JUnit.LogoutTest.UnitTest1" />
-      <item itemvalue="JUnit.GetListCommentsTest" />
-      <item itemvalue="JUnit.GetDetailAuctionsTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GetNewsTest" />
+        <item itemvalue="JUnit.SearchTest.UnitTest1" />
+        <item itemvalue="JUnit.SearchTest" />
         <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
-        <item itemvalue="JUnit.GetListCommentsTest" />
-        <item itemvalue="JUnit.GetDetailAuctionsTest" />
-        <item itemvalue="JUnit.LogoutTest.UnitTest1" />
+        <item itemvalue="JUnit.GetNewsTest.UnitTest2" />
+        <item itemvalue="JUnit.GetNewsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -170,6 +169,10 @@
       <workItem from="1656497106680" duration="1331000" />
       <workItem from="1656578609296" duration="2927000" />
       <workItem from="1656750990676" duration="555000" />
+      <workItem from="1656920548588" duration="1523000" />
+      <workItem from="1656927088508" duration="1766000" />
+      <workItem from="1656932756222" duration="600000" />
+      <workItem from="1656946610159" duration="2368000" />
     </task>
     <servers />
   </component>
@@ -208,6 +211,33 @@
           </properties>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Search.java</url>
+          <line>41</line>
+          <properties class="Search" method="getCode">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/SearchTest.java</url>
+          <line>8</line>
+          <properties class="SearchTest" method="UnitTest1">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/GetNewsTest.java</url>
+          <line>17</line>
+          <properties class="GetNewsTest" method="UnitTest2">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/LogoutTest.java</url>
           <line>6</line>
@@ -217,6 +247,11 @@
           <url>file://$PROJECT_DIR$/src/GetDetailAuctionsTest.java</url>
           <line>4</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SearchTest.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
