@@ -27,8 +27,8 @@ public class GetListBidsTests {
 		System.out.println("Testing unit2...");
 		for (int i = 1; i <= 10; i++) {
 			int randomId = random.nextInt(1,3);
-			int randomIndex = random.nextInt(1, 10);
-			int randomCount = random.nextInt(1, 10);
+			int randomIndex = random.nextInt(-5,-1);
+			int randomCount = random.nextInt(-5,-1);
 			bidList.Test07(randomId, randomIndex, randomCount, null);
 			Assertions.assertEquals(1000, bidList.getCode());
 			Assertions.assertEquals("OK", bidList.getMessage());
