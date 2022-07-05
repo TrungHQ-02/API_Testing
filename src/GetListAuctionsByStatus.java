@@ -9,8 +9,19 @@ import java.net.URL;
 public class GetListAuctionsByStatus {
     private static HttpURLConnection connection;
     public static Rp rp;
+    public String fixedId;
 
-    public void Test07(int statusId, int index, int count, String token) {
+    public String getFixedId() {
+		return fixedId;
+	}
+
+
+	public void setFixedId(String fixedId) {
+		this.fixedId = fixedId;
+	}
+
+
+	public void Test07(int statusId, int index, int count, String token) {
     	// access_token is nullable
         String line;
         BufferedReader reader;
@@ -32,6 +43,8 @@ public class GetListAuctionsByStatus {
                 respondContent.append(line);
             }
 
+            this.setFixedId(statusId+"");
+            
             // Parse JSON
             Gson g = new Gson();
             rp = g.fromJson(respondContent.toString(), Rp.class);
