@@ -1,0 +1,205 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"72b1f1c9-2813-4200-9491-a3615b28e8ce\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"JUnit5 Test Class\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2AtPBO6KLUtdaiGqbvwYkECMw14\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,\r\n    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,\r\n    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,\r\n    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/JetBrains/IntelliJ IDEA 2022.1/lib/junit-jupiter-5.8.2.jar&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\FPTShop\\Desktop\\code\\BTL\\API_Test\\src\" />\r\n    </key>\r\n    <key name=\"CreateTestDialog.Recents.Supers\">\r\n      <recent name=\"\" />\r\n    </key>\r\n    <key name=\"CreateTestDialog.RecentsKey\">\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"JUnit.GetListBidsTests\">\r\n    <configuration name=\"GetListBidsTests\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"API_Test\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"GetListBidsTests\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"GetListBidsTests.unitTest1\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"API_Test\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"GetListBidsTests\" />\r\n      <option name=\"METHOD_NAME\" value=\"unitTest1\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"GetListCommentsTest.UnitTest1\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"API_Test\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"GetListCommentsTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"UnitTest1\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SearchTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"API_Test\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"SearchTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SearchTest.UnitTest1\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"API_Test\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"SearchTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"UnitTest1\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\r\n      <option name=\"filePath\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"JUnit.GetListBidsTests\" />\r\n      <item itemvalue=\"JUnit.GetListBidsTests.unitTest1\" />\r\n      <item itemvalue=\"JUnit.SearchTest\" />\r\n      <item itemvalue=\"JUnit.SearchTest.UnitTest1\" />\r\n      <item itemvalue=\"JUnit.GetListCommentsTest.UnitTest1\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JUnit.GetListBidsTests\" />\r\n        <item itemvalue=\"JUnit.GetListBidsTests.unitTest1\" />\r\n        <item itemvalue=\"JUnit.SearchTest.UnitTest1\" />\r\n        <item itemvalue=\"JUnit.SearchTest\" />\r\n        <item itemvalue=\"JUnit.GetListCommentsTest.UnitTest1\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"72b1f1c9-2813-4200-9491-a3615b28e8ce\" name=\"Changes\" comment=\"\" />\r\n      <created>1655825772975</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1655825772975</updated>\r\n      <workItem from=\"1655825774736\" duration=\"391000\" />\r\n      <workItem from=\"1655826847407\" duration=\"4074000\" />\r\n      <workItem from=\"1655902820895\" duration=\"397000\" />\r\n      <workItem from=\"1656169465023\" duration=\"1976000\" />\r\n      <workItem from=\"1656213687211\" duration=\"692000\" />\r\n      <workItem from=\"1656228322489\" duration=\"5299000\" />\r\n      <workItem from=\"1656257448169\" duration=\"4652000\" />\r\n      <workItem from=\"1656322469210\" duration=\"1629000\" />\r\n      <workItem from=\"1656324144276\" duration=\"58000\" />\r\n      <workItem from=\"1656391325454\" duration=\"2382000\" />\r\n      <workItem from=\"1656393771360\" duration=\"84000\" />\r\n      <workItem from=\"1656403291230\" duration=\"388000\" />\r\n      <workItem from=\"1656408804426\" duration=\"2094000\" />\r\n      <workItem from=\"1656432049660\" duration=\"2898000\" />\r\n      <workItem from=\"1656497106680\" duration=\"1331000\" />\r\n      <workItem from=\"1656578609296\" duration=\"2927000\" />\r\n      <workItem from=\"1656750990676\" duration=\"555000\" />\r\n      <workItem from=\"1656920548588\" duration=\"1523000\" />\r\n      <workItem from=\"1656927088508\" duration=\"1766000\" />\r\n      <workItem from=\"1656932756222\" duration=\"600000\" />\r\n      <workItem from=\"1656946610159\" duration=\"2368000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-method\">\r\n          <url>file://$PROJECT_DIR$/src/Login.java</url>\r\n          <line>49</line>\r\n          <properties class=\"Login\">\r\n            <option name=\"EMULATED\" value=\"true\" />\r\n            <option name=\"WATCH_EXIT\" value=\"false\" />\r\n          </properties>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-method\">\r\n          <url>file://$PROJECT_DIR$/src/LogoutTest.java</url>\r\n          <line>12</line>\r\n          <properties class=\"LogoutTest\" method=\"UnitTest1\">\r\n            <option name=\"EMULATED\" value=\"true\" />\r\n            <option name=\"WATCH_EXIT\" value=\"false\" />\r\n          </properties>\r\n          <option name=\"timeStamp\" value=\"13\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-method\">\r\n          <url>file://$PROJECT_DIR$/src/Search.java</url>\r\n          <line>41</line>\r\n          <properties class=\"Search\" method=\"getCode\">\r\n            <option name=\"EMULATED\" value=\"true\" />\r\n            <option name=\"WATCH_EXIT\" value=\"false\" />\r\n          </properties>\r\n          <option name=\"timeStamp\" value=\"14\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-method\">\r\n          <url>file://$PROJECT_DIR$/src/SearchTest.java</url>\r\n          <line>8</line>\r\n          <properties class=\"SearchTest\" method=\"UnitTest1\">\r\n            <option name=\"EMULATED\" value=\"true\" />\r\n            <option name=\"WATCH_EXIT\" value=\"false\" />\r\n          </properties>\r\n          <option name=\"timeStamp\" value=\"15\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-method\">\r\n          <url>file://$PROJECT_DIR$/src/GetNewsTest.java</url>\r\n          <line>17</line>\r\n          <properties class=\"GetNewsTest\" method=\"UnitTest2\">\r\n            <option name=\"EMULATED\" value=\"true\" />\r\n            <option name=\"WATCH_EXIT\" value=\"false\" />\r\n          </properties>\r\n          <option name=\"timeStamp\" value=\"17\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/LogoutTest.java</url>\r\n          <line>6</line>\r\n          <option name=\"timeStamp\" value=\"8\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/GetDetailAuctionsTest.java</url>\r\n          <line>4</line>\r\n          <option name=\"timeStamp\" value=\"11\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/SearchTest.java</url>\r\n          <line>4</line>\r\n          <option name=\"timeStamp\" value=\"16\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a27db01b44797c8aff67f05d9a5ec87f81d71b60)
++++ b/.idea/workspace.xml	(date 1656992263539)
+@@ -1,7 +1,10 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="" />
++    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/src/GetListLikes.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -59,51 +62,53 @@
+       <recent name="" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="JUnit.GetListBidsTests">
+-    <configuration name="GetListBidsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++  <component name="RunManager" selected="JUnit.LoginTests">
++    <configuration name="RandomEmail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="random.RandomEmail" />
+       <module name="API_Test" />
+-      <option name="PACKAGE_NAME" value="" />
+-      <option name="MAIN_CLASS_NAME" value="GetListBidsTests" />
+-      <option name="TEST_OBJECT" value="class" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="random.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="GetListBidsTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="GetListAuctionsByStatusTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="API_Test" />
+       <option name="PACKAGE_NAME" value="" />
+-      <option name="MAIN_CLASS_NAME" value="GetListBidsTests" />
+-      <option name="METHOD_NAME" value="unitTest1" />
+-      <option name="TEST_OBJECT" value="method" />
++      <option name="MAIN_CLASS_NAME" value="GetListAuctionsByStatusTests" />
++      <option name="TEST_OBJECT" value="class" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="GetListCommentsTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="GetListBidsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="API_Test" />
+       <option name="PACKAGE_NAME" value="" />
+-      <option name="MAIN_CLASS_NAME" value="GetListCommentsTest" />
+-      <option name="METHOD_NAME" value="UnitTest1" />
+-      <option name="TEST_OBJECT" value="method" />
++      <option name="MAIN_CLASS_NAME" value="GetListBidsTests" />
++      <option name="TEST_OBJECT" value="class" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="GetListBidsTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="API_Test" />
+       <option name="PACKAGE_NAME" value="" />
+-      <option name="MAIN_CLASS_NAME" value="SearchTest" />
+-      <option name="TEST_OBJECT" value="class" />
++      <option name="MAIN_CLASS_NAME" value="GetListBidsTests" />
++      <option name="METHOD_NAME" value="unitTest1" />
++      <option name="TEST_OBJECT" value="method" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="SearchTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="LoginTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="API_Test" />
+       <option name="PACKAGE_NAME" value="" />
+-      <option name="MAIN_CLASS_NAME" value="SearchTest" />
+-      <option name="METHOD_NAME" value="UnitTest1" />
+-      <option name="TEST_OBJECT" value="method" />
++      <option name="MAIN_CLASS_NAME" value="LoginTests" />
++      <option name="TEST_OBJECT" value="class" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+@@ -120,19 +125,19 @@
+       </method>
+     </configuration>
+     <list>
++      <item itemvalue="Application.RandomEmail" />
++      <item itemvalue="JUnit.GetListAuctionsByStatusTests" />
+       <item itemvalue="JUnit.GetListBidsTests" />
+       <item itemvalue="JUnit.GetListBidsTests.unitTest1" />
+-      <item itemvalue="JUnit.SearchTest" />
+-      <item itemvalue="JUnit.SearchTest.UnitTest1" />
+-      <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
++      <item itemvalue="JUnit.LoginTests" />
+     </list>
+     <recent_temporary>
+       <list>
++        <item itemvalue="JUnit.LoginTests" />
++        <item itemvalue="Application.RandomEmail" />
++        <item itemvalue="JUnit.GetListAuctionsByStatusTests" />
+         <item itemvalue="JUnit.GetListBidsTests" />
+         <item itemvalue="JUnit.GetListBidsTests.unitTest1" />
+-        <item itemvalue="JUnit.SearchTest.UnitTest1" />
+-        <item itemvalue="JUnit.SearchTest" />
+-        <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -165,6 +170,7 @@
+       <workItem from="1656927088508" duration="1766000" />
+       <workItem from="1656932756222" duration="600000" />
+       <workItem from="1656946610159" duration="2368000" />
++      <workItem from="1656991349133" duration="601000" />
+     </task>
+     <servers />
+   </component>
+@@ -229,6 +235,15 @@
+             <option name="WATCH_EXIT" value="false" />
+           </properties>
+           <option name="timeStamp" value="17" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-method">
++          <url>file://$PROJECT_DIR$/src/random/RandomEmail.java</url>
++          <line>38</line>
++          <properties class="random.RandomEmail" method="main">
++            <option name="EMULATED" value="true" />
++            <option name="WATCH_EXIT" value="false" />
++          </properties>
++          <option name="timeStamp" value="18" />
+         </line-breakpoint>
+         <line-breakpoint enabled="true" type="java-line">
+           <url>file://$PROJECT_DIR$/src/LogoutTest.java</url>
+Index: src/GetListLikes.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/GetListLikes.java b/src/GetListLikes.java
+new file mode 100644
+--- /dev/null	(date 1656951311601)
++++ b/src/GetListLikes.java	(date 1656951311601)
+@@ -0,0 +1,49 @@
++import com.google.gson.Gson;
++
++import java.io.BufferedReader;
++import java.io.IOException;
++import java.io.InputStreamReader;
++import java.net.HttpURLConnection;
++import java.net.URL;
++
++public class GetListLikes {
++    private static HttpURLConnection connection;
++    public static Rp rp;
++
++    public void Test14(int index, int count, String token) {
++        String line;
++        BufferedReader reader;
++        StringBuffer respondContent = new StringBuffer();
++        try {
++            URL url = new URL("https://auctions-app-2.herokuapp.com/api/likes"+"?count=" + count + "&index=" + index);
++            connection = (HttpURLConnection) url.openConnection();
++            connection.setRequestMethod("GET");
++            connection.setRequestProperty("Authorization", "Bearer" + token);
++
++            reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
++            while ((line = reader.readLine()) != null) {
++                respondContent.append(line);
++            }
++            System.out.println(respondContent);
++
++            // Parse JSON
++            Gson g = new Gson();
++            rp = g.fromJson(respondContent.toString(), Rp.class);
++
++            reader.close();
++        } catch (IOException e) {
++            e.printStackTrace();
++        } finally {
++            connection.disconnect();
++        }
++    }
++    public int getCode(){
++        return rp.code;
++    }
++    public String getMessage(){
++        return rp.message;
++    }
++    public Data getData(){
++        return rp.data;
++    }
++}
