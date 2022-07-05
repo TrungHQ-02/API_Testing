@@ -121,4 +121,23 @@ public class GetListAuctionsByStatusTests {
 		}
 		System.out.println("Unit 7: Satisfied!");
 	}
+	
+	@Test
+	// bi sai
+	public void unitTest8() {
+		System.out.println("Status id we receive must equal to status id we send to API");
+		System.out.println("Testing unit8...");
+		for (int i = 1; i <= 10; i++) {
+			int randomId = random.nextInt(1,6);
+			int randomIndex = random.nextInt(1,1000);
+			int randomCount = random.nextInt(1,1000);
+			auctionsByStatus.Test07(randomId, randomIndex, randomCount, null);
+			Auction[] aucList = auctionsByStatus.getData().auctions.clone();
+			for (Auction auction : aucList) {
+				int aucStatusID = Integer.parseInt(auction.statusId);
+				Assertions.assertEquals(auctionsByStatus.getFixedId(), aucStatusID);
+			}
+		}
+		System.out.println("Unit 8: Satisfied!");
+	}
 }

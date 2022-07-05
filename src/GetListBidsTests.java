@@ -23,12 +23,12 @@ public class GetListBidsTests {
 
 	@Test
 	public void unitTest2() {
-		System.out.println("Code should be 1000 and message should be OK with the negative input");
+		System.out.println("Code should be 1000 and message should be OK with the negative input for index and count");
 		System.out.println("Testing unit2...");
 		for (int i = 1; i <= 10; i++) {
-			int randomId = random.nextInt(-1000, -1);
-			int randomIndex = random.nextInt(-1000, -1);
-			int randomCount = random.nextInt(-1000, -1);
+			int randomId = random.nextInt(1,3);
+			int randomIndex = random.nextInt(-5,-1);
+			int randomCount = random.nextInt(-5,-1);
 			bidList.Test07(randomId, randomIndex, randomCount, null);
 			Assertions.assertEquals(1000, bidList.getCode());
 			Assertions.assertEquals("OK", bidList.getMessage());
@@ -41,9 +41,9 @@ public class GetListBidsTests {
 		System.out.println("Code should be 1000 and message should be OK even when token is wrong");
 		System.out.println("Testing unit3...");
 		for (int i = 1; i <= 10; i++) {
-			int randomId = random.nextInt(1, 1000);
-			int randomIndex = random.nextInt(1, 1000);
-			int randomCount = random.nextInt(1, 1000);
+			int randomId = random.nextInt(1, 3);
+			int randomIndex = random.nextInt(1, 10);
+			int randomCount = random.nextInt(1, 10);
 			String random_token = randomString.getStringWithFixedLength(100);
 			bidList.Test07(randomId, randomIndex, randomCount, random_token);
 			Assertions.assertEquals(1000, bidList.getCode());
@@ -57,9 +57,9 @@ public class GetListBidsTests {
 		System.out.println("User name should not be null");
 		System.out.println("Testing unit4...");
 		for (int i = 1; i <= 10; i++) {
-			int randomId = random.nextInt(1, 1000);
-			int randomIndex = random.nextInt(1, 1000);
-			int randomCount = random.nextInt(1, 1000);
+			int randomId = random.nextInt(1, 3);
+			int randomIndex = random.nextInt(1, 10);
+			int randomCount = random.nextInt(1, 10);
 			bidList.Test07(randomId, randomIndex, randomCount, null);
 			Bid[] listOfBids = bidList.getData().bids.clone();
 			for (Bid bid : listOfBids) {
@@ -74,9 +74,9 @@ public class GetListBidsTests {
 		System.out.println("Update time should not be null");
 		System.out.println("Testing unit5...");
 		for (int i = 1; i <= 10; i++) {
-			int randomId = random.nextInt(1, 1000);
-			int randomIndex = random.nextInt(1, 1000);
-			int randomCount = random.nextInt(1, 1000);
+			int randomId = random.nextInt(1, 3);
+			int randomIndex = random.nextInt(1, 10);
+			int randomCount = random.nextInt(1, 10);
 			bidList.Test07(randomId, randomIndex, randomCount, null);
 			Bid[] listOfBids = bidList.getData().bids.clone();
 			for (Bid bid : listOfBids) {
@@ -91,9 +91,9 @@ public class GetListBidsTests {
 		System.out.println("Total of bids should be greater than or equals to zero");
 		System.out.println("Testing unit6...");
 		for (int i = 1; i <= 10; i++) {
-			int randomId = random.nextInt(1, 1000);
-			int randomIndex = random.nextInt(1, 1000);
-			int randomCount = random.nextInt(1, 1000);
+			int randomId = random.nextInt(1, 3);
+			int randomIndex = random.nextInt(1, 10);
+			int randomCount = random.nextInt(1, 10);
 			bidList.Test07(randomId, randomIndex, randomCount, null);
 			int totalAuctions = Integer.parseInt(bidList.getData().total);
 			Assertions.assertTrue(totalAuctions >= 0);

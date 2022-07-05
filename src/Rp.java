@@ -6,34 +6,42 @@ class User {
 	String name, role, email, address, avatar, phone;
 }
 
-class Data{
-    String access_token;
-    String token_type;
-    String expires_in;
-    User user = new User();
-    Auction[] auctions;
-    Deny[] denys;
-    Bid[] bids;
-    String total_not_read; // for notif by Trung
-    String total;
+class Data {
+	String access_token;
+	String token_type;
+	String expires_in;
+	User user = new User();
+	Auction[] auctions;
+	Deny[] denys;
+	Bid[] bids;
+	String total_not_read; // for notif by Trung
+	String total;
+	String user_id; // For likeauction by Trung
+	String auction_id;
+	String is_liked;
+	
+	// for edit auction by Trung
+	String title, category_id, selling_user_id;
+	String start_date, end_date;
+	String status, reason;
 }
 
-class Category{
+class Category {
 	String name;
 	String image;
 	String type;
 }
 
-class Auction{
+class Auction {
 	String auction_id;
-    String selling_user_id;
-    String title;
-    String start_date, end_date;
-    String statusId, status;
-    Category catergory = new Category();
+	String selling_user_id;
+	String title;
+	String start_date, end_date;
+	String statusId, status;
+	Category catergory = new Category();
 }
 
-class Deny{
+class Deny {
 	String title;
 	String start_date, end_date;
 	String reason;
@@ -43,7 +51,7 @@ class Deny{
 	String is_read;
 }
 
-class Bid{
+class Bid {
 	String user_name;
 	String user_avatar;
 	String price;
@@ -51,7 +59,7 @@ class Bid{
 }
 
 public class Rp {
-    public int code;
-    public String message;
-    Data data = new Data();
+	public int code;
+	public String message;
+	Data data = new Data();
 }

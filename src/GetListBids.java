@@ -17,7 +17,7 @@ public class GetListBids {
 		StringBuffer respondContent = new StringBuffer();
 
 		// Connect and parse Json
-		// https://auctions-app-2.herokuapp.com/api/api/bids/{auctionId}
+		// https://auctions-app-2.herokuapp.com/api/bids/{auctionId}
 		try {
 			URL url = new URL("https://auctions-app-2.herokuapp.com/api/bids/" + auctionId + "?index=" + index
 					+ "&count=" + count);
