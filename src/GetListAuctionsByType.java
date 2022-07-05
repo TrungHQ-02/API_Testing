@@ -11,7 +11,7 @@ public class GetListAuctionsByType {
 	private static HttpURLConnection connection;
     public static Rp rp;
 
-    public void Test08( String access_token, String index, String count) {
+    public void Test09( String access_token, String index, String count) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();

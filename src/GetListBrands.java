@@ -11,7 +11,7 @@ public class GetListBrands {
     private static HttpURLConnection connection;
     public static Rp rp;
 
-    public void Test18() {
+    public void Test19() {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
