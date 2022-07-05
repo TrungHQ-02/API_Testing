@@ -12,7 +12,7 @@ public class LikeAuction {
 	private static HttpURLConnection connection;
 
 	public static Rp rp;
-	
+
 	public String content;
 
 	public String getContent() {
@@ -21,6 +21,16 @@ public class LikeAuction {
 
 	public void setContent(String content) {
 		this.content = content;
+	}
+	
+	String auction_id;
+
+	public String getAuction_id() {
+		return auction_id;
+	}
+
+	public void setAuction_id(String auction_id) {
+		this.auction_id = auction_id;
 	}
 
 	public void Test22(String accessToken, String auctionId) {
@@ -38,7 +48,7 @@ public class LikeAuction {
 			connection.setRequestProperty("Content-Type", "application/json");
 			connection.setDoOutput(true);
 
-            String data = "{\n \"auction_id\": \"" + auctionId + "\"\n}";
+			String data = "{\n \"auction_id\": \"" + auctionId + "\"\n}";
 			byte[] out = data.getBytes(StandardCharsets.UTF_8);
 			OutputStream stream = connection.getOutputStream();
 			stream.write(out);
@@ -47,7 +57,10 @@ public class LikeAuction {
 				respondContent.append(line);
 			}
 
+			// set value to model
 			this.setContent(respondContent.toString());
+			this.setAuction_id(auctionId);
+			
 			System.out.println(respondContent);
 			// Parse JSON
 			Gson g = new Gson();
@@ -60,10 +73,6 @@ public class LikeAuction {
 			connection.disconnect();
 		}
 
-	}
-
-	public String getToken() {
-		return rp.data.access_token;
 	}
 
 	public int getCode() {
