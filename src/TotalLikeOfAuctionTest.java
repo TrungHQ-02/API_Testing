@@ -39,7 +39,7 @@ class TotalLikeOfAuctionTest {
     @Test
     @DisplayName("Unit Test 4: Total Like Of Auction ID 1, have access_token")
     public void UnitTest4(){
-    	login.Test01("dien123@gmail.com", "123456");
+    	login.Test01("dien1234@gmail.com", "123456");
     	totalLikeOfAuction.Test23(login.getToken(),"1");
         Assertions.assertEquals(1000,totalLikeOfAuction.getCode());
         Assertions.assertEquals("OK",totalLikeOfAuction.getMessage());
@@ -49,7 +49,7 @@ class TotalLikeOfAuctionTest {
     @Test
     @DisplayName("Unit Test 5: Total Like Of Auction ID 10, have access_token")
     public void UnitTest5(){
-    	login.Test01("dien123@gmail.com", "123456");
+    	login.Test01("dien1234@gmail.com", "123456");
     	totalLikeOfAuction.Test23(login.getToken(),"109");
         Assertions.assertEquals(1000,totalLikeOfAuction.getCode());
         Assertions.assertEquals("OK",totalLikeOfAuction.getMessage());

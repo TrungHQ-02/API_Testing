@@ -18,7 +18,7 @@ class GetSliderTest {
     @Test
     @DisplayName("Unit Test 2: get slider : have access_token")
     public void UnitTest2(){
-    	login.Test01("dien123@gmail.com", "123456");
+    	login.Test01("dien1234@gmail.com", "123456");
        	getSlider.Test28(login.getToken());
         Assertions.assertEquals(1000,getSlider.getCode());
         Assertions.assertEquals("OK",getSlider.getMessage());

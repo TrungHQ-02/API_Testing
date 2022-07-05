@@ -45,7 +45,7 @@ class GetListAuctionsByTypeTest {
     @Test
     //@DisplayName("Unit Test 5: get list auction by type : have access_token")
     public void UnitTest5(){
-    	login.Test01("dien123@gmail.com", "123456");
+    	login.Test01("dien1234@gmail.com", "123456");
     	getListAuctionsByType.Test08(login.getToken() ,"10","5");
         Assertions.assertEquals(1000,getListAuctionsByType.getCode());
         Assertions.assertEquals("OK",getListAuctionsByType.getMessage());
