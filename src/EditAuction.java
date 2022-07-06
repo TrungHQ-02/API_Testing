@@ -25,7 +25,6 @@ public class EditAuction {
 		String line;
 		BufferedReader reader;
 		StringBuffer respondContent = new StringBuffer();
-
 		// Connect and parse Json
 		/// api/auctions/edit/{auctionId}
 		try {

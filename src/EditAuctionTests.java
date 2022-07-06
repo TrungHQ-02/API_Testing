@@ -53,7 +53,6 @@ public class EditAuctionTests {
 		Assertions.assertEquals("Không có quyền chỉnh sửa", editAuction.getMessage());
 		System.out.println("Unit 4: Satisfied!");
 	}
-
 	@Test
 	public void unitTest5() {
 		System.out.println("no 'category_id' field entered or the value exists, Server will return code 1001");
