@@ -24,7 +24,13 @@ class Data {
 	String title, category_id, selling_user_id;
 	String start_date, end_date;
 	String status, reason;
+	
+	// for getCategories
+	String name;
+	String image;
+	String type;
 }
+
 
 class Category {
 	String name;
