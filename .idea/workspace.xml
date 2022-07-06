@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUpTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +85,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SignUpTests.unitTest4">
+  <component name="RunManager" selected="JUnit.SignUpTests.unitTest5">
     <configuration name="LoginTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -114,21 +115,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTests.unitTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
-      <option name="METHOD_NAME" value="unitTest3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SignUpTests.unitTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SignUpTests" />
       <option name="METHOD_NAME" value="unitTest4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUpTests.unitTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
+      <option name="METHOD_NAME" value="unitTest5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,18 +148,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.SignUpTests.unitTest4" />
+      <item itemvalue="JUnit.SignUpTests.unitTest5" />
       <item itemvalue="JUnit.LoginTests.unitTest1" />
       <item itemvalue="JUnit.LoginTests.unitTest5" />
       <item itemvalue="JUnit.SignUpTests" />
-      <item itemvalue="JUnit.SignUpTests.unitTest3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SignUpTests.unitTest5" />
         <item itemvalue="JUnit.SignUpTests.unitTest4" />
         <item itemvalue="JUnit.SignUpTests" />
         <item itemvalue="JUnit.LoginTests.unitTest1" />
         <item itemvalue="JUnit.LoginTests.unitTest5" />
-        <item itemvalue="JUnit.SignUpTests.unitTest3" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657120754035</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Phuong them">
+      <created>1657125257924</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657125257924</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -70,4 +70,20 @@ public class SignUpTests {
         }
         System.out.println("Unit 4: Satisfied!");
     }
+    @Test
+    public void unitTest5() {
+
+        System.out.println("If email is wrong format, code should be 1001 and message should be name: &phone: &address: &email: 7002&password: &re_pass:  &avatar: ");
+        System.out.println("Testing unit5...");
+
+        for (int i = 1; i <= 10; i++) {
+            String randomMail = email.getStringWithFixedLength(10);
+            String randomPass = email.getStringWithFixedLength(10);
+            String randomName = email.getSaltString();
+            signUp.Test02(randomMail, randomPass, randomPass, null, randomName, "0854960116", null);
+            Assertions.assertEquals(1001, signUp.getCode());
+            Assertions.assertEquals("name: &phone: &address: &email: 7002&password: &re_pass:  &avatar: ", signUp.getMessage());
+        }
+        System.out.println("Unit 5: Satisfied!");
+    }
 }
