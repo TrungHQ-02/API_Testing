@@ -3,21 +3,20 @@ import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Collection;
 
-public class Search {
+public class ReadNew {
     private static HttpURLConnection connection;
-    public static Rp2 rp;
+    public static Rp rp;
 
-    public void Test30(int type, String key, String token) {
+    public void Test25(String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/search" + "?type=" + type + "&key=" + key);
+
+            URL url = new URL("https://auctions-app-2.herokuapp.com/api/news/read/1");
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Authorization", "Bearer" + token);
@@ -30,7 +29,7 @@ public class Search {
 
             // Parse JSON
             Gson g = new Gson();
-            rp = g.fromJson(respondContent.toString(), Rp2.class);
+            rp = g.fromJson(respondContent.toString(), Rp.class);
 
             reader.close();
         } catch (IOException e) {
@@ -38,11 +37,19 @@ public class Search {
         } finally {
             connection.disconnect();
         }
+
     }
-    public int getCode(){
+
+    public int getCode() {
         return rp.code;
     }
-    public String getMessage(){
+
+    public String getMessage() {
         return rp.message;
     }
+
+    public String getTotal() {
+        return rp.data.total;
+    }
+
 }

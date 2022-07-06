@@ -10,7 +10,7 @@ public class GetNews {
     private static HttpURLConnection connection;
     public static Rp rp;
 
-    public void Test24(int index, int count, String token) {
+    public void Test25(int index, int count, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();

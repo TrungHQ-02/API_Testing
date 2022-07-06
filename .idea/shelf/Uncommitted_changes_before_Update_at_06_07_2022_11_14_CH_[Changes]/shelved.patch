@@ -1,0 +1,496 @@
+Index: src/SearchTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import org.junit.jupiter.api.Assertions;\r\nimport org.junit.jupiter.api.DisplayName;\r\nimport org.junit.jupiter.api.Test;\r\n\r\nclass SearchTest {\r\n    Search search = new Search();\r\n    @Test\r\n    @DisplayName(\"Unit Test 1:\")\r\n    public void UnitTest1(){\r\n        search.Test29(1,1,null);\r\n        Assertions.assertEquals(1000, search.getCode());\r\n        Assertions.assertEquals(\"OK\",search.getMessage());\r\n\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/SearchTest.java b/src/SearchTest.java
+--- a/src/SearchTest.java	(revision 1dcfda1867f6b9286b5cce37aa3cb4de094eeb5e)
++++ b/src/SearchTest.java	(date 1657124045582)
+@@ -5,12 +5,32 @@
+ class SearchTest {
+     Search search = new Search();
+     @Test
+-    @DisplayName("Unit Test 1:")
++    @DisplayName("Unit Test 1: With correct type and key, response code should be 1000 and message should be OK")
+     public void UnitTest1(){
+-        search.Test29(1,1,null);
++        search.Test30(1,"1",null);
+         Assertions.assertEquals(1000, search.getCode());
+         Assertions.assertEquals("OK",search.getMessage());
+-
++    }
++    @Test
++    @DisplayName("Unit Test 2: If key is wrong, response code should be 9998 and message should be Khong tim thay")
++    public void UnitTest2(){
++        search.Test30(1,"a",null);
++        Assertions.assertEquals(9998,search.getCode());
++        Assertions.assertEquals("Khong tim thay",search.getMessage());
++    }
++    @Test
++    @DisplayName("Unit Test 3: If key is null, response code should be 9998 and message should be Khong tim thay")
++    public void UnitTest3(){
++        search.Test30(1, null, null);
++        Assertions.assertEquals(9998,search.getCode());
++        Assertions.assertEquals("Khong tim thay",search.getMessage());
++    }
++    @Test
++    @DisplayName("Unit Test 4: If type is not between 1 and 4, response code should not be 1000")
++    public void UnitTest4(){
++        search.Test30(6,"1",null);
++        Assertions.assertNotEquals(1000,search.getCode());
+     }
+ 
++
+ }
+\ No newline at end of file
+Index: src/GetDetailAuctions.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import com.google.gson.Gson;\r\n\r\nimport java.io.BufferedReader;\r\nimport java.io.IOException;\r\nimport java.io.InputStreamReader;\r\nimport java.net.HttpURLConnection;\r\nimport java.net.URL;\r\n\r\npublic class GetDetailAuctions{\r\n    private static HttpURLConnection connection;\r\n    public static Rp rp;\r\n    int rpCode;\r\n\r\n    public void Test09(int Auct_ID, String token) {\r\n        String line;\r\n        BufferedReader reader;\r\n        StringBuffer respondContent = new StringBuffer();\r\n        try {\r\n            URL url = new URL(\"https://auctions-app-2.herokuapp.com/api/auctions/detail/\"+Auct_ID);\r\n            connection = (HttpURLConnection) url.openConnection();\r\n            connection.setRequestMethod(\"GET\");\r\n            connection.setRequestProperty(\"Authorization\", \"Bearer\" + token);\r\n            rpCode = connection.getResponseCode();\r\n\r\n            reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));\r\n            while ((line = reader.readLine()) != null) {\r\n                respondContent.append(line);\r\n            }\r\n            System.out.println(respondContent);\r\n\r\n            // Parse JSON\r\n            Gson g = new Gson();\r\n            rp = g.fromJson(respondContent.toString(), Rp.class);\r\n\r\n            reader.close();\r\n        } catch (IOException e) {\r\n            e.printStackTrace();\r\n        }finally {\r\n            connection.disconnect();\r\n        }\r\n    }\r\n    public int getCode(){\r\n        return rp.code;\r\n    }\r\n    public String getMessage(){\r\n        return rp.message;\r\n    }\r\n    public int getHttpResponseCode(){\r\n        return rpCode;\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/GetDetailAuctions.java b/src/GetDetailAuctions.java
+--- a/src/GetDetailAuctions.java	(revision 1dcfda1867f6b9286b5cce37aa3cb4de094eeb5e)
++++ b/src/GetDetailAuctions.java	(date 1657124004872)
+@@ -11,7 +11,7 @@
+     public static Rp rp;
+     int rpCode;
+ 
+-    public void Test09(int Auct_ID, String token) {
++    public void Test10(int Auct_ID, String token) {
+         String line;
+         BufferedReader reader;
+         StringBuffer respondContent = new StringBuffer();
+Index: src/GetListCategories.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import com.google.gson.Gson;\r\n\r\nimport java.io.BufferedReader;\r\nimport java.io.IOException;\r\nimport java.io.InputStreamReader;\r\nimport java.net.HttpURLConnection;\r\nimport java.net.URL;\r\n\r\npublic class GetListCategories {\r\n    private static HttpURLConnection connection;\r\n    public static Rp2 rp;\r\n\r\n    public void Test18() {\r\n        String line;\r\n        BufferedReader reader;\r\n        StringBuffer respondContent = new StringBuffer();\r\n        try {\r\n            URL url = new URL(\"https://auctions-app-2.herokuapp.com/api/categories\");\r\n            connection = (HttpURLConnection) url.openConnection();\r\n            connection.setRequestMethod(\"GET\");\r\n\r\n            reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));\r\n            while ((line = reader.readLine()) != null) {\r\n                respondContent.append(line);\r\n            }\r\n\r\n            // Parse JSON\r\n            Gson g = new Gson();\r\n            rp = g.fromJson(respondContent.toString(), Rp2.class);\r\n\r\n            reader.close();\r\n        } catch (IOException e) {\r\n            e.printStackTrace();\r\n        } finally {\r\n            connection.disconnect();\r\n        }\r\n    }\r\n    public int getCode(){\r\n        return rp.code;\r\n    }\r\n    public String getMessage(){\r\n        return rp.message;\r\n    }\r\n    public Data[] getData(){\r\n        return rp.data;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/GetListCategories.java b/src/GetListCategories.java
+--- a/src/GetListCategories.java	(revision 1dcfda1867f6b9286b5cce37aa3cb4de094eeb5e)
++++ b/src/GetListCategories.java	(date 1657123445171)
+@@ -23,6 +23,7 @@
+             while ((line = reader.readLine()) != null) {
+                 respondContent.append(line);
+             }
++            System.out.println(respondContent);
+ 
+             // Parse JSON
+             Gson g = new Gson();
+Index: src/Search.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import com.google.gson.Gson;\r\n\r\nimport java.io.BufferedReader;\r\nimport java.io.IOException;\r\nimport java.io.InputStreamReader;\r\nimport java.lang.reflect.Array;\r\nimport java.net.HttpURLConnection;\r\nimport java.net.URL;\r\nimport java.util.Collection;\r\n\r\npublic class Search {\r\n    private static HttpURLConnection connection;\r\n    public static Rp2 rp;\r\n\r\n    public void Test29(int type, int key, String token) {\r\n        String line;\r\n        BufferedReader reader;\r\n        StringBuffer respondContent = new StringBuffer();\r\n        try {\r\n            URL url = new URL(\"https://auctions-app-2.herokuapp.com/api/search\" + \"?type=\" + type + \"&key=\" + key);\r\n            connection = (HttpURLConnection) url.openConnection();\r\n            connection.setRequestMethod(\"GET\");\r\n            connection.setRequestProperty(\"Authorization\", \"Bearer\" + token);\r\n\r\n            reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));\r\n            while ((line = reader.readLine()) != null) {\r\n                respondContent.append(line);\r\n            }\r\n            System.out.println(respondContent);\r\n\r\n            // Parse JSON\r\n            Gson g = new Gson();\r\n            rp = g.fromJson(respondContent.toString(), Rp2.class);\r\n\r\n            reader.close();\r\n        } catch (IOException e) {\r\n            e.printStackTrace();\r\n        } finally {\r\n            connection.disconnect();\r\n        }\r\n    }\r\n    public int getCode(){\r\n        return rp.code;\r\n    }\r\n    public String getMessage(){\r\n        return rp.message;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Search.java b/src/Search.java
+--- a/src/Search.java	(revision 1dcfda1867f6b9286b5cce37aa3cb4de094eeb5e)
++++ b/src/Search.java	(date 1657124004857)
+@@ -12,7 +12,7 @@
+     private static HttpURLConnection connection;
+     public static Rp2 rp;
+ 
+-    public void Test29(int type, int key, String token) {
++    public void Test30(int type, String key, String token) {
+         String line;
+         BufferedReader reader;
+         StringBuffer respondContent = new StringBuffer();
+Index: src/GetDetailAuctionsTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import org.junit.jupiter.api.Assertions;\r\nimport org.junit.jupiter.api.DisplayName;\r\nimport org.junit.jupiter.api.Test;\r\n\r\nclass GetDetailAuctionsTest {\r\n    GetDetailAuctions getDetailAuctions = new GetDetailAuctions();\r\n\r\n    @Test\r\n    @DisplayName(\"Unit Test 1: If Auction_ID is right, response code should be 1000 and message should be OK\")\r\n    public void UnitTest1(){\r\n        getDetailAuctions.Test09(1, null);\r\n        Assertions.assertEquals(1000,getDetailAuctions.getCode());\r\n        Assertions.assertEquals(\"OK\",getDetailAuctions.getMessage());\r\n    }\r\n    @Test\r\n    @DisplayName(\"Unit Test 2: When Auction_ID is 0, HTTP response code should not be 200\")\r\n    public void UnitTest2(){\r\n        getDetailAuctions.Test09(0, null);\r\n        Assertions.assertNotEquals(200, getDetailAuctions.getHttpResponseCode());\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/GetDetailAuctionsTest.java b/src/GetDetailAuctionsTest.java
+--- a/src/GetDetailAuctionsTest.java	(revision 1dcfda1867f6b9286b5cce37aa3cb4de094eeb5e)
++++ b/src/GetDetailAuctionsTest.java	(date 1657124004924)
+@@ -8,14 +8,14 @@
+     @Test
+     @DisplayName("Unit Test 1: If Auction_ID is right, response code should be 1000 and message should be OK")
+     public void UnitTest1(){
+-        getDetailAuctions.Test09(1, null);
++        getDetailAuctions.Test10(1, null);
+         Assertions.assertEquals(1000,getDetailAuctions.getCode());
+         Assertions.assertEquals("OK",getDetailAuctions.getMessage());
+     }
+     @Test
+     @DisplayName("Unit Test 2: When Auction_ID is 0, HTTP response code should not be 200")
+     public void UnitTest2(){
+-        getDetailAuctions.Test09(0, null);
++        getDetailAuctions.Test10(0, null);
+         Assertions.assertNotEquals(200, getDetailAuctions.getHttpResponseCode());
+     }
+ }
+\ No newline at end of file
+Index: src/GetListCommentsTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import org.junit.jupiter.api.Assertions;\r\nimport org.junit.jupiter.api.DisplayName;\r\nimport org.junit.jupiter.api.Test;\r\n\r\nclass GetListCommentsTest {\r\n    GetListComments getListComments = new GetListComments();\r\n\r\n    @Test\r\n    @DisplayName(\"Unit Test 1: With correct input\")\r\n    public void UnitTest1(){\r\n        getListComments.Test14(1,1,1,null);\r\n        Assertions.assertEquals(1000,getListComments.getCode());\r\n        Assertions.assertEquals(\"OK\",getListComments.getMessage());\r\n        Assertions.assertNotEquals(null, getListComments.getData());\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/GetListCommentsTest.java b/src/GetListCommentsTest.java
+--- a/src/GetListCommentsTest.java	(revision 1dcfda1867f6b9286b5cce37aa3cb4de094eeb5e)
++++ b/src/GetListCommentsTest.java	(date 1657124004910)
+@@ -4,14 +4,12 @@
+ 
+ class GetListCommentsTest {
+     GetListComments getListComments = new GetListComments();
+-
+     @Test
+     @DisplayName("Unit Test 1: With correct input")
+     public void UnitTest1(){
+-        getListComments.Test14(1,1,1,null);
++        getListComments.Test15(1,1,1,null);
+         Assertions.assertEquals(1000,getListComments.getCode());
+         Assertions.assertEquals("OK",getListComments.getMessage());
+         Assertions.assertNotEquals(null, getListComments.getData());
+     }
+-
+ }
+\ No newline at end of file
+Index: src/GetListComments.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import com.google.gson.Gson;\r\n\r\nimport java.io.BufferedReader;\r\nimport java.io.IOException;\r\nimport java.io.InputStreamReader;\r\nimport java.net.HttpURLConnection;\r\nimport java.net.URL;\r\n\r\n\r\npublic class GetListComments {\r\n    private static HttpURLConnection connection;\r\n    public static Rp rp;\r\n\r\n    public void Test14(int Auct_ID, int index, int count, String token) {\r\n        String line;\r\n        BufferedReader reader;\r\n        StringBuffer respondContent = new StringBuffer();\r\n        try {\r\n            URL url = new URL(\"https://auctions-app-2.herokuapp.com/api/comments/\" + Auct_ID +\"?count=\" + count + \"&index=\" + index);\r\n            connection = (HttpURLConnection) url.openConnection();\r\n            connection.setRequestMethod(\"GET\");\r\n            connection.setRequestProperty(\"Authorization\", \"Bearer\" + token);\r\n\r\n            reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));\r\n            while ((line = reader.readLine()) != null) {\r\n                respondContent.append(line);\r\n            }\r\n            System.out.println(respondContent);\r\n\r\n            // Parse JSON\r\n            Gson g = new Gson();\r\n            rp = g.fromJson(respondContent.toString(), Rp.class);\r\n\r\n            reader.close();\r\n        } catch (IOException e) {\r\n            e.printStackTrace();\r\n        } finally {\r\n            connection.disconnect();\r\n        }\r\n    }\r\n    public int getCode(){\r\n        return rp.code;\r\n    }\r\n    public String getMessage(){\r\n        return rp.message;\r\n    }\r\n    public Data getData(){\r\n        return rp.data;\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/GetListComments.java b/src/GetListComments.java
+--- a/src/GetListComments.java	(revision 1dcfda1867f6b9286b5cce37aa3cb4de094eeb5e)
++++ b/src/GetListComments.java	(date 1657124004892)
+@@ -11,7 +11,7 @@
+     private static HttpURLConnection connection;
+     public static Rp rp;
+ 
+-    public void Test14(int Auct_ID, int index, int count, String token) {
++    public void Test15(int Auct_ID, int index, int count, String token) {
+         String line;
+         BufferedReader reader;
+         StringBuffer respondContent = new StringBuffer();
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"72b1f1c9-2813-4200-9491-a3615b28e8ce\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/GetListLikes.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"JUnit5 Test Class\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2AtPBO6KLUtdaiGqbvwYkECMw14\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,\r\n    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,\r\n    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,\r\n    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/JetBrains/IntelliJ IDEA 2022.1/lib/junit-jupiter-5.8.2.jar&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\FPTShop\\Desktop\\code\\BTL\\API_Test\\src\" />\r\n    </key>\r\n    <key name=\"CreateTestDialog.Recents.Supers\">\r\n      <recent name=\"\" />\r\n    </key>\r\n    <key name=\"CreateTestDialog.RecentsKey\">\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"JUnit.GetListBidsTests\">\r\n    <configuration name=\"GetListBidsTests\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"API_Test\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"GetListBidsTests\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"GetListBidsTests.unitTest1\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"API_Test\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"GetListBidsTests\" />\r\n      <option name=\"METHOD_NAME\" value=\"unitTest1\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"GetListCommentsTest.UnitTest1\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"API_Test\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"GetListCommentsTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"UnitTest1\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SearchTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"API_Test\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"SearchTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SearchTest.UnitTest1\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"API_Test\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"SearchTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"UnitTest1\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\r\n      <option name=\"filePath\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"JUnit.GetListBidsTests\" />\r\n      <item itemvalue=\"JUnit.GetListBidsTests.unitTest1\" />\r\n      <item itemvalue=\"JUnit.SearchTest\" />\r\n      <item itemvalue=\"JUnit.SearchTest.UnitTest1\" />\r\n      <item itemvalue=\"JUnit.GetListCommentsTest.UnitTest1\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JUnit.GetListBidsTests\" />\r\n        <item itemvalue=\"JUnit.GetListBidsTests.unitTest1\" />\r\n        <item itemvalue=\"JUnit.SearchTest.UnitTest1\" />\r\n        <item itemvalue=\"JUnit.SearchTest\" />\r\n        <item itemvalue=\"JUnit.GetListCommentsTest.UnitTest1\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"72b1f1c9-2813-4200-9491-a3615b28e8ce\" name=\"Changes\" comment=\"\" />\r\n      <created>1655825772975</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1655825772975</updated>\r\n      <workItem from=\"1655825774736\" duration=\"391000\" />\r\n      <workItem from=\"1655826847407\" duration=\"4074000\" />\r\n      <workItem from=\"1655902820895\" duration=\"397000\" />\r\n      <workItem from=\"1656169465023\" duration=\"1976000\" />\r\n      <workItem from=\"1656213687211\" duration=\"692000\" />\r\n      <workItem from=\"1656228322489\" duration=\"5299000\" />\r\n      <workItem from=\"1656257448169\" duration=\"4652000\" />\r\n      <workItem from=\"1656322469210\" duration=\"1629000\" />\r\n      <workItem from=\"1656324144276\" duration=\"58000\" />\r\n      <workItem from=\"1656391325454\" duration=\"2382000\" />\r\n      <workItem from=\"1656393771360\" duration=\"84000\" />\r\n      <workItem from=\"1656403291230\" duration=\"388000\" />\r\n      <workItem from=\"1656408804426\" duration=\"2094000\" />\r\n      <workItem from=\"1656432049660\" duration=\"2898000\" />\r\n      <workItem from=\"1656497106680\" duration=\"1331000\" />\r\n      <workItem from=\"1656578609296\" duration=\"2927000\" />\r\n      <workItem from=\"1656750990676\" duration=\"555000\" />\r\n      <workItem from=\"1656920548588\" duration=\"1523000\" />\r\n      <workItem from=\"1656927088508\" duration=\"1766000\" />\r\n      <workItem from=\"1656932756222\" duration=\"600000\" />\r\n      <workItem from=\"1656946610159\" duration=\"2368000\" />\r\n      <workItem from=\"1657033582443\" duration=\"718000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-method\">\r\n          <url>file://$PROJECT_DIR$/src/Login.java</url>\r\n          <line>49</line>\r\n          <properties class=\"Login\">\r\n            <option name=\"EMULATED\" value=\"true\" />\r\n            <option name=\"WATCH_EXIT\" value=\"false\" />\r\n          </properties>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-method\">\r\n          <url>file://$PROJECT_DIR$/src/LogoutTest.java</url>\r\n          <line>12</line>\r\n          <properties class=\"LogoutTest\" method=\"UnitTest1\">\r\n            <option name=\"EMULATED\" value=\"true\" />\r\n            <option name=\"WATCH_EXIT\" value=\"false\" />\r\n          </properties>\r\n          <option name=\"timeStamp\" value=\"13\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-method\">\r\n          <url>file://$PROJECT_DIR$/src/Search.java</url>\r\n          <line>41</line>\r\n          <properties class=\"Search\" method=\"getCode\">\r\n            <option name=\"EMULATED\" value=\"true\" />\r\n            <option name=\"WATCH_EXIT\" value=\"false\" />\r\n          </properties>\r\n          <option name=\"timeStamp\" value=\"14\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-method\">\r\n          <url>file://$PROJECT_DIR$/src/SearchTest.java</url>\r\n          <line>8</line>\r\n          <properties class=\"SearchTest\" method=\"UnitTest1\">\r\n            <option name=\"EMULATED\" value=\"true\" />\r\n            <option name=\"WATCH_EXIT\" value=\"false\" />\r\n          </properties>\r\n          <option name=\"timeStamp\" value=\"15\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-method\">\r\n          <url>file://$PROJECT_DIR$/src/GetNewsTest.java</url>\r\n          <line>17</line>\r\n          <properties class=\"GetNewsTest\" method=\"UnitTest2\">\r\n            <option name=\"EMULATED\" value=\"true\" />\r\n            <option name=\"WATCH_EXIT\" value=\"false\" />\r\n          </properties>\r\n          <option name=\"timeStamp\" value=\"17\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/LogoutTest.java</url>\r\n          <line>6</line>\r\n          <option name=\"timeStamp\" value=\"8\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/GetDetailAuctionsTest.java</url>\r\n          <line>4</line>\r\n          <option name=\"timeStamp\" value=\"11\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/SearchTest.java</url>\r\n          <line>4</line>\r\n          <option name=\"timeStamp\" value=\"16\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 1dcfda1867f6b9286b5cce37aa3cb4de094eeb5e)
++++ b/.idea/workspace.xml	(date 1657123943664)
+@@ -2,8 +2,14 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/GetListLikes.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/GetListCategories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCategories.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/GetListCategoriesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCategoriesTests.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/GetListCommentsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCommentsTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Logout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logout.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LogoutTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Search.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchTest.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -48,7 +54,8 @@
+     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;
+   }
+ }</component>
+   <component name="RecentsManager">
+@@ -62,20 +69,11 @@
+       <recent name="" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="JUnit.GetListBidsTests">
+-    <configuration name="GetListBidsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++  <component name="RunManager" selected="JUnit.GetListCategoriesTests.unitTest1">
++    <configuration name="GetListCategoriesTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="API_Test" />
+       <option name="PACKAGE_NAME" value="" />
+-      <option name="MAIN_CLASS_NAME" value="GetListBidsTests" />
+-      <option name="TEST_OBJECT" value="class" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="GetListBidsTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="API_Test" />
+-      <option name="PACKAGE_NAME" value="" />
+-      <option name="MAIN_CLASS_NAME" value="GetListBidsTests" />
++      <option name="MAIN_CLASS_NAME" value="GetListCategoriesTests" />
+       <option name="METHOD_NAME" value="unitTest1" />
+       <option name="TEST_OBJECT" value="method" />
+       <method v="2">
+@@ -92,20 +90,30 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="LikeAuctionTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="API_Test" />
+       <option name="PACKAGE_NAME" value="" />
+-      <option name="MAIN_CLASS_NAME" value="SearchTest" />
++      <option name="MAIN_CLASS_NAME" value="LikeAuctionTests" />
+       <option name="TEST_OBJECT" value="class" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="SearchTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="LogoutTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="API_Test" />
+       <option name="PACKAGE_NAME" value="" />
+-      <option name="MAIN_CLASS_NAME" value="SearchTest" />
++      <option name="MAIN_CLASS_NAME" value="LogoutTest" />
+       <option name="METHOD_NAME" value="UnitTest1" />
++      <option name="TEST_OBJECT" value="method" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="LogoutTest.UnitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="API_Test" />
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="LogoutTest" />
++      <option name="METHOD_NAME" value="UnitTest2" />
+       <option name="TEST_OBJECT" value="method" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+@@ -123,19 +131,19 @@
+       </method>
+     </configuration>
+     <list>
+-      <item itemvalue="JUnit.GetListBidsTests" />
+-      <item itemvalue="JUnit.GetListBidsTests.unitTest1" />
+-      <item itemvalue="JUnit.SearchTest" />
+-      <item itemvalue="JUnit.SearchTest.UnitTest1" />
++      <item itemvalue="JUnit.GetListCategoriesTests.unitTest1" />
+       <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
++      <item itemvalue="JUnit.LikeAuctionTests" />
++      <item itemvalue="JUnit.LogoutTest.UnitTest1" />
++      <item itemvalue="JUnit.LogoutTest.UnitTest2" />
+     </list>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="JUnit.GetListBidsTests" />
+-        <item itemvalue="JUnit.GetListBidsTests.unitTest1" />
+-        <item itemvalue="JUnit.SearchTest.UnitTest1" />
+-        <item itemvalue="JUnit.SearchTest" />
++        <item itemvalue="JUnit.GetListCategoriesTests.unitTest1" />
+         <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
++        <item itemvalue="JUnit.LogoutTest.UnitTest1" />
++        <item itemvalue="JUnit.LikeAuctionTests" />
++        <item itemvalue="JUnit.LogoutTest.UnitTest2" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -168,7 +176,10 @@
+       <workItem from="1656927088508" duration="1766000" />
+       <workItem from="1656932756222" duration="600000" />
+       <workItem from="1656946610159" duration="2368000" />
+-      <workItem from="1657033582443" duration="718000" />
++      <workItem from="1657033582443" duration="3080000" />
++      <workItem from="1657101206642" duration="6537000" />
++      <workItem from="1657113170915" duration="621000" />
++      <workItem from="1657122273018" duration="1669000" />
+     </task>
+     <servers />
+   </component>
+@@ -199,55 +210,83 @@
+           <option name="timeStamp" value="1" />
+         </line-breakpoint>
+         <line-breakpoint enabled="true" type="java-method">
+-          <url>file://$PROJECT_DIR$/src/LogoutTest.java</url>
+-          <line>12</line>
+-          <properties class="LogoutTest" method="UnitTest1">
++          <url>file://$PROJECT_DIR$/src/Search.java</url>
++          <line>41</line>
++          <properties class="Search" method="getCode">
++            <option name="EMULATED" value="true" />
++            <option name="WATCH_EXIT" value="false" />
++          </properties>
++          <option name="timeStamp" value="14" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-method">
++          <url>file://$PROJECT_DIR$/src/GetNewsTest.java</url>
++          <line>17</line>
++          <properties class="GetNewsTest" method="UnitTest2">
+             <option name="EMULATED" value="true" />
+             <option name="WATCH_EXIT" value="false" />
+           </properties>
+-          <option name="timeStamp" value="13" />
++          <option name="timeStamp" value="17" />
+         </line-breakpoint>
+         <line-breakpoint enabled="true" type="java-method">
+-          <url>file://$PROJECT_DIR$/src/Search.java</url>
+-          <line>41</line>
+-          <properties class="Search" method="getCode">
++          <url>file://$PROJECT_DIR$/src/GetDetailAuctionsTest.java</url>
++          <line>16</line>
++          <properties class="GetDetailAuctionsTest" method="UnitTest2">
+             <option name="EMULATED" value="true" />
+             <option name="WATCH_EXIT" value="false" />
+           </properties>
+-          <option name="timeStamp" value="14" />
++          <option name="timeStamp" value="19" />
+         </line-breakpoint>
+         <line-breakpoint enabled="true" type="java-method">
+           <url>file://$PROJECT_DIR$/src/SearchTest.java</url>
+-          <line>8</line>
+-          <properties class="SearchTest" method="UnitTest1">
++          <line>29</line>
++          <properties class="SearchTest" method="UnitTest4">
+             <option name="EMULATED" value="true" />
+             <option name="WATCH_EXIT" value="false" />
+           </properties>
+-          <option name="timeStamp" value="15" />
++          <option name="timeStamp" value="24" />
+         </line-breakpoint>
+         <line-breakpoint enabled="true" type="java-method">
+-          <url>file://$PROJECT_DIR$/src/GetNewsTest.java</url>
+-          <line>17</line>
+-          <properties class="GetNewsTest" method="UnitTest2">
++          <url>file://$PROJECT_DIR$/src/LogoutTest.java</url>
++          <line>11</line>
++          <properties class="LogoutTest" method="UnitTest1">
++            <option name="EMULATED" value="true" />
++            <option name="WATCH_EXIT" value="false" />
++          </properties>
++          <option name="timeStamp" value="26" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-method">
++          <url>file://$PROJECT_DIR$/src/GetListCategoriesTests.java</url>
++          <line>7</line>
++          <properties class="GetListCategoriesTests" method="unitTest1">
+             <option name="EMULATED" value="true" />
+             <option name="WATCH_EXIT" value="false" />
+           </properties>
+-          <option name="timeStamp" value="17" />
++          <option name="timeStamp" value="32" />
+         </line-breakpoint>
+         <line-breakpoint enabled="true" type="java-line">
+           <url>file://$PROJECT_DIR$/src/LogoutTest.java</url>
+-          <line>6</line>
++          <line>4</line>
+           <option name="timeStamp" value="8" />
+         </line-breakpoint>
+         <line-breakpoint enabled="true" type="java-line">
+           <url>file://$PROJECT_DIR$/src/GetDetailAuctionsTest.java</url>
+           <line>4</line>
+           <option name="timeStamp" value="11" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/GetListCommentsTest.java</url>
++          <line>9</line>
++          <option name="timeStamp" value="21" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/SearchTest.java</url>
++          <line>7</line>
++          <option name="timeStamp" value="22" />
+         </line-breakpoint>
+         <line-breakpoint enabled="true" type="java-line">
+           <url>file://$PROJECT_DIR$/src/SearchTest.java</url>
+           <line>4</line>
+-          <option name="timeStamp" value="16" />
++          <option name="timeStamp" value="25" />
+         </line-breakpoint>
+       </breakpoints>
+     </breakpoint-manager>
+Index: src/Logout.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import com.google.gson.Gson;\r\n\r\nimport java.io.BufferedReader;\r\nimport java.io.IOException;\r\nimport java.io.InputStreamReader;\r\nimport java.net.HttpURLConnection;\r\nimport java.net.URL;\r\n\r\n\r\npublic class Logout {\r\n    private static HttpURLConnection connection;\r\n\r\n    public static Rp rp;\r\n    int rpCode;\r\n\r\n    public void Test04(String token) {\r\n        String line;\r\n        BufferedReader reader;\r\n        StringBuilder respondContent = new StringBuilder();\r\n        // Connect and parse Json\r\n        try {\r\n            URL url = new URL(\"https://auctions-app-2.herokuapp.com/api/logout\");\r\n            connection = (HttpURLConnection) url.openConnection();\r\n            connection.setRequestMethod(\"POST\");\r\n            connection.setRequestProperty(\"Authorization\", \"Bearer\" + token);\r\n            rpCode = connection.getResponseCode();\r\n            System.out.println(rpCode);\r\n\r\n            reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));\r\n            while ((line = reader.readLine()) != null) {\r\n                respondContent.append(line);\r\n            }\r\n            System.out.println(respondContent);\r\n\r\n            // Parse Json\r\n            Gson g = new Gson();\r\n            rp = g.fromJson(respondContent.toString(), Rp.class);\r\n\r\n            reader.close();\r\n        } catch (IOException e) {\r\n            e.printStackTrace();\r\n        } finally {\r\n            connection.disconnect();\r\n        }\r\n    }\r\n    public int getCode(){\r\n        return rp.code;\r\n    }\r\n    public String getMessage(){\r\n        return rp.message;\r\n    }\r\n    public int getHttpCode(){\r\n       return rpCode;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Logout.java b/src/Logout.java
+--- a/src/Logout.java	(revision 1dcfda1867f6b9286b5cce37aa3cb4de094eeb5e)
++++ b/src/Logout.java	(date 1657123943212)
+@@ -10,10 +10,10 @@
+ public class Logout {
+     private static HttpURLConnection connection;
+ 
+-    public static Rp rp;
++    public static Rp4 rp;
+     int rpCode;
+ 
+-    public void Test04(String token) {
++    public void Test05(String token) {
+         String line;
+         BufferedReader reader;
+         StringBuilder respondContent = new StringBuilder();
+@@ -34,7 +34,7 @@
+ 
+             // Parse Json
+             Gson g = new Gson();
+-            rp = g.fromJson(respondContent.toString(), Rp.class);
++            rp = g.fromJson(respondContent.toString(), Rp4.class);
+ 
+             reader.close();
+         } catch (IOException e) {
+Index: src/GetListCategoriesTests.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import org.junit.jupiter.api.Assertions;\r\nimport org.junit.jupiter.api.Test;\r\n\r\npublic class GetListCategoriesTests {\r\n\tGetListCategories categories = new GetListCategories();\r\n\r\n\t@Test\r\n\tpublic void unitTest1() {\r\n\t\tSystem.out.println(\"Code should always be 1000 and message should always be OK \");\r\n\t\tSystem.out.println(\"Testin unit1...\");\r\n\t\tcategories.Test18();\r\n//\t\tData[] dataArray = categories.getData().clone();\r\n//\t\tSystem.out.println(dataArray[1].category_id);\r\n\t\tAssertions.assertEquals(1000, categories.getCode());\r\n\t\tAssertions.assertEquals(\"OK\", categories.getMessage());\r\n\t\tSystem.out.println(\"Unit 1: Satisfied\");\r\n\t}\r\n\r\n\t@Test\r\n\tpublic void unitTest2() {\r\n\t\tSystem.out.println(\"Category id should be greater than zero and less than 10\");\r\n\t\tSystem.out.println(\"Testin unit2...\");\r\n\t\tcategories.Test18();\r\n\t\tData[] dataArray = categories.getData().clone();\r\n\t\tfor (int i = 0; i < dataArray.length; i++) {\r\n\t\t\tAssertions.assertTrue(\r\n\t\t\t\t\t10 > Integer.parseInt(dataArray[i].category_id) && Integer.parseInt(dataArray[i].category_id) > 0);\r\n\t\t}\r\n\t\tSystem.out.println(\"Unit 2: Satisfied\");\r\n\t}\r\n\r\n\t@Test\r\n\tpublic void unitTest3() {\r\n\t\tSystem.out.println(\"Category name should not be null or empty\");\r\n\t\tSystem.out.println(\"Testin unit3...\");\r\n\t\tcategories.Test18();\r\n\t\tData[] dataArray = categories.getData().clone();\r\n\t\tfor (int i = 0; i < dataArray.length; i++) {\r\n\t\t\tAssertions.assertNotEquals(null, dataArray[i].name);\r\n\t\t\tAssertions.assertNotEquals(\"\", dataArray[i].name);\r\n\t\t}\r\n\t\tSystem.out.println(\"Unit 3: Satisfied\");\r\n\t}\r\n\t\r\n\t@Test\r\n\tpublic void unitTest4() {\r\n\t\tSystem.out.println(\"Category image should not be null or empty\");\r\n\t\tSystem.out.println(\"Testin unit4...\");\r\n\t\tcategories.Test18();\r\n\t\tData[] dataArray = categories.getData().clone();\r\n\t\tfor (int i = 0; i < dataArray.length; i++) {\r\n\t\t\tAssertions.assertNotEquals(null, dataArray[i].image);\r\n\t\t\tAssertions.assertNotEquals(\"\", dataArray[i].image);\r\n\t\t}\r\n\t\tSystem.out.println(\"Unit 4: Satisfied\");\r\n\t}\r\n\t\r\n\t@Test\r\n\tpublic void unitTest5() {\r\n\t\tSystem.out.println(\"Category type should be 1 2 3 4 5\");\r\n\t\tSystem.out.println(\"Testin unit5...\");\r\n\t\tcategories.Test18();\r\n\t\tData[] dataArray = categories.getData().clone();\r\n\t\tfor (int i = 0; i < dataArray.length; i++) {\r\n\t\t\tAssertions.assertTrue(Integer.parseInt(dataArray[i].type) > 0);\r\n\t\t\tAssertions.assertTrue(Integer.parseInt(dataArray[i].type) < 6);\r\n\t\t}\r\n\t\tSystem.out.println(\"Unit 5: Satisfied\");\r\n\t}\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/GetListCategoriesTests.java b/src/GetListCategoriesTests.java
+--- a/src/GetListCategoriesTests.java	(revision 1dcfda1867f6b9286b5cce37aa3cb4de094eeb5e)
++++ b/src/GetListCategoriesTests.java	(date 1657123445182)
+@@ -7,7 +7,7 @@
+ 	@Test
+ 	public void unitTest1() {
+ 		System.out.println("Code should always be 1000 and message should always be OK ");
+-		System.out.println("Testin unit1...");
++		System.out.println("Testing unit1...");
+ 		categories.Test18();
+ //		Data[] dataArray = categories.getData().clone();
+ //		System.out.println(dataArray[1].category_id);
+Index: src/LogoutTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import org.junit.jupiter.api.Assertions;\r\nimport org.junit.jupiter.api.BeforeEach;\r\nimport org.junit.jupiter.api.DisplayName;\r\nimport org.junit.jupiter.api.Test;\r\n\r\n\r\nclass LogoutTest {\r\n    Login login = new Login();\r\n    Logout logout = new Logout();\r\n\r\n    @Test\r\n    @DisplayName(\"Unit Test 1: If access token is right, response code should be 1000 and message should be OK\")\r\n    public void UnitTest1() {\r\n        login.Test01(\"minh0915@gmail.com\", \"123456\");\r\n        logout.Test04(login.getToken());\r\n        Assertions.assertEquals(1000, logout.getCode(), \"Wrong code\");\r\n        Assertions.assertEquals(\"OK\", logout.getMessage(), \"Wrong message\");\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/LogoutTest.java b/src/LogoutTest.java
+--- a/src/LogoutTest.java	(revision 1dcfda1867f6b9286b5cce37aa3cb4de094eeb5e)
++++ b/src/LogoutTest.java	(date 1657123943195)
+@@ -1,7 +1,5 @@
+-import org.junit.jupiter.api.Assertions;
+-import org.junit.jupiter.api.BeforeEach;
+-import org.junit.jupiter.api.DisplayName;
+-import org.junit.jupiter.api.Test;
++import org.junit.jupiter.api.*;
++import org.junit.jupiter.params.ParameterizedTest;
+ 
+ 
+ class LogoutTest {
+@@ -10,9 +8,10 @@
+ 
+     @Test
+     @DisplayName("Unit Test 1: If access token is right, response code should be 1000 and message should be OK")
++    @RepeatedTest(value = 5)
+     public void UnitTest1() {
+         login.Test01("minh0915@gmail.com", "123456");
+-        logout.Test04(login.getToken());
++        logout.Test05(login.getToken());
+         Assertions.assertEquals(1000, logout.getCode(), "Wrong code");
+         Assertions.assertEquals("OK", logout.getMessage(), "Wrong message");
+     }
