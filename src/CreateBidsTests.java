@@ -11,7 +11,7 @@ public class CreateBidsTests {
 
     @Test
     public void unitTest1() {
-        System.out.println("If we send to api valid input, code should be 1000 ");
+        System.out.println("If we send to api valid input,code should be 1000 ");
         System.out.println("Testing unit1...");
         createBids.Test16("3232500","1", proper_token);
         Assertions.assertEquals(1000, createBids.getCode());

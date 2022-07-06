@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them">
+    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Quan them">
       <change afterPath="$PROJECT_DIR$/src/ContactUs.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ContactUsTests.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/DeleteComment.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/DeleteCommentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API_Test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/API_Test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateAuctionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateAuctionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateBids.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateBids.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CreateBidsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateBidsTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657120754035</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Quan them">
+      <created>1657123937835</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657123937835</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +243,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Phuong them" />
-    <option name="LAST_COMMIT_MESSAGE" value="Phuong them" />
+    <MESSAGE value="Quan them" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quan them" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
