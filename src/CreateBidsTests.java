@@ -32,7 +32,7 @@ public class CreateBidsTests {
     public void unitTest3() {
         System.out.println("If we not input yet, Server will return code 1004");
         System.out.println("Testing unit3..");
-        createBids.Test16("323230","10", null);
+        createBids.Test16("323280","10", null);
         Assertions.assertEquals(1004, createBids.getCode());
         System.out.println("Unit 3: Satisfied!");
     }

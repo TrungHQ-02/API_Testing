@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them">
+      <change afterPath="$PROJECT_DIR$/src/ContactUs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ContactUsTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DeleteComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DeleteCommentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUpTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/API_Test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateAuctionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateAuctionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateBidsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateBidsTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +42,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2AtPBO6KLUtdaiGqbvwYkECMw14" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -77,22 +85,42 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SignUpTests">
-    <configuration name="LoginTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CreateAuctionTests.unitTest3">
+    <configuration name="CreateAuctionTests.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTests" />
-      <option name="METHOD_NAME" value="unitTest1" />
+      <option name="MAIN_CLASS_NAME" value="CreateAuctionTests" />
+      <option name="METHOD_NAME" value="unitTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests.unitTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateAuctionTests.unitTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTests" />
-      <option name="METHOD_NAME" value="unitTest5" />
+      <option name="MAIN_CLASS_NAME" value="CreateAuctionTests" />
+      <option name="METHOD_NAME" value="unitTest3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateBidsTests.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CreateBidsTests" />
+      <option name="METHOD_NAME" value="unitTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateBidsTests.unitTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CreateBidsTests" />
+      <option name="METHOD_NAME" value="unitTest3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,26 +131,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SignUpTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUpTests.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
-      <option name="METHOD_NAME" value="unitTest2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUpTests.unitTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
-      <option name="METHOD_NAME" value="unitTest3" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,19 +147,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.LoginTests.unitTest1" />
-      <item itemvalue="JUnit.LoginTests.unitTest5" />
+      <item itemvalue="JUnit.CreateAuctionTests.unitTest2" />
+      <item itemvalue="JUnit.CreateAuctionTests.unitTest3" />
+      <item itemvalue="JUnit.CreateBidsTests.unitTest2" />
+      <item itemvalue="JUnit.CreateBidsTests.unitTest3" />
       <item itemvalue="JUnit.SignUpTests" />
-      <item itemvalue="JUnit.SignUpTests.unitTest2" />
-      <item itemvalue="JUnit.SignUpTests.unitTest3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreateAuctionTests.unitTest3" />
+        <item itemvalue="JUnit.CreateAuctionTests.unitTest2" />
+        <item itemvalue="JUnit.CreateBidsTests.unitTest3" />
+        <item itemvalue="JUnit.CreateBidsTests.unitTest2" />
         <item itemvalue="JUnit.SignUpTests" />
-        <item itemvalue="JUnit.LoginTests.unitTest1" />
-        <item itemvalue="JUnit.LoginTests.unitTest5" />
-        <item itemvalue="JUnit.SignUpTests.unitTest3" />
-        <item itemvalue="JUnit.SignUpTests.unitTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +263,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Search.java</url>
           <line>41</line>
-          <properties class="Search">
+          <properties class="Search" method="getCode">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -287,5 +295,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IntelliJgithub$GetListBidsTests.ic" NAME="GetListBidsTests Coverage Results" MODIFIED="1656993518099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -35,7 +35,7 @@ public class CreateAuctionTests {
         System.out.println("Unit 1: Satisfied!");
     }
     @Test//chua dang nhap
-    //loi k the gui accesstoken sai , bat buoc gui thi p gui dung
+    //loi k the gui accesstoken sai ,neu gui thi p gui dung
     public void unitTest2() {
         //logout token
         System.out.println("If we not input yet, Server will return code 1004");
