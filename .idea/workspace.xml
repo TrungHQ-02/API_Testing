@@ -85,27 +85,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SignUpTests.unitTest5">
-    <configuration name="LoginTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTests" />
-      <option name="METHOD_NAME" value="unitTest1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTests.unitTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTests" />
-      <option name="METHOD_NAME" value="unitTest5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SignUpTests">
     <configuration name="SignUpTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -115,21 +95,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTests.unitTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTests.unitTest10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SignUpTests" />
-      <option name="METHOD_NAME" value="unitTest4" />
+      <option name="METHOD_NAME" value="unitTest10" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTests.unitTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTests.unitTest11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SignUpTests" />
-      <option name="METHOD_NAME" value="unitTest5" />
+      <option name="METHOD_NAME" value="unitTest11" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUpTests.unitTest12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
+      <option name="METHOD_NAME" value="unitTest12" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUpTests.unitTest13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
+      <option name="METHOD_NAME" value="unitTest13" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,19 +147,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SignUpTests.unitTest4" />
-      <item itemvalue="JUnit.SignUpTests.unitTest5" />
-      <item itemvalue="JUnit.LoginTests.unitTest1" />
-      <item itemvalue="JUnit.LoginTests.unitTest5" />
+      <item itemvalue="JUnit.SignUpTests.unitTest10" />
+      <item itemvalue="JUnit.SignUpTests.unitTest11" />
+      <item itemvalue="JUnit.SignUpTests.unitTest12" />
+      <item itemvalue="JUnit.SignUpTests.unitTest13" />
       <item itemvalue="JUnit.SignUpTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SignUpTests.unitTest5" />
-        <item itemvalue="JUnit.SignUpTests.unitTest4" />
         <item itemvalue="JUnit.SignUpTests" />
-        <item itemvalue="JUnit.LoginTests.unitTest1" />
-        <item itemvalue="JUnit.LoginTests.unitTest5" />
+        <item itemvalue="JUnit.SignUpTests.unitTest13" />
+        <item itemvalue="JUnit.SignUpTests.unitTest12" />
+        <item itemvalue="JUnit.SignUpTests.unitTest11" />
+        <item itemvalue="JUnit.SignUpTests.unitTest10" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657125257924</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Phuong them">
+      <created>1657125970849</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657125970849</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
