@@ -45,6 +45,7 @@ class Auction {
 	String start_date, end_date;
 	String statusId, status;
 	Category catergory = new Category();
+	Boolean isLiked; // Trung them cho getListLikes
 }
 
 class Deny {
