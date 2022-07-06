@@ -11,7 +11,6 @@ class Data {
 	String token_type;
 	String expires_in;
 	User user = new User();
-	Auction[] auctions;
 	Deny[] denys;
 	Bid[] bids;
 	String total_not_read; // for notif by Trung
@@ -36,15 +35,6 @@ class Category {
 	String name;
 	String image;
 	String type;
-}
-
-class Auction {
-	String auction_id;
-	String selling_user_id;
-	String title;
-	String start_date, end_date;
-	String statusId, status;
-	Category catergory = new Category();
 }
 
 class Deny {

@@ -6,33 +6,34 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class GetListAuctionsByStatus {
+public class GetListLikes {
     private static HttpURLConnection connection;
     public static Rp3 rp;
     public String fixedId;
+    public String contentString;
 
     public String getFixedId() {
 		return fixedId;
 	}
-
 
 	public void setFixedId(String fixedId) {
 		this.fixedId = fixedId;
 	}
 
 
-	public void Test07(int statusId, int index, int count, String token) {
-    	// access_token is nullable
+	public void Test23(int statusId, int index, int count, String token) {
+    	// access_token is not nullable
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
 
         // Connect and parse Json
         //https://auctions-app-2.herokuapp.com/api/auctions/listAuctionsByStatus?statusId=1&index=1&count=3
+        // https://auctions-app-2.herokuapp.com/api/likes/3?index=1&count=1
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/auctions/listAuctionsByStatus?" 
+            URL url = new URL("https://auctions-app-2.herokuapp.com/api/likes/" 
             	    + statusId 
-            		+ "&index=" + index 
+            		+ "?index=" + index 
             		+ "&count=" + count);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
@@ -44,6 +45,7 @@ public class GetListAuctionsByStatus {
             }
 
             this.setFixedId(statusId+"");
+            this.setContentString(respondContent.toString());
             
             // Parse JSON
             Gson g = new Gson();
@@ -58,6 +60,7 @@ public class GetListAuctionsByStatus {
 
     }
     
+    
     public int getCode() {
     	return rp.code;
     }
@@ -69,4 +72,13 @@ public class GetListAuctionsByStatus {
     public Data3 getData() {
     	return rp.data;
     }
+
+	public String getContentString() {
+		return contentString;
+	}
+
+	public void setContentString(String contentString) {
+		this.contentString = contentString;
+	}
+
 }
