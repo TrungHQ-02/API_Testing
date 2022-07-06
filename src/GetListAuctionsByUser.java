@@ -6,33 +6,42 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class GetListAuctionsByStatus {
+public class GetListAuctionsByUser {
     private static HttpURLConnection connection;
     public static Rp3 rp;
     public String fixedId;
+    public String content;
 
-    public String getFixedId() {
-		return fixedId;
+    public String getContent() {
+		return content;
 	}
 
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public String getFixedId() {
+		return fixedId;
+	}
 
 	public void setFixedId(String fixedId) {
 		this.fixedId = fixedId;
 	}
 
 
-	public void Test07(int statusId, int index, int count, String token) {
+	public void Test08(int statusId, int index, int count, String token) {
     	// access_token is nullable
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
 
         // Connect and parse Json
+        //api/auctions/listAuctionsByUser/
         //https://auctions-app-2.herokuapp.com/api/auctions/listAuctionsByStatus?statusId=1&index=1&count=3
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/auctions/listAuctionsByStatus?" 
+            URL url = new URL("https://auctions-app-2.herokuapp.com/api/auctions/listAuctionsByUser/" 
             	    + statusId 
-            		+ "&index=" + index 
+            		+ "?index=" + index 
             		+ "&count=" + count);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
@@ -44,6 +53,7 @@ public class GetListAuctionsByStatus {
             }
 
             this.setFixedId(statusId+"");
+            this.setContent(respondContent.toString());
             
             // Parse JSON
             Gson g = new Gson();
