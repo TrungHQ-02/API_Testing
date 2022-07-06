@@ -11,7 +11,7 @@ public class GetDetailAuctions{
     public static Rp rp;
     int rpCode;
 
-    public void Test09(int Auct_ID, String token) {
+    public void Test10(int Auct_ID, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();

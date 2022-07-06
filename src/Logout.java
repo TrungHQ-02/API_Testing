@@ -10,10 +10,10 @@ import java.net.URL;
 public class Logout {
     private static HttpURLConnection connection;
 
-    public static Rp rp;
+    public static Rp4 rp;
     int rpCode;
 
-    public void Test04(String token) {
+    public void Test05(String token) {
         String line;
         BufferedReader reader;
         StringBuilder respondContent = new StringBuilder();
@@ -34,7 +34,7 @@ public class Logout {
 
             // Parse Json
             Gson g = new Gson();
-            rp = g.fromJson(respondContent.toString(), Rp.class);
+            rp = g.fromJson(respondContent.toString(), Rp4.class);
 
             reader.close();
         } catch (IOException e) {
