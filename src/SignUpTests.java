@@ -34,4 +34,19 @@ public class SignUpTests {
         }
         System.out.println("Unit 2: Satisfied");
     }
+    @Test
+    public void unitTest3() {
+
+        System.out.println("Testing unit3...");
+        for (int i = 1; i <= 10; i++) {
+            String randomMail = email.getStringWithFixedLength(10) + "@gmail.com";
+            String randomPass = email.getStringWithFixedLength(260);
+            String randomName = email.getSaltString();
+            signUp.Test02(randomMail, randomPass, randomPass, null, randomName, "0854960116", null);
+            Assertions.assertEquals(1001, signUp.getCode());
+            Assertions.assertEquals("name: &phone: &address: &email: &password: 7001&re_pass: 7001 &avatar: ", signUp.getMessage());
+        }
+        System.out.println("Unit 3: Satisfied");
+    }
+
 }
