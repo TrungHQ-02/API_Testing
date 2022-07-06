@@ -24,5 +24,14 @@ public class EditAuctionTests {
 		Assertions.assertEquals(1000, editAuction.getCode());
 		Assertions.assertEquals("OK", editAuction.getMessage());
 	}
+	
+	@Test
+	public void unitTest2() {
+		System.out.println("If we send to api valid input, code should be 1000 and message should be OK");
+		System.out.println("Testing unit2...");
+		editAuction.Test12("100", 2, null, null, "Nguyen Mai Huyen", proper_token);
+		Assertions.assertEquals(1000, editAuction.getCode());
+		Assertions.assertEquals("OK", editAuction.getMessage());
+	}
 
 }
