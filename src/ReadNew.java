@@ -6,16 +6,17 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class GetNews {
+public class ReadNew {
     private static HttpURLConnection connection;
     public static Rp rp;
 
-    public void Test25(int index, int count, String token) {
+    public void Test25(String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/news"+"?count=" + count + "&index=" + index);
+
+            URL url = new URL("https://auctions-app-2.herokuapp.com/api/news/read/1");
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Authorization", "Bearer" + token);
@@ -36,14 +37,19 @@ public class GetNews {
         } finally {
             connection.disconnect();
         }
+
     }
-    public int getCode(){
+
+    public int getCode() {
         return rp.code;
     }
-    public String getMessage(){
+
+    public String getMessage() {
         return rp.message;
     }
-    public String getTotal(){
+
+    public String getTotal() {
         return rp.data.total;
     }
+
 }
