@@ -8,7 +8,7 @@ import java.net.URL;
 
 public class GetListLikes {
     private static HttpURLConnection connection;
-    public static Rp rp;
+    public static Rp3 rp;
     public String fixedId;
     public String contentString;
 
@@ -49,7 +49,7 @@ public class GetListLikes {
             
             // Parse JSON
             Gson g = new Gson();
-            rp = g.fromJson(respondContent.toString(), Rp.class);
+            rp = g.fromJson(respondContent.toString(), Rp3.class);
 
             reader.close();
         } catch (IOException e) {
@@ -69,7 +69,7 @@ public class GetListLikes {
     	return rp.message;
     }
     
-    public Data getData() {
+    public Data3 getData() {
     	return rp.data;
     }
 

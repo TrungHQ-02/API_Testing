@@ -69,8 +69,8 @@ public class GetListLikesTests {
 			int randomIndex = random.nextInt(2,3);
 			int randomCount = random.nextInt(1,10);
 			likes.Test23(2, randomIndex, randomCount, proper_token);
-			Auction[] aucList = likes.getData().auctions.clone();
-			for (Auction auction : aucList) {
+			Auction3[] aucList = likes.getData().auctions.clone();
+			for (Auction3 auction : aucList) {
 				int type = Integer.parseInt(auction.catergory.type);
 				Assertions.assertTrue(type == 1 || type == 2 || type == 3 
 						|| type == 4 || type == 5);
@@ -103,8 +103,8 @@ public class GetListLikesTests {
 			int randomIndex = random.nextInt(1,10);
 			int randomCount = random.nextInt(1,10);
 			likes.Test23(randomId, randomIndex, randomCount, proper_token);
-			Auction[] aucList = likes.getData().auctions.clone();
-			for (Auction auction : aucList) {
+			Auction3[] aucList = likes.getData().auctions.clone();
+			for (Auction3 auction : aucList) {
 				Assertions.assertNotEquals(null, auction.title);
 			}
 		}
@@ -120,8 +120,8 @@ public class GetListLikesTests {
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
 			likes.Test23(randomId, randomIndex, randomCount, proper_token);
-			Auction[] aucList = likes.getData().auctions.clone();
-			for (Auction auction : aucList) {
+			Auction3[] aucList = likes.getData().auctions.clone();
+			for (Auction3 auction : aucList) {
 				int aucStatusID = Integer.parseInt(auction.statusId);
 				Assertions.assertEquals(likes.getFixedId(), aucStatusID);
 			}

@@ -62,8 +62,8 @@ public class GetListAuctionsByStatusTests {
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
 			auctionsByStatus.Test07(randomId, randomIndex, randomCount, null);
-			Auction[] aucList = auctionsByStatus.getData().auctions.clone();
-			for (Auction auction : aucList) {
+			Auction3[] aucList = auctionsByStatus.getData().auctions.clone();
+			for (Auction3 auction : aucList) {
 				int aucID = Integer.parseInt(auction.statusId);
 				Assertions.assertTrue(aucID == 1 || aucID == 2 || aucID == 3 || aucID == 4 || aucID == 5 || aucID == 6);
 			}
@@ -81,8 +81,8 @@ public class GetListAuctionsByStatusTests {
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
 			auctionsByStatus.Test07(randomId, randomIndex, randomCount, null);
-			Auction[] aucList = auctionsByStatus.getData().auctions.clone();
-			for (Auction auction : aucList) {
+			Auction3[] aucList = auctionsByStatus.getData().auctions.clone();
+			for (Auction3 auction : aucList) {
 				int aucID = Integer.parseInt(auction.catergory.type);
 				Assertions.assertTrue(aucID == 1 || aucID == 2 || aucID == 3 || aucID == 4 || aucID == 5);
 			}
@@ -114,8 +114,8 @@ public class GetListAuctionsByStatusTests {
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
 			auctionsByStatus.Test07(randomId, randomIndex, randomCount, null);
-			Auction[] aucList = auctionsByStatus.getData().auctions.clone();
-			for (Auction auction : aucList) {
+			Auction3[] aucList = auctionsByStatus.getData().auctions.clone();
+			for (Auction3 auction : aucList) {
 				Assertions.assertNotEquals(null, auction.title);
 			}
 		}
@@ -132,8 +132,8 @@ public class GetListAuctionsByStatusTests {
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
 			auctionsByStatus.Test07(randomId, randomIndex, randomCount, null);
-			Auction[] aucList = auctionsByStatus.getData().auctions.clone();
-			for (Auction auction : aucList) {
+			Auction3[] aucList = auctionsByStatus.getData().auctions.clone();
+			for (Auction3 auction : aucList) {
 				int aucStatusID = Integer.parseInt(auction.statusId);
 				Assertions.assertEquals(auctionsByStatus.getFixedId(), aucStatusID);
 			}

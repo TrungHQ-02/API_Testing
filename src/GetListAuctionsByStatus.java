@@ -8,7 +8,7 @@ import java.net.URL;
 
 public class GetListAuctionsByStatus {
     private static HttpURLConnection connection;
-    public static Rp rp;
+    public static Rp3 rp;
     public String fixedId;
 
     public String getFixedId() {
@@ -47,7 +47,7 @@ public class GetListAuctionsByStatus {
             
             // Parse JSON
             Gson g = new Gson();
-            rp = g.fromJson(respondContent.toString(), Rp.class);
+            rp = g.fromJson(respondContent.toString(), Rp3.class);
 
             reader.close();
         } catch (IOException e) {
@@ -58,7 +58,6 @@ public class GetListAuctionsByStatus {
 
     }
     
-    
     public int getCode() {
     	return rp.code;
     }
@@ -67,7 +66,7 @@ public class GetListAuctionsByStatus {
     	return rp.message;
     }
     
-    public Data getData() {
+    public Data3 getData() {
     	return rp.data;
     }
 }
