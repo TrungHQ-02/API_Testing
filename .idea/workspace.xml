@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/GetListLikes.java" afterDir="false" />
+    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong">
+      <change afterPath="$PROJECT_DIR$/src/SignUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SignUpTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gson_2_8_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_8_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_jupiter_5_8_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter_5_8_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_07_2022_10_03_CH__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_07_2022_10_03_CH__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/API_Test.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +52,11 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/JetBrains/IntelliJ IDEA 2022.1/lib/junit-jupiter-5.8.2.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/84854/Downloads/gson-2.8.6.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
@@ -62,16 +74,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GetListBidsTests">
-    <configuration name="GetListBidsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetListBidsTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SignUpTests.unitTest2">
     <configuration name="GetListBidsTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -82,30 +85,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetListCommentsTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetListCommentsTest" />
-      <option name="METHOD_NAME" value="UnitTest1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchTest" />
+      <option name="MAIN_CLASS_NAME" value="LoginTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTests.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchTest" />
-      <option name="METHOD_NAME" value="UnitTest1" />
+      <option name="MAIN_CLASS_NAME" value="LoginTests" />
+      <option name="METHOD_NAME" value="unitTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUpTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
+      <option name="METHOD_NAME" value="unitTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUpTests.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
+      <option name="METHOD_NAME" value="unitTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,19 +136,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.GetListBidsTests" />
+      <item itemvalue="JUnit.SignUpTests.unitTest2" />
+      <item itemvalue="JUnit.LoginTests" />
+      <item itemvalue="JUnit.SignUpTests.unitTest1" />
+      <item itemvalue="JUnit.LoginTests.unitTest2" />
       <item itemvalue="JUnit.GetListBidsTests.unitTest1" />
-      <item itemvalue="JUnit.SearchTest" />
-      <item itemvalue="JUnit.SearchTest.UnitTest1" />
-      <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GetListBidsTests" />
+        <item itemvalue="JUnit.SignUpTests.unitTest2" />
+        <item itemvalue="JUnit.SignUpTests.unitTest1" />
+        <item itemvalue="JUnit.LoginTests" />
         <item itemvalue="JUnit.GetListBidsTests.unitTest1" />
-        <item itemvalue="JUnit.SearchTest.UnitTest1" />
-        <item itemvalue="JUnit.SearchTest" />
-        <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
+        <item itemvalue="JUnit.LoginTests.unitTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -169,6 +182,9 @@
       <workItem from="1656932756222" duration="600000" />
       <workItem from="1656946610159" duration="2368000" />
       <workItem from="1657033582443" duration="718000" />
+      <workItem from="1657099315026" duration="427000" />
+      <workItem from="1657101455017" duration="3038000" />
+      <workItem from="1657113054279" duration="3723000" />
     </task>
     <servers />
   </component>
@@ -210,7 +226,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Search.java</url>
           <line>41</line>
-          <properties class="Search" method="getCode">
+          <properties class="Search">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -224,15 +240,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/GetNewsTest.java</url>
-          <line>17</line>
-          <properties class="GetNewsTest" method="UnitTest2">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/LogoutTest.java</url>
