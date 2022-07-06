@@ -5,7 +5,7 @@ import random.RandomEmail;
 
 import java.util.Random;
 
-class ReadNewTest {
+class ReadNewTests {
     ReadNew readNew = new ReadNew();
     String token ="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU3MDg3NTgyLCJleHAiOjE2NTc0NDc1ODIsIm5iZiI6MTY1NzA4NzU4MiwianRpIjoiUDJ2dWQ2MVV0d3V4TjAwaiIsInN1YiI6MzAzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.AfGhz_ltry1zkdLJMvUFqY1MHZufibsyY6FHBk--e3M";
 
@@ -19,7 +19,7 @@ class ReadNewTest {
     }
     @Test
     public void unitTest2() {
-        System.out.println("If we send to api valid input, code should be 1000 and message should be OK");
+        System.out.println("If we not input yet, Server will return code 1004");
         System.out.println("Testing unit1...");
         readNew.Test25(null);
         Assertions.assertEquals(1004, readNew.getCode());//loi so voi bao cao, k truyen token van ok
@@ -27,11 +27,3 @@ class ReadNewTest {
     }
 }
 
-//    @Test
-//    @DisplayName("Unit Test 2:")
-//    public void UnitTest2(){
-//        login.Test01("minh0915@gmail.com", "123456");
-//        getNews.Test25(1, 1, login.getToken() );
-//        Assertions.assertEquals(1000, getNews.getCode() );
-//        Assertions.assertNotEquals(null, getNews.getTotal());
-//    }

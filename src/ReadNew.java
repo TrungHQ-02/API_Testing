@@ -39,7 +39,6 @@ public class ReadNew {
         }
 
     }
-
     public int getCode() {
         return rp.code;
     }

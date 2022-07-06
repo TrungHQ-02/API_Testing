@@ -12,6 +12,7 @@ class GetNewsTest {
         Assertions.assertEquals(1000, getNews.getCode() );
         Assertions.assertNotEquals(null, getNews.getTotal());
 
+
     }
     @Test
     @DisplayName("Unit Test 2:")

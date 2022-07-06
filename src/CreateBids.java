@@ -58,7 +58,6 @@ public class CreateBids {
         }
 
     }
-
     public int getCode() {
         return rp.code;
     }

@@ -11,7 +11,7 @@ public class CreateBidsTests {
 
     @Test
     public void unitTest1() {
-        System.out.println("If we send to api valid input, code should be 1000 ");
+        System.out.println("If we send to api valid input,code should be 1000 ");
         System.out.println("Testing unit1...");
         createBids.Test16("3232500","1", proper_token);
         Assertions.assertEquals(1000, createBids.getCode());
@@ -32,7 +32,7 @@ public class CreateBidsTests {
     public void unitTest3() {
         System.out.println("If we not input yet, Server will return code 1004");
         System.out.println("Testing unit3..");
-        createBids.Test16("323230","10", null);
+        createBids.Test16("323280","10", null);
         Assertions.assertEquals(1004, createBids.getCode());
         System.out.println("Unit 3: Satisfied!");
     }
