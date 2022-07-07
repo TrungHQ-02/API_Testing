@@ -12,6 +12,7 @@ public class EditAuction {
 	private static HttpURLConnection connection;
 
 	public static Rp rp;
+	int rpCode;
 	
 	public String fixed_id;
 	
@@ -68,6 +69,9 @@ public class EditAuction {
 
 	public int getCode() {
 		return rp.code;
+	}
+	public int getHttpCode(){
+		return rpCode;
 	}
 
 	public String getMessage() {
