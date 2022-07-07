@@ -267,7 +267,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Search.java</url>
           <line>41</line>
-          <properties class="Search">
+          <properties class="Search" method="getCode">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
