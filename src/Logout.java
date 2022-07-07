@@ -12,7 +12,7 @@ import java.net.URL;
 public class Logout {
     private static HttpURLConnection connection;
 
-    public static Rp4 rp;
+    public static Rp rp;
     int rpCode;
 
     public void Test05(String token) {
@@ -36,7 +36,7 @@ public class Logout {
 
             // Parse Json
             Gson g = new Gson();
-            rp = g.fromJson(respondContent.toString(), Rp4.class);
+            rp = g.fromJson(respondContent.toString(), Rp.class);
 
             reader.close();
         } catch (IOException e) {

@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them" />
+    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateAuction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateAuction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateAuctionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateAuctionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListCommentsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCommentsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUpTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +43,6 @@
     <setting file="file://$PROJECT_DIR$/src/LoginTests.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Rp.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/SignUp.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/SignUpTests.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -82,22 +89,22 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SignUpTests.unitTest5">
-    <configuration name="LoginTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SignUpTests.unitTest1">
+    <configuration name="CreateAuctionTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTests" />
+      <option name="MAIN_CLASS_NAME" value="CreateAuctionTests" />
       <option name="METHOD_NAME" value="unitTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests.unitTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetListCommentsTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTests" />
-      <option name="METHOD_NAME" value="unitTest5" />
+      <option name="MAIN_CLASS_NAME" value="GetListCommentsTest" />
+      <option name="METHOD_NAME" value="UnitTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,21 +119,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTests.unitTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SignUpTests" />
-      <option name="METHOD_NAME" value="unitTest4" />
+      <option name="METHOD_NAME" value="unitTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTests.unitTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTests.unitTest8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SignUpTests" />
-      <option name="METHOD_NAME" value="unitTest5" />
+      <option name="METHOD_NAME" value="unitTest8" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,19 +151,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SignUpTests.unitTest4" />
-      <item itemvalue="JUnit.SignUpTests.unitTest5" />
-      <item itemvalue="JUnit.LoginTests.unitTest1" />
-      <item itemvalue="JUnit.LoginTests.unitTest5" />
+      <item itemvalue="JUnit.CreateAuctionTests.unitTest1" />
+      <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
       <item itemvalue="JUnit.SignUpTests" />
+      <item itemvalue="JUnit.SignUpTests.unitTest1" />
+      <item itemvalue="JUnit.SignUpTests.unitTest8" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SignUpTests.unitTest5" />
-        <item itemvalue="JUnit.SignUpTests.unitTest4" />
+        <item itemvalue="JUnit.SignUpTests.unitTest1" />
+        <item itemvalue="JUnit.CreateAuctionTests.unitTest1" />
+        <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
         <item itemvalue="JUnit.SignUpTests" />
-        <item itemvalue="JUnit.LoginTests.unitTest1" />
-        <item itemvalue="JUnit.LoginTests.unitTest5" />
+        <item itemvalue="JUnit.SignUpTests.unitTest8" />
       </list>
     </recent_temporary>
   </component>
@@ -193,6 +200,12 @@
       <workItem from="1657099315026" duration="427000" />
       <workItem from="1657101455017" duration="3038000" />
       <workItem from="1657113054279" duration="7564000" />
+      <workItem from="1657163496711" duration="172000" />
+      <workItem from="1657163745958" duration="1122000" />
+      <workItem from="1657165249642" duration="416000" />
+      <workItem from="1657165690503" duration="636000" />
+      <workItem from="1657166348721" duration="2260000" />
+      <workItem from="1657187222593" duration="574000" />
     </task>
     <task id="LOCAL-00001" summary="Phuong them">
       <created>1657117211304</created>
@@ -222,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657125257924</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Phuong them">
+      <created>1657138381932</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657138381932</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +317,10 @@
           <line>4</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.net.UnknownHostException" package="java.net" />
+          <option name="timeStamp" value="17" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
