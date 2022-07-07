@@ -18,8 +18,9 @@ public class CreateItemTests {
 
         String randomMail = email.getStringWithFixedLength(10) + "@gmail.com";
         String randomName = email.getSaltString();
+        String randomBrandid = email.getStringWithFixedLength(10);
 
-        createItem.Test13("1", token, randomName, "10", "1", "jkfsdhjfb", null, null);
+        createItem.Test13("1", token, randomName, "10", randomBrandid, "jkfsdhjfb", null, null);
 
         Assertions.assertEquals(9995, createItem.getCode());
         Assertions.assertEquals("Không thể thêm item mới với phiên đấu giá này", createItem.getMessage());
