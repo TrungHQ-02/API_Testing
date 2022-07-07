@@ -11,7 +11,7 @@ public class GetListComments {
     private static HttpURLConnection connection;
     public static Rp rp;
 
-    public void Test14(int Auct_ID, int index, int count, String token) {
+    public void Test15(int Auct_ID, int index, int count, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();

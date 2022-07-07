@@ -21,11 +21,10 @@ public class EditAuction {
 
 	
 
-	public void Test12(String auctionId, int category_id, String start_date, String end_date, String title_ni,String accessToken) {
+	public void Test12(String auctionId, String category_id, String start_date, String end_date, String title_ni,String accessToken) {
 		String line;
 		BufferedReader reader;
 		StringBuffer respondContent = new StringBuffer();
-
 		// Connect and parse Json
 		/// api/auctions/edit/{auctionId}
 		try {
