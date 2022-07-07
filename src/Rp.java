@@ -10,10 +10,10 @@ class Data {
 	String token_type;
 	String expires_in;
 	User user = new User();
-	Deny[] denys;
-	Bid[] bids;
 	String total_not_read; // for notif by Trung
 	String total;
+	Bid[] bids;
+	Deny[] denys;
 	String user_id; // For likeauction by Trung
 	String auction_id;
 	String is_liked;
@@ -24,7 +24,6 @@ class Data {
 	String status, reason;
 	
 	// for getCategories
-<<<<<<< HEAD
 	String name;
 	String image;
 	String type;
@@ -34,16 +33,8 @@ class Data {
 }
 
 
-class Category {
-=======
->>>>>>> 9d666e3dbaeddbaa938604d617f0010b02cdc78a
-	String name;
-	String image;
-	String type;
-}
 
-<<<<<<< HEAD
-=======
+
 
 class Category {
 	String name;
@@ -51,7 +42,6 @@ class Category {
 	String type;
 }
 
->>>>>>> 9d666e3dbaeddbaa938604d617f0010b02cdc78a
 class Deny {
 	String title;
 	String start_date, end_date;
