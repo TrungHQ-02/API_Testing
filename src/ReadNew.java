@@ -6,34 +6,17 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class GetListAuctionsByStatus {
+public class ReadNew {
     private static HttpURLConnection connection;
-    public static Rp3 rp;
-    public String fixedId;
+    public static Rp rp;
 
-    public String getFixedId() {
-		return fixedId;
-	}
-
-
-	public void setFixedId(String fixedId) {
-		this.fixedId = fixedId;
-	}
-
-
-	public void Test07(int statusId, int index, int count, String token) {
-    	// access_token is nullable
+    public void Test25(String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
-
-        // Connect and parse Json
-        //https://auctions-app-2.herokuapp.com/api/auctions/listAuctionsByStatus?statusId=1&index=1&count=3
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/auctions/listAuctionsByStatus?" 
-            	    + statusId 
-            		+ "&index=" + index 
-            		+ "&count=" + count);
+
+            URL url = new URL("https://auctions-app-2.herokuapp.com/api/news/read/1");
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Authorization", "Bearer" + token);
@@ -42,12 +25,11 @@ public class GetListAuctionsByStatus {
             while ((line = reader.readLine()) != null) {
                 respondContent.append(line);
             }
+            System.out.println(respondContent);
 
-            this.setFixedId(statusId+"");
-            
             // Parse JSON
             Gson g = new Gson();
-            rp = g.fromJson(respondContent.toString(), Rp3.class);
+            rp = g.fromJson(respondContent.toString(), Rp.class);
 
             reader.close();
         } catch (IOException e) {
@@ -57,16 +39,16 @@ public class GetListAuctionsByStatus {
         }
 
     }
-    
     public int getCode() {
-    	return rp.code;
+        return rp.code;
     }
-    
+
     public String getMessage() {
-    	return rp.message;
+        return rp.message;
     }
-    
-    public Data3 getData() {
-    	return rp.data;
+
+    public String getTotal() {
+        return rp.data.total;
     }
+
 }

@@ -24,6 +24,7 @@ class Data {
 	String status, reason;
 	
 	// for getCategories
+<<<<<<< HEAD
 	String name;
 	String image;
 	String type;
@@ -34,11 +35,23 @@ class Data {
 
 
 class Category {
+=======
+>>>>>>> 9d666e3dbaeddbaa938604d617f0010b02cdc78a
 	String name;
 	String image;
 	String type;
 }
 
+<<<<<<< HEAD
+=======
+
+class Category {
+	String name;
+	String image;
+	String type;
+}
+
+>>>>>>> 9d666e3dbaeddbaa938604d617f0010b02cdc78a
 class Deny {
 	String title;
 	String start_date, end_date;

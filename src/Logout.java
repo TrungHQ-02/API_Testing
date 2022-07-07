@@ -1,3 +1,5 @@
+
+
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;
@@ -13,7 +15,7 @@ public class Logout {
     public static Rp rp;
     int rpCode;
 
-    public void Test04(String token) {
+    public void Test05(String token) {
         String line;
         BufferedReader reader;
         StringBuilder respondContent = new StringBuilder();
