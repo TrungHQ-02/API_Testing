@@ -54,7 +54,6 @@ public class CreateAuctionTests {
         Assertions.assertEquals(1001, createAuction.getCode());
         System.out.println("Unit 3: Satisfied!");
         }
-
     @Test
     public void unitTest4() {
         System.out.println("field 'start_date' has not been entered, Server will return code 1001");
@@ -79,7 +78,6 @@ public class CreateAuctionTests {
         Assertions.assertEquals(1001, createAuction.getCode());
         System.out.println("Unit 6: Satisfied!");
     }
-
     @Test
     public void unitTest7() {
         System.out.println("field 'end_date' has not been entered, Server will return code 1001");
