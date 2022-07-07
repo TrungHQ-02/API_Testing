@@ -22,6 +22,5 @@ public class DeleteCommentTest {
         deleteComment.Test31(accessToken);
         Assertions.assertEquals(1000,deleteComment.getCode());
         System.out.println("Unit 1: Satisfied!");
-
     }
 }

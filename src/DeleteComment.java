@@ -47,7 +47,6 @@ public class DeleteComment {
 
     }
 
-
     public int getCode() {
         return rp.code;
     }
