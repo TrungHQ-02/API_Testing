@@ -12,6 +12,8 @@ class Data {
 	User user = new User();
 	String total_not_read; // for notif by Trung
 	String total;
+	Bid[] bids;
+	Deny[] denys;
 	String user_id; // For likeauction by Trung
 	String auction_id;
 	String is_liked;
