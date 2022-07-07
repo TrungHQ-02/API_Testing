@@ -3,8 +3,10 @@ import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 
 
 public class CreateComment {
@@ -25,6 +27,11 @@ public class CreateComment {
             connection.setRequestProperty("Authorization", "Bearer" + access_token);
             /*rpCode = connection.getResponseCode();
             System.out.println(rpCode);*/
+            
+            String data = "{\n  \"content\": \"" + content + "\",\n \"comment_last_id\": \"" + comment_last_id + "\"\n}";
+            byte[] out = data.getBytes(StandardCharsets.UTF_8);
+            OutputStream stream = connection.getOutputStream();
+            stream.write(out);
 
             reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             while ((line = reader.readLine()) != null) {
