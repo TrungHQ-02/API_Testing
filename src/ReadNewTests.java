@@ -7,23 +7,25 @@ import java.util.Random;
 
 class ReadNewTests {
     ReadNew readNew = new ReadNew();
-    String token ="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU3MDg3NTgyLCJleHAiOjE2NTc0NDc1ODIsIm5iZiI6MTY1NzA4NzU4MiwianRpIjoiUDJ2dWQ2MVV0d3V4TjAwaiIsInN1YiI6MzAzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.AfGhz_ltry1zkdLJMvUFqY1MHZufibsyY6FHBk--e3M";
-
-    @Test
+    Login login = new Login();
+    Logout logout= new Logout();
     public void unitTest1() {
+        login.Test01("trinhquan100402@gmail.com", "1004");
         System.out.println("If we send to api valid input, code should be 1000 and message should be OK");
         System.out.println("Testing unit1...");
-        readNew.Test25(token);
+        readNew.Test25(login.getToken());
         Assertions.assertEquals(1000, readNew.getCode());
         System.out.println("Unit 1: Satisfied!");
     }
     @Test
     public void unitTest2() {
+        login.Test01("trinhquan100402@gmail.com", "1004");
+        logout.Test05(login.getToken());
         System.out.println("If we not input yet, Server will return code 1004");
         System.out.println("Testing unit1...");
         readNew.Test25(null);
         Assertions.assertEquals(1004, readNew.getCode());//loi so voi bao cao, k truyen token van ok
-        System.out.println("Unit 1: Satisfied!");
+        System.out.println("Unit 2: Satisfied!");
     }
 }
 

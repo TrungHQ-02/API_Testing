@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Quan them">
+    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Quan themmm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ContactUs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContactUs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ContactUsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContactUsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateAuction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateAuction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CreateAuctionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateAuctionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EditAuction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditAuction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeleteCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeleteCommentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EditAuctionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditAuctionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadNewTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadNewTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,51 +92,51 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EditAuctionTests.unitTest4">
-    <configuration name="CreateAuctionTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ContactUsTests">
+    <configuration name="ContactUsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateAuctionTests" />
-      <option name="METHOD_NAME" value="unitTest1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EditAuctionTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EditAuctionTests" />
+      <option name="MAIN_CLASS_NAME" value="ContactUsTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EditAuctionTests.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactUsTests.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EditAuctionTests" />
+      <option name="MAIN_CLASS_NAME" value="ContactUsTests" />
       <option name="METHOD_NAME" value="unitTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EditAuctionTests.unitTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactUsTests.unitTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EditAuctionTests" />
-      <option name="METHOD_NAME" value="unitTest3" />
+      <option name="MAIN_CLASS_NAME" value="ContactUsTests" />
+      <option name="METHOD_NAME" value="unitTest4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EditAuctionTests.unitTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactUsTests.unitTest6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EditAuctionTests" />
-      <option name="METHOD_NAME" value="unitTest4" />
+      <option name="MAIN_CLASS_NAME" value="ContactUsTests" />
+      <option name="METHOD_NAME" value="unitTest6" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactUsTests.unitTest7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ContactUsTests" />
+      <option name="METHOD_NAME" value="unitTest7" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,19 +154,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CreateAuctionTests.unitTest1" />
-      <item itemvalue="JUnit.EditAuctionTests" />
-      <item itemvalue="JUnit.EditAuctionTests.unitTest2" />
-      <item itemvalue="JUnit.EditAuctionTests.unitTest3" />
-      <item itemvalue="JUnit.EditAuctionTests.unitTest4" />
+      <item itemvalue="JUnit.ContactUsTests" />
+      <item itemvalue="JUnit.ContactUsTests.unitTest2" />
+      <item itemvalue="JUnit.ContactUsTests.unitTest4" />
+      <item itemvalue="JUnit.ContactUsTests.unitTest6" />
+      <item itemvalue="JUnit.ContactUsTests.unitTest7" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EditAuctionTests.unitTest4" />
-        <item itemvalue="JUnit.EditAuctionTests.unitTest3" />
-        <item itemvalue="JUnit.EditAuctionTests" />
-        <item itemvalue="JUnit.EditAuctionTests.unitTest2" />
-        <item itemvalue="JUnit.CreateAuctionTests.unitTest1" />
+        <item itemvalue="JUnit.ContactUsTests" />
+        <item itemvalue="JUnit.ContactUsTests.unitTest2" />
+        <item itemvalue="JUnit.ContactUsTests.unitTest7" />
+        <item itemvalue="JUnit.ContactUsTests.unitTest6" />
+        <item itemvalue="JUnit.ContactUsTests.unitTest4" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657191500456</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Quan themmm">
+      <created>1657195289915</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657195289915</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +274,8 @@
     <MESSAGE value="Phuong them" />
     <MESSAGE value="Q themm" />
     <MESSAGE value="Quan them" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quan them" />
+    <MESSAGE value="Quan themmm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quan themmm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

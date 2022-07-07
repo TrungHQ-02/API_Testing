@@ -13,6 +13,7 @@ public class ContactUs {
 
     public static Rp rp;
 
+    public String fixed_name,fixed_phone, fixed_email,fixed_content,fixed_file, fixed_report_type;
 
     public void Test21(String name, String phone,  String email, String content, String file, String report_type, String accessToken) {
         String line;
@@ -21,7 +22,7 @@ public class ContactUs {
 
         // Connect and parse Json
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/contractUs");
+            URL url = new URL("https://auctions-app-2.herokuapp.com/api/contactUs");
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + accessToken);
@@ -40,11 +41,16 @@ public class ContactUs {
                 respondContent.append(line);
             }
 
-            // set value to model
-//            this.setContent(respondContent.toString());
-//            this.setAuction_id(auctionId);
 
-            System.out.println(respondContent);
+            // set to model
+            this.setFixed_name(name);
+            this.setFixed_phone(phone);
+            this.setFixed_email(email);
+            this.setFixed_content(content);
+            this.setFixed_file(file);
+            this.setFixed_report_type(report_type);
+
+
             // Parse JSON
             Gson g = new Gson();
             rp = g.fromJson(respondContent.toString(), Rp.class);
@@ -57,7 +63,6 @@ public class ContactUs {
         }
 
     }
-
     public int getCode() {
         return rp.code;
     }
@@ -69,5 +74,40 @@ public class ContactUs {
     public Data getData() {
         return rp.data;
     }
+
+
+    public String getFixed_name() {return fixed_name;}
+
+    public void setFixed_name(String name) { this.fixed_name = name; }
+
+    public String getFixed_phone() {return fixed_phone;}
+
+    public void setFixed_phone(String phone) {
+        this.fixed_phone= phone;
+    }
+
+    public String getFixed_email() {
+        return fixed_email;
+    }
+
+    public void setFixed_email(String fixed_email) { this.fixed_email = fixed_email; }
+
+    public String getFixed_content() {
+        return fixed_content;
+    }
+
+    public void setFixed_content(String fixed_content) { this.fixed_content = fixed_content; }
+
+    public String getFixed_file() {
+        return fixed_file;
+    }
+
+    public void setFixed_file (String fixed_file) {this.fixed_file = fixed_file; }
+
+    public String getFixed_report_type() {
+        return fixed_report_type;
+    }
+
+    public void setFixed_report_type(String fixed_report_type) { this.fixed_report_type = fixed_report_type;}
 
 }

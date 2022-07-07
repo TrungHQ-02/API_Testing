@@ -20,7 +20,6 @@ public class CreateAuctionTests {
 //
 //        System.out.println(generatedString);
 //    }
- //   String proper_token ="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU3MTI0OTYxLCJleHAiOjE2NTc0ODQ5NjEsIm5iZiI6MTY1NzEyNDk2MSwianRpIjoiYnJrYks3YmdlMzNTcEVVSCIsInN1YiI6MzAzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.9CxZK6q8mExpi2DrFsoMyzdqMOXvZHgjHrHu6w96xC8";
 
     // String auctionId, int category_id, String start_date, String end_date, String
     // title_ni,String accessToken
@@ -28,12 +27,19 @@ public class CreateAuctionTests {
 
 
     @Test//    tao thanh cong 1 phien dau gia moi
-    public void unitTest1() {
+    public void unitTest1() {// tao tieu de ngau nhien
+        int top = 3;
+        char data = ' ';
+        String title = "";
+        for (int i=0; i<=top; i++) {
+            data = (char)(rand.nextInt(25)+97);
+            title = data + title;
+        }
         login.Test01("trinhquan100402@gmail.com", "1004");
         System.out.println("If we send to api valid input, code should be 1000 and message should be OK");
         System.out.println("Testing unit1...");
         //auctionId:514
-        createAuction.Test11("5", "2022/07/09 11:11", "2023/08/21 11:11", "ABCMI22H", login.getToken());
+        createAuction.Test11("5", "2022/07/09 11:11", "2023/08/21 11:11", title, login.getToken());
         Assertions.assertEquals(1000, createAuction.getCode());
         System.out.println("Unit 1: Satisfied!");
     }
@@ -45,7 +51,7 @@ public class CreateAuctionTests {
         logout.Test05(login.getToken());
         System.out.println("If we not input yet, Server will return code 1004");
         System.out.println("Testing unit2...");
-        createAuction.Test11("3", "2024/06/20 11:11", "2024/06/21 11:11", "AaddCccAA", login.getToken());
+        createAuction.Test11("3", "2024/06/20 11:11", "2024/06/21 11:11", "Aaaa", login.getToken());
         Assertions.assertEquals(1004, createAuction.getCode());
         System.out.println("Unit 2: Satisfied!");
     }
