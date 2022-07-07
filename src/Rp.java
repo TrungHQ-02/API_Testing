@@ -1,4 +1,3 @@
-
 // Response Object
 
 class User {
@@ -25,11 +24,26 @@ class Data {
 	String status, reason;
 	
 	// for getCategories
+<<<<<<< HEAD
+	String name;
+	String image;
+	String type;
+	
+	String content;
+	String update_at;
+}
+
+
+class Category {
+=======
+>>>>>>> 9d666e3dbaeddbaa938604d617f0010b02cdc78a
 	String name;
 	String image;
 	String type;
 }
 
+<<<<<<< HEAD
+=======
 
 class Category {
 	String name;
@@ -37,6 +51,7 @@ class Category {
 	String type;
 }
 
+>>>>>>> 9d666e3dbaeddbaa938604d617f0010b02cdc78a
 class Deny {
 	String title;
 	String start_date, end_date;

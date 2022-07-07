@@ -31,7 +31,7 @@ public class CreateAuctionTests {
         System.out.println("If we send to api valid input, code should be 1000 and message should be OK");
         System.out.println("Testing unit1...");
         //auctionId:514
-        createAuction.Test11("5", "2022/07/09 11:11", "2023/08/21 11:11", "ABC11Q11",proper_token);
+        createAuction.Test11("5", "2022/07/09 11:11", "2023/08/21 11:11", "ABCMINH",proper_token);
         Assertions.assertEquals(1000, createAuction.getCode());
         System.out.println("Unit 1: Satisfied!");
     }
