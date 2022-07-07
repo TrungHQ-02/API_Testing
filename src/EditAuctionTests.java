@@ -18,11 +18,18 @@ public class EditAuctionTests {
 	// title_ni,String accessToken
 	@Test
 	public void unitTest1() {
+		int top = 3;
+		char data = ' ';
+		String title = "";
+		for (int i=0; i<=top; i++) {
+			data = (char)(rand.nextInt(25)+97);
+			title = data + title;
+		}
 		//chinh sua phien dau gia ch dc duyet
 		login.Test01("trinhquan100402@gmail.com", "1004");
 		System.out.println("If we send to api valid input, code should be 1000 and message should be OK");
 		System.out.println("Testing unit1...");
-		editAuction.Test12("515", "1", "2024/07/09 11:11", "2024/09/09 11:11", "Acameravv", login.getToken());
+		editAuction.Test12("515", "1", "2024/07/09 11:11", "2024/09/09 11:11", title, login.getToken());
 		Assertions.assertEquals(1000, editAuction.getCode());
 		Assertions.assertEquals("OK", editAuction.getMessage());
 		System.out.println("Unit 1: Satisfied!");
