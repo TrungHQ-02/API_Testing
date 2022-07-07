@@ -85,22 +85,22 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReadNotificationsTests">
-    <configuration name="GetNotificationsTests.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetNotificationsTests" />
-      <option name="METHOD_NAME" value="unitTest2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.GetNotificationsTests.unitTest4">
     <configuration name="GetNotificationsTests.unitTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GetNotificationsTests" />
       <option name="METHOD_NAME" value="unitTest3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetNotificationsTests.unitTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GetNotificationsTests" />
+      <option name="METHOD_NAME" value="unitTest4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,19 +147,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.GetNotificationsTests.unitTest2" />
       <item itemvalue="JUnit.GetNotificationsTests.unitTest3" />
+      <item itemvalue="JUnit.GetNotificationsTests.unitTest4" />
       <item itemvalue="JUnit.ReadNotificationsTests" />
       <item itemvalue="JUnit.ReadNotificationsTests.unitTest1" />
       <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ReadNotificationsTests" />
+        <item itemvalue="JUnit.GetNotificationsTests.unitTest4" />
         <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
+        <item itemvalue="JUnit.ReadNotificationsTests" />
         <item itemvalue="JUnit.ReadNotificationsTests.unitTest1" />
         <item itemvalue="JUnit.GetNotificationsTests.unitTest3" />
-        <item itemvalue="JUnit.GetNotificationsTests.unitTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657212884288</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Phuong them">
+      <created>1657213322448</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1657213322448</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

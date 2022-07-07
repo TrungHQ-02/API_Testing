@@ -17,12 +17,12 @@ class ReadNotificationsTests {
         Assertions.assertEquals("OK", readNotifications.getMessage());
         System.out.println("Unit 1: Satisfied!");
     }
-    @Test //chua dung
+    @Test //chua chay duoc
     public void unitTest2() {
         System.out.println("If do not enter token, code should be 1004 and message should be ");
         System.out.println("Testing unit2...");
-        readNotifications.Test28(token);
-        Assertions.assertEquals(1000, readNotifications.getCode());
+        readNotifications.Test28("");
+        Assertions.assertEquals(1004, readNotifications.getCode());
         Assertions.assertEquals("OK", readNotifications.getMessage());
         System.out.println("Unit 2: Satisfied!");
     }
