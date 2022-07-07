@@ -19,7 +19,7 @@ class ReadNotificationsTests {
     }
     @Test //chua chay duoc
     public void unitTest2() {
-        System.out.println("If do not enter token, code should be 1004 and message should be ");
+        System.out.println("If do not enter token, code should be 1004 and message should be まだログインではありません");
         System.out.println("Testing unit2...");
         readNotifications.Test28("");
         Assertions.assertEquals(1004, readNotifications.getCode());
