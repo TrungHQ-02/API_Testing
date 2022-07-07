@@ -17,7 +17,7 @@ class ReadNotificationsTests {
         Assertions.assertEquals("OK", readNotifications.getMessage());
         System.out.println("Unit 1: Satisfied!");
     }
-    @Test
+    @Test //chua dung
     public void unitTest2() {
         System.out.println("If do not enter token, code should be 1004 and message should be ");
         System.out.println("Testing unit2...");
