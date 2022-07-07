@@ -1,4 +1,3 @@
-
 // Response Object
 
 class User {
@@ -11,10 +10,10 @@ class Data {
 	String token_type;
 	String expires_in;
 	User user = new User();
-	Deny[] denys;
-	Bid[] bids;
 	String total_not_read; // for notif by Trung
 	String total;
+	Bid[] bids;
+	Deny[] denys;
 	String user_id; // For likeauction by Trung
 	String auction_id;
 	String is_liked;
@@ -28,7 +27,13 @@ class Data {
 	String name;
 	String image;
 	String type;
+	
+	String content;
+	String update_at;
 }
+
+
+
 
 
 class Category {
