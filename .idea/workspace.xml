@@ -88,22 +88,12 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContactUsTests">
+  <component name="RunManager" selected="JUnit.ReadNewTests.unitTest2">
     <configuration name="ContactUsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ContactUsTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactUsTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContactUsTests" />
-      <option name="METHOD_NAME" value="unitTest1" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,21 +108,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactUsTests.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReadNewTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContactUsTests" />
-      <option name="METHOD_NAME" value="unitTest2" />
+      <option name="MAIN_CLASS_NAME" value="ReadNewTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadNewTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReadNewTests" />
+      <option name="METHOD_NAME" value="unitTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateAuctionTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReadNewTests.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateAuctionTests" />
-      <option name="METHOD_NAME" value="unitTest1" />
+      <option name="MAIN_CLASS_NAME" value="ReadNewTests" />
+      <option name="METHOD_NAME" value="unitTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,18 +150,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.ContactUsTests.unitTest10" />
-      <item itemvalue="JUnit.CreateAuctionTests.unitTest1" />
+      <item itemvalue="JUnit.ReadNewTests" />
+      <item itemvalue="JUnit.ReadNewTests.unitTest1" />
+      <item itemvalue="JUnit.ReadNewTests.unitTest2" />
       <item itemvalue="JUnit.ContactUsTests" />
-      <item itemvalue="JUnit.ContactUsTests.unitTest1" />
-      <item itemvalue="JUnit.ContactUsTests.unitTest2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReadNewTests.unitTest2" />
+        <item itemvalue="JUnit.ReadNewTests.unitTest1" />
+        <item itemvalue="JUnit.ReadNewTests" />
         <item itemvalue="JUnit.ContactUsTests" />
         <item itemvalue="JUnit.ContactUsTests.unitTest10" />
-        <item itemvalue="JUnit.ContactUsTests.unitTest1" />
-        <item itemvalue="JUnit.CreateAuctionTests.unitTest1" />
-        <item itemvalue="JUnit.ContactUsTests.unitTest2" />
       </list>
     </recent_temporary>
   </component>
