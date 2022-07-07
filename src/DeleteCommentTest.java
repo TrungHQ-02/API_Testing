@@ -23,4 +23,12 @@ public class DeleteCommentTest {
         Assertions.assertEquals(1000,deleteComment.getCode());
         System.out.println("Unit 1: Satisfied!");
     }
+    @Test//  khong co quyen xoa neu la cmt cua nguoi khac
+    public void unitTest2() {
+        System.out.println("If someone else's comment is, Server will return code 1006");
+        System.out.println("Testing unit2...");
+        deleteComment.Test31(accessToken);
+        Assertions.assertEquals(1006,deleteComment.getCode());
+        System.out.println("Unit 2: Satisfied!");
+    }
 }

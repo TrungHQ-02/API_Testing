@@ -19,7 +19,7 @@ public class DeleteComment {
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/comments/delete/391");
+            URL url = new URL("https://auctions-app-2.herokuapp.com/api/comments/delete/301");
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + accessToken);

@@ -47,7 +47,7 @@ public class EditAuctionTests {
 	@Test
 	public void unitTest4() {
 		//Không có quyền chỉnh sửa (Những auctions không phải do user tạo)
-		System.out.println("if the auctions are created by someone else,eServer will return code 1006");
+		System.out.println("if the auctions are created by someone else,Server will return code 1006");
 		System.out.println("Testing unit4...");
 		editAuction.Test12("443", "1", null, null, null, proper_token);
 		Assertions.assertEquals(1006, editAuction.getCode());
