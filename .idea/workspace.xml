@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Quan">
+    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Q them">
       <change afterPath="$PROJECT_DIR$/src/ContactUs.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ContactUsTests.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/DeleteComment.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/DeleteCommentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API_Test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/API_Test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditAuction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditAuction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditAuctionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditAuctionTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +62,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/84854/Downloads/gson-2.8.6.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/GitHub/project-for-oop&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -83,7 +84,17 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EditAuctionTests.unitTest13">
+  <component name="RunManager" selected="JUnit.DeleteCommentTest.unitTest1">
+    <configuration name="DeleteCommentTest.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DeleteCommentTest" />
+      <option name="METHOD_NAME" value="unitTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EditAuctionTests.unitTest10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -124,16 +135,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EditAuctionTests.unitTest9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EditAuctionTests" />
-      <option name="METHOD_NAME" value="unitTest9" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,19 +147,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.DeleteCommentTest.unitTest1" />
       <item itemvalue="JUnit.EditAuctionTests.unitTest10" />
       <item itemvalue="JUnit.EditAuctionTests.unitTest11" />
       <item itemvalue="JUnit.EditAuctionTests.unitTest12" />
       <item itemvalue="JUnit.EditAuctionTests.unitTest13" />
-      <item itemvalue="JUnit.EditAuctionTests.unitTest9" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DeleteCommentTest.unitTest1" />
         <item itemvalue="JUnit.EditAuctionTests.unitTest13" />
         <item itemvalue="JUnit.EditAuctionTests.unitTest12" />
         <item itemvalue="JUnit.EditAuctionTests.unitTest11" />
         <item itemvalue="JUnit.EditAuctionTests.unitTest10" />
-        <item itemvalue="JUnit.EditAuctionTests.unitTest9" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +253,28 @@
       <option name="project" value="LOCAL" />
       <updated>1657129223194</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Quan them">
+      <created>1657129889598</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657129889598</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Q doi ten test cho khop">
+      <created>1657130192969</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1657130192969</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Q them">
+      <created>1657130231339</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1657130231339</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,11 +293,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Phuong them" />
-    <MESSAGE value="Quan them" />
     <MESSAGE value="Quan themm" />
     <MESSAGE value="Quan lam EditAuction" />
     <MESSAGE value="Quan" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quan" />
+    <MESSAGE value="Quan them" />
+    <MESSAGE value="Q doi ten test cho khop" />
+    <MESSAGE value="Q them" />
+    <option name="LAST_COMMIT_MESSAGE" value="Q them" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
