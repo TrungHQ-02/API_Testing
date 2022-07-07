@@ -1,3 +1,4 @@
+
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;
@@ -46,6 +47,7 @@ public class CreateAuction {
             while ((line = reader.readLine()) != null) {
                 respondContent.append(line);
             }
+            System.out.println(respondContent);
 
             // set to model
             this.setFixed_id(category_id+"");
