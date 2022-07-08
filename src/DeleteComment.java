@@ -14,12 +14,12 @@ public class DeleteComment {
     public static Rp rp;
     //public String fixed_comment_id;
 
-    public void Test31(String accessToken) {
+    public void Test31(String commentId, String accessToken) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/comments/delete/301");
+            URL url = new URL("https://auctions-app-2.herokuapp.com/api/comments/delete/"+ commentId);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + accessToken);
@@ -31,8 +31,6 @@ public class DeleteComment {
             while ((line = reader.readLine()) != null) {
                 respondContent.append(line);
             }
-
-            // set to model
 
             // Parse JSON
             Gson g = new Gson();

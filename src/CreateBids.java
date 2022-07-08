@@ -13,19 +13,19 @@ public class CreateBids {
 
     public static Rp rp;
 
-    public String fixed_price;
+    public int fixed_price;
 
-    public String fixed_bid_last_id;
+    public int fixed_bid_last_id;
 
 
-    public void Test16(String price, String bid_last_id,String accessToken) {
+    public void Test16( int price, int bid_last_id,String accessToken) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
 
         // Connect and parse Json
         /// api/auctions/edit/{auctionId}
-        try {
+        try {//auction thu cong dang dien ra
             URL url = new URL("https://auctions-app-2.herokuapp.com/api/bids/create/218");
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
@@ -33,7 +33,7 @@ public class CreateBids {
             connection.setRequestProperty("Accept", "application/json");
             connection.setRequestProperty("Content-Type", "application/json");
             connection.setDoOutput(true);
-            String data = "{\n \"price\": \"" + price + "\"" + "   ,\n  \"bid_last_id\": \"" + bid_last_id  + "\n}";
+            String data = "{\n \"price\": \"" + price + "\"" + "   ,\n  \"bid_last_id\": \"" + bid_last_id  +  "\"" + "\n}";
             byte[] out = data.getBytes(StandardCharsets.UTF_8);
             OutputStream stream = connection.getOutputStream();
             stream.write(out);
@@ -71,13 +71,13 @@ public class CreateBids {
     }
 
 
-    public String getFixed_price() { return fixed_price; }
-    public void setFixed_price(String fixed_price) {
+    public int getFixed_price() { return fixed_price; }
+    public void setFixed_price(int fixed_price) {
         this.fixed_price = fixed_price;
     }
 
-    public String getFixed_bid_last_id() { return fixed_bid_last_id; }
-    public void setFixed_bid_last_id(String fixed_bid_last_id) {
+    public int getFixed_bid_last_id() { return fixed_bid_last_id; }
+    public void setFixed_bid_last_id(int fixed_bid_last_id) {
         this.fixed_price = fixed_bid_last_id;
     }
 

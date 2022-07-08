@@ -18,7 +18,7 @@ class Data {
 	String auction_id;
 	String is_liked;
 	
-	// for edit auction by Trung
+	// for edit auction
 	String title, category_id, selling_user_id;
 	String start_date, end_date;
 	String status, reason;
@@ -30,11 +30,10 @@ class Data {
 	
 	String content;
 	String update_at;
-	
 	int code;
+	//for deletecomment
+	String comment_id;
 }
-
-
 
 
 
