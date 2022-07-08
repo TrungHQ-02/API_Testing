@@ -26,7 +26,6 @@ public class Logout {
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + token);
             rpCode = connection.getResponseCode();
-            System.out.println(rpCode);
 
             reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             while ((line = reader.readLine()) != null) {

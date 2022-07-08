@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them nhung ma chay khong ra 1000 OK :&lt;">
-      <change beforePath="$PROJECT_DIR$/src/CreateItemTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateItemTests.java" afterDir="false" />
+    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Minh changes">
+      <change afterPath="$PROJECT_DIR$/src/AcceptMaxBidTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AcceptMaxBid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AcceptMaxBid.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -32,12 +34,16 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/CreateAuctionTests.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/CreateBids.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/GetListBidsTests.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Login.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/LoginTests.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Rp.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/SignUp.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/SignUpTests.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/clone/Body.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/clone/PostmanClone.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -84,7 +90,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreateItemTests.unitTest1">
+  <component name="RunManager" selected="JUnit.LogoutTest.UnitTest1">
     <configuration name="CreateItemTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -105,11 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadNotificationsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LogoutTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ReadNotificationsTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="LogoutTest" />
+      <option name="METHOD_NAME" value="UnitTest1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,19 +153,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.LogoutTest.UnitTest1" />
       <item itemvalue="JUnit.CreateItemTests.unitTest1" />
       <item itemvalue="JUnit.GetNotificationsTests.unitTest4" />
-      <item itemvalue="JUnit.ReadNotificationsTests" />
       <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
       <item itemvalue="JUnit.SignUpTests.unitTest1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LogoutTest.UnitTest1" />
         <item itemvalue="JUnit.CreateItemTests.unitTest1" />
         <item itemvalue="JUnit.SignUpTests.unitTest1" />
         <item itemvalue="JUnit.GetNotificationsTests.unitTest4" />
         <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
-        <item itemvalue="JUnit.ReadNotificationsTests" />
       </list>
     </recent_temporary>
   </component>
