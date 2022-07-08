@@ -16,7 +16,6 @@ public class CreateItemTests {
         System.out.println("If , code should be 9995 and message should be ");
         System.out.println("Testing unit1...");
 
-        String randomMail = email.getStringWithFixedLength(10) + "@gmail.com";
         String randomName = email.getSaltString();
         String randomBrandid = email.getStringWithFixedLength(10);
 
