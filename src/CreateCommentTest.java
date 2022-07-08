@@ -1,19 +1,67 @@
+import java.nio.charset.Charset;
+import java.util.Random;
+
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-class CreateCommentTest {
+
+public class CreateCommentTest {
     CreateComment createComment = new CreateComment();
     Login login = new Login();
-    @Test
-    @DisplayName("Unit Test 1: create comment ")
-    public void UnitTest1(){
-    	login.Test01("dien1234@gmail.com", "123456");
-    	createComment.Test14( 1, login.getToken(), "hi everyone" ,1);
-        Assertions.assertEquals(1000,createComment.getCode());
-        Assertions.assertEquals("OK",createComment.getMessage());
-        //Assertions.assertNotEquals(null, createComment.getData());
+    Logout logout = new Logout();
+
+/*
+    @Test  
+    @DisplayName("When account don't sign in")
+    public void unitTest1() {
+        
+        login.Test01("dien1234@gmail.com", "123456");
+        logout.Test05(login.getToken());
+        createComment.Test14(null, login.getToken(), "xin chao", 1);
+        Assertions.assertEquals(1004, createComment.getCode());
+        System.out.println("Unit 1: Satisfied!");
+    }
+    */
+    @Test  
+    public void unitTest2() {
+        
+        login.Test01("dien1234@gmail.com", "123456");
+       
+        createComment.Test14("12", login.getToken(), "xin chao", 1);
+        Assertions.assertEquals(1000, createComment.getCode());
+        System.out.println("Unit 2: Satisfied!");
     }
 
+    @Test  
+    @DisplayName("Unit test 3: When content is null")
+    public void unitTest3() {
+        
+        login.Test01("dien1234@gmail.com", "123456");
+       
+        createComment.Test14("12", login.getToken(),"" , 1);
+        Assertions.assertEquals(1001, createComment.getCode());
+        System.out.println("Unit 3: Satisfied!");
+    }
+    
+    @Test  
+    @DisplayName("Unit test 4: When we can't comment")
+    public void unitTest4() {
+        
+        login.Test01("dien1234@gmail.com", "123456");
+       
+        createComment.Test14("2", login.getToken(),"hi" , 1);
+        Assertions.assertEquals(1008, createComment.getCodeData());
+        System.out.println("Unit 4: Satisfied!");
+    }
+    
+    @Test  
+    public void unitTest5() {
+        
+        login.Test01("dien1234@gmail.com", "123456");
+       
+        createComment.Test14("1", login.getToken(), "hello", 10);
+        Assertions.assertEquals(1000, createComment.getCode());
+        System.out.println("Unit 5: Satisfied!");
+    }
 }

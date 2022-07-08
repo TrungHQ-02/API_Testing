@@ -30,6 +30,8 @@ class Data {
 	
 	String content;
 	String update_at;
+	
+	int code;
 }
 
 
