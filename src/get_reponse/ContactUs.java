@@ -1,6 +1,9 @@
+package get_reponse;
+
 import com.google.gson.Gson;
 
 import freq.BaseURL;
+import response_object.Rp;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,5 +1,4 @@
-// Response Object
-
+package response_object;
 class User {
 	// For Test Login
 	String name, role, email, address, avatar, phone;
@@ -17,26 +16,22 @@ class Data {
 	String user_id; // For likeauction by Trung
 	String auction_id;
 	String is_liked;
-	
+
 	// for edit auction by Trung
 	String title, category_id, selling_user_id;
 	String start_date, end_date;
 	String status, reason;
-	
+
 	// for getCategories
 	String name;
 	String image;
 	String type;
-	
+
 	String content;
 	String update_at;
-	
+
 	int code;
 }
-
-
-
-
 
 class Category {
 	String name;

@@ -1,3 +1,4 @@
+package response_object;
 
 // DUng cho getListAuctionsByStatus
 class Auction3 {
@@ -14,7 +15,6 @@ class Data3 {
 	Auction3[] auctions;
 	String total;
 }
-
 
 class Category3 {
 	String name;
