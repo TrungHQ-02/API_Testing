@@ -1,4 +1,4 @@
-package response_object;
+
 
 // DUng cho getListAuctionsByStatus
 class Auction3 {

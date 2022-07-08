@@ -1,4 +1,4 @@
-package response_object;
+
 
 public class Rp2 {
 	public int code;

@@ -1,4 +1,4 @@
-package response_object;
+
 class User {
 	// For Test Login
 	String name, role, email, address, avatar, phone;
