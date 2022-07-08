@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Minh changes">
-      <change afterPath="$PROJECT_DIR$/src/AcceptMaxBidTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AcceptMaxBid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AcceptMaxBid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AcceptMaxBidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AcceptMaxBidTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateAuctionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateAuctionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateBidsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateBidsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateItemTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateItemTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsByStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListAuctionsByStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsByStatusTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListAuctionsByStatusTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +96,36 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LogoutTest.UnitTest1">
+  <component name="RunManager" selected="JUnit.CreateItemTests.unitTest1">
+    <configuration name="AcceptMaxBidTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AcceptMaxBidTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AcceptMaxBidTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AcceptMaxBidTest" />
+      <option name="METHOD_NAME" value="UnitTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AcceptMaxBidTest.UnitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AcceptMaxBidTest" />
+      <option name="METHOD_NAME" value="UnitTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreateItemTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -101,40 +136,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetNotificationsTests.unitTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetNotificationsTests" />
-      <option name="METHOD_NAME" value="unitTest4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogoutTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LogoutTest" />
-      <option name="METHOD_NAME" value="UnitTest1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReadNotificationsTests.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ReadNotificationsTests" />
-      <option name="METHOD_NAME" value="unitTest2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUpTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
+      <option name="MAIN_CLASS_NAME" value="LoginTests" />
       <option name="METHOD_NAME" value="unitTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -153,19 +158,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.LogoutTest.UnitTest1" />
+      <item itemvalue="JUnit.AcceptMaxBidTest" />
+      <item itemvalue="JUnit.AcceptMaxBidTest.UnitTest1" />
+      <item itemvalue="JUnit.AcceptMaxBidTest.UnitTest2" />
+      <item itemvalue="JUnit.LoginTests.unitTest1" />
       <item itemvalue="JUnit.CreateItemTests.unitTest1" />
-      <item itemvalue="JUnit.GetNotificationsTests.unitTest4" />
-      <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
-      <item itemvalue="JUnit.SignUpTests.unitTest1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LogoutTest.UnitTest1" />
         <item itemvalue="JUnit.CreateItemTests.unitTest1" />
-        <item itemvalue="JUnit.SignUpTests.unitTest1" />
-        <item itemvalue="JUnit.GetNotificationsTests.unitTest4" />
-        <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
+        <item itemvalue="JUnit.AcceptMaxBidTest.UnitTest1" />
+        <item itemvalue="JUnit.AcceptMaxBidTest.UnitTest2" />
+        <item itemvalue="JUnit.LoginTests.unitTest1" />
+        <item itemvalue="JUnit.AcceptMaxBidTest" />
       </list>
     </recent_temporary>
   </component>
@@ -202,6 +207,7 @@
       <workItem from="1657099315026" duration="427000" />
       <workItem from="1657101455017" duration="3038000" />
       <workItem from="1657113054279" duration="7564000" />
+      <workItem from="1657249784067" duration="3788000" />
     </task>
     <task id="LOCAL-00001" summary="Phuong them">
       <created>1657117211304</created>
@@ -273,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657218010025</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Minh changes">
+      <created>1657249977203</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1657249977203</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +307,8 @@
     <MESSAGE value="Phuong them" />
     <MESSAGE value="Phuong them nhung ma chua chay duoc :&lt;" />
     <MESSAGE value="Phuong them nhung ma chay khong ra 1000 OK :&lt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Phuong them nhung ma chay khong ra 1000 OK :&lt;" />
+    <MESSAGE value="Minh changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minh changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -307,15 +321,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/LogoutTest.java</url>
-          <line>11</line>
-          <properties class="LogoutTest" method="UnitTest1">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Search.java</url>
@@ -334,6 +339,24 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/CreateAuctionTests.java</url>
+          <line>29</line>
+          <properties class="CreateAuctionTests" method="unitTest1">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/CreateItemTests.java</url>
+          <line>11</line>
+          <properties class="CreateItemTests" method="unitTest1">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/LogoutTest.java</url>

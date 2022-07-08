@@ -24,9 +24,11 @@ public class AcceptMaxBid {
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + token);
+            connection.setRequestProperty("Accept", "application/json");
+            connection.setRequestProperty("Content-Type", "application/json");
             connection.setDoOutput(true);
 
-            String data = "{\n  \"selling_info\": \"" + selling_info + "\"\n}";
+            String data = "{\n  \"selling_info\": \"" + selling_info + "\"}";
             byte[] out = data.getBytes(StandardCharsets.UTF_8);
             OutputStream stream = connection.getOutputStream();
             stream.write(out);
@@ -34,6 +36,7 @@ public class AcceptMaxBid {
             while ((line = reader.readLine()) != null) {
                 respondContent.append(line);
             }
+            System.out.println(respondContent);
 
             // Parse JSON
             Gson g = new Gson();
@@ -46,6 +49,12 @@ public class AcceptMaxBid {
             connection.disconnect();
         }
 
+    }
+    public int getCode(){
+        return rp.code;
+    }
+    public String getMessage(){
+        return rp.message;
     }
 
 }
