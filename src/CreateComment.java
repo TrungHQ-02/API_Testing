@@ -14,32 +14,46 @@ public class CreateComment {
 
     public static Rp rp;
     int rpCode;
+   
 
-    public void Test14(int auction_id, String access_token, String content, int comment_last_id) {
+    public int fixed_comment_last_id;
+
+    public String fixed_content;
+
+
+    public void Test14(String auction_id, String access_token, String content, int comment_last_id) {
         String line;
         BufferedReader reader;
-        StringBuilder respondContent = new StringBuilder();
+        StringBuffer respondContent = new StringBuffer();
+
         // Connect and parse Json
+        /// api/comments/create/{auctionId}
         try {
             URL url = new URL("https://auctions-app-2.herokuapp.com/api/comments/create/" + auction_id);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + access_token);
-            /*rpCode = connection.getResponseCode();
-            System.out.println(rpCode);*/
-            
-            String data = "{\n  \"content\": \"" + content + "\",\n \"comment_last_id\": \"" + comment_last_id + "\"\n}";
+            connection.setRequestProperty("Accept", "application/json");
+            connection.setRequestProperty("Content-Type", "application/json");
+            connection.setDoOutput(true);
+
+            String data = "{\n \"content\": \"" + content + "\"" + "    ,\n  \"comment_last_id\": \"" + comment_last_id
+                    + "\"" + " \n}";
             byte[] out = data.getBytes(StandardCharsets.UTF_8);
             OutputStream stream = connection.getOutputStream();
             stream.write(out);
-
             reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             while ((line = reader.readLine()) != null) {
                 respondContent.append(line);
             }
             System.out.println(respondContent);
 
-            // Parse Json
+            // set to model
+            this.setFixed_content(content+"");
+            this.setFixed_comment_last_id(comment_last_id);
+            
+
+            // Parse JSON
             Gson g = new Gson();
             rp = g.fromJson(respondContent.toString(), Rp.class);
 
@@ -49,17 +63,43 @@ public class CreateComment {
         } finally {
             connection.disconnect();
         }
+
     }
-    public int getCode(){
+    
+	
+	public int getCode() {
         return rp.code;
     }
-    public String getMessage(){
+    public int getHttpCode(){
+        return rpCode;
+    }
+
+    public String getMessage() {
         return rp.message;
     }
-    public int getHttpCode(){
-       return rpCode;
-    }
+
     public Data getData() {
-    	return rp.data;
+        return rp.data;
     }
+    
+    public int getCodeData() {
+    	return rp.data.code;
+    }
+    public String getFixed_content() {
+        return fixed_content;
+    }
+
+    public void setFixed_content(String fixed_content) {
+        this.fixed_content = fixed_content;
+    }
+
+    public int getFixed_comment_last_id() {
+        return fixed_comment_last_id;
+    }
+
+    public void setFixed_comment_last_id(int comment_last_id) {
+        this.fixed_comment_last_id = comment_last_id;
+    }
+
+    
 }
