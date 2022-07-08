@@ -2,6 +2,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+
 class AcceptMaxBidTest {
     AcceptMaxBid acceptMaxBid = new AcceptMaxBid();
     Login login = new Login();
@@ -16,6 +17,7 @@ class AcceptMaxBidTest {
     @Test
     @DisplayName("With wrong token, response")
     public void UnitTest2(){
+        login.Test01("minh0915@gmail.com","123456");
         acceptMaxBid.Test20(541,"sold for minh",login.getToken());
         Assertions.assertEquals(1006,acceptMaxBid.getCode());
     }
