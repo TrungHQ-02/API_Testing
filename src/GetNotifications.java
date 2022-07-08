@@ -5,6 +5,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import com.google.gson.Gson;
 
+import freq.BaseURL;
+
 public class GetNotifications {
 	private static HttpURLConnection connection;
 	public static Rp rp;
@@ -28,7 +30,7 @@ public class GetNotifications {
 		// eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU2OTkyMjc5LCJleHAiOjE2NTczNTIyNzksIm5iZiI6MTY1Njk5MjI3OSwianRpIjoiWFdFSjBROWNiWGxxcmI2cCIsInN1YiI6NDU3LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Qo1zeuy9p9AKabz7uS1WNQI1qxXiN7p_WCowPZP2k-E
 		// https://auctions-app-2.herokuapp.com/api/notifications?index=2&count=10&is_not_read=1
 		try {
-			URL url = new URL("https://auctions-app-2.herokuapp.com/api/notifications" 
+			URL url = new URL(BaseURL.baseURL + "notifications" 
 					+ "?index=" + index
 					+ "&count=" + count
 					+ "&is_not_read" + is_not_read);
