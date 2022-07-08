@@ -17,7 +17,7 @@ public class ContactUsTests{
         String email = String.valueOf(new RandomEmail());
         System.out.println("If we send to api valid input, code should be 1000 ");
         System.out.println("Testing unit1...");
-       contactUs.Test21("TT","0383859368",email,"aaa",null,"2", null);
+       contactUs.Test21("TT111","0383859368",email,"aaa",null,"1", null);
         Assertions.assertEquals(1000, contactUs.getCode());
         System.out.println("Unit 1: Satisfied!");
     }
@@ -116,16 +116,16 @@ public class ContactUsTests{
     @Test
     public void unitTest10() {
         String email = String.valueOf(new RandomEmail());
-        int top = 65;
+        int top = 70;
         char data = ' ';
         String phone = "";
         for (int i=0; i<=top; i++) {
             data = (char)(rand.nextInt(25)+97);
-           phone = data + phone;
+            phone = data+phone;
         }
         System.out.println("If enter a phone longer than 60,server return about 1001");
         System.out.println("Testing unit10...");
-        contactUs.Test21("TT","phone",email,"aaa",null,"2", null);
+        contactUs.Test21("TT",phone ,email,"aaa",null,"2", null);
         Assertions.assertEquals(1001, contactUs.getCode());
         System.out.println("Unit 10: Satisfied!");
     }

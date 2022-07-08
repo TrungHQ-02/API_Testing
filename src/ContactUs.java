@@ -13,9 +13,9 @@ public class ContactUs {
 
     public static Rp rp;
 
-    public String fixed_name,fixed_phone, fixed_email,fixed_content,fixed_file, fixed_report_type;
-
-    public void Test21(String name, String phone,  String email, String content, String file, String report_type, String accessToken) {
+    public String fixed_name,fixed_phone, fixed_email,fixed_file, fixed_report_type;
+    public String fixed_content;
+    public void Test21(String name, String phone, String email, String content, String file, String report_type, String accessToken) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
@@ -30,9 +30,9 @@ public class ContactUs {
             connection.setRequestProperty("Content-Type", "application/json");
             connection.setDoOutput(true);
 
-            String data = "{\n \"name\": \"" + name + "\"" + "  ,\n  \"phone\": \"" + phone
-                    + "\"" + "    ,\n  \" email\": \"" +  email + "\"" + "    ,\n  \"content\": \"" + content
-                    + "\"" + "    ,\n  \"file\": \""+file+ "\"" + "  ,\n \"report_type\": \"+" + report_type + "\n }";
+            String data = "{\n \"name\": \"" + name + "\"" + "    ,\n  \"phone\": \"" +phone
+                    + "\"" + "    ,\n  \"email\": \"" + email + "\"" + "    ,\n  \"content\": \"" + content
+                    + "\"" + "    ,\n  \"file\": \"" + file + "\"" + "    ,\n  \"report_type\": \"" + report_type + "\"" + "\n }";
             byte[] out = data.getBytes(StandardCharsets.UTF_8);
             OutputStream stream = connection.getOutputStream();
             stream.write(out);

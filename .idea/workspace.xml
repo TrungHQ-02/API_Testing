@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Quan themmm">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ContactUs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContactUs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ContactUsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContactUsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateAuctionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateAuctionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DeleteCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeleteCommentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EditAuctionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditAuctionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadNewTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadNewTests.java" afterDir="false" />
+    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them nhung ma chay khong ra 1000 OK :&lt;">
+      <change beforePath="$PROJECT_DIR$/src/CreateItemTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateItemTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +43,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2AtPBO6KLUtdaiGqbvwYkECMw14" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -92,51 +84,51 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContactUsTests">
-    <configuration name="ContactUsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CreateItemTests.unitTest1">
+    <configuration name="CreateItemTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContactUsTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactUsTests.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContactUsTests" />
-      <option name="METHOD_NAME" value="unitTest2" />
+      <option name="MAIN_CLASS_NAME" value="CreateItemTests" />
+      <option name="METHOD_NAME" value="unitTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactUsTests.unitTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetNotificationsTests.unitTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContactUsTests" />
+      <option name="MAIN_CLASS_NAME" value="GetNotificationsTests" />
       <option name="METHOD_NAME" value="unitTest4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactUsTests.unitTest6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReadNotificationsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContactUsTests" />
-      <option name="METHOD_NAME" value="unitTest6" />
+      <option name="MAIN_CLASS_NAME" value="ReadNotificationsTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadNotificationsTests.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReadNotificationsTests" />
+      <option name="METHOD_NAME" value="unitTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactUsTests.unitTest7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContactUsTests" />
-      <option name="METHOD_NAME" value="unitTest7" />
+      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
+      <option name="METHOD_NAME" value="unitTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,19 +146,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ContactUsTests" />
-      <item itemvalue="JUnit.ContactUsTests.unitTest2" />
-      <item itemvalue="JUnit.ContactUsTests.unitTest4" />
-      <item itemvalue="JUnit.ContactUsTests.unitTest6" />
-      <item itemvalue="JUnit.ContactUsTests.unitTest7" />
+      <item itemvalue="JUnit.CreateItemTests.unitTest1" />
+      <item itemvalue="JUnit.GetNotificationsTests.unitTest4" />
+      <item itemvalue="JUnit.ReadNotificationsTests" />
+      <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
+      <item itemvalue="JUnit.SignUpTests.unitTest1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ContactUsTests" />
-        <item itemvalue="JUnit.ContactUsTests.unitTest2" />
-        <item itemvalue="JUnit.ContactUsTests.unitTest7" />
-        <item itemvalue="JUnit.ContactUsTests.unitTest6" />
-        <item itemvalue="JUnit.ContactUsTests.unitTest4" />
+        <item itemvalue="JUnit.CreateItemTests.unitTest1" />
+        <item itemvalue="JUnit.SignUpTests.unitTest1" />
+        <item itemvalue="JUnit.GetNotificationsTests.unitTest4" />
+        <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
+        <item itemvalue="JUnit.ReadNotificationsTests" />
       </list>
     </recent_temporary>
   </component>
@@ -232,28 +224,49 @@
       <option name="project" value="LOCAL" />
       <updated>1657125257924</updated>
     </task>
-    <task id="LOCAL-00005" summary="Q themm">
-      <created>1657191154689</created>
+    <task id="LOCAL-00005" summary="Phuong them">
+      <created>1657212884288</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1657191154689</updated>
+      <updated>1657212884288</updated>
     </task>
-    <task id="LOCAL-00006" summary="Quan them">
-      <created>1657191500456</created>
+    <task id="LOCAL-00006" summary="Phuong them">
+      <created>1657213322448</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1657191500456</updated>
+      <updated>1657213322448</updated>
     </task>
-    <task id="LOCAL-00007" summary="Quan themmm">
-      <created>1657195289915</created>
+    <task id="LOCAL-00007" summary="Phuong them">
+      <created>1657214063350</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1657195289915</updated>
+      <updated>1657214063350</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Phuong them nhung ma chua chay duoc :&lt;">
+      <created>1657214117554</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1657214117554</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Phuong them nhung ma chua chay duoc :&lt;">
+      <created>1657214219005</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657214219005</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Phuong them nhung ma chay khong ra 1000 OK :&lt;">
+      <created>1657218010025</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1657218010025</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,10 +285,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Phuong them" />
-    <MESSAGE value="Q themm" />
-    <MESSAGE value="Quan them" />
-    <MESSAGE value="Quan themmm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quan themmm" />
+    <MESSAGE value="Phuong them nhung ma chua chay duoc :&lt;" />
+    <MESSAGE value="Phuong them nhung ma chay khong ra 1000 OK :&lt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Phuong them nhung ma chay khong ra 1000 OK :&lt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -288,6 +300,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/LogoutTest.java</url>
+          <line>11</line>
+          <properties class="LogoutTest" method="UnitTest1">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Search.java</url>
@@ -308,6 +329,11 @@
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LogoutTest.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GetDetailAuctionsTest.java</url>
           <line>4</line>
           <option name="timeStamp" value="11" />
@@ -317,10 +343,13 @@
           <line>4</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/ReadNotificationsTests.java</url>
+          <line>8</line>
+          <properties field="token" class="ReadNotificationsTests" />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/IntelliJgithub$GetListBidsTests.ic" NAME="GetListBidsTests Coverage Results" MODIFIED="1656993518099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
