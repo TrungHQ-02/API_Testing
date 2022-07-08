@@ -1,4 +1,3 @@
-package test;
 
 import org.junit.jupiter.api.Assertions;
 
@@ -101,7 +100,7 @@ public class LoginTests {
 	public void unitTest7() {
 		// Run 10 test cases
 		System.out.println("If email is long but not more than 255 characters and password is incorrect, "
-				+ "response code should be 1002 and message should be ãƒ¡ãƒ¼ãƒ«ã?¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã?¯é?•ã?„ã?¾ã?—ã?Ÿ");
+				+ "response code should be 1002 and message should be ãƒ¡ãƒ¼ãƒ«ï¿½?ï¿½ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½");
 		System.out.println("Testing unit7...");
 		for (int i = 230; i <= 240; i++) {
 			String random = email.getStringWithFixedLength(i) + "@gmail.com";
@@ -109,7 +108,7 @@ public class LoginTests {
 			System.out.println(random.length());
 			login.Test01(random, "123123");
 			Assertions.assertEquals(1002, login.getCode());
-			Assertions.assertEquals("ãƒ¡ãƒ¼ãƒ«ã?¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã?¯é?•ã?„ã?¾ã?—ã?Ÿ", login.getMessage());
+			Assertions.assertEquals("ãƒ¡ãƒ¼ãƒ«ï¿½?ï¿½ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½", login.getMessage());
 		}
 		System.out.println("Unit 7: Satisfied!");
 	}
@@ -206,12 +205,12 @@ public class LoginTests {
 
 	@Test
 	public void unitTest13() {
-		//If password is incorrect, response code should be 1002, and message should be ãƒ¡ãƒ¼ãƒ«ã?¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã?¯é?•ã?„ã?¾ã?—ã?Ÿ
-		System.out.println("If password is incorrect, response code should be 1002, and message should be ãƒ¡ãƒ¼ãƒ«ã?¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã?¯é?•ã?„ã?¾ã?—");
+		//If password is incorrect, response code should be 1002, and message should be ãƒ¡ãƒ¼ãƒ«ï¿½?ï¿½ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½
+		System.out.println("If password is incorrect, response code should be 1002, and message should be ãƒ¡ãƒ¼ãƒ«ï¿½?ï¿½ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½");
 		login.Test01("trung@gmail.com", "123");
 		System.out.println("Testing unit13...");
 		Assertions.assertEquals(1002, login.getCode());
-		Assertions.assertEquals("ãƒ¡ãƒ¼ãƒ«ã?¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã?¯é?•ã?„ã?¾ã?—ã?Ÿ", login.getMessage());
+		Assertions.assertEquals("ãƒ¡ãƒ¼ãƒ«ï¿½?ï¿½ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½", login.getMessage());
 
 		System.out.println("Unit 13: Satisfied!");
 	}

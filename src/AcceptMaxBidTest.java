@@ -1,6 +1,4 @@
-package test;
-import get_reponse.AcceptMaxBid;
-import get_reponse.Login;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

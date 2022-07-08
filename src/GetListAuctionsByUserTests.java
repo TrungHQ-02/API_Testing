@@ -1,4 +1,4 @@
-package test;
+
 import java.util.Random;
 
 import org.junit.jupiter.api.Assertions;
@@ -45,7 +45,7 @@ public class GetListAuctionsByUserTests {
 
 	@Test
 	public void unitTest3() {
-		System.out.println("Code should be 1004 and message should be ã?¾ã? ãƒ­ã‚°ã‚¤ãƒ³ã?§ã?¯ã?‚ã‚Šã?¾ã?›ã‚“ even when token is wrong");
+		System.out.println("Code should be 1004 and message should be ï¿½?ï¿½ï¿½?ï¿½ãƒ­ã‚°ã‚¤ãƒ³ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ã‚Šï¿½?ï¿½ï¿½?ï¿½ã‚“ even when token is wrong");
 		System.out.println("Testing unit3...");
 		for (int i = 1; i <= 10; i++) {
 			int randomId = random.nextInt(1,10);

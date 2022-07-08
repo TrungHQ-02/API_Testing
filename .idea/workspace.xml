@@ -5,10 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them nhung ma chay khong ra 1000 OK :&lt;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/AcceptMaxBidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/AcceptMaxBidTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/ContactUsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ContactUsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LogoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AcceptMaxBid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AcceptMaxBid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AcceptMaxBidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AcceptMaxBidTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ContactUs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContactUs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ContactUsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContactUsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateAuction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateAuction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateAuctionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateAuctionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateBidsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateBidsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateCommentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateItemTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateItemTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeleteCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeleteCommentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditAuctionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditAuctionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetDetailAuctionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetDetailAuctionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsByStatusTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListAuctionsByStatusTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsByTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListAuctionsByTypeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsByUserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListAuctionsByUserTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListAuctionsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListBidsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListBidsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListBrandsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListBrandsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListCategoriesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCategoriesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListCommentsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCommentsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListLikesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListLikesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetNewsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetNewsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LikeAuctionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LikeAuctionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LogoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadNewTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadNewTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadNotificationsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadNotificationsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUpTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,6 +214,7 @@
       <workItem from="1657099315026" duration="427000" />
       <workItem from="1657101455017" duration="3038000" />
       <workItem from="1657113054279" duration="7564000" />
+      <workItem from="1657297337262" duration="601000" />
     </task>
     <task id="LOCAL-00001" summary="Phuong them">
       <created>1657117211304</created>
@@ -304,7 +330,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/LogoutTest.java</url>
-          <line>9</line>
+          <line>7</line>
           <properties class="LogoutTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
