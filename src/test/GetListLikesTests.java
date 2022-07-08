@@ -1,3 +1,4 @@
+package test;
 import java.util.Random;
 
 import org.junit.jupiter.api.Assertions;
@@ -44,7 +45,7 @@ public class GetListLikesTests {
 
 	@Test
 	public void unitTest3() {
-		System.out.println("Code should be 1004 and message should be „Åæ„Å†„É≠„Ç∞„Ç§„É≥„Åß„ÅØ„ÅÇ„Çä„Åæ„Åõ„Çì even when token is wrong");
+		System.out.println("Code should be 1004 and message should be „?æ„?†„É≠„Ç∞„Ç§„É≥„?ß„?Ø„?Ç„Çä„?æ„?õ„Çì even when token is wrong");
 		System.out.println("Testing unit3...");
 		for (int i = 1; i <= 10; i++) {
 			int randomId = random.nextInt(1,10);

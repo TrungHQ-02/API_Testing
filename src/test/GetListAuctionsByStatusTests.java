@@ -1,3 +1,4 @@
+package test;
 import java.util.Random;
 
 import org.junit.jupiter.api.Assertions;
@@ -6,8 +7,8 @@ import org.junit.jupiter.api.Test;
 
 import freq.RandomEmail;
 
-public class GetListAuctionsTests {
-	GetListAuctions auctions = new GetListAuctions();
+public class GetListAuctionsByStatusTests {
+	GetListAuctionsByStatus auctionsByStatus = new GetListAuctionsByStatus();
 	Random random = new Random();
 	RandomEmail randomString = new RandomEmail();
 
@@ -16,10 +17,10 @@ public class GetListAuctionsTests {
 		// Code 1000 message OK
 		System.out.println("Code should be 1000 and message should be OK with the valid input");
 		System.out.println("Testing unit1...");
-		auctions.Test06(1, 1, null);
-//		System.out.println(auctions.getData().total);
-		Assertions.assertEquals(1000, auctions.getCode());
-		Assertions.assertEquals("OK", auctions.getMessage());
+		auctionsByStatus.Test07(1, 1, 1, null);
+//		System.out.println(auctionsByStatus.getData().total);
+		Assertions.assertEquals(1000, auctionsByStatus.getCode());
+		Assertions.assertEquals("OK", auctionsByStatus.getMessage());
 		System.out.println("Unit 1: Satisfied");
 	}
 
@@ -28,11 +29,12 @@ public class GetListAuctionsTests {
 		System.out.println("Code should be 1000 and message should be OK with the negative input");
 		System.out.println("Testing unit2...");
 		for (int i = 1; i <= 10; i++) {
+			int randomId = random.nextInt(-1000,-1);
 			int randomIndex = random.nextInt(-1000,-1);
 			int randomCount = random.nextInt(-1000,-1);
-			auctions.Test06(randomIndex, randomCount, null);
-			Assertions.assertEquals(1000, auctions.getCode());
-			Assertions.assertEquals("OK", auctions.getMessage());
+			auctionsByStatus.Test07(randomId, randomIndex, randomCount, null);
+			Assertions.assertEquals(1000, auctionsByStatus.getCode());
+			Assertions.assertEquals("OK", auctionsByStatus.getMessage());
 		}
 		System.out.println("Unit 2: Satisfied!");
 	}
@@ -42,28 +44,30 @@ public class GetListAuctionsTests {
 		System.out.println("Code should be 1000 and message should be OK even when token is wrong");
 		System.out.println("Testing unit3...");
 		for (int i = 1; i <= 10; i++) {
+			int randomId = random.nextInt(1,1000);
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
 			String random_token = randomString.getStringWithFixedLength(100);
-			auctions.Test06(randomIndex, randomCount, random_token);
-			Assertions.assertEquals(1000, auctions.getCode());
-			Assertions.assertEquals("OK", auctions.getMessage());
+			auctionsByStatus.Test07(randomId, randomIndex, randomCount, random_token);
+			Assertions.assertEquals(1000, auctionsByStatus.getCode());
+			Assertions.assertEquals("OK", auctionsByStatus.getMessage());
 		}
 		System.out.println("Unit 3: Satisfied!");
 	}
 
 	@Test
 	public void unitTest4() {
-		System.out.println("Status Id should be from 1 to 6 (except 4)");
+		System.out.println("Status Id should be 1,2,3,4,5,6");
 		System.out.println("Testing unit4...");
-		for (int i = 1; i <= 20; i++) {
+		for (int i = 1; i <= 10; i++) {
+			int randomId = random.nextInt(1,1000);
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
-			auctions.Test06(randomIndex, randomCount, null);
-			Auction3[] aucList = auctions.getData().auctions.clone();
+			auctionsByStatus.Test07(randomId, randomIndex, randomCount, null);
+			Auction3[] aucList = auctionsByStatus.getData().auctions.clone();
 			for (Auction3 auction : aucList) {
 				int aucID = Integer.parseInt(auction.statusId);
-				Assertions.assertTrue(aucID == 1 || aucID == 2 || aucID == 3 || aucID == 5 || aucID == 6);
+				Assertions.assertTrue(aucID == 1 || aucID == 2 || aucID == 3 || aucID == 4 || aucID == 5 || aucID == 6);
 			}
 		}
 		System.out.println("Unit 4: Satisfied!");
@@ -75,10 +79,11 @@ public class GetListAuctionsTests {
 		System.out.println("Type id should be 1,2,3,4,5 ");
 		System.out.println("Testing unit5...");
 		for (int i = 1; i <= 10; i++) {
+			int randomId = random.nextInt(1,1000);
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
-			auctions.Test06(randomIndex, randomCount, null);
-			Auction3[] aucList = auctions.getData().auctions.clone();
+			auctionsByStatus.Test07(randomId, randomIndex, randomCount, null);
+			Auction3[] aucList = auctionsByStatus.getData().auctions.clone();
 			for (Auction3 auction : aucList) {
 				int aucID = Integer.parseInt(auction.catergory.type);
 				Assertions.assertTrue(aucID == 1 || aucID == 2 || aucID == 3 || aucID == 4 || aucID == 5);
@@ -92,10 +97,11 @@ public class GetListAuctionsTests {
 		System.out.println("Total of auctions should be greater than 0");
 		System.out.println("Testing unit6...");
 		for (int i = 1; i <= 10; i++) {
+			int randomId = random.nextInt(1,1000);
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
-			auctions.Test06(randomIndex, randomCount, null);
-			int totalAuctions = Integer.parseInt(auctions.getData().total);
+			auctionsByStatus.Test07(randomId, randomIndex, randomCount, null);
+			int totalAuctions = Integer.parseInt(auctionsByStatus.getData().total);
 			Assertions.assertTrue(totalAuctions >= 0);
 		}
 		System.out.println("Unit 6: Satisfied!");
@@ -106,10 +112,11 @@ public class GetListAuctionsTests {
 		System.out.println("Title of auction should be null");
 		System.out.println("Testing unit7...");
 		for (int i = 1; i <= 10; i++) {
+			int randomId = random.nextInt(1,1000);
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
-			auctions.Test06(randomIndex, randomCount, null);
-			Auction3[] aucList = auctions.getData().auctions.clone();
+			auctionsByStatus.Test07(randomId, randomIndex, randomCount, null);
+			Auction3[] aucList = auctionsByStatus.getData().auctions.clone();
 			for (Auction3 auction : aucList) {
 				Assertions.assertNotEquals(null, auction.title);
 			}
@@ -117,4 +124,22 @@ public class GetListAuctionsTests {
 		System.out.println("Unit 7: Satisfied!");
 	}
 	
+	@Test
+	// bi sai
+	public void unitTest8() {
+		System.out.println("Status id we receive must equal to status id we send to API");
+		System.out.println("Testing unit8...");
+		for (int i = 1; i <= 10; i++) {
+			int randomId = random.nextInt(1,6);
+			int randomIndex = random.nextInt(1,1000);
+			int randomCount = random.nextInt(1,1000);
+			auctionsByStatus.Test07(randomId, randomIndex, randomCount, null);
+			Auction3[] aucList = auctionsByStatus.getData().auctions.clone();
+			for (Auction3 auction : aucList) {
+				int aucStatusID = Integer.parseInt(auction.statusId);
+				Assertions.assertEquals(auctionsByStatus.getFixedId(), aucStatusID);
+			}
+		}
+		System.out.println("Unit 8: Satisfied!");
+	}
 }

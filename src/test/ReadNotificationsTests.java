@@ -1,3 +1,4 @@
+package test;
 import org.junit.jupiter.api.Assertions;
 
 import org.junit.jupiter.api.Test;
@@ -19,7 +20,7 @@ class ReadNotificationsTests {
     }
     @Test //chua chay duoc
     public void unitTest2() {
-        System.out.println("If do not enter token, code should be 1004 and message should be „Åæ„Å†„É≠„Ç∞„Ç§„É≥„Åß„ÅØ„ÅÇ„Çä„Åæ„Åõ„Çì");
+        System.out.println("If do not enter token, code should be 1004 and message should be „?æ„?†„É≠„Ç∞„Ç§„É≥„?ß„?Ø„?Ç„Çä„?æ„?õ„Çì");
         System.out.println("Testing unit2...");
         readNotifications.Test28("");
         Assertions.assertEquals(1004, readNotifications.getCode());
