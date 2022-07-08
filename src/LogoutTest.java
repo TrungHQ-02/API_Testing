@@ -1,8 +1,10 @@
-
+package test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
+
+
 class LogoutTest {
     Login login = new Login();
     Logout logout = new Logout();

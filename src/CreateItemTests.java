@@ -21,9 +21,9 @@ public class CreateItemTests {
         String randomName = email.getSaltString();
         String randomBrandid = email.getStringWithFixedLength(10);
 
-        createItem.Test13("594", token, randomName, "100", randomBrandid, "ha ha", null, null);
+        createItem.Test13("599", token, randomName, "100", randomBrandid, "ha ha", null, null);
 
-        Assertions.assertEquals(9995, createItem.getCode());
+        Assertions.assertEquals(1000, createItem.getCode());
         Assertions.assertEquals("OK", createItem.getMessage());
         System.out.println("Unit 1: Satisfied!");
     }
