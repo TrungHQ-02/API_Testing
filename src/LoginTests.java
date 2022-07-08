@@ -2,7 +2,8 @@
 import org.junit.jupiter.api.Assertions;
 
 import org.junit.jupiter.api.Test;
-import random.RandomEmail;
+
+import freq.RandomEmail;
 
 public class LoginTests {
 	Login login = new Login();

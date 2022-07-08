@@ -1,5 +1,7 @@
 import com.google.gson.Gson;
 
+import freq.BaseURL;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -31,7 +33,7 @@ public class GetListLikes {
         //https://auctions-app-2.herokuapp.com/api/auctions/listAuctionsByStatus?statusId=1&index=1&count=3
         // https://auctions-app-2.herokuapp.com/api/likes/3?index=1&count=1
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/likes/" 
+            URL url = new URL(BaseURL.baseURL + "likes/" 
             	    + statusId 
             		+ "?index=" + index 
             		+ "&count=" + count);

@@ -1,5 +1,7 @@
 import com.google.gson.Gson;
 
+import freq.BaseURL;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -20,7 +22,7 @@ public class AcceptMaxBid {
 
         // Connect and parse Json
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/accept/" + auction_id);
+            URL url = new URL(BaseURL.baseURL +"accept/" + auction_id);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + token);
@@ -36,7 +38,6 @@ public class AcceptMaxBid {
             while ((line = reader.readLine()) != null) {
                 respondContent.append(line);
             }
-            System.out.println(respondContent);
 
             // Parse JSON
             Gson g = new Gson();

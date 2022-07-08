@@ -1,7 +1,8 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
-import random.RandomEmail;
+
+import freq.RandomEmail;
 
 public class SignUpTests {
     SignUp signUp = new SignUp();
