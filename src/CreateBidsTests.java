@@ -2,8 +2,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import random.RandomEmail;
 
-import java.util.Random;
-
 public class CreateBidsTests {
    CreateBids createBids = new CreateBids();
     RandomEmail randString = new RandomEmail();
