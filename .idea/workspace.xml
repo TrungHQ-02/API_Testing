@@ -6,67 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them nhung ma chay khong ra 1000 OK :&lt;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AcceptMaxBid.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AcceptMaxBidTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ContactUs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ContactUsTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateAuction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateAuctionTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateBids.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateBidsTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateComment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateCommentTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateItemTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DeleteComment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DeleteCommentTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EditAuction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EditAuctionTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetDetailAuctions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetDetailAuctionsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListAuctions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsByStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsByStatusTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsByType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsByTypeTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsByUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsByUserTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListBids.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListBidsTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListBrands.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListBrandsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListCategories.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListCategoriesTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListComments.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListCommentsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListLikes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListLikesTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetNews.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetNewsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetNotifications.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetNotificationsTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetSlider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetSliderTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LikeAuction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LikeAuctionTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logout.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LogoutTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadNew.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadNewTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadNotifications.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadNotificationsTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rp2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rp3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Search.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SignUp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SignUpTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TotalLikeOfAuction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TotalLikeOfAuctionTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +41,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
+    &quot;keyToString&quot;: {
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
@@ -124,8 +63,8 @@
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
-  }
-}</component>
+    }
+    }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\FPTShop\Desktop\code\BTL\API_Test\src" />
@@ -137,7 +76,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GetDetailAuctionsTest">
+  <component name="RunManager" selected="JUnit.LogoutTest">
     <configuration name="CreateItemTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -167,12 +106,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadNotificationsTests.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LogoutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ReadNotificationsTests" />
-      <option name="METHOD_NAME" value="unitTest2" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="LogoutTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -199,19 +137,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.LogoutTest" />
       <item itemvalue="JUnit.GetDetailAuctionsTest" />
       <item itemvalue="JUnit.CreateItemTests.unitTest1" />
       <item itemvalue="JUnit.GetNotificationsTests.unitTest4" />
-      <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
       <item itemvalue="JUnit.SignUpTests.unitTest1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LogoutTest" />
         <item itemvalue="JUnit.GetDetailAuctionsTest" />
         <item itemvalue="JUnit.CreateItemTests.unitTest1" />
         <item itemvalue="JUnit.SignUpTests.unitTest1" />
         <item itemvalue="JUnit.GetNotificationsTests.unitTest4" />
-        <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
       </list>
     </recent_temporary>
   </component>
