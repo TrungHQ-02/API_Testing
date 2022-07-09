@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateItemTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateItemTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsByStatusTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListAuctionsByStatusTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListAuctionsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListLikesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListLikesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,51 +81,49 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreateItemTests">
-    <configuration name="CreateAuctionTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CreateAuctionTests">
+    <configuration name="ContactUsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateAuctionTests" />
-      <option name="METHOD_NAME" value="unitTest1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateItemTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateItemTests" />
+      <option name="MAIN_CLASS_NAME" value="ContactUsTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateItemTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateAuctionTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateItemTests" />
+      <option name="MAIN_CLASS_NAME" value="CreateAuctionTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetListAuctionsByStatusTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GetListAuctionsByStatusTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetListAuctionsByStatusTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GetListAuctionsByStatusTests" />
       <option name="METHOD_NAME" value="unitTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateItemTests.unitTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetListAuctionsByStatusTests.unitTest8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateItemTests" />
-      <option name="METHOD_NAME" value="unitTest4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateItemTests.unitTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateItemTests" />
-      <option name="METHOD_NAME" value="unitTest5" />
+      <option name="MAIN_CLASS_NAME" value="GetListAuctionsByStatusTests" />
+      <option name="METHOD_NAME" value="unitTest8" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,19 +141,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CreateItemTests" />
-      <item itemvalue="JUnit.CreateItemTests.unitTest4" />
-      <item itemvalue="JUnit.CreateItemTests.unitTest5" />
-      <item itemvalue="JUnit.CreateAuctionTests.unitTest1" />
-      <item itemvalue="JUnit.CreateItemTests.unitTest1" />
+      <item itemvalue="JUnit.ContactUsTests" />
+      <item itemvalue="JUnit.CreateAuctionTests" />
+      <item itemvalue="JUnit.GetListAuctionsByStatusTests" />
+      <item itemvalue="JUnit.GetListAuctionsByStatusTests.unitTest1" />
+      <item itemvalue="JUnit.GetListAuctionsByStatusTests.unitTest8" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CreateItemTests" />
-        <item itemvalue="JUnit.CreateItemTests.unitTest5" />
-        <item itemvalue="JUnit.CreateItemTests.unitTest4" />
-        <item itemvalue="JUnit.CreateItemTests.unitTest1" />
-        <item itemvalue="JUnit.CreateAuctionTests.unitTest1" />
+        <item itemvalue="JUnit.CreateAuctionTests" />
+        <item itemvalue="JUnit.ContactUsTests" />
+        <item itemvalue="JUnit.GetListAuctionsByStatusTests" />
+        <item itemvalue="JUnit.GetListAuctionsByStatusTests.unitTest1" />
+        <item itemvalue="JUnit.GetListAuctionsByStatusTests.unitTest8" />
       </list>
     </recent_temporary>
   </component>
@@ -194,6 +195,7 @@
       <workItem from="1657331204918" duration="3988000" />
       <workItem from="1657345976358" duration="1905000" />
       <workItem from="1657363667892" duration="1268000" />
+      <workItem from="1657373165197" duration="4193000" />
     </task>
     <task id="LOCAL-00001" summary="Phuong them">
       <created>1657117211304</created>
@@ -360,6 +362,15 @@
           </properties>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/LikeAuctionTests.java</url>
+          <line>42</line>
+          <properties class="LikeAuctionTests" method="unitTest3">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GetDetailAuctionsTest.java</url>
           <line>4</line>
@@ -369,6 +380,21 @@
           <url>file://$PROJECT_DIR$/src/SearchTest.java</url>
           <line>4</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LoginTests.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GetListBidsTests.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GetListAuctionsByStatusTests.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

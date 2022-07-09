@@ -105,7 +105,7 @@ public class GetListAuctionsTests {
 
 	@Test
 	public void unitTest7() {
-		System.out.println("Title of auction should be null");
+		System.out.println("Title of auction should not be null");
 		System.out.println("Testing unit7...");
 		for (int i = 1; i <= 10; i++) {
 			int randomIndex = random.nextInt(1,1000);

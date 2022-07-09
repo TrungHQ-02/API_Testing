@@ -37,10 +37,10 @@ public class Login {
                 respondContent.append(line);
             }
 
+
             // Parse JSON
             Gson g = new Gson();
             rp = g.fromJson(respondContent.toString(), Rp.class);
-
             reader.close();
         } catch (IOException e) {
             e.printStackTrace();

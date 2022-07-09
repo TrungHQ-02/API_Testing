@@ -33,7 +33,7 @@ public class GetListLikesTests {
 	public void unitTest2() {
 		System.out.println("Code should be 1000 and message should be OK with the negative input");
 		System.out.println("Testing unit2...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 3; i++) {
 			int randomId = random.nextInt(-10,-1);
 			int randomIndex = random.nextInt(-10,-1);
 			int randomCount = random.nextInt(-10,-1);
@@ -48,7 +48,7 @@ public class GetListLikesTests {
 	public void unitTest3() {
 		System.out.println("Code should be 1004 and message should be �?��?�ログイン�?��?��?�り�?��?�ん even when token is wrong");
 		System.out.println("Testing unit3...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 3; i++) {
 			int randomId = random.nextInt(1,10);
 			int randomIndex = random.nextInt(1,10);
 			int randomCount = random.nextInt(1,10);
@@ -63,30 +63,11 @@ public class GetListLikesTests {
 		System.out.println("Unit 3: Satisfied!");
 	}
 
-
-	@Test
-	public void unitTest4() {
-		System.out.println("Type should be 1,2,3,4,5 ");
-		System.out.println("Testing unit4...");
-		for (int i = 1; i <= 10; i++) {
-			int randomIndex = random.nextInt(2,3);
-			int randomCount = random.nextInt(1,10);
-			likes.Test23(2, randomIndex, randomCount, proper_token);
-			Auction3[] aucList = likes.getData().auctions.clone();
-			for (Auction3 auction : aucList) {
-				int type = Integer.parseInt(auction.catergory.type);
-				Assertions.assertTrue(type == 1 || type == 2 || type == 3 
-						|| type == 4 || type == 5);
-			}
-		}
-		System.out.println("Unit 4: Satisfied!");
-	}
-
 	@Test
 	public void unitTest5() {
 		System.out.println("Total of liked auctions should be greater than 0");
 		System.out.println("Testing unit6...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 3; i++) {
 			int randomId = random.nextInt(1,10);
 			int randomIndex = random.nextInt(1,10);
 			int randomCount = random.nextInt(1,10);
@@ -101,7 +82,7 @@ public class GetListLikesTests {
 	public void unitTest6() {
 		System.out.println("Title of auction should be null");
 		System.out.println("Testing unit6...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 3; i++) {
 			int randomId = random.nextInt(2,3);
 			int randomIndex = random.nextInt(1,10);
 			int randomCount = random.nextInt(1,10);
@@ -118,7 +99,7 @@ public class GetListLikesTests {
 	public void unitTest7() {
 		System.out.println("Status id we receive must equal to status id we send to API");
 		System.out.println("Testing unit8...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 3; i++) {
 			int randomId = random.nextInt(1,6);
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);

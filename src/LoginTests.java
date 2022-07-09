@@ -1,6 +1,5 @@
 
 import org.junit.jupiter.api.Assertions;
-
 import org.junit.jupiter.api.Test;
 
 import freq.RandomEmail;
@@ -10,10 +9,10 @@ public class LoginTests {
 	RandomEmail email = new RandomEmail();
 
 	@Test
-	public void unitTest1() {
+	public void unitTest01() {
 		System.out.println("Code and message should not be NULL or empty under any circumstances");
 		System.out.println("Testing unit1...");
-		for (int i = 1; i < 21; i++) {
+		for (int i = 1; i < 3; i++) {
 			String randomMail = email.getStringWithFixedLength(10) + "@gmail.com";
 			login.Test01(randomMail, "123456");
 			Assertions.assertTrue(Integer.valueOf(login.getCode()) != null);
@@ -24,7 +23,7 @@ public class LoginTests {
 	}
 
 	@Test
-	public void unitTest2() {
+	public void unitTest02() {
 		// Run 1 test case
 		System.out.println(
 				"If both email and password are empty or null, code should be 1001 and msg should be email: 7002 &password: ");
@@ -36,11 +35,11 @@ public class LoginTests {
 	}
 
 	@Test
-	public void unitTest3() {
-		// Run 10 test cases
+	public void unitTest03() {
+		// Run 3 test cases
 		System.out.println("If email is null,code should be 1001 and msg should be email: 7002 &password:  ");
 		System.out.println("Testing unit3...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 3; i++) {
 			login.Test01(null, email.getStringWithFixedLength(10));
 			Assertions.assertEquals(1001, login.getCode());
 			Assertions.assertEquals("email: 7002 &password: ", login.getMessage());
@@ -50,11 +49,11 @@ public class LoginTests {
 	}
 
 	@Test
-	public void unitTest4() {
-		// Run 10 test cases
+	public void unitTest04() {
+		// Run 3 test cases
 		System.out.println("If email is empty, code should be 1001 and msg should be email: 7000 &password: ");
 		System.out.println("Testing unit4...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 3; i++) {
 			login.Test01("", email.getStringWithFixedLength(10));
 			Assertions.assertEquals(1001, login.getCode());
 			Assertions.assertEquals("email: 7000 &password: ", login.getMessage());
@@ -64,28 +63,28 @@ public class LoginTests {
 	}
 
 	@Test
-	public void unitTest5() {
+	public void unitTest05() {
 
 //		Failed: truyen len null nhung lai tra ve sai mk
 
-		// Run 10 test cases
+		// Run 3 test cases
 		System.out.println("If password is null, code should be 1001 and msg should be email: 7000 &password: ");
 		System.out.println("Testing unit5...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 3; i++) {
 			login.Test01(email.getSaltString() + "@gmail.com", null);
 			Assertions.assertEquals(1001, login.getCode());
-			Assertions.assertEquals("email: 7000 &password: ", login.getCode());
+			Assertions.assertEquals("email:  &password: 7000", login.getMessage());
 		}
 		System.out.println("Finished! Satisfied!");
 
 	}
 
 	@Test
-	public void unitTest6() {
-		// Run 10 test cases
+	public void unitTest06() {
+		// Run 3 test cases
 		System.out.println("If password is empty, code should be 1001 and msg should be ");
 		System.out.println("Testing unit6...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 3; i++) {
 			String random = email.getSaltString();
 //			System.out.println(i + ":" + random + "@gmail.com");
 			login.Test01(random + "@gmail.com", "");
@@ -98,12 +97,12 @@ public class LoginTests {
 	}
 
 	@Test
-	public void unitTest7() {
-		// Run 10 test cases
+	public void unitTest07() {
+		// Run 3 test cases
 		System.out.println("If email is long but not more than 255 characters and password is incorrect, "
 				+ "response code should be 1002 and message should be メールとパスワードは違いました");
 		System.out.println("Testing unit7...");
-		for (int i = 230; i <= 240; i++) {
+		for (int i = 230; i <= 233; i++) {
 			String random = email.getStringWithFixedLength(i) + "@gmail.com";
 			System.out.println(random);
 			System.out.println(random.length());
@@ -115,13 +114,13 @@ public class LoginTests {
 	}
 
 	@Test
-	public void unitTest8() {
-		// Run 10 test cases
+	public void unitTest08() {
+		// Run 3 test cases
 		System.out
 				.println("If email is more than 255 characters and password is incorrect, response code should be 1001 "
 						+ "and message should be email: 7002 &password: ");
 		System.out.println("Testing unit8...");
-		for (int i = 250; i <= 260; i++) {
+		for (int i = 250; i <= 253; i++) {
 			String random = email.getStringWithFixedLength(i) + "@gmail.com";
 //			System.out.println(random);
 			login.Test01(random, "123123");
@@ -133,7 +132,7 @@ public class LoginTests {
 
 	@Test
 	// trung@gmail.com, 1234567
-	public void unitTest9() {
+	public void unitTest09() {
 		System.out.println("If email is about 250 characters and password is correct, "
 				+ "response code should be 1000 and data should not be null");
 		// Thay bang signup
@@ -159,7 +158,7 @@ public class LoginTests {
 		System.out.println("If email is not formatted properly, "
 				+ "response code should be 1001 and message should be email: 7002 &password:");
 		System.out.println("Testing unit10...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 3; i++) {
 			String random = email.getSaltString();
 			if (i % 3 == 0) {
 				login.Test01(random, "1233456");
@@ -184,7 +183,7 @@ public class LoginTests {
 		System.out.println("If email is properly formatted but password is longer than 255 characters, "
 				+ "response code should be 1001 and message should be email:  &password: 7001");
 		System.out.println("Testing unit11...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 3; i++) {
 			String random = email.getStringWithFixedLength(257);
 			login.Test01("trung@gmail.com", random);
 			Assertions.assertEquals(1001, login.getCode());
