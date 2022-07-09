@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them" />
+    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them">
+      <change beforePath="$PROJECT_DIR$/src/ReadNotifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadNotifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadNotificationsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadNotificationsTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -275,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657301104345</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Phuong them">
+      <created>1657355176670</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1657355176670</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

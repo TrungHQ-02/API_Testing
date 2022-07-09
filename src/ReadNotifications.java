@@ -18,7 +18,7 @@ public class ReadNotifications {
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
         try {
-            URL url = new URL(BaseURL.baseURL + "auctions/detail/" + auctionDenyId);
+            URL url = new URL(BaseURL.baseURL + "notifications/read/" + auctionDenyId);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Authorization", "Bearer" + token);
