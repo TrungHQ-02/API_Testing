@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateItemTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateItemTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetDetailAuctionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetDetailAuctionsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,31 +41,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/84854/Downloads/gson-2.8.6.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "jdk.selected.JAVA_MODULE": "18",
+    "last_opened_file_path": "C:/Users/84854/Downloads/gson-2.8.6.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\FPTShop\Desktop\code\BTL\API_Test\src" />
@@ -77,7 +78,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContactUsTests.unitTest8">
+  <component name="RunManager" selected="JUnit.AcceptMaxBidTest">
+    <configuration name="AcceptMaxBidTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AcceptMaxBidTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ContactUsTests.unitTest8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -97,29 +107,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadNotificationsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetDetailAuctionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ReadNotificationsTests" />
+      <option name="MAIN_CLASS_NAME" value="GetDetailAuctionsTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetDetailAuctionsTest.UnitTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUpTests.unitTest12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
-      <option name="METHOD_NAME" value="unitTest12" />
+      <option name="MAIN_CLASS_NAME" value="GetDetailAuctionsTest" />
+      <option name="METHOD_NAME" value="UnitTest3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,19 +138,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.AcceptMaxBidTest" />
+      <item itemvalue="JUnit.GetDetailAuctionsTest" />
+      <item itemvalue="JUnit.GetDetailAuctionsTest.UnitTest3" />
       <item itemvalue="JUnit.ContactUsTests.unitTest8" />
-      <item itemvalue="JUnit.ReadNotificationsTests" />
-      <item itemvalue="JUnit.SignUpTests" />
-      <item itemvalue="JUnit.SignUpTests.unitTest12" />
       <item itemvalue="JUnit.CreateItemTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AcceptMaxBidTest" />
+        <item itemvalue="JUnit.GetDetailAuctionsTest.UnitTest3" />
+        <item itemvalue="JUnit.GetDetailAuctionsTest" />
         <item itemvalue="JUnit.ContactUsTests.unitTest8" />
         <item itemvalue="JUnit.CreateItemTests" />
-        <item itemvalue="JUnit.ReadNotificationsTests" />
-        <item itemvalue="JUnit.SignUpTests" />
-        <item itemvalue="JUnit.SignUpTests.unitTest12" />
       </list>
     </recent_temporary>
   </component>
@@ -192,6 +193,7 @@
       <workItem from="1657345976358" duration="1905000" />
       <workItem from="1657363667892" duration="1268000" />
       <workItem from="1657373165197" duration="8987000" />
+      <workItem from="1657382439236" duration="972000" />
     </task>
     <task id="LOCAL-00001" summary="Phuong them">
       <created>1657117211304</created>
