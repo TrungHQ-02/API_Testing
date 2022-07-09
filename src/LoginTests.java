@@ -2,7 +2,8 @@
 import org.junit.jupiter.api.Assertions;
 
 import org.junit.jupiter.api.Test;
-import random.RandomEmail;
+
+import freq.RandomEmail;
 
 public class LoginTests {
 	Login login = new Login();
@@ -99,7 +100,7 @@ public class LoginTests {
 	public void unitTest7() {
 		// Run 10 test cases
 		System.out.println("If email is long but not more than 255 characters and password is incorrect, "
-				+ "response code should be 1002 and message should be メールとパスワードは違いました");
+				+ "response code should be 1002 and message should be メール�?�パスワード�?��?��?��?��?��?�");
 		System.out.println("Testing unit7...");
 		for (int i = 230; i <= 240; i++) {
 			String random = email.getStringWithFixedLength(i) + "@gmail.com";
@@ -107,7 +108,7 @@ public class LoginTests {
 			System.out.println(random.length());
 			login.Test01(random, "123123");
 			Assertions.assertEquals(1002, login.getCode());
-			Assertions.assertEquals("メールとパスワードは違いました", login.getMessage());
+			Assertions.assertEquals("メール�?�パスワード�?��?��?��?��?��?�", login.getMessage());
 		}
 		System.out.println("Unit 7: Satisfied!");
 	}
@@ -204,12 +205,12 @@ public class LoginTests {
 
 	@Test
 	public void unitTest13() {
-		//If password is incorrect, response code should be 1002, and message should be メールとパスワードは違いました
-		System.out.println("If password is incorrect, response code should be 1002, and message should be メールとパスワードは違いまし");
+		//If password is incorrect, response code should be 1002, and message should be メール�?�パスワード�?��?��?��?��?��?�
+		System.out.println("If password is incorrect, response code should be 1002, and message should be メール�?�パスワード�?��?��?��?��?�");
 		login.Test01("trung@gmail.com", "123");
 		System.out.println("Testing unit13...");
 		Assertions.assertEquals(1002, login.getCode());
-		Assertions.assertEquals("メールとパスワードは違いました", login.getMessage());
+		Assertions.assertEquals("メール�?�パスワード�?��?��?��?��?��?�", login.getMessage());
 
 		System.out.println("Unit 13: Satisfied!");
 	}

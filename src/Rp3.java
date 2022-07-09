@@ -1,4 +1,5 @@
 
+
 // DUng cho getListAuctionsByStatus
 class Auction3 {
 	String auction_id;
@@ -14,7 +15,6 @@ class Data3 {
 	Auction3[] auctions;
 	String total;
 }
-
 
 class Category3 {
 	String name;

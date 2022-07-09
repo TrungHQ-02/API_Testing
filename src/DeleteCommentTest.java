@@ -1,9 +1,10 @@
+
 import java.util.Random;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import random.RandomEmail;
+import freq.RandomEmail;
 
 public class DeleteCommentTest {
     DeleteComment deleteComment = new DeleteComment();

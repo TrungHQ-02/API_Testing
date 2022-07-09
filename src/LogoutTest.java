@@ -1,5 +1,8 @@
-import org.junit.jupiter.api.*;
-import org.junit.jupiter.params.ParameterizedTest;
+package test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.Test;
 
 
 class LogoutTest {
@@ -8,7 +11,7 @@ class LogoutTest {
 
     @Test
     @DisplayName("Unit Test 1: If access token is right, response code should be 1000 and message should be OK")
-    @RepeatedTest(value = 5)
+    @RepeatedTest(value = 2)
     public void UnitTest1() {
         login.Test01("minh0915@gmail.com", "123456");
         logout.Test05(login.getToken());
