@@ -45,6 +45,7 @@ public class GetListLikes {
             while ((line = reader.readLine()) != null) {
                 respondContent.append(line);
             }
+            System.out.println(respondContent);
 
             this.setFixedId(statusId+"");
             this.setContentString(respondContent.toString());

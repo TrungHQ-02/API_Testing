@@ -31,6 +31,7 @@ public class GetListBids {
 			while ((line = reader.readLine()) != null) {
 				respondContent.append(line);
 			}
+			System.out.println(respondContent);
 
 			// Parse JSON
 			Gson g = new Gson();

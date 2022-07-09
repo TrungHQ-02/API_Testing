@@ -43,6 +43,7 @@ public class CreateBids {
             while ((line = reader.readLine()) != null) {
                 respondContent.append(line);
             }
+            System.out.println(respondContent);
 
             // set to model
             this.setFixed_price(price);

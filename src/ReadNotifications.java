@@ -39,6 +39,7 @@ public class ReadNotifications {
             while ((line = reader.readLine()) != null) {
                 respondContent.append(line);
             }
+            System.out.println(respondContent);
 
             this.setRespondContentString(respondContent.toString());
             // Parse JSON

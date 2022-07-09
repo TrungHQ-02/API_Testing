@@ -31,8 +31,7 @@ public class DeleteComment {
             while ((line = reader.readLine()) != null) {
                 respondContent.append(line);
             }
-
-            // set to model
+            System.out.println(respondContent);
 
             // Parse JSON
             Gson g = new Gson();
