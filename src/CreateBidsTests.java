@@ -7,22 +7,26 @@ import freq.RandomEmail;
 public class CreateBidsTests {
    CreateBids createBids = new CreateBids();
     RandomEmail randString = new RandomEmail();
-    String proper_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU3MDk5ODI1LCJleHAiOjE2NTc0NTk4MjUsIm5iZiI6MTY1NzA5OTgyNSwianRpIjoiU3liR1lvRGp1dHlUVHlsSSIsInN1YiI6MzAzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.DOqeRZ5KbeGNFrzCKRGsUCdBNUD9kRhKJwBy_465TzI";
+    Login login = new Login();
+    SignUp signup = new SignUp();
+
 
     @Test
     public void unitTest1() {
+        login.Test01("trinhquan100402@gmail.com", "1004");
         System.out.println("If we send to api valid input,code should be 1000 ");
         System.out.println("Testing unit1...");
-        createBids.Test16("3232500","1", proper_token);
+        createBids.Test16(500,0, login.getToken());//500Internal Server Error
         Assertions.assertEquals(1000, createBids.getCode());
         System.out.println("Unit 1: Satisfied!");
     }
 
     @Test
     public void unitTest2() {
+     login.Test01("trinhquan100402@gmail.com", "1004");
         System.out.println("bid lower than the highest price, Server will return code 1001");
         System.out.println("Testing unit2...");
-        createBids.Test16("323230","10", proper_token);
+        createBids.Test16(30,0, login.getToken());//tra gia thap hon hien tai
         Assertions.assertEquals(1001, createBids.getCode());
         System.out.println("Unit 2: Satisfied!");
     }
@@ -32,8 +36,17 @@ public class CreateBidsTests {
     public void unitTest3() {
         System.out.println("If we not input yet, Server will return code 1004");
         System.out.println("Testing unit3..");
-        createBids.Test16("323280","10", null);
+        createBids.Test16(400,0,null);
         Assertions.assertEquals(1004, createBids.getCode());
         System.out.println("Unit 3: Satisfied!");
+    }
+    @Test
+    public void unitTest4() {
+        login.Test01("trinhquan100402@gmail.com", "1004");
+        System.out.println("if the auction has ended, the server returns 1008");//vd,7,8,9
+        System.out.println("Testing unit4..");
+        createBids.Test16(1000000,0, login.getToken());
+        Assertions.assertEquals(1008, createBids.getCode());//ketthuc van tra gia dc vd cai 7
+        System.out.println("Unit 4: Satisfied!");
     }
 }

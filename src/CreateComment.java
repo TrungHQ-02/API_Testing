@@ -16,14 +16,14 @@ public class CreateComment {
 
     public static Rp rp;
     int rpCode;
-   
+
 
     public int fixed_comment_last_id;
 
     public String fixed_content;
 
 
-    public void Test14(String auction_id, String access_token, String content, int comment_last_id) {
+    public void Test14(int auction_id, String access_token, String content, int comment_last_id) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
@@ -40,7 +40,7 @@ public class CreateComment {
             connection.setDoOutput(true);
 
             String data = "{\n \"content\": \"" + content + "\"" + "    ,\n  \"comment_last_id\": \"" + comment_last_id
-                    + "\"" + " \n}";
+            + "\"" + " \n}";
             byte[] out = data.getBytes(StandardCharsets.UTF_8);
             OutputStream stream = connection.getOutputStream();
             stream.write(out);
@@ -53,7 +53,7 @@ public class CreateComment {
             // set to model
             this.setFixed_content(content+"");
             this.setFixed_comment_last_id(comment_last_id);
-            
+
 
             // Parse JSON
             Gson g = new Gson();
@@ -67,9 +67,9 @@ public class CreateComment {
         }
 
     }
-    
-	
-	public int getCode() {
+
+
+    public int getCode() {
         return rp.code;
     }
     public int getHttpCode(){
@@ -83,9 +83,9 @@ public class CreateComment {
     public Data getData() {
         return rp.data;
     }
-    
+
     public int getCodeData() {
-    	return rp.data.code;
+        return rp.data.code;
     }
     public String getFixed_content() {
         return fixed_content;
@@ -103,5 +103,5 @@ public class CreateComment {
         this.fixed_comment_last_id = comment_last_id;
     }
 
-    
+
 }
