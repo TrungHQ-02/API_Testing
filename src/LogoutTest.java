@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 class LogoutTest {
     Login login = new Login();
     Logout logout = new Logout();
-
     @Test
     @DisplayName("Unit Test 1: If access token is right, response code should be 1000 and message should be OK")
     @RepeatedTest(value = 2)
