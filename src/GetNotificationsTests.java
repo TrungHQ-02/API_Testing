@@ -27,7 +27,7 @@ public class GetNotificationsTests {
 	public void unitTest2() {
 		System.out.println("Code should be 1000 and message should be OK with the negative input for index and count");
 		System.out.println("Testing unit2...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomIs_not_read = random.nextInt(0,1);
 			int randomIndex = random.nextInt(-5,-1);
 			int randomCount = random.nextInt(-5,-1);
@@ -42,7 +42,7 @@ public class GetNotificationsTests {
 	public void unitTest3() {
 		System.out.println("Code should be 1004 and message should be ã�¾ã� ãƒ­ã‚°ã‚¤ãƒ³ã�§ã�¯ã�‚ã‚Šã�¾ã�›ã‚“ even when token is wrong");
 		System.out.println("Testing unit3...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomIs_not_read = random.nextInt(0,1);
 			int randomIndex = random.nextInt(1,10);
 			int randomCount = random.nextInt(1,10);
@@ -62,7 +62,7 @@ public class GetNotificationsTests {
 	public void unitTest4() {
 		System.out.println("Code should be 1004 and message should be ã�¾ã� ãƒ­ã‚°ã‚¤ãƒ³ã�§ã�¯ã�‚ã‚Šã�¾ã�›ã‚“ even when token is empty");
 		System.out.println("Testing unit4...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomIs_not_read = random.nextInt(0,1);
 			int randomIndex = random.nextInt(1,10);
 			int randomCount = random.nextInt(1,10);
@@ -82,7 +82,7 @@ public class GetNotificationsTests {
 	public void unitTest5() {
 		System.out.println("Total of notifications should be greater than or equals to zero");
 		System.out.println("Testing unit5...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomIs_not_read = random.nextInt(0,1);
 			int randomIndex = random.nextInt(1,10);
 			int randomCount = random.nextInt(1,10);
@@ -96,7 +96,7 @@ public class GetNotificationsTests {
 	public void unitTest6() {
 		System.out.println("Total of unread notifications should be greater than or equals to zero");
 		System.out.println("Testing unit6...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomIs_not_read = random.nextInt(0,1);
 			int randomIndex = random.nextInt(1,10);
 			int randomCount = random.nextInt(1,10);

@@ -27,15 +27,15 @@ public class GetListAuctionsByStatusTests {
 
 	@Test
 	public void unitTest2() {
-		System.out.println("Code should be 1000 and message should be OK with the negative input");
+		System.out.println("Code should not be 1000 and message should not be OK with the negative input");
 		System.out.println("Testing unit2...");
 		for (int i = 1; i <= 3; i++) {
 			int randomId = random.nextInt(-1000,-1);
 			int randomIndex = random.nextInt(-1000,-1);
 			int randomCount = random.nextInt(-1000,-1);
 			auctionsByStatus.Test07(randomId, randomIndex, randomCount, null);
-			Assertions.assertEquals(1000, auctionsByStatus.getCode());
-			Assertions.assertEquals("OK", auctionsByStatus.getMessage());
+			Assertions.assertNotEquals(1000, auctionsByStatus.getCode());
+			Assertions.assertNotEquals("OK", auctionsByStatus.getMessage());
 		}
 		System.out.println("Unit 2: Satisfied!");
 	}

@@ -21,7 +21,7 @@ class ReadNewTests {
 	public void unitTest2() {// loi so voi bao cao, k truyen token van tra 1000
 		login.Test01("trinhquan100402@gmail.com", "1004");
 		// logout.Test05(login.getToken());
-		System.out.println("If we not input yet, Server will return code 1004");
+		System.out.println("If we not login yet, Server will return code 1004");
 		System.out.println("Testing unit1...");
 		readNew.Test25(null);
 		Assertions.assertEquals(1004, readNew.getCode());
