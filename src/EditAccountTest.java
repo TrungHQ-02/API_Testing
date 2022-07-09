@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import java.nio.charset.Charset;
 class EditAccountTest {
     EditAccount editAccount = new EditAccount();
     Login login = new Login();
@@ -9,7 +11,7 @@ class EditAccountTest {
     /*
     @Test
     @DisplayName("Unit Test 1:  The code and message strings shall be not NULL as well as non-empty:")
-    public void UnitTest1(){
+    public void UnitTest01(){
     	login.Test01("dien12@gmail.com", "123456");
         editAccount.Test04( login.getToken(), "dien12@gmail.com", "123456", "123456", "hanoi" , "dien", "0123456789", null);
         Assertions.assertEquals(1000,editAccount.getCode());
@@ -19,7 +21,7 @@ class EditAccountTest {
 
     @Test
     @DisplayName("Unit Test 2:   When name's length is more than 255 characters, the code is equal to 1001")
-    public void UnitTest2(){
+    public void UnitTest02(){
     	login.Test01("dien1@gmail.com", "123456");
         editAccount.Test04( login.getToken(), "dien1@gmail.com", "123456", "123456", "hanoi" , 
         		          "dien123fkgkflsslgfabcdefghiklmnopqrstuvwxyzabcdefghiklmnopqrstuvwxyzabcdefghiklmnopqrstuvwxyzabcdefghiklmnopqrstuvwxyzabcdef"
@@ -34,7 +36,7 @@ class EditAccountTest {
     
     @Test
     @DisplayName("Unit Test 3:   When name is empty, the code is equal to 1001")
-    public void UnitTest3(){
+    public void UnitTest03(){
     	login.Test01("dien1@gmail.com", "123456");
         editAccount.Test04( login.getToken(), "dien1@gmail.com", "123456", "123456", "hanoi" , "", "0123456789", null);
         Assertions.assertEquals(1001,editAccount.getCode());
@@ -44,7 +46,7 @@ class EditAccountTest {
     
     @Test
     @DisplayName("Unit Test 4:   when email is existed, the code is equal to 1001")
-    public void UnitTest4(){
+    public void UnitTest04(){
     	login.Test01("dien1@gmail.com", "123456");
         editAccount.Test04( login.getToken(), "thanh12345@gmail.com", "123456", "123456", "hanoi" , "dien", "0123456789", null);
         Assertions.assertEquals(1001,editAccount.getCode());
@@ -54,7 +56,7 @@ class EditAccountTest {
     
     @Test
     @DisplayName("Unit Test 5:   when email is not truly-formatted, the code is equal to 1001")
-    public void UnitTest5(){
+    public void UnitTest05(){
     	login.Test01("dien1@gmail.com", "123456");
         editAccount.Test04( login.getToken(), "dien1", "123456", "123456", "hanoi" , "dien", "0123456789", null);
         Assertions.assertEquals(1001,editAccount.getCode());
@@ -64,7 +66,7 @@ class EditAccountTest {
     
     @Test
     @DisplayName("Unit Test 6:   When email's length is more than 255 characters, the code is equal to 1001")
-    public void UnitTest6(){
+    public void UnitTest06(){
     	login.Test01("dien1@gmail.com", "123456");
         editAccount.Test04( login.getToken(), "dien1kffggggfkgkflsslgfabcdefghiklmnopqrstuvwxyzabcdefghiklmnopqrstuvwxyzabcdefghiklmnopqrstuvwxyzabcdefghiklmnopqrstuvwxyzabcdef"
 				+ "ghiklmnopqrstuvwxyzabcdefghiklmnopqrstuvwxyzabcdefghiklmnopqrstuvwxyzabcdefghiklmnopqrstuvwxyzabcdefghiklmnopqrstuvwxyz"
@@ -78,7 +80,7 @@ class EditAccountTest {
     
     @Test
     @DisplayName("Unit Test 7:   When email is empty, the code is equal to 1001")
-    public void UnitTest7(){
+    public void UnitTest07(){
     	login.Test01("dien1@gmail.com", "123456");
         editAccount.Test04( login.getToken(), "", "123456", "123456", "hanoi" , "dien", "0123456789", null);
         Assertions.assertEquals(1001,editAccount.getCode());
@@ -88,7 +90,7 @@ class EditAccountTest {
     
     @Test
     @DisplayName("Unit Test 8:   when phone's length is more than 60 characters, the code is equal to 1001")
-    public void UnitTest8(){
+    public void UnitTest08(){
     	login.Test01("tdien1@gmail.com", "123456");
         editAccount.Test04( login.getToken(), "tdien1@gmail.com", "123456", "123456", "hanoi" , "dien", "0123456789012345678901234567890123456789012345678901234567890123456789", null);
         Assertions.assertEquals(1001,editAccount.getCode());
@@ -98,7 +100,7 @@ class EditAccountTest {
     
     @Test
     @DisplayName("Unit Test 9:   when phone is empty, the code is equal to 1001")
-    public void UnitTest9(){
+    public void UnitTest09(){
     	login.Test01("tdien1@gmail.com", "123456");
         editAccount.Test04( login.getToken(), "tdien1@gmail.com", "123456", "123456", "hanoi" , "dien", "", null);
         Assertions.assertEquals(1001,editAccount.getCode());
@@ -120,6 +122,8 @@ class EditAccountTest {
         Assertions.assertEquals("name: &phone: &address: 7001&email:  &avatar: ",editAccount.getMessage());
         System.out.println("Unit 10: Satisfied!");
     }
+    
+    
     
     //test 11 lam thay doi password khong xac dinh
     /*
