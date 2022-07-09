@@ -10,6 +10,7 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 
 
 public class CreateItem {
@@ -21,7 +22,7 @@ public class CreateItem {
     public String fixed_title;
 
 
-    public void Test13(String auction_id, String token, String name, String starting_price, String brand_id, String description,String series, String images) {
+    public void Test13(int auction_id, String name, int starting_price, int brand_id, String description, String series, Arrays images, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
@@ -37,10 +38,10 @@ public class CreateItem {
             connection.setRequestProperty("Content-Type", "application/json");
             connection.setDoOutput(true);
 
-            String data = "{\n \"auction_id\": \"" + auction_id
+            String data = "{\n \"name\": \"" + name
                     + "\",\n  \"brand_id\": \"" + brand_id
                     + "\",\n  \"series\": \"" + series
-                    + "\",\n  \"name\": \"" + name
+                    +"\",\n  \"starting_price\": \"" + starting_price
                     + "\",\n  \"description\": \"" + description
                     + "\",\n  \"images\": \"" + images
                     + "\"\n}";
