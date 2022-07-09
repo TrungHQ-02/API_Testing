@@ -1,4 +1,3 @@
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -13,6 +12,7 @@ class GetListBrandsTest {
         Assertions.assertEquals(1000,getListBrands.getCode());
         Assertions.assertEquals("OK",getListBrands.getMessage());
         Assertions.assertNotEquals(null, getListBrands.getData());
+        System.out.println("Unit test: Satisfied!");
     }
 
 }

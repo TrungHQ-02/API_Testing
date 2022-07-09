@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -12,6 +13,7 @@ class GetSliderTest {
         Assertions.assertEquals(1000,getSlider.getCode());
         Assertions.assertEquals("OK",getSlider.getMessage());
         //Assertions.assertNotEquals(null, getSlider.getData());
+        System.out.println("Unit 1: Satisfied!");
     }
     
     @Test
@@ -22,5 +24,6 @@ class GetSliderTest {
         Assertions.assertEquals(1000,getSlider.getCode());
         Assertions.assertEquals("OK",getSlider.getMessage());
         //Assertions.assertNotEquals(null, getSlider.getData());
+        System.out.println("Unit 2: Satisfied!");
     }
 }

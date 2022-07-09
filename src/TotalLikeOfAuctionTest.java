@@ -13,6 +13,7 @@ class TotalLikeOfAuctionTest {
         Assertions.assertEquals(1000,totalLikeOfAuction.getCode());
         Assertions.assertEquals("OK",totalLikeOfAuction.getMessage());
         Assertions.assertNotEquals(null, totalLikeOfAuction.getData());
+        System.out.println("Unit 1: Satisfied!");
     }
 
     @Test
@@ -22,6 +23,7 @@ class TotalLikeOfAuctionTest {
         Assertions.assertEquals(1000,totalLikeOfAuction.getCode());
         Assertions.assertEquals("OK",totalLikeOfAuction.getMessage());
         Assertions.assertNotEquals(null, totalLikeOfAuction.getData());
+        System.out.println("Unit 2: Satisfied!");
     }
     
     /*
@@ -34,6 +36,7 @@ class TotalLikeOfAuctionTest {
         Assertions.assertEquals(1000,totalLikeOfAuction.getCode());
         Assertions.assertEquals("OK",totalLikeOfAuction.getMessage());
         Assertions.assertNotEquals(null, totalLikeOfAuction.getData());
+        System.out.println("Unit 3: Satisfied!");
     }*/
     
     @Test
@@ -44,6 +47,7 @@ class TotalLikeOfAuctionTest {
         Assertions.assertEquals(1000,totalLikeOfAuction.getCode());
         Assertions.assertEquals("OK",totalLikeOfAuction.getMessage());
         Assertions.assertNotEquals(null, totalLikeOfAuction.getData());
+        System.out.println("Unit 4: Satisfied!");
     }
     
     @Test
@@ -54,5 +58,6 @@ class TotalLikeOfAuctionTest {
         Assertions.assertEquals(1000,totalLikeOfAuction.getCode());
         Assertions.assertEquals("OK",totalLikeOfAuction.getMessage());
         Assertions.assertNotEquals(null, totalLikeOfAuction.getData());
+        System.out.println("Unit 5: Satisfied!");
     }
 }
