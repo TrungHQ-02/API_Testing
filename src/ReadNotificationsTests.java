@@ -14,8 +14,7 @@ public class ReadNotificationsTests {
         System.out.println("If token not null, code should be 1000 and message should be OK");
         System.out.println("Testing unit1...");
 
-
-        readNotifications.Test28(token, "1");
+        readNotifications.Test28(1, token);
         Assertions.assertEquals(1000, readNotifications.getCode());
         Assertions.assertEquals("OK", readNotifications.getMessage());
         System.out.println("Unit 1: Satisfied!");
@@ -24,7 +23,8 @@ public class ReadNotificationsTests {
     public void unitTest2() {
         System.out.println("If do not enter token, code should be 1004 and message should be ");
         System.out.println("Testing unit2...");
-        readNotifications.Test28(null, "1");
+
+        readNotifications.Test28(1, "");
         Assertions.assertEquals(1000, readNotifications.getCode());
         Assertions.assertEquals("OK", readNotifications.getMessage());
         System.out.println("Unit 2: Satisfied!");

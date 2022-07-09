@@ -30,6 +30,9 @@ class Data {
 	String content;
 	String update_at;
 
+	//for create item
+	int starting_price;
+
 	int code;
 }
 

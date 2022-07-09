@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateItemTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateItemTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReadNotifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadNotifications.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReadNotificationsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadNotificationsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUpTests.java" afterDir="false" />
@@ -80,11 +81,11 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ReadNotificationsTests.unitTest2">
-    <configuration name="GetListBidsTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetDetailAuctionsTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetListBidsTests" />
-      <option name="METHOD_NAME" value="unitTest1" />
+      <option name="MAIN_CLASS_NAME" value="GetDetailAuctionsTest" />
+      <option name="METHOD_NAME" value="UnitTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,8 +143,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.GetDetailAuctionsTest.UnitTest1" />
       <item itemvalue="JUnit.SignUpTests.unitTest2" />
-      <item itemvalue="JUnit.GetListBidsTests.unitTest1" />
       <item itemvalue="JUnit.ReadNotificationsTests.unitTest1" />
       <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
       <item itemvalue="JUnit.SignUpTests.unitTest1" />
@@ -152,9 +153,9 @@
       <list>
         <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
         <item itemvalue="JUnit.ReadNotificationsTests.unitTest1" />
+        <item itemvalue="JUnit.GetDetailAuctionsTest.UnitTest1" />
         <item itemvalue="JUnit.SignUpTests.unitTest1" />
         <item itemvalue="JUnit.SignUpTests.unitTest2" />
-        <item itemvalue="JUnit.GetListBidsTests.unitTest1" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +195,7 @@
       <workItem from="1657297337262" duration="601000" />
       <workItem from="1657301156254" duration="621000" />
       <workItem from="1657331204918" duration="3988000" />
-      <workItem from="1657345976358" duration="1905000" />
+      <workItem from="1657345976358" duration="6197000" />
     </task>
     <task id="LOCAL-00001" summary="Phuong them">
       <created>1657117211304</created>
@@ -280,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657301104345</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Phuong them">
+      <created>1657350869343</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1657350869343</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
