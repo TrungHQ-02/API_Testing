@@ -91,29 +91,6 @@ public class CreateItem {
         return rp.data;
     }
 
-    public String getFixed_title() {
-        return fixed_title;
-    }
-
-    public void setFixed_title(String fixed_title) {
-        this.fixed_title = fixed_title;
-    }
-
-    public String getFixed_start_date() {
-        return fixed_start_date;
-    }
-
-    public void setFixed_start_date(String fixed_start_date) {
-        this.fixed_start_date = fixed_start_date;
-    }
-
-    public String getFixed_end_date() {
-        return fixed_end_date;
-    }
-
-    public void setFixed_end_date(String fixed_end_date) {
-        this.fixed_end_date = fixed_end_date;
-    }
 
     public String getFixed_id() {
         return fixed_id;
