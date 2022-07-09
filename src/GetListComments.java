@@ -1,22 +1,26 @@
 import com.google.gson.Gson;
 
+import freq.BaseURL;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Arrays;
 
 
 public class GetListComments {
     private static HttpURLConnection connection;
-    public static Rp rp;
+    public static Rp4 rp;
 
     public void Test15(int Auct_ID, int index, int count, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/comments/" + Auct_ID +"?count=" + count + "&index=" + index);
+            URL url = new URL(BaseURL.baseURL + "comments/" + Auct_ID +"?count=" + count + "&index=" + index);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Authorization", "Bearer" + token);
@@ -29,7 +33,7 @@ public class GetListComments {
 
             // Parse JSON
             Gson g = new Gson();
-            rp = g.fromJson(respondContent.toString(), Rp.class);
+            rp = g.fromJson(respondContent.toString(), Rp4.class);
 
             reader.close();
         } catch (IOException e) {
@@ -44,8 +48,14 @@ public class GetListComments {
     public String getMessage(){
         return rp.message;
     }
-    public Data getData(){
-        return rp.data;
+    public int getCommentsLength(){
+        return rp.data.comments.length;
+    }
+    public comments[] getComments(){
+        return rp.data.comments;
+    }
+    public int getCommentId(comments[] comments){
+        return comments[0].comment_id;
     }
 
 }

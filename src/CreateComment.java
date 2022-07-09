@@ -1,5 +1,7 @@
 import com.google.gson.Gson;
 
+import freq.BaseURL;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -29,7 +31,7 @@ public class CreateComment {
         // Connect and parse Json
         /// api/comments/create/{auctionId}
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/comments/create/" + auction_id);
+            URL url = new URL(BaseURL.baseURL + "comments/create/" + auction_id);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + access_token);

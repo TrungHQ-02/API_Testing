@@ -1,10 +1,10 @@
-import java.nio.charset.Charset;
+
 import java.util.Random;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import random.RandomEmail;
+import freq.RandomEmail;
 
 public class ContactUsTests{
     ContactUs contactUs = new ContactUs();
@@ -70,7 +70,7 @@ public class ContactUsTests{
     public void unitTest7() {
         String email = String.valueOf(new RandomEmail());
         int top = 260;
-        char data = ' ';
+        char data;
         String name = "";
         for (int i=0; i<=top; i++) {
             data = (char)(rand.nextInt(25)+97);
@@ -85,7 +85,7 @@ public class ContactUsTests{
     @Test
     public void unitTest8() {
         int top = 260;
-        char data = ' ';
+        char data;
         String email = "";
         for (int i=0; i<=top; i++) {
             data = (char)(rand.nextInt(25)+97);
@@ -101,7 +101,7 @@ public class ContactUsTests{
     @Test
     public void unitTest9() {
         int top = 20;
-        char data = ' ';
+        char data;
         String email = "";
         for (int i=0; i<=top; i++) {
             data = (char)(rand.nextInt(25)+97);
@@ -117,7 +117,7 @@ public class ContactUsTests{
     public void unitTest10() {
         String email = String.valueOf(new RandomEmail());
         int top = 70;
-        char data = ' ';
+        char data;
         String phone = "";
         for (int i=0; i<=top; i++) {
             data = (char)(rand.nextInt(25)+97);

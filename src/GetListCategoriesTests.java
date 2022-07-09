@@ -6,6 +6,7 @@ public class GetListCategoriesTests {
 
 	@Test
 	public void unitTest1() {
+		// OK
 		System.out.println("Code should always be 1000 and message should always be OK ");
 		System.out.println("Testing unit1...");
 		categories.Test18();

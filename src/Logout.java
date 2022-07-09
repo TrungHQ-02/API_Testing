@@ -2,6 +2,8 @@
 
 import com.google.gson.Gson;
 
+import freq.BaseURL;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -21,12 +23,11 @@ public class Logout {
         StringBuilder respondContent = new StringBuilder();
         // Connect and parse Json
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/logout");
+            URL url = new URL(BaseURL.baseURL + "logout");
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + token);
             rpCode = connection.getResponseCode();
-            System.out.println(rpCode);
 
             reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             while ((line = reader.readLine()) != null) {

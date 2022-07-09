@@ -1,9 +1,11 @@
+
 import java.util.Random;
 
 import org.junit.jupiter.api.Assertions;
 
 import org.junit.jupiter.api.Test;
-import random.RandomEmail;
+
+import freq.RandomEmail;
 
 public class GetListAuctionsByUserTests {
 	GetListAuctionsByUser auctionsByUser = new GetListAuctionsByUser();
@@ -14,6 +16,7 @@ public class GetListAuctionsByUserTests {
 			+ "dET3NROWtiVm9FY1czYiIsInN1YiI6NDU3LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0."
 			+ "Kn0DlO1VR5Dary4k9iM54zKp1zIhM-f9IB7BTscIFrY";
 
+	// On
 	@Test
 	public void unitTest1() {
 		// Code 1000 message OK
@@ -43,7 +46,7 @@ public class GetListAuctionsByUserTests {
 
 	@Test
 	public void unitTest3() {
-		System.out.println("Code should be 1004 and message should be まだログインではありません even when token is wrong");
+		System.out.println("Code should be 1004 and message should be �?��?�ログイン�?��?��?�り�?��?�ん even when token is wrong");
 		System.out.println("Testing unit3...");
 		for (int i = 1; i <= 10; i++) {
 			int randomId = random.nextInt(1,10);

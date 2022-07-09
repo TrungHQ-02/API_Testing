@@ -1,4 +1,3 @@
-// Response Object
 
 class User {
 	// For Test Login
@@ -17,25 +16,25 @@ class Data {
 	String user_id; // For likeauction by Trung
 	String auction_id;
 	String is_liked;
-	
-	// for edit auction
+
+	// for edit auction by Trung
 	String title, category_id, selling_user_id;
 	String start_date, end_date;
 	String status, reason;
-	
+
 	// for getCategories
 	String name;
 	String image;
 	String type;
-	
+
 	String content;
 	String update_at;
+
+	//for create item
+	int starting_price;
+
 	int code;
-	//for deletecomment
-	String comment_id;
 }
-
-
 
 class Category {
 	String name;

@@ -1,10 +1,10 @@
-import java.nio.charset.Charset;
+
 import java.util.Random;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import random.RandomEmail;
+import freq.RandomEmail;
 
 
 public class EditAuctionTests {
@@ -36,13 +36,12 @@ public class EditAuctionTests {
 	}
 		@Test
 	public void unitTest2() {
-		//Không thể chỉnh sửa ( Những auctions đã được duyệt thì không thể chỉnh sửa)
 			login.Test01("trinhquan100402@gmail.com", "1004");
 		System.out.println("if auctions have been approved, Server will return code 1005");
 		System.out.println("Testing unit2...");
 		editAuction.Test12("513", "1", null, null, "Dagoiaffaiiiii", login.getToken());
 		Assertions.assertEquals(1005, editAuction.getCode());
-		Assertions.assertEquals("Không thể chỉnh sửa", editAuction.getMessage());
+		Assertions.assertEquals("KhÃ´ng thá»ƒ chá»‰nh sá»­a", editAuction.getMessage());
 			System.out.println("Unit 2: Satisfied!");
 	}
 	@Test
@@ -60,12 +59,12 @@ public class EditAuctionTests {
 	@Test
 	public void unitTest4() {
 		login.Test01("trinhquan100402@gmail.com", "1004");
-		//Không có quyền chỉnh sửa (Những auctions không phải do user tạo)
+		//KhÃ´ng cÃ³ quyá»�n chá»‰nh sá»­a (Nhá»¯ng auctions khÃ´ng pháº£i do user táº¡o)
 		System.out.println("if the auctions are created by someone else,Server will return code 1006");
 		System.out.println("Testing unit4...");
 		editAuction.Test12("443", "1", null, null, null, login.getToken());
 		Assertions.assertEquals(1006, editAuction.getCode());
-		Assertions.assertEquals("Không có quyền chỉnh sửa", editAuction.getMessage());
+		Assertions.assertEquals("KhÃ´ng cÃ³ quyá»�n chá»‰nh sá»­a", editAuction.getMessage());
 		System.out.println("Unit 4: Satisfied!");
 	}
 	@Test

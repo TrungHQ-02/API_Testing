@@ -1,9 +1,11 @@
+
 import java.util.Random;
 
 import org.junit.jupiter.api.Assertions;
 
 import org.junit.jupiter.api.Test;
-import random.RandomEmail;
+
+import freq.RandomEmail;
 
 public class GetListAuctionsByStatusTests {
 	GetListAuctionsByStatus auctionsByStatus = new GetListAuctionsByStatus();
@@ -37,6 +39,7 @@ public class GetListAuctionsByStatusTests {
 		System.out.println("Unit 2: Satisfied!");
 	}
 
+	// On
 	@Test
 	public void unitTest3() {
 		System.out.println("Code should be 1000 and message should be OK even when token is wrong");

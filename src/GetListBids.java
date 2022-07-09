@@ -1,5 +1,7 @@
 import com.google.gson.Gson;
 
+import freq.BaseURL;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,6 +12,7 @@ public class GetListBids {
 	private static HttpURLConnection connection;
 	public static Rp rp;
 
+	// On
 	public void Test07(int auctionId, int index, int count, String token) {
 		// access_token is nullable
 		String line;
@@ -19,7 +22,7 @@ public class GetListBids {
 		// Connect and parse Json
 		// https://auctions-app-2.herokuapp.com/api/bids/{auctionId}
 		try {
-			URL url = new URL("https://auctions-app-2.herokuapp.com/api/bids/" + auctionId + "?index=" + index
+			URL url = new URL(BaseURL.baseURL + "bids/" + auctionId + "?index=" + index
 					+ "&count=" + count);
 			connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod("GET");
@@ -29,6 +32,7 @@ public class GetListBids {
 			while ((line = reader.readLine()) != null) {
 				respondContent.append(line);
 			}
+			System.out.println(respondContent);
 
 			// Parse JSON
 			Gson g = new Gson();

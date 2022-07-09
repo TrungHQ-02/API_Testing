@@ -1,5 +1,7 @@
 import com.google.gson.Gson;
 
+import freq.BaseURL;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -16,7 +18,7 @@ public class GetListBrands {
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/brands");
+            URL url = new URL(BaseURL.baseURL + "brands");
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             //connection.setRequestProperty("Authorization", "Bearer" + access_token);

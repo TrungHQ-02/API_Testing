@@ -1,5 +1,8 @@
+
+
 import com.google.gson.Gson;
 
+import freq.BaseURL;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -22,7 +25,7 @@ public class ContactUs {
 
         // Connect and parse Json
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/contactUs");
+            URL url = new URL(BaseURL.baseURL +"contactUs");
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + accessToken);
@@ -40,7 +43,7 @@ public class ContactUs {
             while ((line = reader.readLine()) != null) {
                 respondContent.append(line);
             }
-
+            System.out.println(respondContent);
 
             // set to model
             this.setFixed_name(name);
@@ -49,7 +52,6 @@ public class ContactUs {
             this.setFixed_content(content);
             this.setFixed_file(file);
             this.setFixed_report_type(report_type);
-
 
             // Parse JSON
             Gson g = new Gson();

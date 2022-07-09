@@ -1,6 +1,8 @@
 
 import com.google.gson.Gson;
 
+import freq.BaseURL;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -30,7 +32,7 @@ public class CreateAuction {
         // Connect and parse Json
         /// api/auctions/edit/{auctionId}
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/auctions/create");
+            URL url = new URL(BaseURL.baseURL + "auctions/create");
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + accessToken);
@@ -81,6 +83,9 @@ public class CreateAuction {
 
     public Data getData() {
         return rp.data;
+    }
+    public String getAuctionId(){
+        return rp.data.auction_id;
     }
 
     public String getFixed_title() {

@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Quan themxg">
+    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateBids.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateBids.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateBidsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateBidsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateCommentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DeleteComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeleteComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DeleteCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeleteCommentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListCommentsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCommentsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUpTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,21 +32,11 @@
       </UrlAndAccount>
     </option>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/GetListBidsTests.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Login.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/LoginTests.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Rp.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/SignUp.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/SignUpTests.java" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2AtPBO6KLUtdaiGqbvwYkECMw14" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -72,7 +55,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/GitHub/project-for-oop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/84854/Downloads/gson-2.8.6.jar&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -94,52 +77,52 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DeleteCommentTest.unitTest1">
-    <configuration name="CreateCommentTest.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SearchTest.UnitTest4">
+    <configuration name="CreateAuctionTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateCommentTest" />
-      <option name="METHOD_NAME" value="unitTest2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateCommentTest.unitTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateCommentTest" />
-      <option name="METHOD_NAME" value="unitTest5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeleteCommentTest.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DeleteCommentTest" />
+      <option name="MAIN_CLASS_NAME" value="CreateAuctionTests" />
       <option name="METHOD_NAME" value="unitTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeleteCommentTest.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateItemTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DeleteCommentTest" />
+      <option name="MAIN_CLASS_NAME" value="CreateItemTests" />
+      <option name="METHOD_NAME" value="unitTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadNotificationsTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReadNotificationsTests" />
+      <option name="METHOD_NAME" value="unitTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadNotificationsTests.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReadNotificationsTests" />
       <option name="METHOD_NAME" value="unitTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetListCommentsTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTest.UnitTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetListCommentsTest" />
-      <option name="METHOD_NAME" value="UnitTest1" />
+      <option name="MAIN_CLASS_NAME" value="SearchTest" />
+      <option name="METHOD_NAME" value="UnitTest4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,19 +140,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CreateCommentTest.unitTest2" />
-      <item itemvalue="JUnit.CreateCommentTest.unitTest5" />
-      <item itemvalue="JUnit.DeleteCommentTest.unitTest1" />
-      <item itemvalue="JUnit.DeleteCommentTest.unitTest2" />
-      <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
+      <item itemvalue="JUnit.CreateAuctionTests.unitTest1" />
+      <item itemvalue="JUnit.SearchTest.UnitTest4" />
+      <item itemvalue="JUnit.CreateItemTests.unitTest1" />
+      <item itemvalue="JUnit.ReadNotificationsTests.unitTest1" />
+      <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DeleteCommentTest.unitTest1" />
-        <item itemvalue="JUnit.DeleteCommentTest.unitTest2" />
-        <item itemvalue="JUnit.CreateCommentTest.unitTest2" />
-        <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
-        <item itemvalue="JUnit.CreateCommentTest.unitTest5" />
+        <item itemvalue="JUnit.SearchTest.UnitTest4" />
+        <item itemvalue="JUnit.CreateItemTests.unitTest1" />
+        <item itemvalue="JUnit.CreateAuctionTests.unitTest1" />
+        <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
+        <item itemvalue="JUnit.ReadNotificationsTests.unitTest1" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +189,11 @@
       <workItem from="1657099315026" duration="427000" />
       <workItem from="1657101455017" duration="3038000" />
       <workItem from="1657113054279" duration="7564000" />
+      <workItem from="1657297337262" duration="601000" />
+      <workItem from="1657301156254" duration="621000" />
+      <workItem from="1657331204918" duration="3988000" />
+      <workItem from="1657345976358" duration="1905000" />
+      <workItem from="1657363667892" duration="1871000" />
     </task>
     <task id="LOCAL-00001" summary="Phuong them">
       <created>1657117211304</created>
@@ -235,35 +223,84 @@
       <option name="project" value="LOCAL" />
       <updated>1657125257924</updated>
     </task>
-    <task id="LOCAL-00005" summary="Q themm">
-      <created>1657191154689</created>
+    <task id="LOCAL-00005" summary="Phuong them">
+      <created>1657212884288</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1657191154689</updated>
+      <updated>1657212884288</updated>
     </task>
-    <task id="LOCAL-00006" summary="Quan them">
-      <created>1657191500456</created>
+    <task id="LOCAL-00006" summary="Phuong them">
+      <created>1657213322448</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1657191500456</updated>
+      <updated>1657213322448</updated>
     </task>
-    <task id="LOCAL-00007" summary="Quan themmm">
-      <created>1657195289915</created>
+    <task id="LOCAL-00007" summary="Phuong them">
+      <created>1657214063350</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1657195289915</updated>
+      <updated>1657214063350</updated>
     </task>
-    <task id="LOCAL-00008" summary="Quanthem">
-      <created>1657199433782</created>
+    <task id="LOCAL-00008" summary="Phuong them nhung ma chua chay duoc :&lt;">
+      <created>1657214117554</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1657199433782</updated>
+      <updated>1657214117554</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Phuong them nhung ma chua chay duoc :&lt;">
+      <created>1657214219005</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657214219005</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Phuong them nhung ma chay khong ra 1000 OK :&lt;">
+      <created>1657218010025</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1657218010025</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Phuong them nhung ma chay khong ra 1000 OK :&lt;">
+      <created>1657291052526</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1657291052526</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Phuong them">
+      <created>1657301104345</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1657301104345</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Phuong them">
+      <created>1657355176670</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1657355176670</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Phuong them">
+      <created>1657355640989</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1657355640989</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Phuong them">
+      <created>1657356040582</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1657356040582</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,19 +318,17 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Phuong them nhung ma chua chay duoc :&lt;" />
+    <MESSAGE value="Phuong them nhung ma chay khong ra 1000 OK :&lt;" />
     <MESSAGE value="Phuong them" />
-    <MESSAGE value="Q themm" />
-    <MESSAGE value="Quan them" />
-    <MESSAGE value="Quan themmm" />
-    <MESSAGE value="Quanthem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quanthem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Phuong them" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Login.java</url>
-          <line>49</line>
+          <line>48</line>
           <properties class="Login">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -302,8 +337,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Search.java</url>
-          <line>41</line>
-          <properties class="Search" method="getCode">
+          <line>39</line>
+          <properties class="Search">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -318,15 +353,6 @@
           </properties>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/ContactUsTests.java</url>
-          <line>116</line>
-          <properties class="ContactUsTests" method="unitTest10">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GetDetailAuctionsTest.java</url>
           <line>4</line>
@@ -339,8 +365,5 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/IntelliJgithub$GetListBidsTests.ic" NAME="GetListBidsTests Coverage Results" MODIFIED="1656993518099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

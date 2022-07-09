@@ -1,10 +1,10 @@
-import java.nio.charset.Charset;
+
 import java.util.Random;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import random.RandomEmail;
+import freq.RandomEmail;
 
 public class CreateAuctionTests {
     CreateAuction createAuction = new CreateAuction();
@@ -29,7 +29,7 @@ public class CreateAuctionTests {
     @Test//    tao thanh cong 1 phien dau gia moi
     public void unitTest1() {// tao tieu de ngau nhien
         int top = 3;
-        char data = ' ';
+        char data;
         String title = "";
         for (int i=0; i<=top; i++) {
             data = (char)(rand.nextInt(25)+97);
@@ -39,7 +39,7 @@ public class CreateAuctionTests {
         System.out.println("If we send to api valid input, code should be 1000 and message should be OK");
         System.out.println("Testing unit1...");
         //auctionId:514
-        createAuction.Test11("5", "2022/07/09 11:11", "2023/08/21 11:11", title, login.getToken());
+        createAuction.Test11("5", "2022/07/12 11:11", "2023/08/21 11:11", title, login.getToken());
         Assertions.assertEquals(1000, createAuction.getCode());
         System.out.println("Unit 1: Satisfied!");
     }

@@ -1,15 +1,18 @@
+
 import java.util.Random;
 
 import org.junit.jupiter.api.Assertions;
 
 import org.junit.jupiter.api.Test;
-import random.RandomEmail;
+
+import freq.RandomEmail;
 
 public class GetListBidsTests {
 	GetListBids bidList = new GetListBids();
 	Random random = new Random();
 	RandomEmail randomString = new RandomEmail();
 
+	// On
 	@Test
 	public void unitTest1() {
 		// Code 1000 message OK

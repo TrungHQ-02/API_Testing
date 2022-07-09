@@ -8,6 +8,8 @@ import java.nio.charset.StandardCharsets;
 
 import com.google.gson.Gson;
 
+import freq.BaseURL;
+
 public class LikeAuction {
 	private static HttpURLConnection connection;
 
@@ -17,6 +19,7 @@ public class LikeAuction {
 
 	public String getContent() {
 		return content;
+		// check html
 	}
 
 	public void setContent(String content) {
@@ -40,7 +43,7 @@ public class LikeAuction {
 
 		// Connect and parse Json
 		try {
-			URL url = new URL("https://auctions-app-2.herokuapp.com/api/updateLike/" + auctionId);
+			URL url = new URL(BaseURL.baseURL +  "updateLike/" + auctionId);
 			connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod("POST");
 			connection.setRequestProperty("Authorization", "Bearer" + accessToken);
@@ -56,6 +59,7 @@ public class LikeAuction {
 			while ((line = reader.readLine()) != null) {
 				respondContent.append(line);
 			}
+			System.out.println(respondContent);
 
 			// set value to model
 			this.setContent(respondContent.toString());

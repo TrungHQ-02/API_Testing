@@ -1,5 +1,7 @@
 import com.google.gson.Gson;
 
+import freq.BaseURL;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -9,7 +11,7 @@ import java.net.URL;
 public class GetListAuctionsByStatus {
     private static HttpURLConnection connection;
     public static Rp3 rp;
-    public String fixedId;
+    public String fixedId; // de check
 
     public String getFixedId() {
 		return fixedId;
@@ -30,7 +32,7 @@ public class GetListAuctionsByStatus {
         // Connect and parse Json
         //https://auctions-app-2.herokuapp.com/api/auctions/listAuctionsByStatus?statusId=1&index=1&count=3
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/auctions/listAuctionsByStatus?" 
+            URL url = new URL(BaseURL.baseURL + "auctions/listAuctionsByStatus?" 
             	    + statusId 
             		+ "&index=" + index 
             		+ "&count=" + count);
@@ -42,6 +44,7 @@ public class GetListAuctionsByStatus {
             while ((line = reader.readLine()) != null) {
                 respondContent.append(line);
             }
+            System.out.println(respondContent);
 
             this.setFixedId(statusId+"");
             
