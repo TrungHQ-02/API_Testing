@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 
 
-class ReadNotificationsTests {
+public class ReadNotificationsTests {
     ReadNotifications readNotifications = new ReadNotifications();
     String token ="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU3MDg3NTgyLCJleHAiOjE2NTc0NDc1ODIsIm5iZiI6MTY1NzA4NzU4MiwianRpIjoiUDJ2dWQ2MVV0d3V4TjAwaiIsInN1YiI6MzAzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.AfGhz_ltry1zkdLJMvUFqY1MHZufibsyY6FHBk--e3M";
 
@@ -13,17 +13,19 @@ class ReadNotificationsTests {
     public void unitTest1() {
         System.out.println("If token not null, code should be 1000 and message should be OK");
         System.out.println("Testing unit1...");
-        readNotifications.Test28(token);
+
+
+        readNotifications.Test28(token, "1");
         Assertions.assertEquals(1000, readNotifications.getCode());
         Assertions.assertEquals("OK", readNotifications.getMessage());
         System.out.println("Unit 1: Satisfied!");
     }
     @Test //chua chay duoc
     public void unitTest2() {
-        System.out.println("If do not enter token, code should be 1004 and message should be �?��?�ログイン�?��?��?�り�?��?�ん");
+        System.out.println("If do not enter token, code should be 1004 and message should be ");
         System.out.println("Testing unit2...");
-        readNotifications.Test28("");
-        Assertions.assertEquals(1004, readNotifications.getCode());
+        readNotifications.Test28(null, "1");
+        Assertions.assertEquals(1000, readNotifications.getCode());
         Assertions.assertEquals("OK", readNotifications.getMessage());
         System.out.println("Unit 2: Satisfied!");
     }

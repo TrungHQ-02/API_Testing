@@ -23,7 +23,7 @@ public class SignUpTests {
         signUp.Test02(randomMail, randomPass, randomPass, null, randomName, "0854960116", null);
 
         try {
-            Assertions.assertEquals(1001, signUp.getCode());
+            Assertions.assertEquals(1000, signUp.getCode());
             Assertions.assertEquals("OK", signUp.getMessage());
             System.out.println("Unit 1: Satisfied!");
         } catch(AssertionError error) {
