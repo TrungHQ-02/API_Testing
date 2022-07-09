@@ -42,6 +42,7 @@ public class CreateItem {
                     + "\",\n  \"brand_id\": \"" + brand_id
                     +"\",\n  \"starting_price\": \"" + starting_price
                     + "\",\n  \"description\": \"" + description
+                    + "\",\n  \"series\": \"" + series
                     + "\"\n}";
             byte[] out = data.getBytes(StandardCharsets.UTF_8);
             OutputStream stream = connection.getOutputStream();
