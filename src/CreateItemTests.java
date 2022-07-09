@@ -13,7 +13,7 @@ public class CreateItemTests {
     CreateAuction createAuction = new CreateAuction();
 
     String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU3MzY0MDkzLCJleHAiOjE2NTc3MjQwOTMsIm5iZiI6MTY1NzM2NDA5MywianRpIjoiYk92cjJGWXVLMUU4UThuNyIsInN1YiI6MzAzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.nKJv4CFkUX4HrvXjaiCkiI5F8nIoBRQGdBNEsHs2cqk";
-    @RepeatedTest(value = 4)
+    @RepeatedTest(value = 2)
     public void unitTest1(){
 
         System.out.println("If all is correct, code should be 1000 and message should be OK");
@@ -29,7 +29,7 @@ public class CreateItemTests {
         Assertions.assertEquals("OK", createItem.getMessage());
         System.out.println("Unit 1: Satisfied!");
     }
-    @RepeatedTest(value = 4)
+    @RepeatedTest(value = 2)
     public void unitTest2(){
 
         System.out.println("If brand_id > 10, code should be 1001 and message should be brand: The selected brand id is invalid.&name: &series: &description: &starting_price: ");
@@ -45,7 +45,7 @@ public class CreateItemTests {
         Assertions.assertEquals("brand: The selected brand id is invalid.&name: &series: &description: &starting_price: ", createItem.getMessage());
         System.out.println("Unit 2: Satisfied!");
     }
-    @RepeatedTest(value = 4)
+    @RepeatedTest(value = 2)
     public void unitTest3(){
 
         System.out.println("If name > 255, code should be 1001 and message should be brand: &name: 7001&series: &description: &starting_price: ");
@@ -62,7 +62,7 @@ public class CreateItemTests {
         Assertions.assertEquals("brand: &name: 7001&series: &description: &starting_price: ", createItem.getMessage());
         System.out.println("Unit 3: Satisfied!");
     }
-    @RepeatedTest(value = 4)
+    @RepeatedTest(value = 2)
     public void unitTest4(){
 
         System.out.println("If series > 10, code should be 1001 and message should be brand: &name: &series: 7011&description: &starting_price:");
@@ -78,7 +78,7 @@ public class CreateItemTests {
         Assertions.assertEquals("brand: &name: &series: 7011&description: &starting_price: ", createItem.getMessage());
         System.out.println("Unit 4: Satisfied!");
     }
-    @RepeatedTest(value = 4)
+    @RepeatedTest(value = 2)
     public void unitTest5(){
 
         System.out.println("If series is null, code should be 1001 and message should be brand: &name: &series: 7004&description: &starting_price: ");
