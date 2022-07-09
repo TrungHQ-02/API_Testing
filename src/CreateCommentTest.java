@@ -1,6 +1,7 @@
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
 
@@ -21,12 +22,12 @@ public class CreateCommentTest {
         System.out.println("Unit 1: Satisfied!");
     }
     */
-    @Test  
+    @RepeatedTest(5)
     public void unitTest2() {
         
-        login.Test01("dien1234@gmail.com", "123456");
+        login.Test01("minh0915@gmail.com", "123456");
        
-        createComment.Test14("12", login.getToken(), "xin chao", 1);
+        createComment.Test14("12", login.getToken(), "comment for work", 1);
         Assertions.assertEquals(1000, createComment.getCode());
         System.out.println("Unit 2: Satisfied!");
     }

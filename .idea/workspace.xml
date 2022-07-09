@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them">
+    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadNotifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadNotifications.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadNotificationsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadNotificationsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUpTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ContactUsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContactUsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateAuctionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateAuctionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeleteComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeleteComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeleteCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeleteCommentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListComments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListComments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListCommentsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCommentsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rp4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rp4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,52 +84,50 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AcceptMaxBidTest.UnitTest3">
-    <configuration name="AcceptMaxBidTest.UnitTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DeleteCommentTest.unitTest1">
+    <configuration name="CreateCommentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AcceptMaxBidTest" />
-      <option name="METHOD_NAME" value="UnitTest3" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="CreateCommentTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadNotificationsTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateCommentTest.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ReadNotificationsTests" />
-      <option name="METHOD_NAME" value="unitTest1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReadNotificationsTests.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ReadNotificationsTests" />
+      <option name="MAIN_CLASS_NAME" value="CreateCommentTest" />
       <option name="METHOD_NAME" value="unitTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DeleteCommentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
+      <option name="MAIN_CLASS_NAME" value="DeleteCommentTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeleteCommentTest.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DeleteCommentTest" />
       <option name="METHOD_NAME" value="unitTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTests.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetListCommentsTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
-      <option name="METHOD_NAME" value="unitTest2" />
+      <option name="MAIN_CLASS_NAME" value="GetListCommentsTest" />
+      <option name="METHOD_NAME" value="UnitTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,19 +145,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.AcceptMaxBidTest.UnitTest3" />
-      <item itemvalue="JUnit.SignUpTests.unitTest2" />
-      <item itemvalue="JUnit.ReadNotificationsTests.unitTest1" />
-      <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
-      <item itemvalue="JUnit.SignUpTests.unitTest1" />
+      <item itemvalue="JUnit.CreateCommentTest" />
+      <item itemvalue="JUnit.CreateCommentTest.unitTest2" />
+      <item itemvalue="JUnit.DeleteCommentTest" />
+      <item itemvalue="JUnit.DeleteCommentTest.unitTest1" />
+      <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AcceptMaxBidTest.UnitTest3" />
-        <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
-        <item itemvalue="JUnit.ReadNotificationsTests.unitTest1" />
-        <item itemvalue="JUnit.SignUpTests.unitTest1" />
-        <item itemvalue="JUnit.SignUpTests.unitTest2" />
+        <item itemvalue="JUnit.DeleteCommentTest.unitTest1" />
+        <item itemvalue="JUnit.GetListCommentsTest.UnitTest1" />
+        <item itemvalue="JUnit.CreateCommentTest.unitTest2" />
+        <item itemvalue="JUnit.DeleteCommentTest" />
+        <item itemvalue="JUnit.CreateCommentTest" />
       </list>
     </recent_temporary>
   </component>
@@ -332,6 +335,24 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/CreateCommentTest.java</url>
+          <line>24</line>
+          <properties class="CreateCommentTest" method="unitTest2">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/GetListCommentsTest.java</url>
+          <line>11</line>
+          <properties class="GetListCommentsTest" method="UnitTest1">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GetDetailAuctionsTest.java</url>

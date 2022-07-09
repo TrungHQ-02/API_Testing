@@ -29,7 +29,7 @@ public class CreateAuctionTests {
     @Test//    tao thanh cong 1 phien dau gia moi
     public void unitTest1() {// tao tieu de ngau nhien
         int top = 3;
-        char data = ' ';
+        char data;
         String title = "";
         for (int i=0; i<=top; i++) {
             data = (char)(rand.nextInt(25)+97);

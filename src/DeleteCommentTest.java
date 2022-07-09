@@ -11,12 +11,14 @@ public class DeleteCommentTest {
     Random rand = new Random();
     RandomEmail randString = new RandomEmail();
     Login login= new Login();
+    GetListComments getListComments = new GetListComments();
     @Test//   xoa mot comment thanh cong
     public void unitTest1() {
-        login.Test01("trinhquan100402@gmail.com", "1004");
+        login.Test01("minh0915@gmail.com", "123456");
         System.out.println("If we send to api valid input, code should be 1000 and message should be OK");
         System.out.println("Testing unit1...");
-        deleteComment.Test31(login.getToken());
+        getListComments.Test15(12,1,1, login.getToken());
+        deleteComment.Test31(login.getToken(),getListComments.getCommentId(getListComments.getComments()));
         Assertions.assertEquals(1000,deleteComment.getCode());
         System.out.println("Unit 1: Satisfied!");
     }
@@ -25,7 +27,7 @@ public class DeleteCommentTest {
         login.Test01("trinhquan100402@gmail.com", "1004");
         System.out.println("If someone else's comment is, Server will return code 1006");
         System.out.println("Testing unit2...");
-        deleteComment.Test31(login.getToken());
+        deleteComment.Test31(login.getToken(),1);
         Assertions.assertEquals(1006,deleteComment.getCode());
         System.out.println("Unit 2: Satisfied!");
     }

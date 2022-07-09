@@ -51,5 +51,11 @@ public class GetListComments {
     public int getCommentsLength(){
         return rp.data.comments.length;
     }
+    public comments[] getComments(){
+        return rp.data.comments;
+    }
+    public int getCommentId(comments[] comments){
+        return comments[0].comment_id;
+    }
 
 }
