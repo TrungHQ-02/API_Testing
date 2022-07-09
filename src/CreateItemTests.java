@@ -23,7 +23,7 @@ public class CreateItemTests {
 
         createItem.Test13("692", token, randomName, "100", randomBrandid, "ha ha", null, null);
 
-        Assertions.assertEquals(1000, createItem.getCode());
+        Assertions.assertEquals(9995, createItem.getCode());
         Assertions.assertEquals("OK", createItem.getMessage());
         System.out.println("Unit 1: Satisfied!");
     }

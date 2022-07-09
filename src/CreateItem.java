@@ -17,9 +17,6 @@ public class CreateItem {
 
     public static Rp rp;
     int rpCode;
-    public String fixed_id;
-
-    public String fixed_start_date, fixed_end_date;
 
     public String fixed_title;
 
@@ -56,14 +53,6 @@ public class CreateItem {
             }
             System.out.println(respondContent);
 
-            // set to model
-            this.setFixed_id(auction_id);
-            this.setFixed_id(brand_id);
-            this.setFixed_id(series);
-            this.setFixed_id(name);
-            this.setFixed_id(description);
-            this.setFixed_id(images);
-
             // Parse JSON
             Gson g = new Gson();
             rp = g.fromJson(respondContent.toString(), Rp.class);
@@ -91,12 +80,13 @@ public class CreateItem {
         return rp.data;
     }
 
-
-    public String getFixed_id() {
-        return fixed_id;
+    public String getFixed_title() {
+        return fixed_title;
     }
 
-    public void setFixed_id(String fixed_id) {
-        this.fixed_id = fixed_id;
+    public void setFixed_title(String fixed_title) {
+        this.fixed_title = fixed_title;
     }
+
+
 }
