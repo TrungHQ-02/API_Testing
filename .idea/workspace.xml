@@ -79,12 +79,12 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReadNotificationsTests.unitTest2">
-    <configuration name="GetListBidsTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AcceptMaxBidTest.UnitTest3">
+    <configuration name="AcceptMaxBidTest.UnitTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetListBidsTests" />
-      <option name="METHOD_NAME" value="unitTest1" />
+      <option name="MAIN_CLASS_NAME" value="AcceptMaxBidTest" />
+      <option name="METHOD_NAME" value="UnitTest3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,19 +142,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.AcceptMaxBidTest.UnitTest3" />
       <item itemvalue="JUnit.SignUpTests.unitTest2" />
-      <item itemvalue="JUnit.GetListBidsTests.unitTest1" />
       <item itemvalue="JUnit.ReadNotificationsTests.unitTest1" />
       <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
       <item itemvalue="JUnit.SignUpTests.unitTest1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AcceptMaxBidTest.UnitTest3" />
         <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
         <item itemvalue="JUnit.ReadNotificationsTests.unitTest1" />
         <item itemvalue="JUnit.SignUpTests.unitTest1" />
         <item itemvalue="JUnit.SignUpTests.unitTest2" />
-        <item itemvalue="JUnit.GetListBidsTests.unitTest1" />
       </list>
     </recent_temporary>
   </component>
