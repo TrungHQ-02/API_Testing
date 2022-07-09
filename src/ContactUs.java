@@ -43,7 +43,7 @@ public class ContactUs {
             while ((line = reader.readLine()) != null) {
                 respondContent.append(line);
             }
-
+            System.out.println(respondContent);
 
             // set to model
             this.setFixed_name(name);
@@ -52,7 +52,6 @@ public class ContactUs {
             this.setFixed_content(content);
             this.setFixed_file(file);
             this.setFixed_report_type(report_type);
-
 
             // Parse JSON
             Gson g = new Gson();

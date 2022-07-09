@@ -58,6 +58,7 @@ public class LikeAuction {
 			while ((line = reader.readLine()) != null) {
 				respondContent.append(line);
 			}
+			System.out.println(respondContent);
 
 			// set value to model
 			this.setContent(respondContent.toString());

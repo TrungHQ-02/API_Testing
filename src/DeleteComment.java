@@ -14,12 +14,12 @@ public class DeleteComment {
     public static Rp rp;
     //public String fixed_comment_id;
 
-    public void Test31(String accessToken) {
+    public void Test31(String accessToken, int comment_id) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
         try {
-            URL url = new URL(BaseURL.baseURL + "comments/delete/301");
+            URL url = new URL(BaseURL.baseURL + "comments/delete/" + comment_id);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + accessToken);
@@ -31,8 +31,7 @@ public class DeleteComment {
             while ((line = reader.readLine()) != null) {
                 respondContent.append(line);
             }
-
-            // set to model
+            System.out.println(respondContent);
 
             // Parse JSON
             Gson g = new Gson();
