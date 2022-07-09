@@ -11,7 +11,7 @@ import java.net.URL;
 public class GetListAuctionsByStatus {
     private static HttpURLConnection connection;
     public static Rp3 rp;
-    public String fixedId;
+    public String fixedId; // de check
 
     public String getFixedId() {
 		return fixedId;
