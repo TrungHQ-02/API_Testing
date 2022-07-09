@@ -10,10 +10,7 @@ public class GetNotificationsTests {
 	GetNotifications getNotifications = new GetNotifications();
 	Random random = new Random();
 	RandomEmail randomString = new RandomEmail();
-	String proper_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcH"
-			+ "AuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU2OTkyMjc5LCJleHAiOjE2NTczNTIyNzksIm5iZiI6MTY1Njk5MjI3OSwianRpIjoiWF"
-			+ "dFSjBROWNiWGxxcmI2cCIsInN1YiI6NDU3LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Q"
-			+ "o1zeuy9p9AKabz7uS1WNQI1qxXiN7p_WCowPZP2k-E";
+	String proper_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU3MzU5Nzc5LCJleHAiOjE2NTc3MTk3NzksIm5iZiI6MTY1NzM1OTc3OSwianRpIjoiOXNMSFczMm9HNjhFRkJlaCIsInN1YiI6MTAxNywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.eKkxJrwX3rQVo8bA7aNlmUItFpK91E0kDzHrqKkWe50";
 
 	@Test
 	public void unitTest1() {
