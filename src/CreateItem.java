@@ -22,7 +22,7 @@ public class CreateItem {
     public String fixed_title;
 
 
-    public void Test13(int auction_id, String name, int starting_price, int brand_id, String description, String series, Arrays images, String token) {
+    public void Test13(String auction_id, String name, int starting_price, int brand_id, String description, String series,String images, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
@@ -40,10 +40,8 @@ public class CreateItem {
 
             String data = "{\n \"name\": \"" + name
                     + "\",\n  \"brand_id\": \"" + brand_id
-                    + "\",\n  \"series\": \"" + series
                     +"\",\n  \"starting_price\": \"" + starting_price
                     + "\",\n  \"description\": \"" + description
-                    + "\",\n  \"images\": \"" + images
                     + "\"\n}";
             byte[] out = data.getBytes(StandardCharsets.UTF_8);
             OutputStream stream = connection.getOutputStream();

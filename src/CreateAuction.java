@@ -84,6 +84,9 @@ public class CreateAuction {
     public Data getData() {
         return rp.data;
     }
+    public String getAuctionId(){
+        return rp.data.auction_id;
+    }
 
     public String getFixed_title() {
         return fixed_title;
