@@ -51,7 +51,6 @@ public class CreateAuction {
                 respondContent.append(line);
             }
             System.out.println(respondContent);
-
             // set to model
             this.setFixed_id(category_id+"");
             this.setFixed_end_date(end_date);

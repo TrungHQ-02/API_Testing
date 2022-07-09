@@ -19,7 +19,7 @@ public class DeleteComment {
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
         try {
-            URL url = new URL(BaseURL.baseURL + "comments/delete/" + comment_id);
+            URL url = new URL(BaseURL.baseURL + "comments/delete/" + comment_id );
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + accessToken);

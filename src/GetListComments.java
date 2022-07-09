@@ -15,12 +15,12 @@ public class GetListComments {
     private static HttpURLConnection connection;
     public static Rp4 rp;
 
-    public void Test15(int Auct_ID, int index, int count, String token) {
+    public void Test15(int acuction_id, int index, int count, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
         try {
-            URL url = new URL(BaseURL.baseURL + "comments/" + Auct_ID +"?count=" + count + "&index=" + index);
+            URL url = new URL(BaseURL.baseURL + "comments/" + acuction_id +"?count=" + count + "&index=" + index);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Authorization", "Bearer" + token);

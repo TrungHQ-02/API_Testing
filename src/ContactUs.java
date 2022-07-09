@@ -25,7 +25,7 @@ public class ContactUs {
 
         // Connect and parse Json
         try {
-            URL url = new URL(BaseURL.baseURL +"contactUs");
+            URL url = new URL(BaseURL.baseURL +"contactUs" );
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + accessToken);

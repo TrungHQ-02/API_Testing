@@ -12,18 +12,9 @@ public class CreateAuctionTests {
     RandomEmail randString = new RandomEmail();
     Login login = new Login();
     Logout logout = new Logout();
-//    @Test
-//    public void givenUsingPlainJava_whenGeneratingRandomStringUnbounded_thenCorrect() {
-//        byte[] array = new byte[7]; // length is bounded by 7
-//        new Random().nextBytes(array);
-//        String generatedString = new String(array, Charset.forName("UTF-8"));
-//
-//        System.out.println(generatedString);
-//    }
 
     // String auctionId, int category_id, String start_date, String end_date, String
     // title_ni,String accessToken
-
 
 
     @Test//    tao thanh cong 1 phien dau gia moi
@@ -44,16 +35,16 @@ public class CreateAuctionTests {
         System.out.println("Unit 1: Satisfied!");
     }
     @Test//chua dang nhap
-    //loi k the gui accesstoken sai ,neu gui thi p gui dung
+    //loi k the gui accesstoken sai ,neu gui thi p gui dung, gui dung loi 401
     public void unitTest2() {
         //logout token
         login.Test01("trinhquan100402@gmail.com", "1004");
         logout.Test05(login.getToken());
         System.out.println("If we not input yet, Server will return code 1004");
         System.out.println("Testing unit2...");
-        createAuction.Test11("3", "2024/06/20 11:11", "2024/06/21 11:11", "Aaaa", login.getToken());
-        Assertions.assertEquals(1004, createAuction.getCode());
-        System.out.println("Unit 2: Satisfied!");
+        createAuction.Test11("3", "2024/06/20 11:11", "2024/06/21 11:11", "Aaaa", null);
+        Assertions.assertEquals(1004, createAuction.getCode());//Server returned HTTP response code: 401 for URL
+        System.out.println("Unit 2: Satisfied!");//yêu cầu ứng dụng khách chưa được hoàn thành vì nó thiếu thông tin xác thực hợp lệ cho tài nguyên được yêu cầu.
     }
 
     @Test

@@ -27,7 +27,7 @@ public class CreateCommentTest {
         
         login.Test01("minh0915@gmail.com", "123456");
        
-        createComment.Test14("12", login.getToken(), "comment for work", 1);
+        createComment.Test14(12, login.getToken(), "comment for work", 1);
         Assertions.assertEquals(1000, createComment.getCode());
         System.out.println("Unit 2: Satisfied!");
     }
@@ -38,7 +38,7 @@ public class CreateCommentTest {
         
         login.Test01("dien1234@gmail.com", "123456");
        
-        createComment.Test14("12", login.getToken(),"" , 1);
+        createComment.Test14(12, login.getToken(),"" , 1);
         Assertions.assertEquals(1001, createComment.getCode());
         System.out.println("Unit 3: Satisfied!");
     }
@@ -49,7 +49,7 @@ public class CreateCommentTest {
         
         login.Test01("dien1234@gmail.com", "123456");
        
-        createComment.Test14("2", login.getToken(),"hi" , 1);
+        createComment.Test14(2, login.getToken(),"hi" , 1);
         Assertions.assertEquals(1008, createComment.getCodeData());
         System.out.println("Unit 4: Satisfied!");
     }
@@ -59,7 +59,7 @@ public class CreateCommentTest {
         
         login.Test01("dien1234@gmail.com", "123456");
        
-        createComment.Test14("1", login.getToken(), "hello", 10);
+        createComment.Test14(1, login.getToken(), "hello", 10);
         Assertions.assertEquals(1000, createComment.getCode());
         System.out.println("Unit 5: Satisfied!");
     }
