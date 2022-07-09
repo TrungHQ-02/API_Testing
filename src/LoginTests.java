@@ -13,7 +13,6 @@ public class LoginTests {
 	public void unitTest1() {
 		// Code and message should not be NULL or empty
 		System.out.println("Code and message should not be NULL or empty under any circumstances");
-//		System.out.println("Now try to login with 20 mails and check:");
 		System.out.println("Testing unit1...");
 		for (int i = 1; i < 21; i++) {
 			String randomMail = email.getStringWithFixedLength(10) + "@gmail.com";
@@ -67,6 +66,9 @@ public class LoginTests {
 
 	@Test
 	public void unitTest5() {
+
+//		Failed: truyen len null nhung lai tra ve sai mk
+
 		// Run 10 test cases
 		System.out.println("If password is null, code should be 1001 and msg should be email: 7000 &password: ");
 		System.out.println("Testing unit5...");
@@ -100,7 +102,7 @@ public class LoginTests {
 	public void unitTest7() {
 		// Run 10 test cases
 		System.out.println("If email is long but not more than 255 characters and password is incorrect, "
-				+ "response code should be 1002 and message should be メール�?�パスワード�?��?��?��?��?��?�");
+				+ "response code should be 1002 and message should be メールとパスワードは違いました");
 		System.out.println("Testing unit7...");
 		for (int i = 230; i <= 240; i++) {
 			String random = email.getStringWithFixedLength(i) + "@gmail.com";
@@ -108,7 +110,7 @@ public class LoginTests {
 			System.out.println(random.length());
 			login.Test01(random, "123123");
 			Assertions.assertEquals(1002, login.getCode());
-			Assertions.assertEquals("メール�?�パスワード�?��?��?��?��?��?�", login.getMessage());
+			Assertions.assertEquals("メールとパスワードは違いました", login.getMessage());
 		}
 		System.out.println("Unit 7: Satisfied!");
 	}
@@ -116,15 +118,16 @@ public class LoginTests {
 	@Test
 	public void unitTest8() {
 		// Run 10 test cases
-		System.out.println("If email is more than 255 characters and password is incorrect, response code should be 1001 "
-				+ "and message should be email: 7002 &password: ");
+		System.out
+				.println("If email is more than 255 characters and password is incorrect, response code should be 1001 "
+						+ "and message should be email: 7002 &password: ");
 		System.out.println("Testing unit8...");
-		for (int i = 230; i <= 240; i++) {
+		for (int i = 250; i <= 260; i++) {
 			String random = email.getStringWithFixedLength(i) + "@gmail.com";
 //			System.out.println(random);
 			login.Test01(random, "123123");
 			Assertions.assertEquals(1001, login.getCode());
-			Assertions.assertEquals("email: 7002 &password: ", login.getMessage());
+			Assertions.assertEquals("email: 7001 &password: ", login.getMessage());
 		}
 		System.out.println("Unit 8: Satisfied!");
 	}
@@ -135,11 +138,17 @@ public class LoginTests {
 		System.out.println("If email is about 250 characters and password is correct, "
 				+ "response code should be 1000 and data should not be null");
 		// Thay bang signup
+		// XmYxGE4Qm4Kg2yZ7lCEXfJAGlmrQC4i9uSvEuDcatmQn1MLpnHbSZ6OLj2KgIYj2KDD2ZvkvXcmbBPsB064vRjKfVc4qjqr1d01opFEJYFSeK0daXIeGvxHttRVXUUpX9ZQpDHmvEhrj7W9XZgkkEmKRhQSrJjULBSPgvOETz1mZRYYDZr1fpjGrfUo3UBd3FqChvqIUNeZfURtutUkNhrdP4XPqJv15c8mRy1aFXaZFgDHy@gmail.com
 		// mail nay da signup
 		String mail_250 = "ZpRqF16RPhjias47dy4EvTAB5P9AceT67ofnmhNygSc99iKANRF6I3ln0DlWcx51qQrWngygTTuIL4hSxaEQ1AnH3ACUHccbCUCr0TU87XE12"
 				+ "34561234Qh6KBPAouC43sAWJpsHM93IMaycJgNXV40cQiW57INGkH3UtoU7oLgEX6KVNoAOGTDFLBrTg3CTF0vpYkGzCdkSEWjdXADvVmVDduYZ57si3FlljNnp8KR1zgRJ@gmail.com";
 		System.out.println("Testing unit9...");
 		login.Test01(mail_250, "1234567");
+		Assertions.assertEquals(1000, login.getCode());
+		Assertions.assertNotEquals(null, login.getData());
+
+		String mail_250_2 = "XmYxGE4Qm4Kg2yZ7lCEXfJAGlmrQC4i9uSvEuDcatmQn1MLpnHbSZ6OLj2KgIYj2KDD2ZvkvXcmbBPsB064vRjKfVc4qjqr1d01opFEJYFSeK0daXIeGvxHttRVXUUpX9ZQpDHmvEhrj7W9XZgkkEmKRhQSrJjULBSPgvOETz1mZRYYDZr1fpjGrfUo3UBd3FqChvqIUNeZfURtutUkNhrdP4XPqJv15c8mRy1aFXaZFgDHy@gmail.com";
+		login.Test01(mail_250_2, "1234567");
 		Assertions.assertEquals(1000, login.getCode());
 		Assertions.assertNotEquals(null, login.getData());
 
@@ -187,7 +196,8 @@ public class LoginTests {
 
 	@Test
 	public void unitTest12() {
-		//If email and password are correct, response code shoule be 1000 and data is not null
+		// If email and password are correct, response code shoule be 1000 and data is
+		// not null
 		System.out.println("If email and password are correct, response code shoule be 1000 and data is not null");
 		System.out.println("Testing unit12...");
 
@@ -205,22 +215,32 @@ public class LoginTests {
 
 	@Test
 	public void unitTest13() {
-		//If password is incorrect, response code should be 1002, and message should be メール�?�パスワード�?��?��?��?��?��?�
-		System.out.println("If password is incorrect, response code should be 1002, and message should be メール�?�パスワード�?��?��?��?��?�");
-		login.Test01("trung@gmail.com", "123");
-		System.out.println("Testing unit13...");
-		Assertions.assertEquals(1002, login.getCode());
-		Assertions.assertEquals("メール�?�パスワード�?��?��?��?��?��?�", login.getMessage());
+		// If password is incorrect, response code should be 1002, and message should be
+		// ãƒ¡ãƒ¼ãƒ«ï¿½?ï¿½ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½
+		System.out.println(
+				"If password is incorrect, response code should be 1002, and message should be メールとパスワードは違いました");
+		SignUp signUp = new SignUp();
+		for (int i = 1; i <= 10; i++) {
+			String randomMail = email.getStringWithFixedLength(10) + "@gmail.com";
+			String randomPass = email.getStringWithFixedLength(10);
+			signUp.Test02(randomMail, randomPass, randomPass, null, "Hoang Trung", "03830090109", null);
+			login.Test01(randomMail, randomPass + i);
+			System.out.println("Testing unit13...");
+			Assertions.assertEquals(1002, login.getCode());
+			Assertions.assertEquals("メールとパスワードは違いました", login.getMessage());
+		}
 
 		System.out.println("Unit 13: Satisfied!");
 	}
 
 	@Test
 	public void unitTest14() {
-		//If we use the admin account,response code should be 1000, message should be OK and the role in data should be 1
-		System.out.println("If we use the admin account,response code should be 1000, message should be OK and the role in data should be 1");
+		// If we use the admin account,response code should be 1000, message should be
+		// OK and the role in data should be 1
+		System.out.println(
+				"If we use the admin account,response code should be 1000, message should be OK and the role in data should be 1");
 		System.out.println("Testing unit14...");
-		login.Test01("devAdmin2@gmail.com", "123456");
+		login.Test01("devAdmin@gmail.com", "123456");
 		Assertions.assertEquals(1000, login.getCode());
 		Assertions.assertEquals("OK", login.getMessage());
 		Assertions.assertEquals("1", login.getData().user.role);
@@ -229,8 +249,10 @@ public class LoginTests {
 
 	@Test
 	public void unitTest15() {
-		//If we log in an account that is not admin, code should be 1000, , message should be OK and the role should be 2
-		System.out.println("If we log in an account that is not admin, code should be 1000, message should be OK and the role should be 2");
+		// If we log in an account that is not admin, code should be 1000, , message
+		// should be OK and the role should be 2
+		System.out.println(
+				"If we log in an account that is not admin, code should be 1000, message should be OK and the role should be 2");
 		System.out.println("Testing unit 15...");
 		login.Test01("trung@gmail.com", "1234567");
 		Assertions.assertEquals(1000, login.getCode());
@@ -241,7 +263,8 @@ public class LoginTests {
 
 	@Test
 	public void unitTest16() {
-		// If we login in an proper account, access_token should not be null, token_type should be bearer and expires_in should not be null
+		// If we login in an proper account, access_token should not be null, token_type
+		// should be bearer and expires_in should not be null
 		System.out.println("If we login in an proper account, access_token should not be null,"
 				+ " token_type should be bearer and expires_in should not be null");
 		System.out.println("Testing unit 16...");
