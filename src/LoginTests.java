@@ -4,14 +4,13 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import freq.RandomEmail;
-
+// Trung
 public class LoginTests {
 	Login login = new Login();
 	RandomEmail email = new RandomEmail();
 
 	@Test
 	public void unitTest1() {
-		// Code and message should not be NULL or empty
 		System.out.println("Code and message should not be NULL or empty under any circumstances");
 		System.out.println("Testing unit1...");
 		for (int i = 1; i < 21; i++) {

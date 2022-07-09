@@ -19,6 +19,7 @@ public class LikeAuction {
 
 	public String getContent() {
 		return content;
+		// check html
 	}
 
 	public void setContent(String content) {

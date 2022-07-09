@@ -14,6 +14,7 @@ public class GetListLikes {
     public String fixedId;
     public String contentString;
 
+    // OK
     public String getFixedId() {
 		return fixedId;
 	}

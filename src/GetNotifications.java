@@ -10,7 +10,7 @@ import freq.BaseURL;
 public class GetNotifications {
 	private static HttpURLConnection connection;
 	public static Rp rp;
-	public String respondContentString;
+	public String respondContentString; // check HTML
 
 	public String getRespondContentString() {
 		return respondContentString;

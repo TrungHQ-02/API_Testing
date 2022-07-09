@@ -13,6 +13,8 @@ public class GetListAuctionsByUser {
     public static Rp3 rp;
     public String fixedId;
     public String content;
+    
+    // de check
 
     public String getContent() {
 		return content;

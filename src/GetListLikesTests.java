@@ -16,6 +16,7 @@ public class GetListLikesTests {
 	Random random = new Random();
 	RandomEmail randomString = new RandomEmail();
 
+	// OK
 	@Test
 	public void unitTest1() {
 		// Code 1000 message OK

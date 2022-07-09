@@ -12,6 +12,7 @@ public class GetListAuctionsTests {
 	Random random = new Random();
 	RandomEmail randomString = new RandomEmail();
 
+	// On
 	@Test
 	public void unitTest1() {
 		// Code 1000 message OK

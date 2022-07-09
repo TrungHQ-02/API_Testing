@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import freq.RandomEmail;
-
+// Trung
 public class LikeAuctionTests {
 	LikeAuction likeAuction = new LikeAuction();
 	Random rand = new Random();
@@ -15,6 +15,7 @@ public class LikeAuctionTests {
 			+ "dFSjBROWNiWGxxcmI2cCIsInN1YiI6NDU3LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Q"
 			+ "o1zeuy9p9AKabz7uS1WNQI1qxXiN7p_WCowPZP2k-E";
 
+	// OK
 	@Test
 	public void unitTest1() {
 		System.out.println("If we use the proper account, code should be 1000 and message should be OK");

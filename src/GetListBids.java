@@ -12,6 +12,7 @@ public class GetListBids {
 	private static HttpURLConnection connection;
 	public static Rp rp;
 
+	// On
 	public void Test07(int auctionId, int index, int count, String token) {
 		// access_token is nullable
 		String line;

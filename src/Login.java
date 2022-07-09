@@ -20,7 +20,6 @@ public class Login {
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
 
-        // Connect and parse Json
         try {
             URL url = new URL(BaseURL.baseURL + "login");
             connection = (HttpURLConnection) url.openConnection();
