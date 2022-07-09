@@ -14,7 +14,6 @@ class GetSliderTest {
         //Assertions.assertNotEquals(null, getSlider.getData());
         System.out.println("Unit 1: Satisfied!");
     }
-    
     @Test
     @DisplayName("Unit Test 2: get slider : have access_token")
     public void UnitTest2(){

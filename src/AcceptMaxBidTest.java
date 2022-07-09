@@ -20,7 +20,7 @@ class AcceptMaxBidTest {
     public void UnitTest2(){
         login.Test01("minh0915@gmail.com","123456");
         acceptMaxBid.Test20(1,"sold for minh",login.getToken());
-        Assertions.assertEquals(1006,acceptMaxBid.getCode());
+        Assertions.assertEquals(1006, acceptMaxBid.getCode());
         Assertions.assertEquals("Không có quyền", acceptMaxBid.getMessage());
     }
     @Test

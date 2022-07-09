@@ -39,7 +39,6 @@ public class CreateAuctionTests {
     public void unitTest2() {
         //logout token
         login.Test01("trinhquan100402@gmail.com", "1004");
-        logout.Test05(login.getToken());
         System.out.println("If we not input yet, Server will return code 1004");
         System.out.println("Testing unit2...");
         createAuction.Test11("3", "2024/06/20 11:11", "2024/06/21 11:11", "Aaaa", null);

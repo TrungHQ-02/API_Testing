@@ -36,7 +36,7 @@ public class SignUpTests {
         String randomPass = email.getStringWithFixedLength(10);
         String randomName = email.getSaltString();
         signUp.Test02(randomMail, randomPass, randomPass, null, randomName, "0854960116", null);
-        Assertions.assertEquals(1000, signUp.getCode());
+        Assertions.assertEquals(1001, signUp.getCode());
         Assertions.assertEquals("name: &phone: &address: &email: 7001&password: &re_pass:  &avatar: ", signUp.getMessage());
 
         System.out.println("Unit 2: Satisfied!");
@@ -52,7 +52,7 @@ public class SignUpTests {
         String randomPass = email.getStringWithFixedLength(260);
         String randomName = email.getSaltString();
         signUp.Test02(randomMail, randomPass, randomPass, null, randomName, "0854960116", null);
-        Assertions.assertEquals(1000, signUp.getCode());
+        Assertions.assertEquals(1001, signUp.getCode());
         Assertions.assertEquals("name: &phone: &address: &email: &password: 7001&re_pass: 7001 &avatar: ", signUp.getMessage());
 
         System.out.println("Unit 3: Satisfied!");

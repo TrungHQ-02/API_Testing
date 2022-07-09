@@ -19,7 +19,7 @@ public class EditAuctionTests {
 	@Test
 	public void unitTest1() {
 		int top = 3;
-		char data = ' ';
+		char data;
 		String title = "";
 		for (int i=0; i<=top; i++) {
 			data = (char)(rand.nextInt(25)+97);
@@ -39,9 +39,9 @@ public class EditAuctionTests {
 			login.Test01("trinhquan100402@gmail.com", "1004");
 		System.out.println("if auctions have been approved, Server will return code 1005");
 		System.out.println("Testing unit2...");
-		editAuction.Test12("513", "1", null, null, "Dagoiaffaiiiii", login.getToken());
+		editAuction.Test12("529", "1", null, null, null, login.getToken());
 		Assertions.assertEquals(1005, editAuction.getCode());
-		Assertions.assertEquals("KhÃ´ng thá»ƒ chá»‰nh sá»­a", editAuction.getMessage());
+		Assertions.assertEquals("Không thể chỉnh sửa", editAuction.getMessage());
 			System.out.println("Unit 2: Satisfied!");
 	}
 	@Test
@@ -50,9 +50,9 @@ public class EditAuctionTests {
 		login.Test01("trinhquan100402@gmail.com", "1004");
 		//loi ch dang nhap
 
-		System.out.println("If we not input yet, Server will return code 1004");
+		System.out.println("If we not login yet, Server will return code 1004");
 		System.out.println("Testing unit3...");
-		editAuction.Test12("515", "1", null, null, "Dagoiaffaiiiii",login.getToken());
+		editAuction.Test12("515", "1", null, null, null,null);
 		Assertions.assertEquals(1004, editAuction.getCode());
 		System.out.println("Unit 3: Satisfied!");
 	}
@@ -64,7 +64,7 @@ public class EditAuctionTests {
 		System.out.println("Testing unit4...");
 		editAuction.Test12("443", "1", null, null, null, login.getToken());
 		Assertions.assertEquals(1006, editAuction.getCode());
-		Assertions.assertEquals("KhÃ´ng cÃ³ quyá»�n chá»‰nh sá»­a", editAuction.getMessage());
+		Assertions.assertEquals("Không có quyền chỉnh sửa", editAuction.getMessage());
 		System.out.println("Unit 4: Satisfied!");
 	}
 	@Test
