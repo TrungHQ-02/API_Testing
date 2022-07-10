@@ -218,7 +218,7 @@ public class LoginTests {
 		System.out.println(
 				"If password is incorrect, response code should be 1002, and message should be メールとパスワードは違いました");
 		SignUp signUp = new SignUp();
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			String randomMail = email.getStringWithFixedLength(10) + "@gmail.com";
 			String randomPass = email.getStringWithFixedLength(10);
 			signUp.Test02(randomMail, randomPass, randomPass, null, "Hoang Trung", "03830090109", null);
@@ -272,6 +272,5 @@ public class LoginTests {
 		Assertions.assertNotEquals(null, login.getData().expires_in);
 		System.out.println("Unit 16: Satisfied");
 	}
-
 	// Test 20 la du
 }

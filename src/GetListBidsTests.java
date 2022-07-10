@@ -28,7 +28,7 @@ public class GetListBidsTests {
 	public void unitTest2() {
 		System.out.println("Code should be 1000 and message should be OK with the negative input for index and count");
 		System.out.println("Testing unit2...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomId = random.nextInt(1,3);
 			int randomIndex = random.nextInt(-5,-1);
 			int randomCount = random.nextInt(-5,-1);
@@ -43,7 +43,7 @@ public class GetListBidsTests {
 	public void unitTest3() {
 		System.out.println("Code should be 1000 and message should be OK even when token is wrong");
 		System.out.println("Testing unit3...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomId = random.nextInt(1, 3);
 			int randomIndex = random.nextInt(1, 10);
 			int randomCount = random.nextInt(1, 10);
@@ -59,7 +59,7 @@ public class GetListBidsTests {
 	public void unitTest4() {
 		System.out.println("User name should not be null");
 		System.out.println("Testing unit4...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomId = random.nextInt(1, 3);
 			int randomIndex = random.nextInt(1, 10);
 			int randomCount = random.nextInt(1, 10);
@@ -76,7 +76,7 @@ public class GetListBidsTests {
 	public void unitTest5() {
 		System.out.println("Update time should not be null");
 		System.out.println("Testing unit5...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomId = random.nextInt(1, 3);
 			int randomIndex = random.nextInt(1, 10);
 			int randomCount = random.nextInt(1, 10);
@@ -93,7 +93,7 @@ public class GetListBidsTests {
 	public void unitTest6() {
 		System.out.println("Total of bids should be greater than or equals to zero");
 		System.out.println("Testing unit6...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomId = random.nextInt(1, 3);
 			int randomIndex = random.nextInt(1, 10);
 			int randomCount = random.nextInt(1, 10);
