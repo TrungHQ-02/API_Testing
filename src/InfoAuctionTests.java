@@ -30,9 +30,9 @@ public class InfoAuctionTests {
 	public void unitTest2() throws FileNotFoundException {
 		System.out.println("Status ID shoud not be negative");
 		System.out.println("Testing unit2...");
+		infoAuction.setNum(2);
 		int randomID = random.nextInt(-5, -1);
 		infoAuction.Test06(randomID + "", properToken);
-		System.out.println("Unit 2: Satisfied!");
 	}
 
 	@Test
@@ -70,7 +70,7 @@ public class InfoAuctionTests {
 		System.out.println("Title of auction should not be null");
 		System.out.println("Testing unit5...");
 		for (int i = 1; i <= 3; i++) {
-			int randomID = random.nextInt(1, 5);
+			int randomID = random.nextInt(1, 2);
 			infoAuction.Test06(randomID + "", properToken);
 			Assertions.assertNotEquals(null, infoAuction.getData().title);
 		}
