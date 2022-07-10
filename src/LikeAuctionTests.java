@@ -62,7 +62,6 @@ public class LikeAuctionTests {
 		}
 		System.out.println("Unit 4: Satisfied");
 	}
-	
 	@Test
 	public void unitTest5() {
 		System.out.println("The is_liked field should be proper");

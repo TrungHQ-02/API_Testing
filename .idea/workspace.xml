@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Quan sua">
-      <change beforePath="$PROJECT_DIR$/src/InfoAuctionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InfoAuctionTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Quan sua" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -324,7 +322,21 @@
       <option name="project" value="LOCAL" />
       <updated>1657432281377</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Quan sua">
+      <created>1657432418066</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1657432418066</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Quan sua">
+      <created>1657432724002</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1657432724002</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
