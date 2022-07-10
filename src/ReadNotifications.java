@@ -12,7 +12,7 @@ public class ReadNotifications {
     private static HttpURLConnection connection;
     public static Rp rp;
 
-    public void Test28(int auctionDenyId, String token) {
+    public void Test33(int auctionDenyId, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
