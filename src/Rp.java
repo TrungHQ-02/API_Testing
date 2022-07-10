@@ -17,12 +17,10 @@ class Data {
 	String auction_id;
 	String is_liked;
 
-	// for edit auction by Quan
+	// for edit auction by Trung
 	String title, category_id, selling_user_id;
 	String start_date, end_date;
 	String status, reason;
-	// for edit rate by Quan
-	String star,buying_user_id;
 
 	// for getCategories
 	String name;
