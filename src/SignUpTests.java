@@ -19,7 +19,7 @@ public class SignUpTests {
         String randomMail = email.getStringWithFixedLength(10) + "@gmail.com";
         String randomPass = email.getStringWithFixedLength(10);
         String randomName = email.getSaltString();
-        signUp.Test02(randomMail, randomPass, randomPass, null, randomName, "0854960116", null);
+        signUp.Test04(randomMail, randomPass, randomPass, null, randomName, "0854960116", null);
         Assertions.assertEquals(1000, signUp.getCode());
         Assertions.assertEquals("OK", signUp.getMessage());
 
@@ -35,7 +35,7 @@ public class SignUpTests {
         String randomMail = email.getStringWithFixedLength(260) + "@gmail.com";
         String randomPass = email.getStringWithFixedLength(10);
         String randomName = email.getSaltString();
-        signUp.Test02(randomMail, randomPass, randomPass, null, randomName, "0854960116", null);
+        signUp.Test04(randomMail, randomPass, randomPass, null, randomName, "0854960116", null);
         Assertions.assertEquals(1001, signUp.getCode());
         Assertions.assertEquals("name: &phone: &address: &email: 7001&password: &re_pass:  &avatar: ", signUp.getMessage());
 
@@ -51,7 +51,7 @@ public class SignUpTests {
         String randomMail = email.getStringWithFixedLength(10) + "@gmail.com";
         String randomPass = email.getStringWithFixedLength(260);
         String randomName = email.getSaltString();
-        signUp.Test02(randomMail, randomPass, randomPass, null, randomName, "0854960116", null);
+        signUp.Test04(randomMail, randomPass, randomPass, null, randomName, "0854960116", null);
         Assertions.assertEquals(1001, signUp.getCode());
         Assertions.assertEquals("name: &phone: &address: &email: &password: 7001&re_pass: 7001 &avatar: ", signUp.getMessage());
 
@@ -67,7 +67,7 @@ public class SignUpTests {
         String randomMail = email.getStringWithFixedLength(10) + "@gmail.com";
         String randomPass = email.getStringWithFixedLength(10);
         String randomName = email.getSaltString();
-        signUp.Test02(randomMail, randomPass, randomPass, null, randomName, null, null);
+        signUp.Test04(randomMail, randomPass, randomPass, null, randomName, null, null);
         Assertions.assertEquals(1001, signUp.getCode());
         Assertions.assertEquals("name: &phone: The phone format is invalid.&address: &email: &password: &re_pass:  &avatar: ", signUp.getMessage());
 
@@ -83,7 +83,7 @@ public class SignUpTests {
         String randomMail = email.getStringWithFixedLength(10);
         String randomPass = email.getStringWithFixedLength(10);
         String randomName = email.getSaltString();
-        signUp.Test02(randomMail, randomPass, randomPass, null, randomName, "0854960116", null);
+        signUp.Test04(randomMail, randomPass, randomPass, null, randomName, "0854960116", null);
         Assertions.assertEquals(1001, signUp.getCode());
         Assertions.assertEquals("name: &phone: &address: &email: 7002&password: &re_pass:  &avatar: ", signUp.getMessage());
 
@@ -99,7 +99,7 @@ public class SignUpTests {
         String randomMail = email.getStringWithFixedLength(10) + "@gmail.com";
         String randomPass = email.getStringWithFixedLength(10);
         String randomName = email.getSaltString();
-        signUp.Test02(randomMail, randomPass, "123456", null, randomName, "0854960116", null);
+        signUp.Test04(randomMail, randomPass, "123456", null, randomName, "0854960116", null);
         Assertions.assertEquals(1001, signUp.getCode());
         Assertions.assertEquals("name: &phone: &address: &email: &password: &re_pass: 7003 &avatar: ", signUp.getMessage());
 
@@ -114,7 +114,7 @@ public class SignUpTests {
 
         String randomMail = email.getStringWithFixedLength(10) + "@gmail.com";
         String randomPass = email.getStringWithFixedLength(10);
-        signUp.Test02(randomMail, randomPass, randomPass, null, "", "0854960116", null);
+        signUp.Test04(randomMail, randomPass, randomPass, null, "", "0854960116", null);
         Assertions.assertEquals(1001, signUp.getCode());
         Assertions.assertEquals("name: 7000&phone: &address: &email: &password: &re_pass:  &avatar: ", signUp.getMessage());
 
@@ -130,7 +130,7 @@ public class SignUpTests {
         String randomMail = email.getStringWithFixedLength(10) + "@gmail.com";
         String randomPass = email.getStringWithFixedLength(10);
         String randomName = email.getStringWithFixedLength(260);
-        signUp.Test02(randomMail, randomPass, randomPass, null, randomName, "0854960116", null);
+        signUp.Test04(randomMail, randomPass, randomPass, null, randomName, "0854960116", null);
         Assertions.assertEquals(1001, signUp.getCode());
         Assertions.assertEquals("name: 7001&phone: &address: &email: &password: &re_pass:  &avatar: ", signUp.getMessage());
 
@@ -146,7 +146,7 @@ public class SignUpTests {
         String randomMail = email.getStringWithFixedLength(10) + "@gmail.com";
         String randomPass = email.getStringWithFixedLength(10);
         String randomName = email.getSaltString();
-        signUp.Test02(randomMail, randomPass, randomPass, null, randomName, "", null);
+        signUp.Test04(randomMail, randomPass, randomPass, null, randomName, "", null);
         Assertions.assertEquals(1001, signUp.getCode());
         Assertions.assertEquals("name: &phone: 7000&address: &email: &password: &re_pass:  &avatar: ", signUp.getMessage());
 
@@ -163,7 +163,7 @@ public class SignUpTests {
         String randomPass = email.getStringWithFixedLength(10);
         String randomName = email.getSaltString();
         String randomAddress = email.getStringWithFixedLength(260);
-        signUp.Test02(randomMail, randomPass, randomPass, randomAddress, randomName, "0854960116", null);
+        signUp.Test04(randomMail, randomPass, randomPass, randomAddress, randomName, "0854960116", null);
         Assertions.assertEquals(1001, signUp.getCode());
         Assertions.assertEquals("name: &phone: &address: 7001&email: &password: &re_pass:  &avatar: ", signUp.getMessage());
 
@@ -179,7 +179,7 @@ public class SignUpTests {
         String randomMail = email.getStringWithFixedLength(10) + "@gmail.com";
         String randomPass = email.getStringWithFixedLength(10);
         String randomName = email.getSaltString();
-        signUp.Test02(randomMail, randomPass, "", null, randomName, "0854960116", null);
+        signUp.Test04(randomMail, randomPass, "", null, randomName, "0854960116", null);
         Assertions.assertEquals(1001, signUp.getCode());
         Assertions.assertEquals("name: &phone: &address: &email: &password: &re_pass: 7000 &avatar: ", signUp.getMessage());
 
@@ -195,7 +195,7 @@ public class SignUpTests {
         String randomMail = email.getStringWithFixedLength(10) + "@gmail.com";
         String randomPass = email.getStringWithFixedLength(10);
         String randomName = email.getSaltString();
-        signUp.Test02(randomMail, "", randomPass, null, randomName, "0854960116", null);
+        signUp.Test04(randomMail, "", randomPass, null, randomName, "0854960116", null);
         Assertions.assertEquals(1001, signUp.getCode());
         Assertions.assertEquals("name: &phone: &address: &email: &password: 7000&re_pass: 7003 &avatar: ", signUp.getMessage());
 
@@ -210,7 +210,7 @@ public class SignUpTests {
 
         String randomPass = email.getStringWithFixedLength(10);
         String randomName = email.getSaltString();
-        signUp.Test02("", randomPass, randomPass, null, randomName, "0854960116", null);
+        signUp.Test04("", randomPass, randomPass, null, randomName, "0854960116", null);
         Assertions.assertEquals(1001, signUp.getCode());
         Assertions.assertEquals("name: &phone: &address: &email: 7000&password: &re_pass:  &avatar: ", signUp.getMessage());
 
@@ -225,7 +225,7 @@ public class SignUpTests {
         String randomMail = email.getStringWithFixedLength(10) + "@gmail.com";
         String randomPass = email.getStringWithFixedLength(10);
         String randomName = email.getSaltString();
-        signUp.Test02("phuong@gmail.com", randomPass, randomPass, null, randomName, "0854960116", null);
+        signUp.Test04("phuong@gmail.com", randomPass, randomPass, null, randomName, "0854960116", null);
         Assertions.assertEquals(1001, signUp.getCode());
         Assertions.assertEquals("name: &phone: &address: &email: 7004&password: &re_pass:  &avatar: ", signUp.getMessage());
 

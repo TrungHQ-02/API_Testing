@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong done">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateItemTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateItemTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUpTests.java" afterDir="false" />
+    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them">
+      <change beforePath="$PROJECT_DIR$/src/ReadNotifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadNotifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadNotificationsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadNotificationsTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,26 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReadNotificationsTests">
+  <component name="RunManager" selected="JUnit.CreateItemTests">
+    <configuration name="CreateItemTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CreateItemTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateItemTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CreateItemTests" />
+      <option name="METHOD_NAME" value="unitTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReadNotificationsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -88,42 +106,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadNotificationsTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReadNotificationsTests.unitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ReadNotificationsTests" />
-      <option name="METHOD_NAME" value="unitTest1" />
+      <option name="METHOD_NAME" value="unitTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTests.unitTest05" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SignUpTests" />
-      <option name="METHOD_NAME" value="unitTest05" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUpTests.unitTest06" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
-      <option name="METHOD_NAME" value="unitTest06" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUpTests.unitTest07" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
-      <option name="METHOD_NAME" value="unitTest07" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,19 +137,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ReadNotificationsTests.unitTest1" />
-      <item itemvalue="JUnit.SignUpTests.unitTest05" />
-      <item itemvalue="JUnit.SignUpTests.unitTest06" />
-      <item itemvalue="JUnit.SignUpTests.unitTest07" />
+      <item itemvalue="JUnit.CreateItemTests.unitTest1" />
+      <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
       <item itemvalue="JUnit.ReadNotificationsTests" />
+      <item itemvalue="JUnit.SignUpTests" />
+      <item itemvalue="JUnit.CreateItemTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreateItemTests" />
         <item itemvalue="JUnit.ReadNotificationsTests" />
-        <item itemvalue="JUnit.ReadNotificationsTests.unitTest1" />
-        <item itemvalue="JUnit.SignUpTests.unitTest07" />
-        <item itemvalue="JUnit.SignUpTests.unitTest06" />
-        <item itemvalue="JUnit.SignUpTests.unitTest05" />
+        <item itemvalue="JUnit.SignUpTests" />
+        <item itemvalue="JUnit.CreateItemTests.unitTest1" />
+        <item itemvalue="JUnit.ReadNotificationsTests.unitTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -308,7 +305,21 @@
       <option name="project" value="LOCAL" />
       <updated>1657369195086</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Phuong them">
+      <created>1657422758243</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1657422758243</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Phuong them">
+      <created>1657423532102</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1657423532102</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
