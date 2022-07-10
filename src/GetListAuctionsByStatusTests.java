@@ -119,7 +119,7 @@ public class GetListAuctionsByStatusTests {
 			Auction3[] aucList = auctionsByStatus.getData().auctions.clone();
 			for (Auction3 auction : aucList) {
 				int aucStatusID = Integer.parseInt(auction.statusId);
-				Assertions.assertEquals(auctionsByStatus.getFixedId(), aucStatusID);
+				Assertions.assertEquals(Integer.parseInt(auctionsByStatus.getFixedId()), aucStatusID);
 			}
 		}
 		System.out.println("Unit 8: Satisfied!");
