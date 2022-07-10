@@ -1,3 +1,4 @@
+
 import com.google.gson.Gson;
 
 import freq.BaseURL;
@@ -6,36 +7,43 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 
-public class SignUp {
+
+public class EditItem {
     private static HttpURLConnection connection;
 
     public static Rp rp;
+    int rpCode;
 
-    public void Test04(String email, String pass, String re_pass, String address, String name, String phone, String avatarLink) {
+    public String fixed_title;
+
+
+    public void Test13(String auction_id, String name, int starting_price, int brand_id, String description, String series, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
 
         // Connect and parse Json
+        /// api/auctions/edit/{auctionId}
         try {
-            URL url = new URL(BaseURL.baseURL + "signup");
+            URL url = new URL(BaseURL.baseURL + "items/create/" + auction_id);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
+            connection.setRequestProperty("Authorization", "Bearer" + token);
             connection.setRequestProperty("Accept", "application/json");
             connection.setRequestProperty("Content-Type", "application/json");
             connection.setDoOutput(true);
 
-            String data = "{\n \"email\": \"" + email
-                    + "\",\n  \"password\": \"" + pass
-                    + "\",\n  \"re_pass\": \"" + re_pass
-                    + "\",\n  \"address\": \"" + address
-                    + "\",\n  \"name\": \"" + name
-                    + "\",\n  \"phone\": \"" + phone
-                    + "\",\n  \"avatarLink\": \"" + avatarLink
+            String data = "{\n \"name\": \"" + name
+                    + "\",\n  \"brand_id\": \"" + brand_id
+                    +"\",\n  \"starting_price\": \"" + starting_price
+                    + "\",\n  \"description\": \"" + description
+                    + "\",\n  \"series\": \"" + series
                     + "\"\n}";
             byte[] out = data.getBytes(StandardCharsets.UTF_8);
             OutputStream stream = connection.getOutputStream();
@@ -58,22 +66,28 @@ public class SignUp {
         }
 
     }
-
-    public String getToken(){
-        return rp.data.access_token;
-    }
-
     public int getCode() {
         return rp.code;
+    }
+    public int getHttpCode(){
+        return rpCode;
     }
 
     public String getMessage() {
         return rp.message;
     }
 
-    // Trung them
     public Data getData() {
         return rp.data;
     }
+
+    public String getFixed_title() {
+        return fixed_title;
+    }
+
+    public void setFixed_title(String fixed_title) {
+        this.fixed_title = fixed_title;
+    }
+
 
 }

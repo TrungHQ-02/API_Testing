@@ -33,7 +33,7 @@ public class GetListAuctionsByUserTests {
 	public void unitTest2() {
 		System.out.println("Code should be 1000 and message should be OK with the negative input");
 		System.out.println("Testing unit2...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomId = random.nextInt(-1000,-1);
 			int randomIndex = random.nextInt(-1000,-1);
 			int randomCount = random.nextInt(-1000,-1);
@@ -48,7 +48,7 @@ public class GetListAuctionsByUserTests {
 	public void unitTest3() {
 		System.out.println("Code should be 1004 and message should be �?��?�ログイン�?��?��?�り�?��?�ん even when token is wrong");
 		System.out.println("Testing unit3...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomId = random.nextInt(1,10);
 			int randomIndex = random.nextInt(1,10);
 			int randomCount = random.nextInt(1,10);
@@ -67,7 +67,7 @@ public class GetListAuctionsByUserTests {
 	public void unitTest4() {
 		System.out.println("Status Id should be 1,2,3,4,5,6");
 		System.out.println("Testing unit4...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomId = random.nextInt(1,1000);
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
@@ -86,7 +86,7 @@ public class GetListAuctionsByUserTests {
 	public void unitTest5() {
 		System.out.println("Type id should be 1,2,3,4,5 ");
 		System.out.println("Testing unit5...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomId = random.nextInt(1,1000);
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
@@ -104,7 +104,7 @@ public class GetListAuctionsByUserTests {
 	public void unitTest6() {
 		System.out.println("Total of auctions should be greater than 0");
 		System.out.println("Testing unit6...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomId = random.nextInt(1,1000);
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
@@ -119,7 +119,7 @@ public class GetListAuctionsByUserTests {
 	public void unitTest7() {
 		System.out.println("Title of auction should be null");
 		System.out.println("Testing unit7...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomId = random.nextInt(1,1000);
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
@@ -137,7 +137,7 @@ public class GetListAuctionsByUserTests {
 	public void unitTest8() {
 		System.out.println("Status id we receive must equal to status id we send to API");
 		System.out.println("Testing unit8...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomId = random.nextInt(1,6);
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);

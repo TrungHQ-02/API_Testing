@@ -29,7 +29,7 @@ public class GetListAuctionsTests {
 	public void unitTest2() {
 		System.out.println("Code should be 1000 and message should be OK with the negative input");
 		System.out.println("Testing unit2...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomIndex = random.nextInt(-1000,-1);
 			int randomCount = random.nextInt(-1000,-1);
 			auctions.Test06(randomIndex, randomCount, null);
@@ -43,7 +43,7 @@ public class GetListAuctionsTests {
 	public void unitTest3() {
 		System.out.println("Code should be 1000 and message should be OK even when token is wrong");
 		System.out.println("Testing unit3...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
 			String random_token = randomString.getStringWithFixedLength(100);
@@ -58,7 +58,7 @@ public class GetListAuctionsTests {
 	public void unitTest4() {
 		System.out.println("Status Id should be from 1 to 6 (except 4)");
 		System.out.println("Testing unit4...");
-		for (int i = 1; i <= 20; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
 			auctions.Test06(randomIndex, randomCount, null);
@@ -76,7 +76,7 @@ public class GetListAuctionsTests {
 	public void unitTest5() {
 		System.out.println("Type id should be 1,2,3,4,5 ");
 		System.out.println("Testing unit5...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
 			auctions.Test06(randomIndex, randomCount, null);
@@ -93,7 +93,7 @@ public class GetListAuctionsTests {
 	public void unitTest6() {
 		System.out.println("Total of auctions should be greater than 0");
 		System.out.println("Testing unit6...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
 			auctions.Test06(randomIndex, randomCount, null);
@@ -107,7 +107,7 @@ public class GetListAuctionsTests {
 	public void unitTest7() {
 		System.out.println("Title of auction should not be null");
 		System.out.println("Testing unit7...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int randomIndex = random.nextInt(1,1000);
 			int randomCount = random.nextInt(1,1000);
 			auctions.Test06(randomIndex, randomCount, null);

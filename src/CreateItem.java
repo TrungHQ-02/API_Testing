@@ -23,7 +23,7 @@ public class CreateItem {
     public String fixed_title;
 
 
-    public void Test13(String auction_id, String name, int starting_price, int brand_id, String description, String series, String token) {
+    public void Test15(String auction_id, String name, int starting_price, int brand_id, String description, String series, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
