@@ -213,7 +213,7 @@ public class LoginTests {
 		for (int i = 1; i <= 2; i++) {
 			String randomMail = email.getStringWithFixedLength(10) + "@gmail.com";
 			String randomPass = email.getStringWithFixedLength(10);
-			signUp.Test02(randomMail, randomPass, randomPass, null, "Hoang Trung", "03830090109", null);
+			signUp.Test04(randomMail, randomPass, randomPass, null, "Hoang Trung", "03830090109", null);
 			login.Test01(randomMail, randomPass + i);
 			System.out.println("Testing unit13...");
 			Assertions.assertEquals(1002, login.getCode());
