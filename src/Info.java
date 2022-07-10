@@ -8,18 +8,18 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class ReadNew {
+public class Info {
     private static HttpURLConnection connection;
     public static Rp rp;
 
 
-    public void Test31(String token) {
+    public void Test08(String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
         try {
 
-            URL url = new URL(BaseURL.baseURL + "news/read/1");
+            URL url = new URL(BaseURL.baseURL + "info");
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Authorization", "Bearer" + token);

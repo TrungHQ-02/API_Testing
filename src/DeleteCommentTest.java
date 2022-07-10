@@ -2,6 +2,7 @@
 import java.util.Random;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import freq.RandomEmail;
@@ -14,9 +15,10 @@ public class DeleteCommentTest {
     CreateComment crecmt = new CreateComment();
     GetListComments getListComments = new GetListComments();
     @Test//   xoa mot comment thanh cong
+    @DisplayName("Unit test 1: If we send to api valid input, code should be 1000 and message should be OK")
     public void unitTest1() {
-        login.Test01("minh0915@gmail.com", "123456");
-        System.out.println("If we send to api valid input, code should be 1000 and message should be OK");
+        login.Test01("trinhquan100402@gmail.com", "1004");
+       // System.out.println("If we send to api valid input, code should be 1000 and message should be OK");
         System.out.println("Testing unit1...");
         crecmt.Test14(12, login.getToken(),"work",1);
         getListComments.Test15(12,0,1, login.getToken());
