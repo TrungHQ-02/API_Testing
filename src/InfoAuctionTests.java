@@ -13,7 +13,7 @@ public class InfoAuctionTests {
 	Random random = new Random();
 	RandomEmail randomString = new RandomEmail();
 	String properToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU3NDI0MDAzLCJleHAiOjE2NTc3ODQwMDMsIm5iZiI6MTY1NzQyNDAwMywianRpIjoiemQ2SmI1d3J5VFM2VFpxVyIsInN1YiI6MTAxNywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.n7GknSMcak5_xDnKKCAFXj7JQSdwZ33sGHBeTDYTkDQ";
-
+	// token dang nhap
 	// On
 	@Test
 	public void unitTest1() {

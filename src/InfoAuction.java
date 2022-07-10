@@ -13,6 +13,7 @@ public class InfoAuction {
 	public static Rp rp;
 	public String fixedId; // de check
 	public String content;
+	// de check html
 
 	public String getFixedId() {
 		return fixedId;
