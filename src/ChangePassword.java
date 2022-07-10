@@ -13,7 +13,7 @@ import java.nio.charset.StandardCharsets;
 public class ChangePassword {
     private static HttpURLConnection connection;
 
-    public static Rp5 rp;
+    public static Rp6 rp;
     int rpCode;
    
 
@@ -61,7 +61,7 @@ public class ChangePassword {
 
             // Parse JSON
             Gson g = new Gson();
-            rp = g.fromJson(respondContent.toString(), Rp5.class);
+            rp = g.fromJson(respondContent.toString(), Rp6.class);
 
             reader.close();
         } catch (IOException e) {
