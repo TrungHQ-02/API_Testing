@@ -21,7 +21,7 @@ public class GetListAuctions {
 		this.fixedId = fixedId;
 	}
 
-	public void Test06(int index, int count, String token) {
+	public void Test09(int index, int count, String token) {
 		// access_token is nullable
 		String line;
 		BufferedReader reader;

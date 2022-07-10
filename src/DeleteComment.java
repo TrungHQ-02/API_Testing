@@ -14,7 +14,7 @@ public class DeleteComment {
     public static Rp rp;
     //public String fixed_comment_id;
 
-    public void Test31(String accessToken, int comment_id) {
+    public void Test19(String accessToken, int comment_id) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();

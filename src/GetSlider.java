@@ -12,7 +12,7 @@ public class GetSlider {
     private static HttpURLConnection connection;
     public static Rp2 rp;
 
-    public void Test29(String access_token) {
+    public void Test34(String access_token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();

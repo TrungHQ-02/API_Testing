@@ -23,7 +23,7 @@ public class InfoAuction {
 		this.fixedId = fixedId;
 	}
 
-	public void Test06(String auctionId, String token) {
+	public void Test14(String auctionId, String token) {
 		// access_token is nullable
 		String line;
 		BufferedReader reader;

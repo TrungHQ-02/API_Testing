@@ -4,9 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them">
+    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Quan them">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateItemTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateItemTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AcceptMaxBid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AcceptMaxBid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AcceptMaxBidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AcceptMaxBidTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateCommentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeleteComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeleteComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeleteCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeleteCommentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListAuctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListAuctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListAuctionsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListBids.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListBids.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListBidsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListBidsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListBrands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListBrands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListBrandsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListBrandsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListCategories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCategories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListCategoriesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCategoriesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListComments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListComments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListCommentsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCommentsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListLikes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListLikes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListLikesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListLikesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetNews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetNewsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetNewsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetNotifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetNotifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetNotificationsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetNotificationsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetSlider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetSlider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetSliderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetSliderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,11 +58,21 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/GetListBidsTests.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Login.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/LoginTests.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Rp.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/SignUp.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/SignUpTests.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2AtPBO6KLUtdaiGqbvwYkECMw14" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -77,7 +113,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContactUsTests.unitTest8">
+  <component name="RunManager" selected="JUnit.InfoTests.unitTest1">
     <configuration name="ContactUsTests.unitTest8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -97,30 +133,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DeleteAuctionTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DeleteAuctionTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InfoTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InfoTests" />
+      <option name="METHOD_NAME" value="unitTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReadNotificationsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ReadNotificationsTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUpTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUpTests.unitTest12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
-      <option name="METHOD_NAME" value="unitTest12" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,19 +173,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.DeleteAuctionTests" />
+      <item itemvalue="JUnit.InfoTests.unitTest1" />
       <item itemvalue="JUnit.ContactUsTests.unitTest8" />
       <item itemvalue="JUnit.ReadNotificationsTests" />
-      <item itemvalue="JUnit.SignUpTests" />
-      <item itemvalue="JUnit.SignUpTests.unitTest12" />
       <item itemvalue="JUnit.CreateItemTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.InfoTests.unitTest1" />
+        <item itemvalue="JUnit.DeleteAuctionTests" />
         <item itemvalue="JUnit.ContactUsTests.unitTest8" />
         <item itemvalue="JUnit.CreateItemTests" />
         <item itemvalue="JUnit.ReadNotificationsTests" />
-        <item itemvalue="JUnit.SignUpTests" />
-        <item itemvalue="JUnit.SignUpTests.unitTest12" />
       </list>
     </recent_temporary>
   </component>
@@ -326,20 +362,12 @@
     <MESSAGE value="Phuong them nhung ma chua chay duoc :&lt;" />
     <MESSAGE value="Phuong them nhung ma chay khong ra 1000 OK :&lt;" />
     <MESSAGE value="Phuong them" />
-    <option name="LAST_COMMIT_MESSAGE" value="Phuong them" />
+    <MESSAGE value="Quan them" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quan them" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Login.java</url>
-          <line>48</line>
-          <properties class="Login">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Search.java</url>
           <line>39</line>
@@ -366,15 +394,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/EditAccountTest.java</url>
-          <line>23</line>
-          <properties class="EditAccountTest" method="UnitTest02">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GetDetailAuctionsTest.java</url>
@@ -403,5 +422,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IntelliJgithub$GetListBidsTests.ic" NAME="GetListBidsTests Coverage Results" MODIFIED="1656993518099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -23,7 +23,7 @@ public class EditItem {
     public String fixed_title;
 
 
-    public void Test13(String auction_id, String name, int starting_price, int brand_id, String description, String series, String token) {
+    public void Test16(String auction_id, String name, int starting_price, int brand_id, String description, String series, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
