@@ -26,7 +26,7 @@ public class EditAccount {
     public File fixed_avatar;
 
 
-    public void Test04(String access_token, String email, String password, String re_pass, String address, String name, String phone, File avatar) {
+    public void Test05(String access_token, String email, String password, String re_pass, String address, String name, String phone, File avatar) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();

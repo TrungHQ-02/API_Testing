@@ -22,7 +22,7 @@ public class GetListLikesTests {
 		// Code 1000 message OK
 		System.out.println("Code should be 1000 and message should be OK with the valid input");
 		System.out.println("Testing unit1...");
-		likes.Test23(1,1,1,proper_token);
+		likes.Test28(1,1,1,proper_token);
 //		System.out.println(auctionsByStatus.getData().total);
 		Assertions.assertEquals(1000, likes.getCode());
 		Assertions.assertEquals("OK", likes.getMessage());
@@ -37,7 +37,7 @@ public class GetListLikesTests {
 			int randomId = random.nextInt(-10,-1);
 			int randomIndex = random.nextInt(-10,-1);
 			int randomCount = random.nextInt(-10,-1);
-			likes.Test23(randomId, randomIndex, randomCount, proper_token);
+			likes.Test28(randomId, randomIndex, randomCount, proper_token);
 			Assertions.assertEquals(1000, likes.getCode());
 			Assertions.assertEquals("OK", likes.getMessage());
 		}
@@ -54,7 +54,7 @@ public class GetListLikesTests {
 			int randomCount = random.nextInt(1,3);
 			String random_token = randomString.getStringWithFixedLength(100);
 			try {
-				likes.Test23(randomId, randomIndex, randomCount, random_token);
+				likes.Test28(randomId, randomIndex, randomCount, random_token);
 			} catch (Exception e) {}
 			String contentRP = likes.getContentString();
 			boolean contain_HTML = contentRP.contains("html");
@@ -71,7 +71,7 @@ public class GetListLikesTests {
 			int randomId = random.nextInt(1,3);
 			int randomIndex = random.nextInt(1,3);
 			int randomCount = random.nextInt(1,3);
-			likes.Test23(randomId, randomIndex, randomCount, proper_token);
+			likes.Test28(randomId, randomIndex, randomCount, proper_token);
 			int totalAuctions = Integer.parseInt(likes.getData().total);
 			Assertions.assertTrue(totalAuctions >= 0);
 		}
@@ -86,7 +86,7 @@ public class GetListLikesTests {
 			int randomId = random.nextInt(1,3);
 			int randomIndex = random.nextInt(1,3);
 			int randomCount = random.nextInt(1,3);
-			likes.Test23(randomId, randomIndex, randomCount, proper_token);
+			likes.Test28(randomId, randomIndex, randomCount, proper_token);
 			Auction3[] aucList = likes.getData().auctions.clone();
 			for (Auction3 auction : aucList) {
 				Assertions.assertNotEquals(null, auction.title);
@@ -103,7 +103,7 @@ public class GetListLikesTests {
 			int randomId = random.nextInt(1,6);
 			int randomIndex = random.nextInt(1,3);
 			int randomCount = random.nextInt(1,3);
-			likes.Test23(randomId, randomIndex, randomCount, proper_token);
+			likes.Test28(randomId, randomIndex, randomCount, proper_token);
 			Auction3[] aucList = likes.getData().auctions.clone();
 			for (Auction3 auction : aucList) {
 				int aucStatusID = Integer.parseInt(auction.statusId);

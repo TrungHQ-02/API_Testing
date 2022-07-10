@@ -13,7 +13,7 @@ public class GetListBrands {
     private static HttpURLConnection connection;
     public static Rp rp;
 
-    public void Test19() {
+    public void Test24() {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();

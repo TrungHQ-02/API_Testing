@@ -8,7 +8,7 @@ class GetListBrandsTest {
     @Test
     @DisplayName("Unit Test : get list brands")
     public void UnitTest(){
-    	getListBrands.Test19();
+    	getListBrands.Test24();
         Assertions.assertEquals(1000,getListBrands.getCode());
         Assertions.assertEquals("OK",getListBrands.getMessage());
         Assertions.assertNotEquals(null, getListBrands.getData());

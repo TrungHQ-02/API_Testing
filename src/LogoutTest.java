@@ -12,7 +12,7 @@ class LogoutTest {
     @RepeatedTest(value = 2)
     public void UnitTest1() {
         login.Test01("minh0915@gmail.com", "123456");
-        logout.Test05(login.getToken());
+        logout.Test06(login.getToken());
         Assertions.assertEquals(1000, logout.getCode(), "Wrong code");
         Assertions.assertEquals("OK", logout.getMessage(), "Wrong message");
     }

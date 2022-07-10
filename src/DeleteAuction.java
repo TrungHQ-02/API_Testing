@@ -8,18 +8,23 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class GetListCategories {
+public class DeleteAuction {
     private static HttpURLConnection connection;
-    public static Rp2 rp;
 
-    public void Test23() {
+    public static Rp rp;
+    //public String fixed_comment_id;
+    public void Test13(String accessToken, String auction_id) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
         try {
-            URL url = new URL(BaseURL.baseURL + "categories");
+            URL url = new URL(BaseURL.baseURL + "auctions/deleteAuction/" + auction_id );
             connection = (HttpURLConnection) url.openConnection();
-            connection.setRequestMethod("GET");
+            connection.setRequestMethod("POST");
+            connection.setRequestProperty("Authorization", "Bearer" + accessToken);
+            connection.setRequestProperty("Accept", "application/json");
+            connection.setRequestProperty("Content-Type", "application/json");
+            connection.setDoOutput(true);
 
             reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             while ((line = reader.readLine()) != null) {
@@ -29,7 +34,7 @@ public class GetListCategories {
 
             // Parse JSON
             Gson g = new Gson();
-            rp = g.fromJson(respondContent.toString(), Rp2.class);
+            rp = g.fromJson(respondContent.toString(), Rp.class);
 
             reader.close();
         } catch (IOException e) {
@@ -37,14 +42,18 @@ public class GetListCategories {
         } finally {
             connection.disconnect();
         }
+
     }
-    public int getCode(){
+
+    public int getCode() {
         return rp.code;
     }
-    public String getMessage(){
-        return rp.message;
-    }
-    public Data[] getData(){
+
+    public String getMessage() {return rp.message; }
+
+    public Data getData() {
         return rp.data;
     }
+
+
 }

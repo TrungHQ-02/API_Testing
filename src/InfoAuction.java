@@ -8,10 +8,21 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class GetListAuctions {
+public class InfoAuction {
 	private static HttpURLConnection connection;
-	public static Rp3 rp;
-	public String fixedId; // de check
+	public static Rp rp;
+	public String fixedId;
+	public String content;
+
+	
+	public int num;
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
 
 	public String getFixedId() {
 		return fixedId;
@@ -21,18 +32,14 @@ public class GetListAuctions {
 		this.fixedId = fixedId;
 	}
 
-	public void Test09(int index, int count, String token) {
+	public void Test14(String auctionId, String token) {
 		// access_token is nullable
 		String line;
 		BufferedReader reader;
 		StringBuffer respondContent = new StringBuffer();
 
-		// Connect and parse Json
-//        https://auctions-app-2.herokuapp.com/api/auctions/listAuctions
-		// https://auctions-app-2.herokuapp.com/api/auctions/listAuctionsByStatus?statusId=1&index=1&count=3
 		try {
-			URL url = new URL(BaseURL.baseURL + "auctions/listAuctions" 
-					+ "?index=" + index + "&count=" + count);
+			URL url = new URL(BaseURL.baseURL + "auctions/info/" + auctionId);
 			connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod("GET");
 			connection.setRequestProperty("Authorization", "Bearer" + token);
@@ -42,18 +49,32 @@ public class GetListAuctions {
 				respondContent.append(line);
 			}
 			System.out.println(respondContent);
+			
+			this.setFixedId(auctionId);
+			this.setContent(respondContent.toString());
 
 			// Parse JSON
 			Gson g = new Gson();
-			rp = g.fromJson(respondContent.toString(), Rp3.class);
+			rp = g.fromJson(respondContent.toString(), Rp.class);
 
 			reader.close();
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println(e.getMessage());
+			if (this.getNum() == 2) {
+				System.out.println("Unit 2: Satisfied!");
+			}
 		} finally {
 			connection.disconnect();
 		}
 
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
 	}
 
 	public int getCode() {
@@ -64,7 +85,7 @@ public class GetListAuctions {
 		return rp.message;
 	}
 
-	public Data3 getData() {
+	public Data getData() {
 		return rp.data;
 	}
 }
