@@ -243,7 +243,7 @@ public class GetListAuctionsTests {
 		System.out.println("Unit 16: Satisfied");
 	}
 	
-	// test truyeenf category id
+	// test truyen category id
 	@Test
 	public void unitTest17() {
 		System.out.println("Auction status id should not be 4");
