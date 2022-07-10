@@ -10,12 +10,22 @@ import com.google.gson.Gson;
 
 import freq.BaseURL;
 
-public class LikeAuction {
+public class DeleteNotification {
 	private static HttpURLConnection connection;
 
 	public static Rp rp;
 
 	public String content;
+	
+	int num;
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
 
 	public String getContent() {
 		return content;
@@ -35,14 +45,14 @@ public class LikeAuction {
 		this.auction_id = auction_id;
 	}
 
-	public void Test27(String accessToken, String auctionId) {
+	public void Test22(String accessToken, String auctionId) {
 		String line;
 		BufferedReader reader;
 		StringBuffer respondContent = new StringBuffer();
 
 		// Connect and parse Json
 		try {
-			URL url = new URL(BaseURL.baseURL +  "updateLike/" + auctionId);
+			URL url = new URL(BaseURL.baseURL +  "notifications/delete/" + auctionId);
 			connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod("POST");
 			connection.setRequestProperty("Authorization", "Bearer" + accessToken);
@@ -71,7 +81,10 @@ public class LikeAuction {
 
 			reader.close();
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println(e.toString());
+			if (this.getNum() == 3) {
+				System.out.println("Unit 3: Satisfied!");
+			}
 		} finally {
 			connection.disconnect();
 		}

@@ -29,6 +29,7 @@ public class EditItem {
         StringBuffer respondContent = new StringBuffer();
 
         // Connect and parse Json
+        /// api/auctions/edit/{auctionId}
         try {
             URL url = new URL(BaseURL.baseURL + "items/edit/" + item_id);
             connection = (HttpURLConnection) url.openConnection();
@@ -40,7 +41,7 @@ public class EditItem {
 
             String data = "{\n \"name\": \"" + name
                     + "\",\n  \"brand_id\": \"" + brand_id
-                    + "\",\n  \"starting_price\": \"" + starting_price
+                    +"\",\n  \"starting_price\": \"" + starting_price
                     + "\",\n  \"description\": \"" + description
                     + "\",\n  \"series\": \"" + series
                     + "\"\n}";

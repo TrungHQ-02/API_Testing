@@ -14,7 +14,7 @@ public class TotalLikeOfAuction {
     public static Rp rp;
     int rpCode;
 
-    public void Test24(String access_token, String auction_id) {
+    public void Test29(String access_token, String auction_id) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();

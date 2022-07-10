@@ -17,7 +17,7 @@ public class GetNotificationsTests {
 		// Code 1000 message OK
 		System.out.println("Code should be 1000 and message should be OK with the valid input");
 		System.out.println("Testing unit1...");
-		getNotifications.Test27(1, 1, "1", proper_token);
+		getNotifications.Test32(1, 1, "1", proper_token);
 		Assertions.assertEquals(1000, getNotifications.getCode());
 		Assertions.assertEquals("OK", getNotifications.getMessage());
 		System.out.println("Unit 1: Satisfied");
@@ -31,7 +31,7 @@ public class GetNotificationsTests {
 			int randomIs_not_read = random.nextInt(0,1);
 			int randomIndex = random.nextInt(-5,-1);
 			int randomCount = random.nextInt(-5,-1);
-			getNotifications.Test27(randomIndex, randomCount, "" + randomIs_not_read, proper_token);
+			getNotifications.Test32(randomIndex, randomCount, "" + randomIs_not_read, proper_token);
 			Assertions.assertEquals(1000, getNotifications.getCode());
 			Assertions.assertEquals("OK", getNotifications.getMessage());
 		}
@@ -47,7 +47,7 @@ public class GetNotificationsTests {
 			int randomIndex = random.nextInt(1,10);
 			int randomCount = random.nextInt(1,10);
 			try {
-				getNotifications.Test27(randomIndex, randomCount, "" + randomIs_not_read, randomString.getStringWithFixedLength(120));
+				getNotifications.Test32(randomIndex, randomCount, "" + randomIs_not_read, randomString.getStringWithFixedLength(120));
 			} catch (Exception e) {
 			}
 			String contentRP = getNotifications.getRespondContentString();
@@ -67,7 +67,7 @@ public class GetNotificationsTests {
 			int randomIndex = random.nextInt(1,10);
 			int randomCount = random.nextInt(1,10);
 			try {
-				getNotifications.Test27(randomIndex, randomCount, "" + randomIs_not_read, "");
+				getNotifications.Test32(randomIndex, randomCount, "" + randomIs_not_read, "");
 			} catch (Exception e) {
 			}
 			String contentRP = getNotifications.getRespondContentString();
@@ -86,7 +86,7 @@ public class GetNotificationsTests {
 			int randomIs_not_read = random.nextInt(0,1);
 			int randomIndex = random.nextInt(1,10);
 			int randomCount = random.nextInt(1,10);
-			getNotifications.Test27(randomIndex, randomCount, "" + randomIs_not_read, proper_token);
+			getNotifications.Test32(randomIndex, randomCount, "" + randomIs_not_read, proper_token);
 			Assertions.assertTrue(Integer.parseInt(getNotifications.getData().total) >= 0);
 		}
 		System.out.println("Unit 5: Satisfied!");
@@ -100,7 +100,7 @@ public class GetNotificationsTests {
 			int randomIs_not_read = random.nextInt(0,1);
 			int randomIndex = random.nextInt(1,10);
 			int randomCount = random.nextInt(1,10);
-			getNotifications.Test27(randomIndex, randomCount, "" + randomIs_not_read, proper_token);
+			getNotifications.Test32(randomIndex, randomCount, "" + randomIs_not_read, proper_token);
 			Assertions.assertTrue(Integer.parseInt(getNotifications.getData().total_not_read) >= 0);
 		}
 		System.out.println("Unit 6: Satisfied!");

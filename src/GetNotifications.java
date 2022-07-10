@@ -20,7 +20,7 @@ public class GetNotifications {
 		this.respondContentString = respondContentString;
 	}
 
-	public void Test27(int index, int count,String is_not_read, String token) {
+	public void Test32(int index, int count,String is_not_read, String token) {
 		// access_token is not nullable
 		String line;
 		BufferedReader reader;

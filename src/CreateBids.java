@@ -18,8 +18,7 @@ public class CreateBids {
 
     public int fixed_bid_last_id;
 
-
-    public void Test16(int price, int bid_last_id,String accessToken,int auction_id) {
+    public void Test21(int price, int bid_last_id,String accessToken,int auction_id) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
