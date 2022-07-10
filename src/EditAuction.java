@@ -22,6 +22,7 @@ public class EditAuction {
 	
 	public String fixed_auction_id, fixed_title;
 
+
 	public void Test12(String auctionId, String category_id, String start_date, String end_date, String title_ni,String accessToken) {
 		String line;
 		BufferedReader reader;

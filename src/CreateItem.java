@@ -7,7 +7,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
@@ -23,7 +22,7 @@ public class CreateItem {
     public String fixed_title;
 
 
-    public void Test15(String auction_id, String name, int starting_price, int brand_id, String description, String series, String token) {
+    public void Test13(String auction_id, String name, int starting_price, int brand_id, String description, String series,String images, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
@@ -41,7 +40,7 @@ public class CreateItem {
 
             String data = "{\n \"name\": \"" + name
                     + "\",\n  \"brand_id\": \"" + brand_id
-                    + "\",\n  \"starting_price\": \"" + starting_price
+                    +"\",\n  \"starting_price\": \"" + starting_price
                     + "\",\n  \"description\": \"" + description
                     + "\",\n  \"series\": \"" + series
                     + "\"\n}";

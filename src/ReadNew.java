@@ -13,11 +13,12 @@ public class ReadNew {
     public static Rp rp;
 
 
-    public void Test31(String token) {
+    public void Test25(String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
         try {
+
             URL url = new URL(BaseURL.baseURL + "news/read/1");
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");

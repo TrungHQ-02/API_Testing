@@ -8,14 +8,23 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class GetListLikes {
+public class GetListAuctionsByUser {
     private static HttpURLConnection connection;
     public static Rp3 rp;
     public String fixedId;
-    public String contentString;
+    public String content;
+    
+    // de check
 
-    // OK
-    public String getFixedId() {
+    public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public String getFixedId() {
 		return fixedId;
 	}
 
@@ -24,17 +33,17 @@ public class GetListLikes {
 	}
 
 
-	public void Test23(int statusId, int index, int count, String token) {
-    	// access_token is not nullable
+	public void Test08(int statusId, int index, int count, String token) {
+    	// access_token is nullable
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
 
         // Connect and parse Json
+        //api/auctions/listAuctionsByUser/
         //https://auctions-app-2.herokuapp.com/api/auctions/listAuctionsByStatus?statusId=1&index=1&count=3
-        // https://auctions-app-2.herokuapp.com/api/likes/3?index=1&count=1
         try {
-            URL url = new URL(BaseURL.baseURL + "likes/" 
+            URL url = new URL(BaseURL.baseURL + "auctions/listAuctionsByUser/" 
             	    + statusId 
             		+ "?index=" + index 
             		+ "&count=" + count);
@@ -49,7 +58,7 @@ public class GetListLikes {
             System.out.println(respondContent);
 
             this.setFixedId(statusId+"");
-            this.setContentString(respondContent.toString());
+            this.setContent(respondContent.toString());
             
             // Parse JSON
             Gson g = new Gson();
@@ -64,7 +73,6 @@ public class GetListLikes {
 
     }
     
-    
     public int getCode() {
     	return rp.code;
     }
@@ -76,13 +84,4 @@ public class GetListLikes {
     public Data3 getData() {
     	return rp.data;
     }
-
-	public String getContentString() {
-		return contentString;
-	}
-
-	public void setContentString(String contentString) {
-		this.contentString = contentString;
-	}
-
 }

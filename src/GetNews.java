@@ -13,7 +13,7 @@ public class GetNews {
     public static Rp rp;
 
 
-    public void Test30(int index, int count, String token) {
+    public void Test25(int index, int count, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();

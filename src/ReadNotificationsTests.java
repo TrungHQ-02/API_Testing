@@ -15,7 +15,7 @@ public class ReadNotificationsTests {
         System.out.println("If token not null, code should be 1000 and message should be OK");
         System.out.println("Testing unit1...");
 
-        readNotifications.Test33(1, token);
+        readNotifications.Test28(1, token);
         Assertions.assertEquals(1000, readNotifications.getCode());
         Assertions.assertEquals("OK", readNotifications.getMessage());
         System.out.println("Unit 1: Satisfied!");

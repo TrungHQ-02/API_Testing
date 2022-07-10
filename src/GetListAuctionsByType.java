@@ -8,20 +8,20 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class Info {
-    private static HttpURLConnection connection;
+
+public class GetListAuctionsByType {
+	private static HttpURLConnection connection;
     public static Rp rp;
 
-    public void Test08(String token) {
+    public void Test09( String access_token, String index, String count) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
         try {
-
-            URL url = new URL(BaseURL.baseURL + "info");
+            URL url = new URL(BaseURL.baseURL +  "auctions/listAuctions" + "?index=" + index + "&count=" + count);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
-            connection.setRequestProperty("Authorization", "Bearer" + token);
+            //connection.setRequestProperty("Authorization", "Bearer" + access_token);
 
             reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             while ((line = reader.readLine()) != null) {
@@ -39,18 +39,15 @@ public class Info {
         } finally {
             connection.disconnect();
         }
-
     }
-    public int getCode() {
+    public int getCode(){
         return rp.code;
     }
-
-    public String getMessage() {
+    public String getMessage(){
         return rp.message;
     }
-
-    public String getTotal() {
-        return rp.data.total;
+    public Data getData(){
+        return rp.data;
     }
 
 }

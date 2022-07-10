@@ -13,7 +13,7 @@ public class GetListBids {
 	public static Rp rp;
 
 	// On
-	public void Test22(int auctionId, int index, int count, String token) {
+	public void Test07(int auctionId, int index, int count, String token) {
 		// access_token is nullable
 		String line;
 		BufferedReader reader;

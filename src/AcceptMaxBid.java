@@ -16,7 +16,7 @@ public class AcceptMaxBid {
 
     public static Rp rp;
 
-    public void Test25(int auction_id, String selling_info, String token) {
+    public void Test20(int auction_id, String selling_info, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();

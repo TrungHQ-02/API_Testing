@@ -8,16 +8,34 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class InfoItem {
+public class GetListAuctionsByStatus {
     private static HttpURLConnection connection;
-    public static Rp rp;
+    public static Rp3 rp;
+    public String fixedId; // de check
 
-    public void Test33(int itemId, String token) {
+    public String getFixedId() {
+		return fixedId;
+	}
+
+
+	public void setFixedId(String fixedId) {
+		this.fixedId = fixedId;
+	}
+
+
+	public void Test07(int statusId, int index, int count, String token) {
+    	// access_token is nullable
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
+
+        // Connect and parse Json
+        //https://auctions-app-2.herokuapp.com/api/auctions/listAuctionsByStatus?statusId=1&index=1&count=3
         try {
-            URL url = new URL(BaseURL.baseURL + "items/info/" + itemId);
+            URL url = new URL(BaseURL.baseURL + "auctions/listAuctionsByStatus?" 
+            	    + statusId 
+            		+ "&index=" + index 
+            		+ "&count=" + count);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Authorization", "Bearer" + token);
@@ -28,21 +46,30 @@ public class InfoItem {
             }
             System.out.println(respondContent);
 
+            this.setFixedId(statusId+"");
+            
             // Parse JSON
             Gson g = new Gson();
-            rp = g.fromJson(respondContent.toString(), Rp.class);
+            rp = g.fromJson(respondContent.toString(), Rp3.class);
 
             reader.close();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             connection.disconnect();
         }
+
     }
-    public int getCode(){
-        return rp.code;
+    
+    public int getCode() {
+    	return rp.code;
     }
-    public String getMessage(){
-        return rp.message;
+    
+    public String getMessage() {
+    	return rp.message;
+    }
+    
+    public Data3 getData() {
+    	return rp.data;
     }
 }

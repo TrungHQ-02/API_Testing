@@ -76,6 +76,7 @@ public class EditAuctionTests {
 		Assertions.assertEquals(1001, editAuction.getCode());
 		System.out.println("Unit 5: Satisfied!");
 	}
+
 	@Test
 	public void unitTest6() {
 		login.Test01("trinhquan100402@gmail.com", "1004");
