@@ -18,7 +18,6 @@ public class ReadNew {
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
         try {
-
             URL url = new URL(BaseURL.baseURL + "news/read/1");
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");

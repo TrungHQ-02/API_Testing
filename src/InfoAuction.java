@@ -11,12 +11,11 @@ import java.net.URL;
 public class InfoAuction {
 	private static HttpURLConnection connection;
 	public static Rp rp;
-	public String fixedId; // de check
+	public String fixedId;
 	public String content;
-	// de check html
+
 	
 	public int num;
-
 	public int getNum() {
 		return num;
 	}

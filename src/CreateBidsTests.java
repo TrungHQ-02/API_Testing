@@ -10,7 +10,6 @@ public class CreateBidsTests {
     Login login = new Login();
     SignUp signup = new SignUp();
 
-
     @Test
     public void unitTest1() {
         login.Test01("trinhquan100402@gmail.com", "1004");

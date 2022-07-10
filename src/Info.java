@@ -12,7 +12,6 @@ public class Info {
     private static HttpURLConnection connection;
     public static Rp rp;
 
-
     public void Test08(String token) {
         String line;
         BufferedReader reader;

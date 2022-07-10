@@ -13,6 +13,7 @@ public class ContactUsTests{
     Login login = new Login();
 
     @Test//lien he thanh cong
+
     public void unitTest1() {
         String email = String.valueOf(new RandomEmail());
         System.out.println("If we send to api valid input, code should be 1000 ");

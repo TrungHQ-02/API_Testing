@@ -18,6 +18,7 @@ class ReadNewTests {
 		System.out.println("Unit 1: Satisfied!");
 	}
 /*
+
 	@Test
 	public void unitTest2() {// loi so voi bao cao, k truyen token van tra 1000
 		login.Test01("trinhquan100402@gmail.com", "1004");

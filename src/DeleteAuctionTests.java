@@ -6,7 +6,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import freq.RandomEmail;
-
 public class DeleteAuctionTests {
     DeleteAuction deleteAuction = new DeleteAuction();
     Random rand = new Random();

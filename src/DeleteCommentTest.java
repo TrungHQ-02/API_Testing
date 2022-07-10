@@ -17,6 +17,7 @@ public class DeleteCommentTest {
     @Test//   xoa mot comment thanh cong
     @DisplayName("Unit test 1: If we send to api valid input, code should be 1000 and message should be OK")
     public void unitTest1() {
+
         login.Test01("trinhquan100402@gmail.com", "1004");
        // System.out.println("If we send to api valid input, code should be 1000 and message should be OK");
         System.out.println("Testing unit1...");

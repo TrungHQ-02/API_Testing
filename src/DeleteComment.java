@@ -17,6 +17,7 @@ public class DeleteComment {
     public void Test19(String accessToken, int comment_id) {
         String line;
         BufferedReader reader;
+
         StringBuffer respondContent = new StringBuffer();
         try {
             URL url = new URL(BaseURL.baseURL + "comments/delete/" + comment_id );

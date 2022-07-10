@@ -16,7 +16,6 @@ public class CreateAuctionTests {
     // String auctionId, int category_id, String start_date, String end_date, String
     // title_ni,String accessToken
 
-
     @Test//    tao thanh cong 1 phien dau gia moi
     public void unitTest1() {// tao tieu de ngau nhien
         int top = 3;

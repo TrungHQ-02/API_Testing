@@ -13,7 +13,6 @@ public class DeleteAuction {
 
     public static Rp rp;
     //public String fixed_comment_id;
-
     public void Test13(String accessToken, String auction_id) {
         String line;
         BufferedReader reader;
