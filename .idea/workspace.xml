@@ -4,35 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Quan them">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AcceptMaxBid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AcceptMaxBid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AcceptMaxBidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AcceptMaxBidTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateCommentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DeleteComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeleteComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DeleteCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeleteCommentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EditAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EditAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditAccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EditItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListAuctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListAuctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListAuctionsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListBids.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListBids.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListBidsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListBidsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListBrands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListBrands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListBrandsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListBrandsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListCategories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCategories.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListCategoriesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCategoriesTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListComments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListComments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListCommentsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCommentsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListLikes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListLikes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListLikesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListLikesTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetNews.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetNewsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetNewsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetNotifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetNotifications.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetNotificationsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetNotificationsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetSlider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetSlider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetSliderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetSliderTest.java" afterDir="false" />
+    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Quan sua">
+      <change beforePath="$PROJECT_DIR$/src/InfoAuctionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InfoAuctionTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +41,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2AtPBO6KLUtdaiGqbvwYkECMw14" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -341,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657369195086</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Quan sua">
+      <created>1657432281377</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1657432281377</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +346,8 @@
     <MESSAGE value="Phuong them nhung ma chay khong ra 1000 OK :&lt;" />
     <MESSAGE value="Phuong them" />
     <MESSAGE value="Quan them" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quan them" />
+    <MESSAGE value="Quan sua" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quan sua" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
