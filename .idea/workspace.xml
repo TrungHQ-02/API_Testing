@@ -78,13 +78,12 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreateItemTests">
-    <configuration name="CreateAuctionTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ChangePasswordTest">
+    <configuration name="ChangePasswordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateAuctionTests" />
-      <option name="METHOD_NAME" value="unitTest1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="ChangePasswordTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,19 +139,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.ChangePasswordTest" />
       <item itemvalue="JUnit.CreateItemTests" />
       <item itemvalue="JUnit.CreateItemTests.unitTest4" />
       <item itemvalue="JUnit.CreateItemTests.unitTest5" />
-      <item itemvalue="JUnit.CreateAuctionTests.unitTest1" />
       <item itemvalue="JUnit.CreateItemTests.unitTest1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ChangePasswordTest" />
         <item itemvalue="JUnit.CreateItemTests" />
         <item itemvalue="JUnit.CreateItemTests.unitTest5" />
         <item itemvalue="JUnit.CreateItemTests.unitTest4" />
         <item itemvalue="JUnit.CreateItemTests.unitTest1" />
-        <item itemvalue="JUnit.CreateAuctionTests.unitTest1" />
       </list>
     </recent_temporary>
   </component>
