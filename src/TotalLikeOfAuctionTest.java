@@ -9,7 +9,7 @@ class TotalLikeOfAuctionTest {
     @Test
     @DisplayName("Unit Test 1: Total Like Of Auction ID 100")
     public void UnitTest1(){
-    	totalLikeOfAuction.Test24(null,"100");
+    	totalLikeOfAuction.Test29(null,"100");
         Assertions.assertEquals(1000,totalLikeOfAuction.getCode());
         Assertions.assertEquals("OK",totalLikeOfAuction.getMessage());
         Assertions.assertNotEquals(null, totalLikeOfAuction.getData());
@@ -17,33 +17,29 @@ class TotalLikeOfAuctionTest {
     }
 
     @Test
-    @DisplayName("Unit Test 2: Total Like Of Auction ID 200")
+    @DisplayName("Unit Test 2: Total Like Of Auction ID , ID isn't exist")
     public void UnitTest2(){
-    	totalLikeOfAuction.Test24(null,"200");
-        Assertions.assertEquals(1000,totalLikeOfAuction.getCode());
-        Assertions.assertEquals("OK",totalLikeOfAuction.getMessage());
-        Assertions.assertNotEquals(null, totalLikeOfAuction.getData());
+    	totalLikeOfAuction.Test29(null,"16");
+        Assertions.assertNotEquals(200,totalLikeOfAuction.getRpCode());
         System.out.println("Unit 2: Satisfied!");
     }
+
     
-    /*
-    //Loi -> khong ton tai id =0
-    //co nhieu id khong ton tai nhu 10, 11, ...
     @Test
-    @DisplayName("Unit Test 3: Total Like Of Auction ID 0")
+    @DisplayName("Unit Test 1: Total Like Of Auction ID 20")
     public void UnitTest3(){
-    	totalLikeOfAuction.Test24(null,"0");
+    	totalLikeOfAuction.Test29(null,"20");
         Assertions.assertEquals(1000,totalLikeOfAuction.getCode());
         Assertions.assertEquals("OK",totalLikeOfAuction.getMessage());
         Assertions.assertNotEquals(null, totalLikeOfAuction.getData());
         System.out.println("Unit 3: Satisfied!");
-    }*/
+    }
     
     @Test
     @DisplayName("Unit Test 4: Total Like Of Auction ID 1, have access_token")
     public void UnitTest4(){
-    	login.Test01("dien1234@gmail.com", "123456");
-    	totalLikeOfAuction.Test24(login.getToken(),"1");
+    	login.Test03("dien1234@gmail.com", "123456");
+    	totalLikeOfAuction.Test29(login.getToken(),"1");
         Assertions.assertEquals(1000,totalLikeOfAuction.getCode());
         Assertions.assertEquals("OK",totalLikeOfAuction.getMessage());
         Assertions.assertNotEquals(null, totalLikeOfAuction.getData());
@@ -53,8 +49,8 @@ class TotalLikeOfAuctionTest {
     @Test
     @DisplayName("Unit Test 5: Total Like Of Auction ID 10, have access_token")
     public void UnitTest5(){
-    	login.Test01("dien1234@gmail.com", "123456");
-    	totalLikeOfAuction.Test24(login.getToken(),"109");
+    	login.Test03("dien1234@gmail.com", "123456");
+    	totalLikeOfAuction.Test29(login.getToken(),"109");
         Assertions.assertEquals(1000,totalLikeOfAuction.getCode());
         Assertions.assertEquals("OK",totalLikeOfAuction.getMessage());
         Assertions.assertNotEquals(null, totalLikeOfAuction.getData());

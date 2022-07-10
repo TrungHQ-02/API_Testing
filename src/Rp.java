@@ -26,14 +26,18 @@ class Data {
 	String name;
 	String image;
 	String type;
-
+    
+	//for create comment
 	String content;
 	String update_at;
 
 	//for create item
 	int starting_price;
-
+    
+	//for total like of auction
 	int code;
+	
+	
 }
 
 class Category {

@@ -23,7 +23,7 @@ public class CreateComment {
     public String fixed_content;
 
 
-    public void Test14(int auction_id, String access_token, String content, int comment_last_id) {
+    public void Test18(int auction_id, String access_token, String content, int comment_last_id) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();

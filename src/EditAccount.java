@@ -18,15 +18,13 @@ public class EditAccount {
    
 
     public String fixed_email;
-    public String fixed_password;
-    public String fixed_re_pass;
     public String fixed_address;
     public String fixed_name;
     public String fixed_phone;
     public File fixed_avatar;
 
 
-    public void Test04(String access_token, String email, String password, String re_pass, String address, String name, String phone, File avatar) {
+    public void Test05(String access_token, String email, String address, String name, String phone, File avatar) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
@@ -42,8 +40,7 @@ public class EditAccount {
             connection.setRequestProperty("Content-Type", "application/json");
             connection.setDoOutput(true);
 
-            String data = "{\n \"email\": \"" + email + "\"" + "    ,\n  \"password\": \"" + password
-					+ "\"" + "    ,\n  \"re_pass\": \"" + re_pass + "\"" + "    ,\n  \"address\": \"" + address
+            String data = "{\n \"email\": \"" + email + "\"" + "    ,\n  \"address\": \"" + address
 					+ "\"" + "    ,\n \"name\": \"" + name + "\"" + "   , \n \"phone\": \"" + phone 
 					+ "\"" + "    ,\n \"avatar\": \"" + avatar + "\"" + " \n}";          
             byte[] out = data.getBytes(StandardCharsets.UTF_8);
@@ -57,8 +54,6 @@ public class EditAccount {
 
             // set to model
             this.setFixed_email(email+"");
-            this.setFixed_password(password+"");
-            this.setFixed_re_pass(re_pass+"");
             this.setFixed_address(address+"");
             this.setFixed_name(name+"");
             this.setFixed_phone(phone+"");
@@ -112,21 +107,6 @@ public class EditAccount {
         this.fixed_email = fixed_email;
     }
     
-    public String getFixed_password() {
-        return fixed_password;
-    }
-
-    public void setFixed_password(String fixed_password) {
-        this.fixed_password = fixed_password;
-    }
-    
-    public String getFixed_re_pass() {
-        return fixed_re_pass;
-    }
-
-    public void setFixed_re_pass(String fixed_re_pass) {
-        this.fixed_re_pass = fixed_re_pass;
-    }
     
     public String getFixed_address() {
         return fixed_address;
