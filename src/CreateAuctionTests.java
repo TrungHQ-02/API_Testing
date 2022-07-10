@@ -32,6 +32,7 @@ public class CreateAuctionTests {
         //auctionId:514
         createAuction.Test11("5", "2022/07/12 11:11", "2023/08/21 11:11", title, login.getToken());
         Assertions.assertEquals(1000, createAuction.getCode());
+        Assertions.assertEquals("OK", createAuction.getMessage());
         System.out.println("Unit 1: Satisfied!");
     }
     @Test//chua dang nhap
@@ -43,6 +44,7 @@ public class CreateAuctionTests {
         System.out.println("Testing unit2...");
         createAuction.Test11("3", "2024/06/20 11:11", "2024/06/21 11:11", "Aaaa", null);
         Assertions.assertEquals(1004, createAuction.getCode());//Server returned HTTP response code: 401 for URL
+        Assertions.assertEquals("Chưa đăng nhập", createAuction.getMessage());
         System.out.println("Unit 2: Satisfied!");//yêu cầu ứng dụng khách chưa được hoàn thành vì nó thiếu thông tin xác thực hợp lệ cho tài nguyên được yêu cầu.
     }
 
