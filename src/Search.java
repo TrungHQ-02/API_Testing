@@ -12,7 +12,7 @@ public class Search {
     private static HttpURLConnection connection;
     public static Rp2 rp;
 
-    public void Test30(int type, String key, String token) {
+    public void Test35(int type, String key, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();

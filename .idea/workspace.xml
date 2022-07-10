@@ -4,10 +4,83 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them">
+    <list default="true" id="da342fb9-b423-4690-95f4-d65d2464829b" name="Changes" comment="Phuong them">
+      <change afterPath="$PROJECT_DIR$/src/DeleteAuction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DeleteNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DeleteNotificationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EditItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EditItemTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InfoAuction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InfoAuctionTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InfoItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InfoItemTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InfoTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Rp5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AcceptMaxBid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AcceptMaxBid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AcceptMaxBidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AcceptMaxBidTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChangePassword.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChangePasswordTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ContactUs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContactUs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ContactUsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContactUsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateAuction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateAuction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateAuctionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateAuctionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateBids.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateBids.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateBidsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateBidsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateCommentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CreateItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CreateItemTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateItemTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeleteComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeleteComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeleteCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeleteCommentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditAuction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditAuction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditAuctionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditAuctionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetDetailAuctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetDetailAuctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetDetailAuctionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetDetailAuctionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListAuctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListAuctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsByStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsByStatusTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsByType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsByTypeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsByUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsByUserTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListAuctionsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListBids.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListBids.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListBidsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListBidsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListBrands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListBrands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListBrandsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListBrandsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListCategories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCategories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListCategoriesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCategoriesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListComments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListComments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListCommentsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListCommentsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListLikes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListLikes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetListLikesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListLikesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetNews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetNewsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetNewsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetNotifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetNotifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetNotificationsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetNotificationsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetSliderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetSliderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LikeAuction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LikeAuction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LikeAuctionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LikeAuctionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LogoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadNew.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadNewTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadNewTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadNotifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadNotifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadNotificationsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadNotificationsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rp6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUpTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TotalLikeOfAuction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TotalLikeOfAuction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TotalLikeOfAuctionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TotalLikeOfAuctionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +105,15 @@
         <option name="url" value="https://github.com/TrungHQ-02/API_Testing.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/AcceptMaxBid.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/AcceptMaxBidTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/CreateAuctionTests.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/CreateBidsTests.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/CreateItemTests.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/DeleteComment.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/DeleteCommentTest.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,7 +160,15 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChangePasswordTest">
+  <component name="RunManager" selected="JUnit.All in API_Test">
+    <configuration name="All in API_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ChangePasswordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -93,16 +183,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CreateItemTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateItemTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateItemTests" />
-      <option name="METHOD_NAME" value="unitTest1" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,19 +219,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.All in API_Test" />
       <item itemvalue="JUnit.ChangePasswordTest" />
       <item itemvalue="JUnit.CreateItemTests" />
       <item itemvalue="JUnit.CreateItemTests.unitTest4" />
       <item itemvalue="JUnit.CreateItemTests.unitTest5" />
-      <item itemvalue="JUnit.CreateItemTests.unitTest1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in API_Test" />
         <item itemvalue="JUnit.ChangePasswordTest" />
         <item itemvalue="JUnit.CreateItemTests" />
         <item itemvalue="JUnit.CreateItemTests.unitTest5" />
         <item itemvalue="JUnit.CreateItemTests.unitTest4" />
-        <item itemvalue="JUnit.CreateItemTests.unitTest1" />
       </list>
     </recent_temporary>
   </component>
@@ -333,27 +413,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Login.java</url>
-          <line>48</line>
-          <properties class="Login">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Search.java</url>
-          <line>39</line>
-          <properties class="Search">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/SearchTest.java</url>
-          <line>8</line>
-          <properties class="SearchTest" method="UnitTest1">
+          <line>1</line>
+          <properties class="SearchTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -361,13 +423,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GetDetailAuctionsTest.java</url>
-          <line>4</line>
+          <line>1</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SearchTest.java</url>
-          <line>4</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

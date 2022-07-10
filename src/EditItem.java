@@ -1,5 +1,4 @@
 
-
 import com.google.gson.Gson;
 
 import freq.BaseURL;
@@ -8,23 +7,30 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 
-public class AcceptMaxBid {
+
+public class EditItem {
     private static HttpURLConnection connection;
 
     public static Rp rp;
+    int rpCode;
 
-    public void Test25(int auction_id, String selling_info, String token) {
+    public String fixed_title;
+
+    public void Test16(String item_id, String name, int starting_price, int brand_id, String description, String series, String token) {
+
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
 
         // Connect and parse Json
         try {
-            URL url = new URL(BaseURL.baseURL +"accept/" + auction_id);
+            URL url = new URL(BaseURL.baseURL + "items/edit/" + item_id);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + token);
@@ -32,7 +38,12 @@ public class AcceptMaxBid {
             connection.setRequestProperty("Content-Type", "application/json");
             connection.setDoOutput(true);
 
-            String data = "{\n  \"selling_info\": \"" + selling_info + "\"}";
+            String data = "{\n \"name\": \"" + name
+                    + "\",\n  \"brand_id\": \"" + brand_id
+                    + "\",\n  \"starting_price\": \"" + starting_price
+                    + "\",\n  \"description\": \"" + description
+                    + "\",\n  \"series\": \"" + series
+                    + "\"\n}";
             byte[] out = data.getBytes(StandardCharsets.UTF_8);
             OutputStream stream = connection.getOutputStream();
             stream.write(out);
@@ -54,11 +65,28 @@ public class AcceptMaxBid {
         }
 
     }
-    public int getCode(){
+    public int getCode() {
         return rp.code;
     }
-    public String getMessage(){
+    public int getHttpCode(){
+        return rpCode;
+    }
+
+    public String getMessage() {
         return rp.message;
     }
+
+    public Data getData() {
+        return rp.data;
+    }
+
+    public String getFixed_title() {
+        return fixed_title;
+    }
+
+    public void setFixed_title(String fixed_title) {
+        this.fixed_title = fixed_title;
+    }
+
 
 }

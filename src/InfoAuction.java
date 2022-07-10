@@ -8,45 +8,38 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class GetListAuctionsByUser {
+public class InfoAuction {
     private static HttpURLConnection connection;
-    public static Rp3 rp;
+    public static Rp rp;
     public String fixedId;
     public String content;
-    
-    // de check
-
-    public String getContent() {
-		return content;
-	}
-
-	public void setContent(String content) {
-		this.content = content;
-	}
-
-	public String getFixedId() {
-		return fixedId;
-	}
-
-	public void setFixedId(String fixedId) {
-		this.fixedId = fixedId;
-	}
 
 
-	public void Test08(int statusId, int index, int count, String token) {
-    	// access_token is nullable
+    public int num;
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
+    public String getFixedId() {
+        return fixedId;
+    }
+
+    public void setFixedId(String fixedId) {
+        this.fixedId = fixedId;
+    }
+
+    public void Test14(String auctionId, String token) {
+        // access_token is nullable
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
 
-        // Connect and parse Json
-        //api/auctions/listAuctionsByUser/
-        //https://auctions-app-2.herokuapp.com/api/auctions/listAuctionsByStatus?statusId=1&index=1&count=3
         try {
-            URL url = new URL(BaseURL.baseURL + "auctions/listAuctionsByUser/" 
-            	    + statusId 
-            		+ "?index=" + index 
-            		+ "&count=" + count);
+            URL url = new URL(BaseURL.baseURL + "auctions/info/" + auctionId);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Authorization", "Bearer" + token);
@@ -57,31 +50,42 @@ public class GetListAuctionsByUser {
             }
             System.out.println(respondContent);
 
-            this.setFixedId(statusId+"");
+            this.setFixedId(auctionId);
             this.setContent(respondContent.toString());
-            
+
             // Parse JSON
             Gson g = new Gson();
-            rp = g.fromJson(respondContent.toString(), Rp3.class);
+            rp = g.fromJson(respondContent.toString(), Rp.class);
 
             reader.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
+            if (this.getNum() == 2) {
+                System.out.println("Unit 2: Satisfied!");
+            }
         } finally {
             connection.disconnect();
         }
 
     }
-    
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
     public int getCode() {
-    	return rp.code;
+        return rp.code;
     }
-    
+
     public String getMessage() {
-    	return rp.message;
+        return rp.message;
     }
-    
-    public Data3 getData() {
-    	return rp.data;
+
+    public Data getData() {
+        return rp.data;
     }
 }

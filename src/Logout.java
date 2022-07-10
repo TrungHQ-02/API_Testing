@@ -1,5 +1,7 @@
 
 
+
+
 import com.google.gson.Gson;
 
 import freq.BaseURL;
@@ -17,7 +19,7 @@ public class Logout {
     public static Rp rp;
     int rpCode;
 
-    public void Test05(String token) {
+    public void Test06(String token) {
         String line;
         BufferedReader reader;
         StringBuilder respondContent = new StringBuilder();
@@ -53,6 +55,6 @@ public class Logout {
         return rp.message;
     }
     public int getHttpCode(){
-       return rpCode;
+        return rpCode;
     }
 }

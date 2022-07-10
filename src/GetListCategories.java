@@ -12,7 +12,7 @@ public class GetListCategories {
     private static HttpURLConnection connection;
     public static Rp2 rp;
 
-    public void Test18() {
+    public void Test23() {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();

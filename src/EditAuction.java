@@ -15,13 +15,12 @@ public class EditAuction {
 
 	public static Rp rp;
 	int rpCode;
-	
-	public String fixed_id;
-	
-	public String fixed_start_date, fixed_end_date;
-	
-	public String fixed_auction_id, fixed_title;
 
+	public String fixed_id;
+
+	public String fixed_start_date, fixed_end_date;
+
+	public String fixed_auction_id, fixed_title;
 
 	public void Test12(String auctionId, String category_id, String start_date, String end_date, String title_ni,String accessToken) {
 		String line;
@@ -56,7 +55,7 @@ public class EditAuction {
 			this.setFixed_end_date(end_date);
 			this.setFixed_start_date(start_date);
 			this.setFixed_title(title_ni);
-			
+
 			// Parse JSON
 			Gson g = new Gson();
 			rp = g.fromJson(respondContent.toString(), Rp.class);
@@ -84,7 +83,7 @@ public class EditAuction {
 	public Data getData() {
 		return rp.data;
 	}
-	
+
 	public String getFixed_auction_id() {
 		return fixed_auction_id;
 	}

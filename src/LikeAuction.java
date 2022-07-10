@@ -19,13 +19,12 @@ public class LikeAuction {
 
 	public String getContent() {
 		return content;
-		// check html
 	}
 
 	public void setContent(String content) {
 		this.content = content;
 	}
-	
+
 	String auction_id;
 
 	public String getAuction_id() {
@@ -36,7 +35,7 @@ public class LikeAuction {
 		this.auction_id = auction_id;
 	}
 
-	public void Test22(String accessToken, String auctionId) {
+	public void Test27(String accessToken, String auctionId) {
 		String line;
 		BufferedReader reader;
 		StringBuffer respondContent = new StringBuffer();
@@ -64,7 +63,7 @@ public class LikeAuction {
 			// set value to model
 			this.setContent(respondContent.toString());
 			this.setAuction_id(auctionId);
-			
+
 			System.out.println(respondContent);
 			// Parse JSON
 			Gson g = new Gson();

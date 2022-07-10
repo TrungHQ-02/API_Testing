@@ -23,7 +23,6 @@ public class CreateAuction {
 
     public String fixed_title;
 
-
     public void Test11(String category_id, String start_date, String end_date, String title_ni,String accessToken) {
         String line;
         BufferedReader reader;

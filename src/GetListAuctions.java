@@ -10,8 +10,17 @@ import java.net.URL;
 
 public class GetListAuctions {
 	private static HttpURLConnection connection;
-	public static Rp3 rp;
+	public static Rp5 rp;
 	public String fixedId; // de check
+	public String fixedType;
+
+	public String getFixedType() {
+		return fixedType;
+	}
+
+	public void setFixedType(String fixedType) {
+		this.fixedType = fixedType;
+	}
 
 	public String getFixedId() {
 		return fixedId;
@@ -21,18 +30,26 @@ public class GetListAuctions {
 		this.fixedId = fixedId;
 	}
 
-	public void Test06(int index, int count, String token) {
+
+
+
+	public void Test07(int statusId, String user_id,String type, String category_id, int index, int count, String token) {
 		// access_token is nullable
 		String line;
 		BufferedReader reader;
 		StringBuffer respondContent = new StringBuffer();
 
 		// Connect and parse Json
-//        https://auctions-app-2.herokuapp.com/api/auctions/listAuctions
-		// https://auctions-app-2.herokuapp.com/api/auctions/listAuctionsByStatus?statusId=1&index=1&count=3
+		// https://auctions-app-2.herokuapp.com/api/auctions/2?index=1&count=10&user_id&type=1&category_id
 		try {
-			URL url = new URL(BaseURL.baseURL + "auctions/listAuctions" 
-					+ "?index=" + index + "&count=" + count);
+			URL url = new URL(BaseURL.baseURL + "auctions/"
+					+ statusId
+					+ "?index=" + index
+					+ "&count=" + count
+					+ "&user_id=" + user_id
+					+ "&type=" + type
+					+ "&category_id=" + category_id
+			);
 			connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod("GET");
 			connection.setRequestProperty("Authorization", "Bearer" + token);
@@ -43,9 +60,12 @@ public class GetListAuctions {
 			}
 			System.out.println(respondContent);
 
+			this.setFixedId(statusId+"");
+			this.setFixedType(type);
+
 			// Parse JSON
 			Gson g = new Gson();
-			rp = g.fromJson(respondContent.toString(), Rp3.class);
+			rp = g.fromJson(respondContent.toString(), Rp5.class);
 
 			reader.close();
 		} catch (IOException e) {
@@ -53,7 +73,6 @@ public class GetListAuctions {
 		} finally {
 			connection.disconnect();
 		}
-
 	}
 
 	public int getCode() {
@@ -64,7 +83,7 @@ public class GetListAuctions {
 		return rp.message;
 	}
 
-	public Data3 getData() {
+	public DataForGLA getData() {
 		return rp.data;
 	}
 }

@@ -37,10 +37,10 @@ public class Login {
                 respondContent.append(line);
             }
 
+
             // Parse JSON
             Gson g = new Gson();
             rp = g.fromJson(respondContent.toString(), Rp.class);
-
             reader.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -49,21 +49,21 @@ public class Login {
         }
 
     }
-    
+
     public String getToken(){
         return rp.data.access_token;
     }
-    
+
     public int getCode() {
-    	return rp.code;
+        return rp.code;
     }
-    
+
     public String getMessage() {
-    	return rp.message;
+        return rp.message;
     }
-    
+
     // Trung them
     public Data getData() {
-    	return rp.data;
+        return rp.data;
     }
 }

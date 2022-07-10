@@ -15,7 +15,7 @@ public class GetListComments {
     private static HttpURLConnection connection;
     public static Rp4 rp;
 
-    public void Test15(int acuction_id, int index, int count, String token) {
+    public void Test20(int acuction_id, int index, int count, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();

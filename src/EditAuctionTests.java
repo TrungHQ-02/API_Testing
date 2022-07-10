@@ -1,4 +1,5 @@
 
+
 import java.util.Random;
 
 import org.junit.jupiter.api.Assertions;
@@ -34,15 +35,15 @@ public class EditAuctionTests {
 		Assertions.assertEquals("OK", editAuction.getMessage());
 		System.out.println("Unit 1: Satisfied!");
 	}
-		@Test
+	@Test
 	public void unitTest2() {
-			login.Test01("trinhquan100402@gmail.com", "1004");
+		login.Test01("trinhquan100402@gmail.com", "1004");
 		System.out.println("if auctions have been approved, Server will return code 1005");
 		System.out.println("Testing unit2...");
 		editAuction.Test12("513", "1", null, null, "Dagoiaffaiiiii", login.getToken());
 		Assertions.assertEquals(1005, editAuction.getCode());
 		Assertions.assertEquals("KhÃ´ng thá»ƒ chá»‰nh sá»­a", editAuction.getMessage());
-			System.out.println("Unit 2: Satisfied!");
+		System.out.println("Unit 2: Satisfied!");
 	}
 	@Test
 	//loi chua dang nhap
@@ -76,7 +77,6 @@ public class EditAuctionTests {
 		Assertions.assertEquals(1001, editAuction.getCode());
 		System.out.println("Unit 5: Satisfied!");
 	}
-
 	@Test
 	public void unitTest6() {
 		login.Test01("trinhquan100402@gmail.com", "1004");
@@ -164,5 +164,4 @@ public class EditAuctionTests {
 //				"selling_user_id": 303
 	}
 }
-
 
