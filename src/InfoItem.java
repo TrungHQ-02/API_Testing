@@ -17,7 +17,7 @@ public class InfoItem {
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
         try {
-            URL url = new URL(BaseURL.baseURL + "items/info" + itemId);
+            URL url = new URL(BaseURL.baseURL + "items/info/" + itemId);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Authorization", "Bearer" + token);
