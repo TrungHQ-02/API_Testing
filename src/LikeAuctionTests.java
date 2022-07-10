@@ -29,7 +29,7 @@ public class LikeAuctionTests {
 	public void unitTest2() {
 		System.out.println("If we use the negative id, code should be 1000 and message should be OK");
 		System.out.println("Testing unit2...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int random_auctionId = rand.nextInt(-100, -10);
 			likeAuction.Test22(proper_token, random_auctionId + "");
 			Assertions.assertEquals(1000, likeAuction.getCode());
@@ -43,7 +43,7 @@ public class LikeAuctionTests {
 	public void unitTest3() {
 		System.out.println("Auction ID which we use to post must equal to auction_id that we receive from API");
 		System.out.println("Testing unit3...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int random_auctionId = rand.nextInt(1, 1000);
 			likeAuction.Test22(proper_token, random_auctionId + "");
 			Assertions.assertEquals(likeAuction.getAuction_id(), likeAuction.getData().auction_id);
@@ -55,7 +55,7 @@ public class LikeAuctionTests {
 	public void unitTest4() {
 		System.out.println("User ID should be a non-negative integer");
 		System.out.println("Testing unit4...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int random_auctionId = rand.nextInt(1, 1000);
 			likeAuction.Test22(proper_token, random_auctionId + "");
 			Assertions.assertTrue(Integer.parseInt(likeAuction.getData().user_id) > 0);
@@ -67,7 +67,7 @@ public class LikeAuctionTests {
 	public void unitTest5() {
 		System.out.println("The is_liked field should be proper");
 		System.out.println("Testing unit5...");
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 2; i++) {
 			int random_auctionId = rand.nextInt(1, 1000);
 			likeAuction.Test22(proper_token, random_auctionId + "");
 			if (likeAuction.getData().is_liked == "true") {
