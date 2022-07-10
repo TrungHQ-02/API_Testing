@@ -23,7 +23,7 @@ public class CreateItemTests {
         String randomSeries = email.getStringWithFixedLength(10);
 
         createAuction.Test11("2","2022/07/12 11:11","2023/08/21 11:11", randomTitle,token);
-        createItem.Test13(createAuction.getAuctionId(),"iphone 15 pro max ",100, 1,"mua 1 tang 2", randomSeries,token);
+        createItem.Test13(createAuction.getAuctionId(),"iphone 15 pro max ",100, 1,"mua 1 tang 2", randomSeries, token);
 
         Assertions.assertEquals(1000, createItem.getCode());
         Assertions.assertEquals("OK", createItem.getMessage());

@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them">
+    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateCommentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListAuctionsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListBidsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetListBidsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateItemTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateItemTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUpTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +64,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -81,49 +78,52 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GetListAuctionsByStatusTests.unitTest8">
-    <configuration name="AcceptMaxBidTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ReadNotificationsTests">
+    <configuration name="ReadNotificationsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AcceptMaxBidTest" />
+      <option name="MAIN_CLASS_NAME" value="ReadNotificationsTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in API_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReadNotificationsTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetDetailAuctionsTest.UnitTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetDetailAuctionsTest" />
-      <option name="METHOD_NAME" value="UnitTest3" />
+      <option name="MAIN_CLASS_NAME" value="ReadNotificationsTests" />
+      <option name="METHOD_NAME" value="unitTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetListAuctionsByStatusTests.unitTest8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTests.unitTest05" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetListAuctionsByStatusTests" />
-      <option name="METHOD_NAME" value="unitTest8" />
+      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
+      <option name="METHOD_NAME" value="unitTest05" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTests.unitTest06" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
+      <option name="METHOD_NAME" value="unitTest06" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUpTests.unitTest07" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SignUpTests" />
+      <option name="METHOD_NAME" value="unitTest07" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,19 +140,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.GetListAuctionsByStatusTests.unitTest8" />
-      <item itemvalue="JUnit.All in API_Test" />
-      <item itemvalue="JUnit.SearchTest" />
-      <item itemvalue="JUnit.AcceptMaxBidTest" />
-      <item itemvalue="JUnit.GetDetailAuctionsTest.UnitTest3" />
+      <item itemvalue="JUnit.ReadNotificationsTests.unitTest1" />
+      <item itemvalue="JUnit.SignUpTests.unitTest05" />
+      <item itemvalue="JUnit.SignUpTests.unitTest06" />
+      <item itemvalue="JUnit.SignUpTests.unitTest07" />
+      <item itemvalue="JUnit.ReadNotificationsTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GetListAuctionsByStatusTests.unitTest8" />
-        <item itemvalue="JUnit.All in API_Test" />
-        <item itemvalue="JUnit.SearchTest" />
-        <item itemvalue="JUnit.AcceptMaxBidTest" />
-        <item itemvalue="JUnit.GetDetailAuctionsTest.UnitTest3" />
+        <item itemvalue="JUnit.ReadNotificationsTests" />
+        <item itemvalue="JUnit.ReadNotificationsTests.unitTest1" />
+        <item itemvalue="JUnit.SignUpTests.unitTest07" />
+        <item itemvalue="JUnit.SignUpTests.unitTest06" />
+        <item itemvalue="JUnit.SignUpTests.unitTest05" />
       </list>
     </recent_temporary>
   </component>
@@ -194,10 +194,7 @@
       <workItem from="1657331204918" duration="3988000" />
       <workItem from="1657345976358" duration="1905000" />
       <workItem from="1657363667892" duration="1268000" />
-      <workItem from="1657373165197" duration="8987000" />
-      <workItem from="1657382439236" duration="972000" />
-      <workItem from="1657385145303" duration="1962000" />
-      <workItem from="1657414260458" duration="680000" />
+      <workItem from="1657373165197" duration="8275000" />
     </task>
     <task id="LOCAL-00001" summary="Phuong them">
       <created>1657117211304</created>

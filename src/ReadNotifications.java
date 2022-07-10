@@ -11,7 +11,6 @@ import java.net.URL;
 public class ReadNotifications {
     private static HttpURLConnection connection;
     public static Rp rp;
-    int rpCode;
 
     public void Test28(int auctionDenyId, String token) {
         String line;
@@ -22,7 +21,6 @@ public class ReadNotifications {
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Authorization", "Bearer" + token);
-            rpCode = connection.getResponseCode();
 
             reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             while ((line = reader.readLine()) != null) {
@@ -47,8 +45,4 @@ public class ReadNotifications {
     public String getMessage(){
         return rp.message;
     }
-    public int getHttpResponseCode(){
-        return rpCode;
-    }
-
 }
