@@ -22,7 +22,7 @@ public class CreateCommentTest {
         System.out.println("Unit 1: Satisfied!");
     }
     */
-    @RepeatedTest(5)
+    @RepeatedTest(2)
     public void unitTest2() {
         
         login.Test01("minh0915@gmail.com", "123456");
