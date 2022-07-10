@@ -20,7 +20,7 @@ public class InfoAuctionTests {
 		// Code 1000 message OK
 		System.out.println("Code should be 1000 and message should be OK with the proper input");
 		System.out.println("Testing unit1...");
-		infoAuction.Test14(1 + "", properToken);
+		infoAuction.Test06(1 + "", properToken);
 		Assertions.assertEquals(1000, infoAuction.getCode());
 		Assertions.assertEquals("OK", infoAuction.getMessage());
 		System.out.println("Unit 1: Satisfied");
@@ -31,7 +31,7 @@ public class InfoAuctionTests {
 		System.out.println("Status ID shoud not be negative");
 		System.out.println("Testing unit2...");
 		int randomID = random.nextInt(-5, -1);
-		infoAuction.Test14(randomID + "", properToken);
+		infoAuction.Test06(randomID + "", properToken);
 		System.out.println("Unit 2: Satisfied!");
 	}
 
@@ -42,7 +42,7 @@ public class InfoAuctionTests {
 		for (int i = 1; i <= 3; i++) {
 			int randomID = random.nextInt(1, 5);
 			try {
-				infoAuction.Test14(randomID + "", properToken + i);
+				infoAuction.Test06(randomID + "", properToken + i);
 			} catch (Exception e) {
 			}
 			String contentRP = infoAuction.getContent();
@@ -58,7 +58,7 @@ public class InfoAuctionTests {
 		System.out.println("Testing unit4...");
 		for (int i = 1; i <= 3; i++) {
 			int randomID = random.nextInt(1, 5);
-			infoAuction.Test14(randomID + "", properToken);
+			infoAuction.Test06(randomID + "", properToken);
 			Assertions.assertNotEquals(null, infoAuction.getData().start_date);
 			Assertions.assertNotEquals(null, infoAuction.getData().end_date);
 		}
@@ -71,7 +71,7 @@ public class InfoAuctionTests {
 		System.out.println("Testing unit5...");
 		for (int i = 1; i <= 3; i++) {
 			int randomID = random.nextInt(1, 5);
-			infoAuction.Test14(randomID + "", properToken);
+			infoAuction.Test06(randomID + "", properToken);
 			Assertions.assertNotEquals(null, infoAuction.getData().title);
 		}
 		System.out.println("Unit 5: Satisfied!");
@@ -83,7 +83,7 @@ public class InfoAuctionTests {
 		System.out.println("Testing unit6");
 		for (int i = 1; i <= 3; i++) {
 			int randomID = random.nextInt(1, 5);
-			infoAuction.Test14(randomID + "", properToken);
+			infoAuction.Test06(randomID + "", properToken);
 			int category_id = Integer.parseInt(infoAuction.getData().category_id);
 			Assertions.assertTrue(category_id >= 0);
 		}

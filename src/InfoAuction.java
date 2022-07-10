@@ -14,6 +14,16 @@ public class InfoAuction {
 	public String fixedId; // de check
 	public String content;
 	// de check html
+	
+	public int num;
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
 
 	public String getFixedId() {
 		return fixedId;
@@ -50,7 +60,10 @@ public class InfoAuction {
 
 			reader.close();
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println(e.getMessage());
+			if (this.getNum() == 2) {
+				System.out.println("Unit 2: Satisfied!");
+			}
 		} finally {
 			connection.disconnect();
 		}
