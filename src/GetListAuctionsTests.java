@@ -13,7 +13,7 @@ public class GetListAuctionsTests {
 	Random random = new Random();
 	RandomEmail randomString = new RandomEmail();
 	
-	String proper_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU3NDM3ODY3LCJleHAiOjE2NTc3OTc4NjcsIm5iZiI6MTY1NzQzNzg2NywianRpIjoiV1J0TFZmTnF4UmRuMFk3OSIsInN1YiI6NjIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.dTBXxQ2nQH2twRsZIcxkWPCm29j0G6BnPiWA9099L48";
+	String proper_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU3NDYzNzkzLCJleHAiOjE2NTc4MjM3OTMsIm5iZiI6MTY1NzQ2Mzc5MywianRpIjoiazkxTnBTaUNrUXdZNkwyVyIsInN1YiI6NjIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.lhm9cDZ1jJe0nSydM7oQEEW2T8O9KY892b9tlArGRDk";
 
 	//int statusId, String user_id,String type, String category_id, int index, int count, String token
 	
@@ -246,7 +246,7 @@ public class GetListAuctionsTests {
 	// test truyen category id
 	@Test
 	public void unitTest17() {
-		System.out.println("Auction status id should not be 4");
+		System.out.println("Auction status id should not be 4 (using category id)");
 		System.out.println("Testing unit17...");
 		getListAuctions.Test07(4, "", "","2",1,10, null);
 		AuctionForGLA[] auctionForGLA = getListAuctions.getData().auctions.clone();
@@ -266,5 +266,32 @@ public class GetListAuctionsTests {
 			Assertions.assertEquals(null, getListAuctions.getData().user_info);
 		}
 		System.out.println("Unit 18: Satisfied");
+	}
+	
+	// test truyen user_id
+	// Can token
+	public void unitTest19() {
+		System.out.println("Auction status id should not be 4 (using user_id)");
+		System.out.println("Testing unit19...");
+		getListAuctions.Test07(4, "", "","823",1,10, proper_token);
+		AuctionForGLA[] auctionForGLA = getListAuctions.getData().auctions.clone();
+		for (AuctionForGLA auction : auctionForGLA) {
+			Assertions.assertNotEquals(4, Integer.parseInt(auction.statusId));
+		}
+		
+		System.out.println("Unit 17: Satisfied");
+	}
+	
+	public void unitTest20() {
+		System.out.println("User info fields should not be null");
+		System.out.println("Testing unit20...");
+		for (int i = 1; i <= 3; i++) {
+			String randomID = random.nextInt(1, 20) + "";
+			getListAuctions.Test07(i, "", "",randomID,i,10, proper_token);
+			Assertions.assertNotEquals(null, getListAuctions.getData().user_info.name);
+			Assertions.assertNotEquals(null, getListAuctions.getData().user_info.email);
+			Assertions.assertNotEquals(null, getListAuctions.getData().user_info.phone);
+		}
+		System.out.println("Unit 20: Satisfied");
 	}
 }
