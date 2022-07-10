@@ -18,8 +18,7 @@ public class CreateBids {
 
     public int fixed_bid_last_id;
 
-
-    public void Test16(int price, int bid_last_id,String accessToken) {
+    public void Test21(int price, int bid_last_id,String accessToken,int auction_id) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
@@ -27,7 +26,7 @@ public class CreateBids {
         // Connect and parse Json
         /// api/auctions/edit/{auctionId}
         try {
-            URL url = new URL(BaseURL.baseURL + "bids/create/" + 231);//auctionId dang dien ra 231
+            URL url = new URL(BaseURL.baseURL + "bids/create/" + auction_id);//auctionId dang dien ra 231
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + accessToken);

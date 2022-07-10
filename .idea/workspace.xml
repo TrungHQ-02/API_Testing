@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<<<< Temporary merge branch 1
+    <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Quan sua" />
+=========
     <list default="true" id="72b1f1c9-2813-4200-9491-a3615b28e8ce" name="Changes" comment="Phuong them">
+      <change afterPath="$PROJECT_DIR$/src/InfoItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InfoItemTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CreateItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CreateItemTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateItemTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditItemTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditItemTests.java" afterDir="false" />
     </list>
+>>>>>>>>> Temporary merge branch 2
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,11 +41,24 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/GetListBidsTests.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Login.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/LoginTests.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Rp.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/SignUp.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/SignUpTests.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2AtPBO6KLUtdaiGqbvwYkECMw14" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -78,52 +99,87 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreateItemTests">
-    <configuration name="CreateAuctionTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+<<<<<<<<< Temporary merge branch 1
+  <component name="RunManager" selected="JUnit.InfoTests.unitTest1">
+    <configuration name="ContactUsTests.unitTest8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateAuctionTests" />
-      <option name="METHOD_NAME" value="unitTest1" />
+      <option name="MAIN_CLASS_NAME" value="ContactUsTests" />
+      <option name="METHOD_NAME" value="unitTest8" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="CreateItemTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=========
+  <component name="RunManager" selected="JUnit.EditItemTests">
+    <configuration name="EditItemTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>>>> Temporary merge branch 2
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateItemTests" />
+      <option name="MAIN_CLASS_NAME" value="EditItemTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateItemTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+<<<<<<<<< Temporary merge branch 1
+    <configuration name="DeleteAuctionTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateItemTests" />
+      <option name="MAIN_CLASS_NAME" value="DeleteAuctionTests" />
+      <option name="TEST_OBJECT" value="class" />
+=========
+    <configuration name="EditItemTests.unitTes7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EditItemTests" />
+      <option name="METHOD_NAME" value="unitTes7" />
+      <option name="TEST_OBJECT" value="method" />
+>>>>>>>>> Temporary merge branch 2
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+<<<<<<<<< Temporary merge branch 1
+    <configuration name="InfoTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InfoTests" />
+=========
+    <configuration name="EditItemTests.unitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EditItemTests" />
+>>>>>>>>> Temporary merge branch 2
       <option name="METHOD_NAME" value="unitTest1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateItemTests.unitTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EditItemTests.unitTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateItemTests" />
-      <option name="METHOD_NAME" value="unitTest4" />
+<<<<<<<<< Temporary merge branch 1
+      <option name="MAIN_CLASS_NAME" value="ReadNotificationsTests" />
+      <option name="TEST_OBJECT" value="class" />
+=========
+      <option name="MAIN_CLASS_NAME" value="EditItemTests" />
+      <option name="METHOD_NAME" value="unitTest5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateItemTests.unitTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EditItemTests.unitTest6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateItemTests" />
-      <option name="METHOD_NAME" value="unitTest5" />
+      <option name="MAIN_CLASS_NAME" value="EditItemTests" />
+      <option name="METHOD_NAME" value="unitTest6" />
       <option name="TEST_OBJECT" value="method" />
+>>>>>>>>> Temporary merge branch 2
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,19 +196,35 @@
       </method>
     </configuration>
     <list>
+<<<<<<<<< Temporary merge branch 1
+      <item itemvalue="JUnit.DeleteAuctionTests" />
+      <item itemvalue="JUnit.InfoTests.unitTest1" />
+      <item itemvalue="JUnit.ContactUsTests.unitTest8" />
+      <item itemvalue="JUnit.ReadNotificationsTests" />
       <item itemvalue="JUnit.CreateItemTests" />
-      <item itemvalue="JUnit.CreateItemTests.unitTest4" />
-      <item itemvalue="JUnit.CreateItemTests.unitTest5" />
-      <item itemvalue="JUnit.CreateAuctionTests.unitTest1" />
-      <item itemvalue="JUnit.CreateItemTests.unitTest1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.InfoTests.unitTest1" />
+        <item itemvalue="JUnit.DeleteAuctionTests" />
+        <item itemvalue="JUnit.ContactUsTests.unitTest8" />
         <item itemvalue="JUnit.CreateItemTests" />
-        <item itemvalue="JUnit.CreateItemTests.unitTest5" />
-        <item itemvalue="JUnit.CreateItemTests.unitTest4" />
-        <item itemvalue="JUnit.CreateItemTests.unitTest1" />
-        <item itemvalue="JUnit.CreateAuctionTests.unitTest1" />
+        <item itemvalue="JUnit.ReadNotificationsTests" />
+=========
+      <item itemvalue="JUnit.EditItemTests" />
+      <item itemvalue="JUnit.EditItemTests.unitTes7" />
+      <item itemvalue="JUnit.EditItemTests.unitTest1" />
+      <item itemvalue="JUnit.EditItemTests.unitTest5" />
+      <item itemvalue="JUnit.EditItemTests.unitTest6" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EditItemTests" />
+        <item itemvalue="JUnit.EditItemTests.unitTes7" />
+        <item itemvalue="JUnit.EditItemTests.unitTest1" />
+        <item itemvalue="JUnit.EditItemTests.unitTest6" />
+        <item itemvalue="JUnit.EditItemTests.unitTest5" />
+>>>>>>>>> Temporary merge branch 2
       </list>
     </recent_temporary>
   </component>
@@ -194,6 +266,7 @@
       <workItem from="1657331204918" duration="3988000" />
       <workItem from="1657345976358" duration="1905000" />
       <workItem from="1657363667892" duration="1268000" />
+      <workItem from="1657373165197" duration="8987000" />
     </task>
     <task id="LOCAL-00001" summary="Phuong them">
       <created>1657117211304</created>
@@ -307,7 +380,37 @@
       <option name="project" value="LOCAL" />
       <updated>1657369195086</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Quan sua">
+      <created>1657432281377</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1657432281377</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Quan sua">
+      <created>1657432418066</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1657432418066</updated>
+    </task>
+<<<<<<<<< Temporary merge branch 1
+    <task id="LOCAL-00019" summary="Quan sua">
+      <created>1657432724002</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1657432724002</updated>
+=========
+    <task id="LOCAL-00019" summary="Phuong them">
+      <created>1657423698285</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1657423698285</updated>
+>>>>>>>>> Temporary merge branch 2
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,20 +431,13 @@
     <MESSAGE value="Phuong them nhung ma chua chay duoc :&lt;" />
     <MESSAGE value="Phuong them nhung ma chay khong ra 1000 OK :&lt;" />
     <MESSAGE value="Phuong them" />
-    <option name="LAST_COMMIT_MESSAGE" value="Phuong them" />
+    <MESSAGE value="Quan them" />
+    <MESSAGE value="Quan sua" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quan sua" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Login.java</url>
-          <line>48</line>
-          <properties class="Login">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Search.java</url>
           <line>39</line>
@@ -360,6 +456,15 @@
           </properties>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/LikeAuctionTests.java</url>
+          <line>42</line>
+          <properties class="LikeAuctionTests" method="unitTest3">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GetDetailAuctionsTest.java</url>
           <line>4</line>
@@ -370,7 +475,25 @@
           <line>4</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LoginTests.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GetListBidsTests.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GetListAuctionsByStatusTests.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IntelliJgithub$GetListBidsTests.ic" NAME="GetListBidsTests Coverage Results" MODIFIED="1656993518099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

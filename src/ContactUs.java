@@ -13,12 +13,11 @@ import java.nio.charset.StandardCharsets;
 
 public class ContactUs {
     private static HttpURLConnection connection;
-
     public static Rp rp;
 
     public String fixed_name,fixed_phone, fixed_email,fixed_file, fixed_report_type;
     public String fixed_content;
-    public void Test21(String name, String phone, String email, String content, String file, String report_type, String accessToken) {
+    public void Test26(String name, String phone, String email, String content, String file, String report_type, String accessToken) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();

@@ -15,7 +15,7 @@ public class SignUp {
 
     public static Rp rp;
 
-    public void Test02(String email, String pass, String re_pass, String address, String name, String phone, String avatarLink) {
+    public void Test04(String email, String pass, String re_pass, String address, String name, String phone, String avatarLink) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();

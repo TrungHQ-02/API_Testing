@@ -24,7 +24,7 @@ public class GetListLikes {
 	}
 
 
-	public void Test23(int statusId, int index, int count, String token) {
+	public void Test28(int statusId, int index, int count, String token) {
     	// access_token is not nullable
         String line;
         BufferedReader reader;

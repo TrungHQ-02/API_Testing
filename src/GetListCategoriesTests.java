@@ -6,12 +6,9 @@ public class GetListCategoriesTests {
 
 	@Test
 	public void unitTest1() {
-		// OK
 		System.out.println("Code should always be 1000 and message should always be OK ");
 		System.out.println("Testing unit1...");
-		categories.Test18();
-//		Data[] dataArray = categories.getData().clone();
-//		System.out.println(dataArray[1].category_id);
+		categories.Test23();
 		Assertions.assertEquals(1000, categories.getCode());
 		Assertions.assertEquals("OK", categories.getMessage());
 		System.out.println("Unit 1: Satisfied");
@@ -21,7 +18,7 @@ public class GetListCategoriesTests {
 	public void unitTest2() {
 		System.out.println("Category id should be greater than zero and less than 10");
 		System.out.println("Testin unit2...");
-		categories.Test18();
+		categories.Test23();
 		Data[] dataArray = categories.getData().clone();
 		for (int i = 0; i < dataArray.length; i++) {
 			Assertions.assertTrue(
@@ -34,7 +31,7 @@ public class GetListCategoriesTests {
 	public void unitTest3() {
 		System.out.println("Category name should not be null or empty");
 		System.out.println("Testin unit3...");
-		categories.Test18();
+		categories.Test23();
 		Data[] dataArray = categories.getData().clone();
 		for (int i = 0; i < dataArray.length; i++) {
 			Assertions.assertNotEquals(null, dataArray[i].name);
@@ -47,7 +44,7 @@ public class GetListCategoriesTests {
 	public void unitTest4() {
 		System.out.println("Category image should not be null or empty");
 		System.out.println("Testin unit4...");
-		categories.Test18();
+		categories.Test23();
 		Data[] dataArray = categories.getData().clone();
 		for (int i = 0; i < dataArray.length; i++) {
 			Assertions.assertNotEquals(null, dataArray[i].image);
@@ -60,7 +57,7 @@ public class GetListCategoriesTests {
 	public void unitTest5() {
 		System.out.println("Category type should be 1 2 3 4 5");
 		System.out.println("Testin unit5...");
-		categories.Test18();
+		categories.Test23();
 		Data[] dataArray = categories.getData().clone();
 		for (int i = 0; i < dataArray.length; i++) {
 			Assertions.assertTrue(Integer.parseInt(dataArray[i].type) > 0);
