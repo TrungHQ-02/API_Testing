@@ -6,12 +6,9 @@ public class GetListCategoriesTests {
 
 	@Test
 	public void unitTest1() {
-		// OK
 		System.out.println("Code should always be 1000 and message should always be OK ");
 		System.out.println("Testing unit1...");
 		categories.Test18();
-//		Data[] dataArray = categories.getData().clone();
-//		System.out.println(dataArray[1].category_id);
 		Assertions.assertEquals(1000, categories.getCode());
 		Assertions.assertEquals("OK", categories.getMessage());
 		System.out.println("Unit 1: Satisfied");

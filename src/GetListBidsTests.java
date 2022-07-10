@@ -45,8 +45,8 @@ public class GetListBidsTests {
 		System.out.println("Testing unit3...");
 		for (int i = 1; i <= 2; i++) {
 			int randomId = random.nextInt(1, 3);
-			int randomIndex = random.nextInt(1, 10);
-			int randomCount = random.nextInt(1, 10);
+			int randomIndex = random.nextInt(1, 4);
+			int randomCount = random.nextInt(1, 5);
 			String random_token = randomString.getStringWithFixedLength(100);
 			bidList.Test07(randomId, randomIndex, randomCount, random_token);
 			Assertions.assertEquals(1000, bidList.getCode());
@@ -78,8 +78,8 @@ public class GetListBidsTests {
 		System.out.println("Testing unit5...");
 		for (int i = 1; i <= 2; i++) {
 			int randomId = random.nextInt(1, 3);
-			int randomIndex = random.nextInt(1, 10);
-			int randomCount = random.nextInt(1, 10);
+			int randomIndex = random.nextInt(1, 4);
+			int randomCount = random.nextInt(1, 5);
 			bidList.Test07(randomId, randomIndex, randomCount, null);
 			Bid[] listOfBids = bidList.getData().bids.clone();
 			for (Bid bid : listOfBids) {
@@ -95,8 +95,8 @@ public class GetListBidsTests {
 		System.out.println("Testing unit6...");
 		for (int i = 1; i <= 2; i++) {
 			int randomId = random.nextInt(1, 3);
-			int randomIndex = random.nextInt(1, 10);
-			int randomCount = random.nextInt(1, 10);
+			int randomIndex = random.nextInt(1, 4);
+			int randomCount = random.nextInt(1, 5);
 			bidList.Test07(randomId, randomIndex, randomCount, null);
 			int totalAuctions = Integer.parseInt(bidList.getData().total);
 			Assertions.assertTrue(totalAuctions >= 0);
