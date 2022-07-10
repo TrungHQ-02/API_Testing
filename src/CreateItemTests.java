@@ -22,7 +22,7 @@ public class CreateItemTests {
         String randomTitle = email.getSaltString();
         String randomSeries = email.getStringWithFixedLength(10);
 
-        createAuction.Test11("2","2022/07/12 11:11","2023/08/21 11:11", randomTitle, token);
+        createAuction.Test11("2","2023/07/12 11:11","2024/08/21 11:11", randomTitle, token);
         createItem.Test15(createAuction.getAuctionId(),"iphone 15 pro max ",100, 1,"mua 1 tang 2", randomSeries, token);
 
         Assertions.assertEquals(1000, createItem.getCode());
@@ -94,5 +94,34 @@ public class CreateItemTests {
         Assertions.assertEquals("brand: &name: &series: 7004&description: &starting_price: ", createItem.getMessage());
         System.out.println("Unit 5: Satisfied!");
     }
+    @RepeatedTest(value = 2)
+    public void unitTest6(){
 
+        System.out.println("If auction_id does not exist, code should be 9996 and message should be Id truyền vào không tồn tại");
+        System.out.println("Testing unit6...");
+
+        String randomTitle = email.getSaltString();
+        String randomSeries = email.getStringWithFixedLength(10);
+
+        createItem.Test15("346846","iphone 15 pro max ",100, 1,"mua 1 tang 2", randomSeries, token);
+
+        Assertions.assertEquals(9996, createItem.getCode());
+        Assertions.assertEquals("Id truyền vào không tồn tại", createItem.getMessage());
+        System.out.println("Unit 6: Satisfied!");
+    }
+    @RepeatedTest(value = 2)
+    public void unitTest7(){
+
+        System.out.println("If auction_id had item or approved, code should be 9995 and message should be Không thể thêm item mới với phiên đấu giá này");
+        System.out.println("Testing unit1...");
+
+        String randomTitle = email.getSaltString();
+        String randomSeries = email.getStringWithFixedLength(10);
+
+        createItem.Test15("1","iphone 15 pro max ",100, 1,"mua 1 tang 2", randomSeries, token);
+
+        Assertions.assertEquals(9995, createItem.getCode());
+        Assertions.assertEquals("Không thể thêm item mới với phiên đấu giá này", createItem.getMessage());
+        System.out.println("Unit 1: Satisfied!");
+    }
 }

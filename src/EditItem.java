@@ -23,15 +23,14 @@ public class EditItem {
     public String fixed_title;
 
 
-    public void Test13(String auction_id, String name, int starting_price, int brand_id, String description, String series, String token) {
+    public void Test16(String item_id, String name, int starting_price, int brand_id, String description, String series, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
 
         // Connect and parse Json
-        /// api/auctions/edit/{auctionId}
         try {
-            URL url = new URL(BaseURL.baseURL + "items/create/" + auction_id);
+            URL url = new URL(BaseURL.baseURL + "items/edit/" + item_id);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + token);
@@ -41,7 +40,7 @@ public class EditItem {
 
             String data = "{\n \"name\": \"" + name
                     + "\",\n  \"brand_id\": \"" + brand_id
-                    +"\",\n  \"starting_price\": \"" + starting_price
+                    + "\",\n  \"starting_price\": \"" + starting_price
                     + "\",\n  \"description\": \"" + description
                     + "\",\n  \"series\": \"" + series
                     + "\"\n}";

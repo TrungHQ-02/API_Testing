@@ -41,7 +41,7 @@ public class CreateItem {
 
             String data = "{\n \"name\": \"" + name
                     + "\",\n  \"brand_id\": \"" + brand_id
-                    +"\",\n  \"starting_price\": \"" + starting_price
+                    + "\",\n  \"starting_price\": \"" + starting_price
                     + "\",\n  \"description\": \"" + description
                     + "\",\n  \"series\": \"" + series
                     + "\"\n}";
