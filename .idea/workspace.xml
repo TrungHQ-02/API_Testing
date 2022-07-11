@@ -6,39 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="da342fb9-b423-4690-95f4-d65d2464829b" name="Changes" comment="Phuong them">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AcceptMaxBidTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChangePasswordTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ContactUsTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateAuctionTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateBidsTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateCommentTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateItemTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DeleteAuctionTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DeleteCommentTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DeleteNotificationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EditAccountTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EditAuctionTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EditItemTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetDetailAuctionsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListAuctionsTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListBidsTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListBrandsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListCategoriesTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListCommentsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetListLikesTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetNewsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetNotificationsTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetSliderTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InfoAuctionTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InfoItemTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InfoTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LikeAuctionTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LogoutTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadNewTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadNotificationsTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SignUpTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TotalLikeOfAuctionTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +80,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in API_Test">
+  <component name="RunManager" selected="JUnit.SearchTest">
     <configuration name="AcceptMaxBidTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -140,10 +107,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EditAuctionTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EditAuctionTests" />
+      <option name="MAIN_CLASS_NAME" value="SearchTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,17 +144,17 @@
     <list>
       <item itemvalue="JUnit.AcceptMaxBidTest" />
       <item itemvalue="JUnit.CreateAuctionTests" />
-      <item itemvalue="JUnit.EditAuctionTests" />
+      <item itemvalue="JUnit.SearchTest" />
       <item itemvalue="JUnit.Test in API_Test" />
       <item itemvalue="JUnit.All in API_Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SearchTest" />
         <item itemvalue="JUnit.All in API_Test" />
         <item itemvalue="JUnit.Test in API_Test" />
         <item itemvalue="JUnit.CreateAuctionTests" />
         <item itemvalue="JUnit.AcceptMaxBidTest" />
-        <item itemvalue="JUnit.EditAuctionTests" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +198,7 @@
       <workItem from="1657363667892" duration="1268000" />
       <workItem from="1657537193721" duration="569000" />
       <workItem from="1657537835026" duration="57000" />
-      <workItem from="1657546607483" duration="2163000" />
+      <workItem from="1657546607483" duration="3236000" />
     </task>
     <task id="LOCAL-00001" summary="Phuong them">
       <created>1657117211304</created>
