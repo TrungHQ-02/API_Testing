@@ -12,7 +12,7 @@ public class InfoItem {
     private static HttpURLConnection connection;
     public static Rp rp;
 
-    public void Test33(int itemId, String token) {
+    public void Test17(int itemId, String token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();

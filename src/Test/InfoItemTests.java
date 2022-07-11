@@ -1,6 +1,5 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.RepeatedTest;
-import org.junit.jupiter.api.Test;
 
 public class InfoItemTests {
     InfoItem infoItem = new InfoItem();
@@ -11,7 +10,7 @@ public class InfoItemTests {
         System.out.println("If token not null and item id was created, code should be 1000 and message should be OK");
         System.out.println("Testing unit1...");
 
-        infoItem.Test33(1, token);
+        infoItem.Test17(1, token);
         Assertions.assertEquals(1000, infoItem.getCode());
         Assertions.assertEquals("OK", infoItem.getMessage());
         System.out.println("Unit 1: Satisfied!");
