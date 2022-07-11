@@ -26,15 +26,15 @@ public class GetListBidsTests {
 
 	@Test
 	public void unitTest2() {
-		System.out.println("Code should be 1000 and message should be OK with the negative input for index and count");
+		System.out.println("Code should not be 1000 and message should not be OK with negative input for index and count");
 		System.out.println("Testing unit2...");
 		for (int i = 1; i <= 2; i++) {
 			int randomId = random.nextInt(1,3);
 			int randomIndex = random.nextInt(-5,-1);
 			int randomCount = random.nextInt(-5,-1);
 			bidList.Test22(randomId, randomIndex, randomCount, null);
-			Assertions.assertEquals(1000, bidList.getCode());
-			Assertions.assertEquals("OK", bidList.getMessage());
+			Assertions.assertNotEquals(1000, bidList.getCode());
+			Assertions.assertNotEquals("OK", bidList.getMessage());
 		}
 		System.out.println("Unit 2: Satisfied!");
 	}

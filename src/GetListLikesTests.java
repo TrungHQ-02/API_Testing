@@ -43,15 +43,15 @@ public class GetListLikesTests {
 	@Test
 	public void unitTest2() {
 		this.setToken();
-		System.out.println("Code should be 1000 and message should be OK with the negative input");
+		System.out.println("Code should not be 1000 and message should not be OK with the negative input");
 		System.out.println("Testing unit2...");
 		for (int i = 1; i <= 3; i++) {
 			int randomId = random.nextInt(-10,-1);
 			int randomIndex = random.nextInt(-10,-1);
 			int randomCount = random.nextInt(-10,-1);
 			likes.Test28(randomId, randomIndex, randomCount, proper_token);
-			Assertions.assertEquals(1000, likes.getCode());
-			Assertions.assertEquals("OK", likes.getMessage());
+			Assertions.assertNotEquals(1000, likes.getCode());
+			Assertions.assertNotEquals("OK", likes.getMessage());
 		}
 		System.out.println("Unit 2: Satisfied!");
 	}

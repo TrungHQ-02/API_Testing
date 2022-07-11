@@ -42,15 +42,15 @@ public class LikeAuctionTests {
 	@Test
 	public void unitTest2() {
 		this.setToken();
-		System.out.println("If we use the negative id, code should be 1000 and message should be OK");
+		System.out.println("If we use the negative id, code should not be 1000 and message should not be OK");
 		System.out.println("Testing unit2...");
 		for (int i = 1; i <= 2; i++) {
 			int random_auctionId = rand.nextInt(-100, -10);
 			System.out.println(random_auctionId);
 			likeAuction.Test27(proper_token, random_auctionId + "");
 			System.out.println(likeAuction.getData().auction_id);
-			Assertions.assertEquals(1000, likeAuction.getCode());
-			Assertions.assertEquals("OK", likeAuction.getMessage());
+			Assertions.assertNotEquals(1000, likeAuction.getCode());
+			Assertions.assertNotEquals("OK", likeAuction.getMessage());
 		}
 		System.out.println("Unit 2: Satisfied");
 
