@@ -40,15 +40,15 @@ public class GetNotificationsTests {
 	@Test
 	public void unitTest2() {
 		this.setToken();
-		System.out.println("Code should be 1000 and message should be OK with the negative input for index and count");
+		System.out.println("Code should not be 1000 and message should not be OK with negative input for index and count");
 		System.out.println("Testing unit2...");
 		for (int i = 1; i <= 2; i++) {
 			int randomIs_not_read = random.nextInt(0,1);
 			int randomIndex = random.nextInt(-5,-1);
 			int randomCount = random.nextInt(-5,-1);
 			getNotifications.Test32(randomIndex, randomCount, "" + randomIs_not_read, proper_token);
-			Assertions.assertEquals(1000, getNotifications.getCode());
-			Assertions.assertEquals("OK", getNotifications.getMessage());
+			Assertions.assertNotEquals(1000, getNotifications.getCode());
+			Assertions.assertNotEquals("OK", getNotifications.getMessage());
 		}
 		System.out.println("Unit 2: Satisfied!");
 	}

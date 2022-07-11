@@ -11,7 +11,7 @@ public class CreateCommentTest {
     Logout logout = new Logout();
 
     
-    @RepeatedTest(5)
+    @RepeatedTest(3)
     @DisplayName("Unit test 1: test OK")
     public void unitTest1() {
         

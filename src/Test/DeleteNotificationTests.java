@@ -43,13 +43,13 @@ public class DeleteNotificationTests {
 	@Test
 	public void unitTest2() {
 		this.setToken();
-		System.out.println("If we use the negative id, code should not be 1000/1006 and message should be OK/Khong co quyen");
+		System.out.println("If we use the negative id, code should not be 1000/1006 and message should not be OK/Khong co quyen");
 		System.out.println("Testing unit2...");
 		for (int i = 1; i <= 10; i++) {
 			int random_auctionId = rand.nextInt(-100, -10);
 			deleteNotification.Test22(proper_token, random_auctionId + "");
-			Assertions.assertTrue(deleteNotification.getCode() == 1000 || deleteNotification.getCode() == 1006);
-//			Assertions.assertEquals("OK", deleteNotification.getMessage());
+			Assertions.assertFalse(deleteNotification.getCode() == 1000 || deleteNotification.getCode() == 1006);
+//			Assertions.assertFalse("OK", deleteNotification.getMessage());
 		}
 		System.out.println("Unit 2: Satisfied");
 
