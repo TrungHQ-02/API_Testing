@@ -10,21 +10,20 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 
-public class EditAccount {
+public class ChangePassword {
     private static HttpURLConnection connection;
 
-    public static Rp rp;
+    public static Rp6 rp;
     int rpCode;
    
 
+    public String fixed_old_pass;
+    public String fixed_new_pass;
+    public String fixed_re_pass;
     public String fixed_email;
-    public String fixed_address;
-    public String fixed_name;
-    public String fixed_phone;
-    public File fixed_avatar;
 
 
-    public void Test05(String access_token, String email, String address, String name, String phone, File avatar) {
+    public void Test07(String email, String old_pass, String new_pass, String re_pass, String access_token) {
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
@@ -32,7 +31,7 @@ public class EditAccount {
         // Connect and parse Json
         /// api/comments/create/{auctionId}
         try {
-            URL url = new URL("https://auctions-app-2.herokuapp.com/api/edit");
+            URL url = new URL("https://auctions-app-2.herokuapp.com/api/changepass");
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Authorization", "Bearer" + access_token);
@@ -40,9 +39,9 @@ public class EditAccount {
             connection.setRequestProperty("Content-Type", "application/json");
             connection.setDoOutput(true);
 
-            String data = "{\n \"email\": \"" + email + "\"" + "    ,\n  \"address\": \"" + address
-					+ "\"" + "    ,\n \"name\": \"" + name + "\"" + "   , \n \"phone\": \"" + phone 
-					+ "\"" + "    ,\n \"avatar\": \"" + avatar + "\"" + " \n}";          
+            String data = "{\n \"email\": \"" + email + "\"" + ",    \n \"old_pass\": \"" + old_pass 
+            		       + "\"" + "    ,\n  \"new_pass\": \"" + new_pass
+					       + "\"" + "    ,\n \"re_pass\": \"" + re_pass + "\"" + " \n}";          
             byte[] out = data.getBytes(StandardCharsets.UTF_8);
             OutputStream stream = connection.getOutputStream();
             stream.write(out);
@@ -54,16 +53,15 @@ public class EditAccount {
 
             // set to model
             this.setFixed_email(email+"");
-            this.setFixed_address(address+"");
-            this.setFixed_name(name+"");
-            this.setFixed_phone(phone+"");
-            this.setFixed_avatar(avatar);
+            this.setFixed_old_pass(old_pass+"");
+            this.setFixed_new_pass(new_pass+"");
+            this.setFixed_re_pass(re_pass+"");
             
             
 
             // Parse JSON
             Gson g = new Gson();
-            rp = g.fromJson(respondContent.toString(), Rp.class);
+            rp = g.fromJson(respondContent.toString(), Rp6.class);
 
             reader.close();
         } catch (IOException e) {
@@ -74,12 +72,6 @@ public class EditAccount {
 
     }
     
-	
-	private void setFixed_avatar(File avatar) {
-		// TODO Auto-generated method stub
-		
-	}
-
 
 	public int getCode() {
         return rp.code;
@@ -92,49 +84,43 @@ public class EditAccount {
         return rp.message;
     }
 
-    public Data getData() {
+    public String getData() {
         return rp.data;
     }
     
-    public int getCodeData() {
-    	return rp.data.code;
-    }
     public String getFixed_email() {
         return fixed_email;
     }
 
-    public void setFixed_email(String fixed_email) {
+	public void setFixed_email(String fixed_email) {
         this.fixed_email = fixed_email;
     }
-    
-    
-    public String getFixed_address() {
-        return fixed_address;
+	
+    public String getFixed_old_pass() {
+        return fixed_old_pass;
     }
 
-    public void setFixed_address(String fixed_address) {
-        this.fixed_address = fixed_address;
+	public void setFixed_old_pass(String fixed_old_pass) {
+        this.fixed_old_pass = fixed_old_pass;
     }
     
-    public String getFixed_name() {
-        return fixed_name;
+    public String getFixed_new_pass() {
+        return fixed_new_pass;
     }
 
-    public void setFixed_name(String fixed_name) {
-        this.fixed_name = fixed_name;
+    public void setFixed_new_pass(String fixed_new_pass) {
+        this.fixed_new_pass = fixed_new_pass;
     }
     
-    public String getFixed_phone() {
-        return fixed_phone;
+    public String getFixed_re_pass() {
+        return fixed_re_pass;
     }
 
-    public void setFixed_phone(String fixed_phone) {
-        this.fixed_phone = fixed_phone;
+    public void setFixed_re_pass(String fixed_re_pass) {
+        this.fixed_re_pass = fixed_re_pass;
     }
-
-    public File getFixed_avatar() {
-        return fixed_avatar;
-    }
+    
+    
 
 
 

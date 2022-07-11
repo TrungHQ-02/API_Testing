@@ -8,7 +8,7 @@ class GetSliderTest {
     @Test
     @DisplayName("Unit Test 1 : get slider")
     public void UnitTest1(){
-        getSlider.Test34(null);
+       	getSlider.Test34(null);
         Assertions.assertEquals(1000,getSlider.getCode());
         Assertions.assertEquals("OK",getSlider.getMessage());
         //Assertions.assertNotEquals(null, getSlider.getData());
@@ -17,8 +17,8 @@ class GetSliderTest {
     @Test
     @DisplayName("Unit Test 2: get slider : have access_token")
     public void UnitTest2(){
-        login.Test01("dien1234@gmail.com", "123456");
-        getSlider.Test34(login.getToken());
+    	login.Test01("dien1234@gmail.com", "123456");
+       	getSlider.Test34(login.getToken());
         Assertions.assertEquals(1000,getSlider.getCode());
         Assertions.assertEquals("OK",getSlider.getMessage());
         //Assertions.assertNotEquals(null, getSlider.getData());

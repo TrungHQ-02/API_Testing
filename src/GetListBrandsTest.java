@@ -3,12 +3,12 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class GetListBrandsTest {
-    GetListBrands getListBrands = new GetListBrands();
+	GetListBrands getListBrands = new GetListBrands();
 
     @Test
     @DisplayName("Unit Test : get list brands")
     public void UnitTest(){
-        getListBrands.Test24();
+    	getListBrands.Test24();
         Assertions.assertEquals(1000,getListBrands.getCode());
         Assertions.assertEquals("OK",getListBrands.getMessage());
         Assertions.assertNotEquals(null, getListBrands.getData());
