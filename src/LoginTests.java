@@ -206,7 +206,7 @@ public class LoginTests {
 	@Test
 	public void unitTest13() {
 		// If password is incorrect, response code should be 1002, and message should be
-		//
+		// 
 		System.out.println(
 				"If password is incorrect, response code should be 1002, and message should be ");
 		SignUp signUp = new SignUp();

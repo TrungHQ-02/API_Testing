@@ -12,17 +12,33 @@ public class GetListAuctionsTests {
 	GetListAuctions getListAuctions = new GetListAuctions();
 	Random random = new Random();
 	RandomEmail randomString = new RandomEmail();
+	
+	String proper_token;
+	public String getProper_token() {
+		return proper_token;
+	}
 
-	String proper_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU3NDM3ODY3LCJleHAiOjE2NTc3OTc4NjcsIm5iZiI6MTY1NzQzNzg2NywianRpIjoiV1J0TFZmTnF4UmRuMFk3OSIsInN1YiI6NjIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.dTBXxQ2nQH2twRsZIcxkWPCm29j0G6BnPiWA9099L48";
-
+	public void setProper_token(String proper_token) {
+		this.proper_token = proper_token;
+	}
+	
+	public void setToken() {
+		Login login = new Login();
+		login.Test01("trung@gmail.com", "1234567");
+		this.setProper_token(login.getToken());
+	}
 	//int statusId, String user_id,String type, String category_id, int index, int count, String token
-
+	
 	// Day la 3 unit chung cho ca 3 TH
 	// Vi 2 trong 3 phai null nen co 3 test cho 1000 OK
+	
+	
+
 
 	@Test
 	public void unitTest01() {
 		// Code 1000 message OK
+		this.setToken();
 		System.out.println("Code should be 1000 and message should be OK with the valid input (only type)");
 		System.out.println("Testing unit1...");
 		getListAuctions.Test07(2, "", 2+"","",1,10, null);
@@ -30,10 +46,11 @@ public class GetListAuctionsTests {
 		Assertions.assertEquals("OK", getListAuctions.getMessage());
 		System.out.println("Unit 1: Satisfied");
 	}
-
+	
 
 	@Test
 	public void unitTest02() {
+		this.setToken();
 		System.out.println("Code should be 1000 and message should be OK with the valid input (only category_id)");
 		System.out.println("Testing unit2...");
 		getListAuctions.Test07(2, "", "",2+"",1,10, null);
@@ -44,6 +61,7 @@ public class GetListAuctionsTests {
 
 	@Test
 	public void unitTest03() {
+		this.setToken();
 		System.out.println("Code should be 1000 and message should be OK with the valid input (only user_id)");
 		System.out.println("Testing unit3...");
 		getListAuctions.Test07(2, "", "",2+"",1,10, null);
@@ -51,9 +69,10 @@ public class GetListAuctionsTests {
 		Assertions.assertEquals("OK", getListAuctions.getMessage());
 		System.out.println("Unit 3: Satisfied");
 	}
-
+	
 	@Test
 	public void unitTest04() {
+		this.setToken();
 		System.out.println("Code should be 1000 and message should be OK with the valid input (3 null)");
 		System.out.println("Testing unit4...");
 		getListAuctions.Test07(2, "", "","",1,10, null);
@@ -61,14 +80,15 @@ public class GetListAuctionsTests {
 		Assertions.assertEquals("OK", getListAuctions.getMessage());
 		System.out.println("Unit 4: Satisfied");
 	}
-
-
-
-
-
+	
+	
+	
+	
+	
 	// Test voi ca 3 truong deu null
 	@Test
 	public void unitTest05() {
+		this.setToken();
 		System.out.println("API should return all auctions whose status equals to what we send to API");
 		System.out.println("Testing unit5...");
 		for (int i = 1; i <= 5; i++) {
@@ -78,13 +98,14 @@ public class GetListAuctionsTests {
 				Assertions.assertEquals(getListAuctions.getFixedId(), auctionForGLA2.statusId);
 			}
 		}
-
+		
 		System.out.println("Unit 5: Satisfied");
 	}
-
-
+	
+	
 	@Test
 	public void unitTest06() {
+		this.setToken();
 		System.out.println("Auction id should be greater than 0");
 		System.out.println("Testing unit6...");
 		for (int i = 1; i <= 5; i++) {
@@ -96,7 +117,7 @@ public class GetListAuctionsTests {
 		}
 		System.out.println("Unit 6: Satisfied");
 	}
-
+	
 	@Test
 	public void unitTest07() {
 		System.out.println("Selling user id should be greater than 0");
@@ -110,7 +131,7 @@ public class GetListAuctionsTests {
 		}
 		System.out.println("Unit 7: Satisfied");
 	}
-
+	
 	@Test
 	public void unitTest08() {
 		System.out.println("Title should not be null");
@@ -124,7 +145,7 @@ public class GetListAuctionsTests {
 		}
 		System.out.println("Unit 8: Satisfied");
 	}
-
+	
 	@Test
 	public void unitTest09() {
 		System.out.println("Auction Id of a auction must be different from others'");
@@ -140,7 +161,7 @@ public class GetListAuctionsTests {
 		}
 		System.out.println("Unit 9: Satisfied");
 	}
-
+	
 	@Test
 	public void unitTest10() {
 		System.out.println("Category should not be null");
@@ -154,7 +175,7 @@ public class GetListAuctionsTests {
 		}
 		System.out.println("Unit 10: Satisfied");
 	}
-
+	
 	@Test
 	public void unitTest11() {
 		System.out.println("Category type should be 1 2 3 4 5");
@@ -165,32 +186,32 @@ public class GetListAuctionsTests {
 			for (AuctionForGLA auctionForGLA2 : auctionForGLA) {
 				boolean b = (Integer.parseInt(auctionForGLA2.category.type) == 1 ||
 						Integer.parseInt(auctionForGLA2.category.type) == 2 ||
-						Integer.parseInt(auctionForGLA2.category.type) == 3||
-						Integer.parseInt(auctionForGLA2.category.type) == 4||
-						Integer.parseInt(auctionForGLA2.category.type) == 5);
-
+								Integer.parseInt(auctionForGLA2.category.type) == 3||
+										Integer.parseInt(auctionForGLA2.category.type) == 4||
+												Integer.parseInt(auctionForGLA2.category.type) == 5);
+												
 				Assertions.assertTrue(b);
 			}
 		}
 		System.out.println("Unit 11: Satisfied");
 	}
-
+	
 	@Test
 	public void unitTest12() {
-		System.out.println("Auction status id should not be 4");
+		System.out.println("Auction status id should not be 4 when all are null");
 		System.out.println("Testing unit12...");
 		getListAuctions.Test07(4, "", "","",1,10, null);
 		AuctionForGLA[] auctionForGLA = getListAuctions.getData().auctions.clone();
 		for (AuctionForGLA auction : auctionForGLA) {
 			Assertions.assertNotEquals(4, Integer.parseInt(auction.statusId));
 		}
-
+		
 		System.out.println("Unit 12: Satisfied");
 	}
-
+	
 	@Test
 	public void unitTest13() {
-		System.out.println("User info should be null if we use 3 null param");
+		System.out.println("User info should be null if we use 3 null params");
 		System.out.println("Testing unit13..");
 		for (int i = 1; i <= 3; i++) {
 			getListAuctions.Test07(i, "", "","",i,10, null);
@@ -198,10 +219,10 @@ public class GetListAuctionsTests {
 		}
 		System.out.println("Unit 13: Satisfied");
 	}
-
-
-
-
+	
+	
+	
+	
 	// test truyen type
 
 	@Test
@@ -215,10 +236,10 @@ public class GetListAuctionsTests {
 				Assertions.assertEquals(getListAuctions.getFixedType(), auctionForGLA2.category.type);
 			}
 		}
-
+		
 		System.out.println("Unit 14: Satisfied");
 	}
-
+	
 	@Test
 	public void unitTest15() {
 		System.out.println("User info should be null if we use 2 null param");
@@ -229,34 +250,34 @@ public class GetListAuctionsTests {
 		}
 		System.out.println("Unit 15: Satisfied");
 	}
-
+	
 	@Test
 	public void unitTest16() {
-		System.out.println("Auction status id should not be 4");
+		System.out.println("Auction status id should not be 4 (using type)");
 		System.out.println("Testing unit16...");
 		getListAuctions.Test07(4, "", "2","",1,10, null);
 		AuctionForGLA[] auctionForGLA = getListAuctions.getData().auctions.clone();
 		for (AuctionForGLA auction : auctionForGLA) {
 			Assertions.assertNotEquals(4, Integer.parseInt(auction.statusId));
 		}
-
+		
 		System.out.println("Unit 16: Satisfied");
 	}
-
+	
 	// test truyen category id
 	@Test
 	public void unitTest17() {
-		System.out.println("Auction status id should not be 4");
+		System.out.println("Auction status id should not be 4 (using category id)");
 		System.out.println("Testing unit17...");
 		getListAuctions.Test07(4, "", "","2",1,10, null);
 		AuctionForGLA[] auctionForGLA = getListAuctions.getData().auctions.clone();
 		for (AuctionForGLA auction : auctionForGLA) {
 			Assertions.assertNotEquals(4, Integer.parseInt(auction.statusId));
 		}
-
+		
 		System.out.println("Unit 17: Satisfied");
 	}
-
+	
 	@Test
 	public void unitTest18() {
 		System.out.println("User info should be null if we use 2 null param");
@@ -266,5 +287,21 @@ public class GetListAuctionsTests {
 			Assertions.assertEquals(null, getListAuctions.getData().user_info);
 		}
 		System.out.println("Unit 18: Satisfied");
+	}
+	
+	// test truyen user_id
+	// Can token
+	@Test
+	public void unitTest19() {
+		this.setToken();
+		System.out.println("Auction status id should not be 4 (using user_id)");
+		System.out.println("Testing unit19...");
+		getListAuctions.Test07(4, "", "","5",1,10, this.getProper_token());
+		AuctionForGLA[] auctionForGLA = getListAuctions.getData().auctions.clone();
+		for (AuctionForGLA auction : auctionForGLA) {
+			Assertions.assertNotEquals(4, Integer.parseInt(auction.statusId));
+		}
+		
+		System.out.println("Unit 17: Satisfied");
 	}
 }

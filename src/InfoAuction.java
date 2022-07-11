@@ -9,83 +9,83 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class InfoAuction {
-    private static HttpURLConnection connection;
-    public static Rp rp;
-    public String fixedId;
-    public String content;
+	private static HttpURLConnection connection;
+	public static Rp rp;
+	public String fixedId;
+	public String content;
 
+	
+	public int num;
+	public int getNum() {
+		return num;
+	}
 
-    public int num;
-    public int getNum() {
-        return num;
-    }
+	public void setNum(int num) {
+		this.num = num;
+	}
 
-    public void setNum(int num) {
-        this.num = num;
-    }
+	public String getFixedId() {
+		return fixedId;
+	}
 
-    public String getFixedId() {
-        return fixedId;
-    }
+	public void setFixedId(String fixedId) {
+		this.fixedId = fixedId;
+	}
 
-    public void setFixedId(String fixedId) {
-        this.fixedId = fixedId;
-    }
+	public void Test14(String auctionId, String token) {
+		// access_token is nullable
+		String line;
+		BufferedReader reader;
+		StringBuffer respondContent = new StringBuffer();
 
-    public void Test14(String auctionId, String token) {
-        // access_token is nullable
-        String line;
-        BufferedReader reader;
-        StringBuffer respondContent = new StringBuffer();
+		try {
+			URL url = new URL(BaseURL.baseURL + "auctions/info/" + auctionId);
+			connection = (HttpURLConnection) url.openConnection();
+			connection.setRequestMethod("GET");
+			connection.setRequestProperty("Authorization", "Bearer" + token);
 
-        try {
-            URL url = new URL(BaseURL.baseURL + "auctions/info/" + auctionId);
-            connection = (HttpURLConnection) url.openConnection();
-            connection.setRequestMethod("GET");
-            connection.setRequestProperty("Authorization", "Bearer" + token);
+			reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+			while ((line = reader.readLine()) != null) {
+				respondContent.append(line);
+			}
+			System.out.println(respondContent);
+			
+			this.setFixedId(auctionId);
+			this.setContent(respondContent.toString());
 
-            reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-            while ((line = reader.readLine()) != null) {
-                respondContent.append(line);
-            }
-            System.out.println(respondContent);
+			// Parse JSON
+			Gson g = new Gson();
+			rp = g.fromJson(respondContent.toString(), Rp.class);
 
-            this.setFixedId(auctionId);
-            this.setContent(respondContent.toString());
+			reader.close();
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+			if (this.getNum() == 2) {
+				System.out.println("Unit 2: Satisfied!");
+			}
+		} finally {
+			connection.disconnect();
+		}
 
-            // Parse JSON
-            Gson g = new Gson();
-            rp = g.fromJson(respondContent.toString(), Rp.class);
+	}
 
-            reader.close();
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-            if (this.getNum() == 2) {
-                System.out.println("Unit 2: Satisfied!");
-            }
-        } finally {
-            connection.disconnect();
-        }
+	public String getContent() {
+		return content;
+	}
 
-    }
+	public void setContent(String content) {
+		this.content = content;
+	}
 
-    public String getContent() {
-        return content;
-    }
+	public int getCode() {
+		return rp.code;
+	}
 
-    public void setContent(String content) {
-        this.content = content;
-    }
+	public String getMessage() {
+		return rp.message;
+	}
 
-    public int getCode() {
-        return rp.code;
-    }
-
-    public String getMessage() {
-        return rp.message;
-    }
-
-    public Data getData() {
-        return rp.data;
-    }
+	public Data getData() {
+		return rp.data;
+	}
 }
