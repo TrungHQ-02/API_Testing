@@ -24,7 +24,7 @@ public class LikeAuction {
 	public void setContent(String content) {
 		this.content = content;
 	}
-
+	
 	String auction_id;
 
 	public String getAuction_id() {
@@ -63,7 +63,7 @@ public class LikeAuction {
 			// set value to model
 			this.setContent(respondContent.toString());
 			this.setAuction_id(auctionId);
-
+			
 			System.out.println(respondContent);
 			// Parse JSON
 			Gson g = new Gson();

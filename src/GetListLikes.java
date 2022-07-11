@@ -16,16 +16,16 @@ public class GetListLikes {
 
     // OK
     public String getFixedId() {
-        return fixedId;
-    }
+		return fixedId;
+	}
 
-    public void setFixedId(String fixedId) {
-        this.fixedId = fixedId;
-    }
+	public void setFixedId(String fixedId) {
+		this.fixedId = fixedId;
+	}
 
 
-    public void Test28(int statusId, int index, int count, String token) {
-        // access_token is not nullable
+	public void Test28(int statusId, int index, int count, String token) {
+    	// access_token is not nullable
         String line;
         BufferedReader reader;
         StringBuffer respondContent = new StringBuffer();
@@ -34,10 +34,10 @@ public class GetListLikes {
         //https://auctions-app-2.herokuapp.com/api/auctions/listAuctionsByStatus?statusId=1&index=1&count=3
         // https://auctions-app-2.herokuapp.com/api/likes/3?index=1&count=1
         try {
-            URL url = new URL(BaseURL.baseURL + "likes/"
-                    + statusId
-                    + "?index=" + index
-                    + "&count=" + count);
+            URL url = new URL(BaseURL.baseURL + "likes/" 
+            	    + statusId 
+            		+ "?index=" + index 
+            		+ "&count=" + count);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Authorization", "Bearer" + token);
@@ -50,7 +50,7 @@ public class GetListLikes {
 
             this.setFixedId(statusId+"");
             this.setContentString(respondContent.toString());
-
+            
             // Parse JSON
             Gson g = new Gson();
             rp = g.fromJson(respondContent.toString(), Rp3.class);
@@ -63,26 +63,26 @@ public class GetListLikes {
         }
 
     }
-
-
+    
+    
     public int getCode() {
-        return rp.code;
+    	return rp.code;
     }
-
+    
     public String getMessage() {
-        return rp.message;
+    	return rp.message;
     }
-
+    
     public Data3 getData() {
-        return rp.data;
+    	return rp.data;
     }
 
-    public String getContentString() {
-        return contentString;
-    }
+	public String getContentString() {
+		return contentString;
+	}
 
-    public void setContentString(String contentString) {
-        this.contentString = contentString;
-    }
+	public void setContentString(String contentString) {
+		this.contentString = contentString;
+	}
 
 }

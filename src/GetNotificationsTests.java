@@ -10,10 +10,24 @@ public class GetNotificationsTests {
 	GetNotifications getNotifications = new GetNotifications();
 	Random random = new Random();
 	RandomEmail randomString = new RandomEmail();
-	String proper_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU3MzU5Nzc5LCJleHAiOjE2NTc3MTk3NzksIm5iZiI6MTY1NzM1OTc3OSwianRpIjoiOXNMSFczMm9HNjhFRkJlaCIsInN1YiI6MTAxNywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.eKkxJrwX3rQVo8bA7aNlmUItFpK91E0kDzHrqKkWe50";
 
+	String proper_token;
+	public String getProper_token() {
+		return proper_token;
+	}
+
+	public void setProper_token(String proper_token) {
+		this.proper_token = proper_token;
+	}
+	
+	public void setToken() {
+		Login login = new Login();
+		login.Test01("trung@gmail.com", "1234567");
+		this.setProper_token(login.getToken());
+	}
 	@Test
 	public void unitTest1() {
+		this.setToken();
 		// Code 1000 message OK
 		System.out.println("Code should be 1000 and message should be OK with the valid input");
 		System.out.println("Testing unit1...");
@@ -25,6 +39,7 @@ public class GetNotificationsTests {
 
 	@Test
 	public void unitTest2() {
+		this.setToken();
 		System.out.println("Code should be 1000 and message should be OK with the negative input for index and count");
 		System.out.println("Testing unit2...");
 		for (int i = 1; i <= 2; i++) {
@@ -40,7 +55,8 @@ public class GetNotificationsTests {
 
 	@Test
 	public void unitTest3() {
-		System.out.println("Code should be 1004 and message should be ã�¾ã� ãƒ­ã‚°ã‚¤ãƒ³ã�§ã�¯ã�‚ã‚Šã�¾ã�›ã‚“ even when token is wrong");
+		this.setToken();
+		System.out.println("Code should be 1004 and message should be ... when token is wrong");
 		System.out.println("Testing unit3...");
 		for (int i = 1; i <= 2; i++) {
 			int randomIs_not_read = random.nextInt(0,1);
@@ -53,14 +69,15 @@ public class GetNotificationsTests {
 			String contentRP = getNotifications.getRespondContentString();
 //			System.out.println(contentRP);
 			boolean contain_HTML = contentRP.contains("html");
-			Assertions.assertTrue(contain_HTML);
+			Assertions.assertTrue(contain_HTML);		
 		}
 		System.out.println("Unit 3: Satisfied!");
 	}
 
 	@Test
 	public void unitTest4() {
-		System.out.println("Code should be 1004 and message should be ã�¾ã� ãƒ­ã‚°ã‚¤ãƒ³ã�§ã�¯ã�‚ã‚Šã�¾ã�›ã‚“ even when token is empty");
+		this.setToken();
+		System.out.println("Code should be 1004 and message should be ... even when token is empty");
 		System.out.println("Testing unit4...");
 		for (int i = 1; i <= 2; i++) {
 			int randomIs_not_read = random.nextInt(0,1);
@@ -73,13 +90,14 @@ public class GetNotificationsTests {
 			String contentRP = getNotifications.getRespondContentString();
 //			System.out.println(contentRP);
 			boolean contain_HTML = contentRP.contains("html");
-			Assertions.assertTrue(contain_HTML);
+			Assertions.assertTrue(contain_HTML);		
 		}
 		System.out.println("Unit 4: Satisfied!");
 	}
 
 	@Test
 	public void unitTest5() {
+		this.setToken();
 		System.out.println("Total of notifications should be greater than or equals to zero");
 		System.out.println("Testing unit5...");
 		for (int i = 1; i <= 2; i++) {
@@ -94,6 +112,7 @@ public class GetNotificationsTests {
 
 	@Test
 	public void unitTest6() {
+		this.setToken();
 		System.out.println("Total of unread notifications should be greater than or equals to zero");
 		System.out.println("Testing unit6...");
 		for (int i = 1; i <= 2; i++) {
