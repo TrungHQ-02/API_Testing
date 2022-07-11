@@ -18,7 +18,7 @@ public class EditAuctionTests {
 	// String auctionId, int category_id, String start_date, String end_date, String
 	// title_ni,String accessToken
 	@Test
-	public void unitTest1() {
+	public void unitTest01() {
 		int top = 3;
 		char data = ' ';
 		String title = "";
@@ -36,7 +36,7 @@ public class EditAuctionTests {
 		System.out.println("Unit 1: Satisfied!");
 	}
 	@Test
-	public void unitTest2() {
+	public void unitTest02() {
 		login.Test01("trinhquan100402@gmail.com", "1004");
 		System.out.println("if auctions have been approved, Server will return code 1005");
 		System.out.println("Testing unit2...");
@@ -47,7 +47,7 @@ public class EditAuctionTests {
 	}
 	@Test
 	//loi chua dang nhap
-	public void unitTest3() {
+	public void unitTest03() {
 		login.Test01("trinhquan100402@gmail.com", "1004");
 		//loi ch dang nhap
 
@@ -58,7 +58,7 @@ public class EditAuctionTests {
 		System.out.println("Unit 3: Satisfied!");
 	}
 	@Test
-	public void unitTest4() {
+	public void unitTest04() {
 		login.Test01("trinhquan100402@gmail.com", "1004");
 		//KhÃ´ng cÃ³ quyá»�n chá»‰nh sá»­a (Nhá»¯ng auctions khÃ´ng pháº£i do user táº¡o)
 		System.out.println("if the auctions are created by someone else,Server will return code 1006");
@@ -69,7 +69,7 @@ public class EditAuctionTests {
 		System.out.println("Unit 4: Satisfied!");
 	}
 	@Test
-	public void unitTest5() {
+	public void unitTest05() {
 		login.Test01("trinhquan100402@gmail.com", "1004");
 		System.out.println("no 'category_id' field entered or the value exists, Server will return code 1001");
 		System.out.println("Testing unit5...");
@@ -78,7 +78,7 @@ public class EditAuctionTests {
 		System.out.println("Unit 5: Satisfied!");
 	}
 	@Test
-	public void unitTest6() {
+	public void unitTest06() {
 		login.Test01("trinhquan100402@gmail.com", "1004");
 		System.out.println("field 'start_date' has not been entered, Server will return code 1001");
 		System.out.println("Testing unit6...");
@@ -87,7 +87,7 @@ public class EditAuctionTests {
 		System.out.println("Unit 6: Satisfied!");
 	}
 	@Test
-	public void unitTest7() {
+	public void unitTest07() {
 		login.Test01("trinhquan100402@gmail.com", "1004");
 		System.out.println("Data format of field 'start_date' incorrect, Server will return code 1001");
 		System.out.println("Testing unit7...");
@@ -96,7 +96,7 @@ public class EditAuctionTests {
 		System.out.println("Unit 7: Satisfied!");
 	}
 	@Test
-	public void unitTest8() {
+	public void unitTest08() {
 		login.Test01("trinhquan100402@gmail.com", "1004");
 		System.out.println("start time must be one day from current time, Server will return code 1001");
 		System.out.println("Testing unit8...");
@@ -106,7 +106,7 @@ public class EditAuctionTests {
 	}
 
 	@Test
-	public void unitTest9() {
+	public void unitTest09() {
 		login.Test01("trinhquan100402@gmail.com", "1004");
 		System.out.println("field 'end_date' has not been entered, Server will return code 1001");
 		System.out.println("Testing unit9...");
