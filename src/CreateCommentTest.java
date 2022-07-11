@@ -54,7 +54,7 @@ public class CreateCommentTest {
         login.Test01("dien1234@gmail.com", "123456");
        
         createComment.Test18(2, login.getToken(),"hi" , 1);
-        Assertions.assertEquals(1008, createComment.getCodeData());
+        Assertions.assertEquals(1008, createComment.getCode());
         System.out.println("Unit 4: Satisfied!");
     }
     
