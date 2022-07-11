@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 public class InfoItemTests {
     InfoItem infoItem = new InfoItem();
 
-    String token ="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU3MDg3NTgyLCJleHAiOjE2NTc0NDc1ODIsIm5iZiI6MTY1NzA4NzU4MiwianRpIjoiUDJ2dWQ2MVV0d3V4TjAwaiIsInN1YiI6MzAzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.AfGhz_ltry1zkdLJMvUFqY1MHZufibsyY6FHBk--e3M";
+    String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdWN0aW9ucy1hcHAtMi5oZXJva3VhcHAuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU3NTQ4MzIyLCJleHAiOjE2NTc5MDgzMjIsIm5iZiI6MTY1NzU0ODMyMiwianRpIjoiZDZYbGh4WE9UUUppQnl0QSIsInN1YiI6NDI0LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.9GfCpU9MAFNA9p_NjS1fMpa9ktcEmt2W4zmobryUo0s";
     @RepeatedTest(value = 4)
     public void unitTest01(){
         System.out.println("If token not null and item id was created, code should be 1000 and message should be OK");
