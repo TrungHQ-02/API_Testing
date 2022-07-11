@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="da342fb9-b423-4690-95f4-d65d2464829b" name="Changes" comment="Phuong them">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateCommentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadNotificationsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadNotificationsTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +85,27 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreateCommentTest.unitTest4">
+  <component name="RunManager" selected="JUnit.AcceptMaxBidTest.UnitTest3">
+    <configuration name="AcceptMaxBidTest.UnitTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AcceptMaxBidTest" />
+      <option name="METHOD_NAME" value="UnitTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AcceptMaxBidTest.UnitTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="API_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AcceptMaxBidTest" />
+      <option name="METHOD_NAME" value="UnitTest3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in API_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="API_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -115,25 +133,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateItemTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateItemTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateItemTests.unitTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="API_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreateItemTests" />
-      <option name="METHOD_NAME" value="unitTest5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,19 +145,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.AcceptMaxBidTest.UnitTest1" />
+      <item itemvalue="JUnit.AcceptMaxBidTest.UnitTest3" />
       <item itemvalue="JUnit.CreateCommentTest.unitTest4" />
       <item itemvalue="JUnit.All in API_Test" />
       <item itemvalue="JUnit.ChangePasswordTest" />
-      <item itemvalue="JUnit.CreateItemTests" />
-      <item itemvalue="JUnit.CreateItemTests.unitTest5" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AcceptMaxBidTest.UnitTest3" />
+        <item itemvalue="JUnit.AcceptMaxBidTest.UnitTest1" />
         <item itemvalue="JUnit.CreateCommentTest.unitTest4" />
         <item itemvalue="JUnit.All in API_Test" />
         <item itemvalue="JUnit.ChangePasswordTest" />
-        <item itemvalue="JUnit.CreateItemTests" />
-        <item itemvalue="JUnit.CreateItemTests.unitTest5" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +199,7 @@
       <workItem from="1657331204918" duration="3988000" />
       <workItem from="1657345976358" duration="1905000" />
       <workItem from="1657363667892" duration="1268000" />
-      <workItem from="1657537193721" duration="442000" />
+      <workItem from="1657537193721" duration="569000" />
     </task>
     <task id="LOCAL-00001" summary="Phuong them">
       <created>1657117211304</created>
