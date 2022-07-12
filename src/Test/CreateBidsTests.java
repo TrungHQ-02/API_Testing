@@ -16,7 +16,7 @@ public class CreateBidsTests {
         login.Test01("trinhquan100402@gmail.com", "1004");
         System.out.println("If we send to api valid input,code should be 1000 ");
         System.out.println("Testing unit1...");
-        createBids.Test21(9000500,1, login.getToken(),218);//500 Internal Server Error
+        createBids.Test21(9002000,1, login.getToken(),218);//500 Internal Server Error
         Assertions.assertEquals(1000, createBids.getCode());
         System.out.println("Unit 1: Satisfied!");
     }
@@ -43,10 +43,10 @@ public class CreateBidsTests {
     @Test
     public void unitTest4() {
         login.Test01("trinhquan100402@gmail.com", "1004");
-        System.out.println("if the auction has ended, the server returns 1008");//vd,7,8,9
+        System.out.println("if the auction has ended, the server returns 1008");
         System.out.println("Testing unit4..");
-        createBids.Test21(1000000,0, login.getToken(),7);
-        Assertions.assertEquals(1008, createBids.getCode());//ketthuc van tra gia dc vd cai 7
+        createBids.Test21(2000,0, login.getToken(),18);
+        Assertions.assertEquals(1008, createBids.getCode());
         System.out.println("Unit 4: Satisfied!");
     }
 }

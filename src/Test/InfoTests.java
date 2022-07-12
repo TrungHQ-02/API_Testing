@@ -6,7 +6,6 @@ class InfoTests {
     ReadNew readNew = new ReadNew();
     Login login = new Login();
     Logout logout = new Logout();
-
     @Test
     public void unitTest1() {
         login.Test01("trinhquan100402@gmail.com", "1004");

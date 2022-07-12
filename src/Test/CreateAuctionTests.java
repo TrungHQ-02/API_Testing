@@ -18,7 +18,8 @@ public class CreateAuctionTests {
     // title_ni,String accessToken
 
     @Test//    tao thanh cong 1 phien dau gia moi
-    public void unitTest1() {// tao tieu de ngau nhien
+    public void unitTest1() {
+        // tao tieu de ngau nhien
         int top = 3;
         char data;
         String title = "";
@@ -29,20 +30,21 @@ public class CreateAuctionTests {
         login.Test01("trinhquan100402@gmail.com", "1004");
         System.out.println("If we send to api valid input, code should be 1000 and message should be OK");
         System.out.println("Testing unit1...");
-        //auctionId:514
-        createAuction.Test11("3", "2022/07/11 07:00", "2022/07/11 08:00", title, login.getToken());
+        createAuction.Test11("3", "2022/07/15 07:00", "2022/07/19 08:00", title, login.getToken());
         Assertions.assertEquals(1000, createAuction.getCode());
         Assertions.assertEquals("OK", createAuction.getMessage());
         System.out.println("Unit 1: Satisfied!");
     }
     @Test//chua dang nhap
-    //loi k the gui accesstoken sai ,neu gui thi p gui dung, gui dung loi 401
+    //loi k the gui accesstoken sai ,neu gui thi p gui dung, gui dung gap loi 401
+
     public void unitTest2() {
         //logout token
         login.Test01("trinhquan100402@gmail.com", "1004");
         System.out.println("If we not input yet, Server will return code 1004");
         System.out.println("Testing unit2...");
-        createAuction.Test11("3", "2024/06/20 11:11", "2024/06/21 11:11", "Aaaa", null);
+        logout.Test06(login.getToken());
+        createAuction.Test11("3", "2024/06/20 11:11", "2024/06/21 11:11", "Aaaa", login.getToken());
         Assertions.assertEquals(1004, createAuction.getCode());//Server returned HTTP response code: 401 for URL
         Assertions.assertEquals("Chưa đăng nhập", createAuction.getMessage());
         System.out.println("Unit 2: Satisfied!");//yêu cầu ứng dụng khách chưa được hoàn thành vì nó thiếu thông tin xác thực hợp lệ cho tài nguyên được yêu cầu.

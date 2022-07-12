@@ -24,7 +24,7 @@ public class DeleteAuctionTests {
             data = (char)(rand.nextInt(25)+97);
             title = data + title;
         }
-        creauc.Test11("1", "2022/07/12 11:11", "2023/08/21 11:11", title, login.getToken());
+        creauc.Test11("1", "2022/07/15 11:11", "2023/08/21 11:11", title, login.getToken());
         deleteAuction.Test13(login.getToken(),creauc.getData().auction_id);
         Assertions.assertEquals(1000,deleteAuction.getCode());
         Assertions.assertEquals("OK",deleteAuction.getMessage());
@@ -50,18 +50,18 @@ public class DeleteAuctionTests {
         Assertions.assertEquals("Không có quyền",deleteAuction.getMessage());//ở file là không có quyền xóa
         System.out.println("Unit 3: Satisfied!");
     }
-/*
+
     @Test//  loi ch dang nhap
     @DisplayName("Unit test 4: If we not input yet, Server will return code 1004")
     public void unitTest4() {
         login.Test01("devAdmin@gmail.com", "123456");
-        logout.Test05(login.getToken());
+        logout.Test06(login.getToken());
         System.out.println("Testing unit3...");//loi 401
         //yêu cầu ứng dụng khách chưa được hoàn thành vì nó thiếu thông tin xác thực hợp lệ cho tài nguyên được yêu cầu.
-        deleteAuction.Test13(null, "1107");
+        deleteAuction.Test13(login.getToken(), "1107");
         Assertions.assertEquals(1004,deleteAuction.getCode());
         Assertions.assertEquals("Chưa đăng nhập",deleteAuction.getMessage());
         System.out.println("Unit 4: Satisfied!");
     }
-*/
+
 }

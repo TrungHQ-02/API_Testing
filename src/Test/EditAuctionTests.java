@@ -39,10 +39,11 @@ public class EditAuctionTests {
 	public void unitTest02() {
 		login.Test01("trinhquan100402@gmail.com", "1004");
 		System.out.println("if auctions have been approved, Server will return code 1005");
+		//auciton dc duyet roi thi k sua duoc
 		System.out.println("Testing unit2...");
-		editAuction.Test12("513", "1", null, null, "Dagoiaffaiiiii", login.getToken());
+		editAuction.Test12("513", "1", null, null, "Dragonia", login.getToken());
 		Assertions.assertEquals(1005, editAuction.getCode());
-		Assertions.assertEquals("KhÃ´ng thá»ƒ chá»‰nh sá»­a", editAuction.getMessage());
+		Assertions.assertEquals("Không thể chỉnh sửa", editAuction.getMessage());
 		System.out.println("Unit 2: Satisfied!");
 	}
 	@Test
@@ -50,7 +51,7 @@ public class EditAuctionTests {
 	public void unitTest03() {
 		login.Test01("trinhquan100402@gmail.com", "1004");
 		//loi ch dang nhap
-
+        logout.Test06(login.getToken());
 		System.out.println("If we not input yet, Server will return code 1004");
 		System.out.println("Testing unit3...");
 		editAuction.Test12("515", "1", null, null, "Dagoiaffaiiiii",login.getToken());
@@ -59,13 +60,13 @@ public class EditAuctionTests {
 	}
 	@Test
 	public void unitTest04() {
+		//khong co quyen chinh sua nhung cai k do user tao
 		login.Test01("trinhquan100402@gmail.com", "1004");
-		//KhÃ´ng cÃ³ quyá»�n chá»‰nh sá»­a (Nhá»¯ng auctions khÃ´ng pháº£i do user táº¡o)
 		System.out.println("if the auctions are created by someone else,Server will return code 1006");
 		System.out.println("Testing unit4...");
 		editAuction.Test12("443", "1", null, null, null, login.getToken());
 		Assertions.assertEquals(1006, editAuction.getCode());
-		Assertions.assertEquals("KhÃ´ng cÃ³ quyá»�n chá»‰nh sá»­a", editAuction.getMessage());
+		Assertions.assertEquals("Không có quyền chỉnh sửa", editAuction.getMessage());
 		System.out.println("Unit 4: Satisfied!");
 	}
 	@Test
