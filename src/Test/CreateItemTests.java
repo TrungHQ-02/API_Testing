@@ -22,7 +22,7 @@ public class CreateItemTests {
         String randomTitle = email.getSaltString();
         String randomSeries = email.getStringWithFixedLength(10);
 
-        createAuction.Test11("2","2023/07/12 11:11","2024/08/21 11:11", randomTitle, token);
+        createAuction.Test11("2","2023/07/13 11:11","2024/08/21 11:11", randomTitle, token);
         createItem.Test15(createAuction.getAuctionId(),"iphone 15 pro max ",100, 1,"mua 1 tang 2", randomSeries, token);
 
         Assertions.assertEquals(1000, createItem.getCode());
@@ -38,7 +38,7 @@ public class CreateItemTests {
         String randomTitle = email.getSaltString();
         String randomSeries = email.getStringWithFixedLength(10);
 
-        createAuction.Test11("2","2022/07/12 11:11","2023/08/21 11:11", randomTitle, token);
+        createAuction.Test11("2","2022/07/13 11:11","2023/08/21 11:11", randomTitle, token);
         createItem.Test15(createAuction.getAuctionId(),"iphone 15 pro max",100, 11,"mua 1 tang 2", randomSeries,token );
 
         Assertions.assertEquals(1001, createItem.getCode());
@@ -55,7 +55,7 @@ public class CreateItemTests {
         String randomSeries = email.getStringWithFixedLength(10);
         String randomName = email.getStringWithFixedLength(260);
 
-        createAuction.Test11("2","2022/07/12 11:11","2023/08/21 11:11", randomTitle, token);
+        createAuction.Test11("2","2022/07/13 11:11","2023/08/21 11:11", randomTitle, token);
         createItem.Test15(createAuction.getAuctionId(),randomName,100, 1,"mua 1 tang 2", randomSeries, token );
 
         Assertions.assertEquals(1001, createItem.getCode());
@@ -71,7 +71,7 @@ public class CreateItemTests {
         String randomTitle = email.getSaltString();
         String randomSeries = email.getStringWithFixedLength(11);
 
-        createAuction.Test11("2","2022/07/12 11:11","2023/08/21 11:11", randomTitle,token);
+        createAuction.Test11("2","2022/07/13 11:11","2023/08/21 11:11", randomTitle,token);
         createItem.Test15(createAuction.getAuctionId(),"iphone 15 pro max ",100, 1,"mua 1 tang 2", randomSeries,token);
 
         Assertions.assertEquals(1001, createItem.getCode());
@@ -87,7 +87,7 @@ public class CreateItemTests {
         String randomTitle = email.getSaltString();
         String randomSeries = email.getStringWithFixedLength(10);
 
-        createAuction.Test11("2","2022/07/12 11:11","2023/08/21 11:11", randomTitle,token);
+        createAuction.Test11("2","2022/07/13 11:11","2023/08/21 11:11", randomTitle,token);
         createItem.Test15(createAuction.getAuctionId(),"iphone 15 pro max ",100, 1,"mua 1 tang 2", null,token );
 
         Assertions.assertEquals(1001, createItem.getCode());
